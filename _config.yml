@@ -2,7 +2,7 @@
 title: "TEKLA STRUCTURES"
 description: "Documentación y guía de uso"
 # O cualquier theme de GitHub
-remote_theme: mmistakes/just-the-docs
+remote_theme: just-the-docs/just-the-docs
 
 # Configuración opcional
 show_downloads: false
