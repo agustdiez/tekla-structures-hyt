@@ -1,0 +1,16 @@
+# Configuración del sitio GitHub Pages
+title: "TEKLA STRUCTURES"
+description: "Documentación y guía de uso"
+theme: jekyll-theme-cayman  # Opciones: minima, cayman, slate, architect, etc.
+
+# Configuración opcional
+show_downloads: false
+google_analytics: # Tu código GA si lo necesitas
+
+# Navegación del sitio (opcional)
+header_pages:
+  - index.md
+  - guia-uso.md
+  - faq.md
+  - instalacion.md
+  - ejemplos.md
