@@ -1,24 +1,28 @@
-# Bienvenido a la Documentación
+# TS 2022 - Guía de uso
 
-Esta documentación te guiará en el uso de [Nombre del Programa].
+TOdo lo documentado en este sitio se encuentra por igual en los manuales de uso en formato documentos indicados debajo
 
-## Contenido
+## Contenido del sitio
 
-- [Guía de Uso](guia-uso.md) - Instrucciones completas de uso
-- [Preguntas Frecuentes](faq.md) - Respuestas a dudas comunes
-- [Instalación](instalacion.md) - Cómo instalar y configurar
-- [Ejemplos](ejemplos.md) - Casos de uso prácticos
+- [Introducción](introduccion.md) - Comenzar a utilizar el programa
+- [Generalidades](generalidades.md) - Generalidades del TEKLA y BIM
+- [Instalación](instalacion.md) - Instalación del programa
+- [Modelado - Hormigón](modelado_hormigon.md) - Generalidades del modelado en hormigón
+- [Modelado - Acero](modelado_acero.md) - Generalidades del modelado en acero
+- [Modo Dibujo](modo_dibujo.md) - Modo dibujo: guía de uso y parámetros
+- [Editor de cuadros](editor_cuadros.md) - Editor de cuadros: generalidades y alcances de la aplicación
+- [Ejemplos Prácticos de reportes](ejemplos.md) - Ejemplos prácticos
+- [Preguntas Frecuentes (FAQ)](faq.md) - Preguntas frecuentes
 
-## Inicio Rápido
+## Documentos
 
-Descripción breve de qué hace el programa y para qué sirve.
+Se indica en la tabla debajo la ubicación de los documentos asociadoas al uso.
 
-### Características principales
+### BIM
 
-- ✅ Característica 1
-- ✅ Característica 2
-- ✅ Característica 3
 
-## Soporte
+- BIM por CIVIL Y ESTRUCTURAS
+- Plan de ejecución del modelo 3D 
 
-Para reportar problemas o sugerencias, [abre un issue](https://github.com/tu-usuario/tu-repo/issues).
+### TEKLA Structures
+

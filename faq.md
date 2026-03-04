@@ -31,13 +31,13 @@ C:\Users\<USUARIO>\AppData\Local\Trimble\Tekla Structures\2022.0\UserSettings
 
 El TEKLA necesita definir una variable de entorno nueva en Windows.
 
-![Entorno](img/entorno.png)
+![Entorno](img/faq/entorno.png)
 
 1. Configuracion de Windows
 2. Editar las variables de entorno de esta cuenta
 3. Nombrar la ruta de la imagen debajo como TEKLA
 
-![Entorno_2](img/entorno_2.png)
+![Entorno_2](img/faq/entorno_2.png)
 
 ### Archivos de inicio
 

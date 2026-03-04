@@ -1,7 +1,8 @@
 # Configuración del sitio GitHub Pages
 title: "TEKLA STRUCTURES"
 description: "Documentación y guía de uso"
-theme: jekyll-theme-cayman  # Opciones: minima, cayman, slate, architect, etc.
+# O cualquier theme de GitHub
+remote_theme: mmistakes/just-the-docs
 
 # Configuración opcional
 show_downloads: false
