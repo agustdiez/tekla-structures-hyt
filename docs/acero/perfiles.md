@@ -3,7 +3,7 @@ title: Elementos de acero
 layout: default_with_reading_time.html
 parent: Acero
 nav_order: 1
-toc: true
+toc: false
 ---
 
 # Instalación

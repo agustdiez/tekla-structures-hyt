@@ -1,3 +1,11 @@
+---
+title: Editor de cuadros
+layout: default_with_reading_time.html
+parent: Cuadros y Reportes
+nav_order: 1
+toc: false
+---
+
 # Instalación
 
 [← Volver al inicio](index.md)

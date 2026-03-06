@@ -1,3 +1,11 @@
+---
+title: Filtros
+layout: default_with_reading_time.html
+parent: Ejemplos
+nav_order: 3
+toc: false
+---
+
 # Ejemplos Prácticos
 
 [← Volver al inicio](index.md)

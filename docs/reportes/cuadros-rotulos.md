@@ -1,3 +1,11 @@
+---
+title: Creación de rótulos
+layout: default_with_reading_time.html
+parent: Cuadros y Reportes
+nav_order: 2
+toc: false
+---
+
 # Instalación
 
 [← Volver al inicio](index.md)

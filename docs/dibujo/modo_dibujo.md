@@ -1,3 +1,11 @@
+---
+title: Modo dibujo - General
+layout: default_with_reading_time.html
+parent: Modo dibujo
+nav_order: 1
+toc: false
+---
+
 # Instalación
 
 [← Volver al inicio](index.md)

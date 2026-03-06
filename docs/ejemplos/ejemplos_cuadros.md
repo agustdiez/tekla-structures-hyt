@@ -1,3 +1,11 @@
+---
+title: Cuadros y reportes
+layout: default_with_reading_time.html
+parent: Ejemplos
+nav_order: 4
+toc: false
+---
+
 # Ejemplos Prácticos
 
 [← Volver al inicio](index.md)
