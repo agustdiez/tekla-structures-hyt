@@ -1,3 +1,11 @@
+---
+title: Instalación
+layout: default
+parent: Setup - Primeros pasos
+nav_order: 1
+toc: true
+---
+
 # Instalación
 
 [← Volver al inicio](index.md)
