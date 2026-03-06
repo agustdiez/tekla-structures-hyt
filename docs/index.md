@@ -4,31 +4,44 @@ layout: home
 nav_order: 1
 ---
 
-# TS 2022 - Guía de uso
+# Tekla Structures 2022 - Guía de uso
 
-TOdo lo documentado en este sitio se encuentra por igual en los manuales de uso en formato documentos indicados debajo
+## Objeto y alcance
+
+El objeto de este portal es nuclear todas las buenas prácticas adquiridas del uso de TEKLA Structures en Hytech. Todo lo mencionado aquí surge del uso del programa con el correr de los años y la documentación del programa.
+
+Por lo tanto, se busca que el usuario pueda:
+
+- Buscar soporte a hacer una determinada tarea con el programa
+- Servir de guía de entrada para nuevos usuarios del programa que deban modelar o realizar documentación.
+
+Se indican en el siguiente apartado
 
 ## Contenido del sitio
 
-- [Introducción](introduccion.md) - Comenzar a utilizar el programa
-- [Generalidades](generalidades.md) - Generalidades del TEKLA y BIM
-- [Instalación](instalacion.md) - Instalación del programa
-- [Modelado - Hormigón](modelado_hormigon.md) - Generalidades del modelado en hormigón
-- [Modelado - Acero](modelado_acero.md) - Generalidades del modelado en acero
-- [Modo Dibujo](modo_dibujo.md) - Modo dibujo: guía de uso y parámetros
-- [Editor de cuadros](editor_cuadros.md) - Editor de cuadros: generalidades y alcances de la aplicación
-- [Ejemplos Prácticos de reportes](ejemplos.md) - Ejemplos prácticos
-- [Preguntas Frecuentes (FAQ)](faq.md) - Preguntas frecuentes
+- [Setup](setup/index.md) - Primeros pasos con el programa (instalación y configuración)
+- [Generalidades](generalidades/index.md.md) - Generalidades del TEKLA y BIM
+- [Modelado - Hormigón](hormigon/index.md.md) - Modelado de elementos de hormigón
+- [Modelado - Acero](acero/index.md) - Modelado de elementos de acero
+- [Modo Dibujo](dibujo/index.md) - Modo dibujo
+- [Reportes y cuadros](reportes/index.md.md) - Reportes y cuadros: guía de uso
+- [Ejemplos ](ejemplos/index.md) - Ejemplos prácticos de modelado y reportes
+- [FAQ](FAQ/faq.md) - Preguntas frecuentes del uso del programa
 
-## Documentos
+## Material complementario
 
-Se indica en la tabla debajo la ubicación de los documentos asociadoas al uso.
-
-### BIM
+Se sugiere la lectura de los siguientes manuales complementarios de empresa para visualizar nociones de BIM y manejo de maqueta dentro de la empresa
 
 
-- BIM por CIVIL Y ESTRUCTURAS
-- Plan de ejecución del modelo 3D 
+## Documentación del programa
 
-### TEKLA Structures
+Se indica debajo documentación del programa a la cual se hará referencia en varios apartados.
+
+-
+-
+-
+
+
+
+
 

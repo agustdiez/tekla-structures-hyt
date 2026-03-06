@@ -39,13 +39,13 @@ C:\Users\<USUARIO>\AppData\Local\Trimble\Tekla Structures\2022.0\UserSettings
 
 El TEKLA necesita definir una variable de entorno nueva en Windows.
 
-![Entorno](img/faq/entorno.png)
+![Entorno](../img/faq/entorno.png)
 
 1. Configuracion de Windows
 2. Editar las variables de entorno de esta cuenta
 3. Nombrar la ruta de la imagen debajo como TEKLA
 
-![Entorno_2](img/faq/entorno_2.png)
+![Entorno_2](../img/faq/entorno_2.png)
 
 ### Archivos de inicio
 
@@ -91,7 +91,7 @@ El nivel de profundidad de los modelos dependerá de la etapa de ingeniería. Di
 A lo largo de un proyecto de ingeniería básica, a modo generalizado se enumera el listado de tareas vinculadas a TEKLA que se realizan a lo largo de un proyecto y sus responsabies
 
 | Etapa | Responsable |
-|----------|---------------|
+|----------|---------|
 |1. Nomenclatura de modelos|LEP|
 |2. Creación de modelos|Proyectista|
 |3. Definición de criterios de modelado (atributos a considerar)|Proyectista/LEP|

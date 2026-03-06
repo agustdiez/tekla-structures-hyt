@@ -1,3 +1,10 @@
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default_with_reading_time"
+
 # Configuración del sitio GitHub Pages
 title: "TEKLA STRUCTURES"
 description: "Documentación y guía de uso"
