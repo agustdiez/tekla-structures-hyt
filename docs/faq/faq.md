@@ -1,6 +1,6 @@
 ---
 title: Preguntas Frecuentes
-layout: default
+layout: default_with_reading_time
 nav_order: 7
 toc: true
 ---
