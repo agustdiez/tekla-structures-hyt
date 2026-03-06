@@ -5,31 +5,14 @@ nav_order: 2
 has_children: true
 ---
 
-# TS 2022 - Guía de uso
+# Setup - Primeros pasos
 
-TOdo lo documentado en este sitio se encuentra por igual en los manuales de uso en formato documentos indicados debajo
+Esta sección cubre lo primero que debe realizarse para configurar el programa por primera vez. En caso de cambio de PC, debe volverse a realizar lo indicado, ya que varios de los pasos indicados en esta sección no son realizados por IT
 
-## Contenido del sitio
+## Contenido
 
-- [Introducción](introduccion.md) - Comenzar a utilizar el programa
-- [Generalidades](generalidades.md) - Generalidades del TEKLA y BIM
-- [Instalación](instalacion.md) - Instalación del programa
-- [Modelado - Hormigón](modelado_hormigon.md) - Generalidades del modelado en hormigón
-- [Modelado - Acero](modelado_acero.md) - Generalidades del modelado en acero
-- [Modo Dibujo](modo_dibujo.md) - Modo dibujo: guía de uso y parámetros
-- [Editor de cuadros](editor_cuadros.md) - Editor de cuadros: generalidades y alcances de la aplicación
-- [Ejemplos Prácticos de reportes](ejemplos.md) - Ejemplos prácticos
-- [Preguntas Frecuentes (FAQ)](faq.md) - Preguntas frecuentes
+Se cubren los siguientes apartados
 
-## Documentos
-
-Se indica en la tabla debajo la ubicación de los documentos asociadoas al uso.
-
-### BIM
-
-
-- BIM por CIVIL Y ESTRUCTURAS
-- Plan de ejecución del modelo 3D 
-
-### TEKLA Structures
+- [Instalacion](instalacion.md) - Comenzar a utilizar el programa
+- [Configuración inicial](configuracion-inicial.md) - Generalidades del TEKLA y BIM
 

@@ -1,6 +1,6 @@
 ---
 title: Instalación
-layout: default
+layout: default_with_reading_time
 parent: Setup - Primeros pasos
 nav_order: 1
 toc: true
@@ -10,109 +10,37 @@ toc: true
 
 [← Volver al inicio](index.md)
 
-## Requisitos del Sistema
+## Versión del programa
 
-- Python 3.8 o superior
-- pip (gestor de paquetes)
-- 4GB RAM mínimo (8GB recomendado)
-- Espacio en disco: 500MB
+Al momento de realizado este portal, la versión en curso utilizada es Tekla Structures 2022. Lo descripto aquí de todas formas será de caracter general, y transferible entre versiones.
 
-## Instalación Rápida
+Los cambios que pudiesen existir por cambios de interfaz o nuevas funcionalidades del programa no estarán reflejados.
 
-### Opción 1: Usando pip
+El programa cuenta con su versión base y se le instalan entornos, para sumar reportes y bases de datos. El entorno utilizado en Hytech es el **SouthAmerica**
 
-```bash
-pip install tu-programa
-```
+## Descarga del programa
 
-### Opción 2: Desde el código fuente
+{: .warning} 
 
-```bash
-git clone https://github.com/tu-usuario/tu-programa.git
-cd tu-programa
-pip install -e .
-```
+> El programa es instalado por el departamento de IT de la empresa. Los pasos 1 a 3 descriptos debajo son responsabilidad de IT-Hytech. El paso 4 es responsabilidad del usuario, de acuerdo con [Configuración inicial](configuracion-inicial.md)
 
-## Verificar Instalación
+Para evitar conflictos, se debe seguir lo siguiente:
 
-```bash
-tu-programa --version
-```
+1. Descarga de programa y entorno (con el mismo Service Pack!).  
+2. Instalación del TEKLA en la ruta por default
+3. Instalación de entornos
+4. Seteo de configuraciones de usuario (ver [Configuración inicial](configuracion-inicial.md))
 
-Deberías ver la versión instalada.
 
-## Configuración Inicial
+## Trimble Connect
 
-### 1. Crear archivo de configuración
+{: .new}
 
-```bash
-tu-programa --init
-```
+> Trimble Connect ya no debe instalarse localmente en la PC. Se accede de forma online a través del siguiente enlace:
 
-Esto genera un archivo `config.yml` con valores por defecto.
 
-### 2. Ajustar configuración
-
-Edita `config.yml` según tus necesidades:
-
-```yaml
-general:
-  ruta_datos: ./datos
-  ruta_salida: ./resultados
-  
-opciones:
-  verbose: true
-  formato_salida: csv
-```
-
-## Dependencias Opcionales
-
-Para funcionalidades adicionales:
-
-```bash
-# Para procesamiento de imágenes
-pip install tu-programa[imagenes]
-
-# Para análisis avanzado
-pip install tu-programa[analisis]
-
-# Todas las opcionales
-pip install tu-programa[completo]
-```
-
-## Actualización
-
-```bash
-pip install --upgrade tu-programa
-```
-
-## Desinstalación
-
-```bash
-pip uninstall tu-programa
-```
-
-## Solución de Problemas en Instalación
-
-### Error de permisos
-
-```bash
-pip install --user tu-programa
-```
-
-### Conflictos de versiones
-
-```bash
-# Crear entorno virtual
-python -m venv venv
-source venv/bin/activate  # Linux/Mac
-# o
-venv\Scripts\activate  # Windows
-
-pip install tu-programa
-```
 
 ## Próximos Pasos
 
-- Lee la [Guía de Uso](guia-uso.md)
-- Consulta las [Preguntas Frecuentes](faq.md)
+- Hacé los ajustes de [Configuracion inicial](configuracion-inicial.md)
+

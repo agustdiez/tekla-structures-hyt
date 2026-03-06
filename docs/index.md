@@ -1,5 +1,5 @@
 ---
-title: Home
+title: Inicio
 layout: home
 nav_order: 1
 ---
@@ -20,11 +20,11 @@ Se indican en el siguiente apartado
 ## Contenido del sitio
 
 - [Setup](setup/index.md) - Primeros pasos con el programa (instalación y configuración)
-- [Generalidades](generalidades/index.md.md) - Generalidades del TEKLA y BIM
-- [Modelado - Hormigón](hormigon/index.md.md) - Modelado de elementos de hormigón
+- [Generalidades](generalidades/index.md) - Generalidades del TEKLA y BIM
+- [Modelado - Hormigón](hormigon/index.md) - Modelado de elementos de hormigón
 - [Modelado - Acero](acero/index.md) - Modelado de elementos de acero
 - [Modo Dibujo](dibujo/index.md) - Modo dibujo
-- [Reportes y cuadros](reportes/index.md.md) - Reportes y cuadros: guía de uso
+- [Reportes y cuadros](reportes/index.md) - Reportes y cuadros: guía de uso
 - [Ejemplos ](ejemplos/index.md) - Ejemplos prácticos de modelado y reportes
 - [FAQ](FAQ/faq.md) - Preguntas frecuentes del uso del programa
 
