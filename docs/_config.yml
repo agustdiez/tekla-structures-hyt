@@ -9,7 +9,7 @@ remote_theme: just-the-docs/just-the-docs
 logo: "img/logos/tekla_logo.png"
 
 # Set a path/url to a favicon that will be displayed by the browser
-favicon_ico: "img/logos/hytech.ico"
+favicon_ico: "img/logos/hytech.svg"
 
 defaults:
   - scope:
