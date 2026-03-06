@@ -4,14 +4,13 @@ description: "Documentación y guía de uso"
 # O cualquier theme de GitHub
 remote_theme: just-the-docs/just-the-docs
 
+mermaid:
+  # Version of mermaid library
+  # Pick an available version from https://cdn.jsdelivr.net/npm/mermaid/
+  version: "9.1.3"
+
 # Configuración opcional
 show_downloads: false
 google_analytics: # Tu código GA si lo necesitas
 
-# Navegación del sitio (opcional)
-header_pages:
-  - index.md
-  - guia-uso.md
-  - faq.md
-  - instalacion.md
-  - ejemplos.md
+
