@@ -13,4 +13,5 @@ mermaid:
 show_downloads: false
 google_analytics: # Tu código GA si lo necesitas
 
-
+# Enable or disable heading anchors
+heading_anchors: true
