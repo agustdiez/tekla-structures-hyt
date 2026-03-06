@@ -1,3 +1,11 @@
+---
+title: ✅Checklist de modelado
+layout: default_with_reading_time.html
+parent: Acero
+nav_order: 3
+toc: true
+---
+
 # Instalación
 
 [← Volver al inicio](index.md)

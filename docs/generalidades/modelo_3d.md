@@ -1,3 +1,11 @@
+---
+title: Modelo 3D
+layout: default_with_reading_time.html
+parent: Generalidades
+nav_order: 3
+toc: true
+---
+
 # Instalación
 
 [← Volver al inicio](index.md)

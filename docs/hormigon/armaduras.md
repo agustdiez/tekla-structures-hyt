@@ -1,3 +1,11 @@
+---
+title: Diseño de armaduras
+layout: default_with_reading_time.html
+parent: Hormigón
+nav_order: 2
+toc: true
+---
+
 # Instalación
 
 [← Volver al inicio](index.md)

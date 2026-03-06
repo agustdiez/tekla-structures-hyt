@@ -1,3 +1,11 @@
+---
+title: Generalidades TEKLA
+layout: default_with_reading_time.html
+parent: Generalidades
+nav_order: 1
+toc: true
+---
+
 # Instalación
 
 [← Volver al inicio](index.md)

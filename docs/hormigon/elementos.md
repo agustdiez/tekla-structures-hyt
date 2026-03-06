@@ -1,3 +1,11 @@
+---
+title: Elementos de Hormigón
+layout: default_with_reading_time.html
+parent: Hormigón
+nav_order: 1
+toc: true
+---
+
 # Instalación
 
 [← Volver al inicio](index.md)
