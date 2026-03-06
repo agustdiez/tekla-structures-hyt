@@ -1,3 +1,9 @@
+---
+title: Home
+layout: home
+nav_order: 1
+---
+
 # TS 2022 - Guía de uso
 
 TOdo lo documentado en este sitio se encuentra por igual en los manuales de uso en formato documentos indicados debajo

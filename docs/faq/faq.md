@@ -1,9 +1,7 @@
 ---
-title: "Preguntas frecuentes"
+title: Preguntas Frecuentes
 layout: default
-parent: "Indice"
-nav_order: 2
-has_children: true
+nav_order: 7
 toc: true
 ---
 
