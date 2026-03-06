@@ -1,11 +1,3 @@
----
-title: Configuración inicial
-layout: default
-parent: Setup - Primeros pasos
-nav_order: 2
-toc: true
----
-
 # Instalación
 
 [← Volver al inicio](index.md)
@@ -24,8 +16,6 @@ toc: true
 ```bash
 pip install tu-programa
 ```
-
-sdsdf
 
 ### Opción 2: Desde el código fuente
 
