@@ -1,3 +1,13 @@
+---
+title: "Preguntas frecuentes"
+layout: default
+parent: "Indice"
+nav_order: 2
+has_children: true
+toc: true
+---
+
+
 # Preguntas Frecuentes (FAQ)
 
 [← Volver al inicio](index.md)
