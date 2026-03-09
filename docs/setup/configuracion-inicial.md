@@ -1,6 +1,6 @@
 ---
 title: Configuración inicial
-layout: default_with_reading_time.html
+layout: default_with_reading_time
 parent: Setup - Primeros pasos
 nav_order: 2
 has_toc: true
