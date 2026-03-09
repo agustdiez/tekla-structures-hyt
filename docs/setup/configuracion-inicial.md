@@ -9,17 +9,23 @@ has_toc: true
 # Configuración inicial
 {: .no_toc }
 
+## Tabla de Contenidos
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+
 
 [← Volver al inicio](index.md)
 
 ## Inicio del programa
-{:toc}
+
 Primero, deberá validarse que el programa fue instalado correctamente ingresando al mismo y pudiendo visualizar.
 
 Al abrirse, se pedirá loguearse en Trimble. Crear cuenta en caso de no contar con una y compartirla con IT para que se sume al equipo.
 
 ## Cliente de Onedrive
-{:toc}
+
 
 Actualmente, todo el departamento hace uso de una carpeta civil de Onedrive donde se guardan los modelos.
 
@@ -29,12 +35,11 @@ Deberá validarse lo siguiente previo a seguir:
 
 
 ## Manejo de licencias
-{:toc}
+
 
 Las licencias podrán ser ancladas al servidor o con suscripción. Debe validarse con el coordinador de IT que su usuario sea sumado al equipo e informar las licencias que están disponibles
 
 ## Archivos de inicialización
-{:toc}
 
 El TEKLA debe poder llamar a una carpeta en común de la empresa, donde quedan guardadas configuraciones personalizadas, rótulos de empresa, imágenes, reportes, etc. 
 
@@ -45,7 +50,7 @@ Todo el equipo debe poder visualizar la misma información, por lo que para eso 
 
 
 ### Definición de variable de entorno
-{:toc}
+
 
 Actualmente la empresa trabaja los modelos del programa en un servidor de Onedrive. Esto ocasiona que los directorios de cada usuario sean distintos, ya que el cliente de Onedrive se instala por usuario y no por sistema.
 
@@ -64,7 +69,7 @@ Son parte del entorno en el que se ejecuta un proceso. Por ejemplo, un proceso e
 2. Crear 
 
 ### Copiado de archivo .ini
-{:toc}
+
 
 En la siguiente ruta 
 
@@ -73,10 +78,8 @@ En la siguiente ruta
 
 
 ## Verificación
-{:toc}
 
 ## Próximos Pasos
-{:toc}
 
 - Leer el apartado de generalidades, para ver como se trabaja internamente la maqueta en la empresa y que herramientas utilizamos.
 - Comenzar a modelar con auxilio de esta guía.
