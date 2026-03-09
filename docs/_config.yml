@@ -5,6 +5,9 @@ description: "Documentación y guía de uso"
 # O cualquier theme de GitHub
 remote_theme: just-the-docs/just-the-docs
 
+kramdown:
+  parse_block_html: true
+
 # Set a path/url to a logo that will be displayed instead of the title
 logo: "img/logos/tekla_logo.png"
 
