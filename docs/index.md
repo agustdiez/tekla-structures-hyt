@@ -25,7 +25,7 @@ Objetivos:
 - [Reportes y cuadros](reportes/index.md) - Reportes y cuadros: guía de uso
 - [Ejemplos](ejemplos/index.md) - Ejemplos prácticos de modelado y reportes
 - [Avanzado](avanzado/index.md) - Aspectos avanzados del programa
-- [FAQ](FAQ/faq.md) - Preguntas frecuentes
+- [FAQ](faq/faq.md) - Preguntas frecuentes
 
 ## Material complementario
 

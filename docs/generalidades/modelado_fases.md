@@ -1,8 +1,8 @@
 ---
-title: Generalidades TEKLA
+title: Modelo 3D
 layout: default_with_reading_time.html
 parent: Generalidades
-nav_order: 1
+nav_order: 2
 toc: false
 ---
 

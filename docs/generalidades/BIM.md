@@ -2,7 +2,7 @@
 title: BIM
 layout: default_with_reading_time.html
 parent: Generalidades
-nav_order: 2
+nav_order: 4
 toc: true
 ---
 

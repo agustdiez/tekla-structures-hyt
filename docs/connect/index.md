@@ -1,14 +1,13 @@
 ---
-title: Avanzado
+title: Trimble Connect
 layout: default
-nav_order: 10
+nav_order: 9
 has_children: true
 ---
 
-# Avanzado
+# TS 2022 - Guía de uso
 
-En este apartado se describen funcionalidades avanzadas, que no son requeridas para el usuario diario del programa, pero que pueden ser útiles dependiendo de la magnitud del proyecto.
-
+TOdo lo documentado en este sitio se encuentra por igual en los manuales de uso en formato documentos indicados debajo
 
 ## Contenido del sitio
 

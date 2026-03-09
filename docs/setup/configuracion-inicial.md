@@ -6,115 +6,72 @@ nav_order: 2
 toc: true
 ---
 
-# Instalación
+# Configuración inicial
+
+{:toc}
 
 [← Volver al inicio](index.md)
 
-## Requisitos del Sistema
+## Inicio del programa
 
-- Python 3.8 o superior
-- pip (gestor de paquetes)
-- 4GB RAM mínimo (8GB recomendado)
-- Espacio en disco: 500MB
+Primero, deberá validarse que el programa fue instalado correctamente ingresando al mismo y pudiendo visualizar.
 
-## Instalación Rápida
+Al abrirse, se pedirá loguearse en Trimble. Crear cuenta en caso de no contar con una y compartirla con IT para que se sume al equipo.
 
-### Opción 1: Usando pip
+## Cliente de Onedrive
 
-```bash
-pip install tu-programa
-```
+Actualmente, todo el departamento hace uso de una carpeta civil de Onedrive donde se guardan los modelos.
 
-sdsdf
+Deberá validarse lo siguiente previo a seguir:
 
-### Opción 2: Desde el código fuente
+1. Validar estar invitado y descargar la carpeta a través del cliente
 
-```bash
-git clone https://github.com/tu-usuario/tu-programa.git
-cd tu-programa
-pip install -e .
-```
 
-## Verificar Instalación
+## Manejo de licencias
 
-```bash
-tu-programa --version
-```
+Las licencias podrán ser ancladas al servidor o con suscripción. Debe validarse con el coordinador de IT que su usuario sea sumado al equipo e informar las licencias que están disponibles
 
-Deberías ver la versión instalada.
+## Archivos de inicialización
 
-## Configuración Inicial
+El TEKLA debe poder llamar a una carpeta en común de la empresa, donde quedan guardadas configuraciones personalizadas, rótulos de empresa, imágenes, reportes, etc. 
 
-### 1. Crear archivo de configuración
+Todo el equipo debe poder visualizar la misma información, por lo que para eso el programa cuenta con un archivo de inicialización que debe pisarse al existente, para que cada vez que abra el programa haga el *mapeo* de ciertas propiedades a carpetas compartidas.
 
-```bash
-tu-programa --init
-```
 
-Esto genera un archivo `config.yml` con valores por defecto.
 
-### 2. Ajustar configuración
 
-Edita `config.yml` según tus necesidades:
 
-```yaml
-general:
-  ruta_datos: ./datos
-  ruta_salida: ./resultados
-  
-opciones:
-  verbose: true
-  formato_salida: csv
-```
+### Definición de variable de entorno
 
-## Dependencias Opcionales
+Actualmente la empresa trabaja los modelos del programa en un servidor de Onedrive. Esto ocasiona que los directorios de cada usuario sean distintos, ya que el cliente de Onedrive se instala por usuario y no por sistema.
 
-Para funcionalidades adicionales:
+Por lo tanto, debemos definir una variable de entorno **%TEKLA%**
 
-```bash
-# Para procesamiento de imágenes
-pip install tu-programa[imagenes]
+{: .note}
+>Una variable de entorno es una variable dinámica que puede afectar al comportamiento de los procesos en ejecución en un ordenador.
+\
+Son parte del entorno en el que se ejecuta un proceso. Por ejemplo, un proceso en ejecución puede consultar el valor de la variable de entorno TEMP para descubrir una ubicación adecuada para almacenar archivos temporales, o la variable HOME o USERPROFILE para encontrar la estructura de directorios propiedad del usuario que ejecuta el proceso.
 
-# Para análisis avanzado
-pip install tu-programa[analisis]
+1. Desde Configuracion/Settings ir a editar las variables locales del sistema
 
-# Todas las opcionales
-pip install tu-programa[completo]
-```
+![variables_entono_sistema](../img/setup/variables_entorno.png)
 
-## Actualización
+2. Crear 
 
-```bash
-pip install --upgrade tu-programa
-```
+### Copiado de archivo .ini
 
-## Desinstalación
+En la siguiente ruta 
 
-```bash
-pip uninstall tu-programa
-```
+{: .note}
+> Un archivo INI es un archivo de texto simple usado comúnmente en informática y programación para almacenar configuraciones de software. Es un formato sencillo y ampliamente compatible que organiza la información en secciones y pares clave-valor. Puedes pensar en él como una forma estructurada de guardar las preferencias para diversos aspectos de un programa.
 
-## Solución de Problemas en Instalación
 
-### Error de permisos
-
-```bash
-pip install --user tu-programa
-```
-
-### Conflictos de versiones
-
-```bash
-# Crear entorno virtual
-python -m venv venv
-source venv/bin/activate  # Linux/Mac
-# o
-venv\Scripts\activate  # Windows
-
-pip install tu-programa
-```
+## Verificación
 
 ## Próximos Pasos
 
-- Lee la [Guía de Uso](guia-uso.md)
-- Consulta las [Preguntas Frecuentes](faq.md)
+- Leer el apartado de generalidades, para ver como se trabaja internamente la maqueta en la empresa y que herramientas utilizamos.
+- Comenzar a modelar con auxilio de esta guía.
+
+{: .warning}
+> No modificar las variables sin consultar con el administrador de Tekla

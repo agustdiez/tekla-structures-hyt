@@ -27,14 +27,17 @@ El programa base de Tekla Structures requiere la instalación de **entornos** es
 Para garantizar tener instalado el programa correctamente, se debe seguir lo siguiente:
 
 1. Descarga de programa y entorno (con el mismo Service Pack!).  
-2. Instalación del TEKLA en la ruta por default del programa (ver imagen debajo)
+2. Instalación del TEKLA en la ruta por default del programa
 
 ![Ruta_TEKLA](../img/setup/ruta_TEKLA.png) 
+*Figura 1: carpeta por default*
 
-![Ruta_TEKLA](../img/setup/entorno_TEKLA.png)
-*Figura 1* 
 
 3. Instalación de entornos
+
+![Ruta_TEKLA](../img/setup/entorno_TEKLA.png)
+*Figura 2: seteo de entornos* 
+
 4. Seteo de configuraciones de usuario (ver [Configuración inicial](configuracion-inicial.md))
 
 
@@ -44,9 +47,12 @@ Para garantizar tener instalado el programa correctamente, se debe seguir lo sig
 
 > Trimble Connect ya no debe instalarse localmente en la PC. Se accede de forma online a través del siguiente enlace:
 
-
+Para mayor información de Connect, referir al apartado [Trimble Connect](../connect/index.md)
 
 ## Próximos Pasos
 
-- Hacé los ajustes de [Configuracion inicial](configuracion-inicial.md)
+- Hacer los ajustes de [Configuracion inicial](configuracion-inicial.md)
+
+
+
 

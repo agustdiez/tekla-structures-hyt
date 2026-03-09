@@ -7,7 +7,9 @@ has_children: true
 
 # Setup - Primeros pasos
 
-Esta sección cubre lo primero que debe realizarse para configurar el programa por primera vez. En caso de cambio de PC, debe volverse a realizar lo indicado, ya que varios de los pasos indicados en esta sección no son realizados por IT
+Esta sección cubre lo primero que debe realizarse para configurar el programa por primera vez. 
+
+Lo indicado aquí debe validarse para cada nueva computadora que ingrese al equipo, ya que varios de los pasos indicados en esta sección no son responsabilidad del departamento IT de la empresa.
 
 ## Contenido
 
