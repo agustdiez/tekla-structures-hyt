@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Fondo blanco con borde azul -->
+  <rect width="100" height="100" fill="#ffffff"/>
+  <rect x="5" y="5" width="90" height="90" fill="none" stroke="#0066cc" stroke-width="3" rx="8"/>
+  
+  <!-- Letras TS en azul -->
+  <text x="50" y="68" 
+        font-family="Arial, sans-serif" 
+        font-size="48" 
+        font-weight="bold" 
+        fill="#0066cc" 
+        text-anchor="middle">TS</text>
+</svg>

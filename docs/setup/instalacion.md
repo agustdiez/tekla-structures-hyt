@@ -24,7 +24,7 @@ El programa base de Tekla Structures requiere la instalación de **entornos** es
 
 > La instalación del programa es responsabilidad del departamento de IT de la empresa. Los pasos 1 a 3 descriptos a continuación son gestionados exclusivamente por IT-Hytech. El paso 4 debe ser completado por cada usuario según las indicaciones en [Configuración inicial](configuracion-inicial.md).
 
-Para garantizar tener instalado el programa correctamente, se debe seguir lo siguiente:
+Para garantizar tener instalado el programa correctamente, se deben seguir los siguiente pasos:
 
 1. Descarga de programa y entorno (con el mismo Service Pack!).  
 2. Instalación del TEKLA en la ruta por default del programa
@@ -47,7 +47,7 @@ Para garantizar tener instalado el programa correctamente, se debe seguir lo sig
 
 > Trimble Connect ya no debe instalarse localmente en la PC. Se accede de forma online a través del siguiente enlace:
 
-Para mayor información de Connect, referir al apartado [Trimble Connect](../connect/index.md)
+Para mayor información de Connect, referir al apartado [Trimble Connect](../connect/index.md). Ya no es necesario contar con el programa instalado localmente en la PC.
 
 ## Próximos Pasos
 

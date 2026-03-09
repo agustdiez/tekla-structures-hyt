@@ -22,12 +22,12 @@ has_toc: true
 
 Primero, deberá validarse que el programa fue instalado correctamente ingresando al mismo y pudiendo visualizar.
 
-Al abrirse, se pedirá loguearse en Trimble. Crear cuenta en caso de no contar con una y compartirla con IT para que se sume al equipo.
+Al abrirse, el programa solicita hacer *login* en Trimble. Crear cuenta en caso de no contar con una y compartirla con IT o el coordinador Civil para que se sume el nuevo usuario a la carpeta compartida.
 
 ## Cliente de Onedrive
 
 
-Actualmente, todo el departamento hace uso de una carpeta civil de Onedrive donde se guardan los modelos.
+El departamento hace uso de una carpeta civil de Onedrive donde se guardan los modelos.
 
 Deberá validarse lo siguiente previo a seguir:
 
