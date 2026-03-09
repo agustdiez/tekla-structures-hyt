@@ -12,7 +12,7 @@ kramdown:
 logo: "img/logos/tekla_logo.png"
 
 # Set a path/url to a favicon that will be displayed by the browser
-favicon_ico: "img/logos/favicon_ts_bordered.svg"
+favicon_ico: "img/logos/favicon.ico"
 
 defaults:
   - scope:
