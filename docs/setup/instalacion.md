@@ -12,22 +12,28 @@ toc: true
 
 ## Versión del programa
 
-Al momento de realizado este portal, la versión en curso utilizada es Tekla Structures 2022. Lo descripto aquí de todas formas será de caracter general, y transferible entre versiones.
+La versión de referencia utilizada para este portal es Tekla Structures 2022. La documentación presentada mantiene un enfoque general, por lo que los conceptos y procedimientos son aplicables a versiones posteriores del software.
 
 Los cambios que pudiesen existir por cambios de interfaz o nuevas funcionalidades del programa no estarán reflejados.
 
-El programa cuenta con su versión base y se le instalan entornos, para sumar reportes y bases de datos. El entorno utilizado en Hytech es el **SouthAmerica**
+El programa base de Tekla Structures requiere la instalación de **entornos** específicos, los cuales agregan reportes, bases de datos de perfiles y configuraciones regionales. En HYTECH, el entorno estándar utilizado es **SouthAmerica**.
 
 ## Descarga del programa
 
 {: .warning} 
 
-> El programa es instalado por el departamento de IT de la empresa. Los pasos 1 a 3 descriptos debajo son responsabilidad de IT-Hytech. El paso 4 es responsabilidad del usuario, de acuerdo con [Configuración inicial](configuracion-inicial.md)
+> La instalación del programa es responsabilidad del departamento de IT de la empresa. Los pasos 1 a 3 descriptos a continuación son gestionados exclusivamente por IT-Hytech. El paso 4 debe ser completado por cada usuario según las indicaciones en [Configuración inicial](configuracion-inicial.md).
 
-Para evitar conflictos, se debe seguir lo siguiente:
+Para garantizar tener instalado el programa correctamente, se debe seguir lo siguiente:
 
 1. Descarga de programa y entorno (con el mismo Service Pack!).  
-2. Instalación del TEKLA en la ruta por default
+2. Instalación del TEKLA en la ruta por default del programa (ver imagen debajo)
+
+![Ruta_TEKLA](../img/setup/ruta_TEKLA.png) 
+
+![Ruta_TEKLA](../img/setup/entorno_TEKLA.png)
+*Figura 1* 
+
 3. Instalación de entornos
 4. Seteo de configuraciones de usuario (ver [Configuración inicial](configuracion-inicial.md))
 

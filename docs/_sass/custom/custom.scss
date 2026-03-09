@@ -1,0 +1,21 @@
+// Control de tamaño de imágenes en documentación
+.main-content img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1.5rem auto;
+}
+
+// Límite máximo para pantallas grandes
+@media (min-width: 800px) {
+  .main-content img {
+    max-width: 800px;
+  }
+}
+
+// Borde y sombra suave (opcional)
+.main-content img {
+  border: 1px solid #e1e4e8;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
