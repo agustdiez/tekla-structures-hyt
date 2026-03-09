@@ -20,7 +20,7 @@ has_toc: true
 
 ## Inicio del programa
 
-Primero, deberá validarse que el programa fue instalado correctamente ingresando al mismo y pudiendo visualizar.
+En primer lugar, validar que el programa fue instalado correctamente ingresando al mismo y pudiendo atravesar la ventana de seleccion de licencia.
 
 Al abrirse, el programa solicita hacer *login* en Trimble. Crear cuenta en caso de no contar con una y compartirla con IT o el coordinador Civil para que se sume el nuevo usuario a la carpeta compartida.
 
@@ -41,9 +41,9 @@ Deberá validarse lo siguiente previo a seguir:
 *Figura 1: las dos posibilidades de tener archivos en el cliente de OneDrive*
 
 {: .warning}
-> Las carpetas compartidas de OneDrive **NO** se borran para dejar de verlas en el explorador de Windows ya que todo el equipo cuenta con permisos de escritura. Esto quiere decir que un archivo que se borra en la carpeta, todo el equipo ve reflejado los mismos cambios.
+> Las carpetas compartidas de OneDrive **NO** se borran para eliminarlas de forma local ya que todo el equipo cuenta con permisos de escritura. Esto quiere decir que un archivo que se borra en la carpeta, todo el equipo ve reflejado los mismos cambios.
 >
->En caso de no querer ver ciertos modelos, dejar de sincronizar la carpeta o dejar en modo "Liberar espacio" para que no ocupe espacio del disco C:/
+>En caso de no querer ver ciertos modelos o archivos, dejar de sincronizar la carpeta o dejar en modo "Liberar espacio" para que no ocupe espacio del disco C:/
 
 ## Manejo de licencias
 
@@ -55,7 +55,7 @@ No se indica mayor detalle en este instructivo ya que depende en cada momento la
 {: .important}
 > Administración de licencias
 >
->Link: admin.account.tekla.com
+>Link: [Tekla Administration Tool](admin.account.tekla.com)
 
 ## Archivos de inicialización
 
@@ -69,7 +69,7 @@ Todo el equipo debe poder visualizar la misma información, por lo que para eso 
 
 Actualmente la empresa trabaja los modelos del programa en un servidor de Onedrive. Esto ocasiona que los directorios de cada usuario sean distintos, ya que el cliente de Onedrive se instala por usuario y no por sistema.
 
-Por lo tanto, debemos definir una variable de entorno **%TEKLA%**
+Por lo tanto, debemos definir una variable de entorno ```%TEKLA%```
 
 {: .note}
 >Una variable de entorno es una **variable dinámica** que puede afectar al comportamiento de los procesos en ejecución en un ordenador.
@@ -87,7 +87,7 @@ Son parte del entorno en el que se ejecuta un proceso. Por ejemplo, un proceso e
 *Figura 3: Acceso a variables de entorno*
 
 {: .highlight}
->Realizados estos dos pasos, Windows tomará %TEKLA% como un path que será común para todo el equipo.
+>Realizados estos dos pasos, Windows tomará ```%TEKLA%``` como un path que será común para todo el equipo.
 
 {: .warning}
 > No modificar las variables del sistema existentes.
@@ -95,22 +95,26 @@ Son parte del entorno en el que se ejecuta un proceso. Por ejemplo, un proceso e
 
 ### Copiado de archivo .ini
 
-Dentro de la carpeta FIRM se encuentra el archivo user.ini a tomar
+Dentro de la carpeta FIRM se encuentra el archivo ```user.ini``` a tomar
 
 {: .note}
 > Un archivo INI es un archivo de texto simple usado comúnmente en informática y programación para almacenar configuraciones de software. Es un formato sencillo y ampliamente compatible que organiza la información en secciones y pares clave-valor. Puedes pensar en él como una forma estructurada de **guardar las preferencias para diversos aspectos de un programa**.
 
-1. Copiar el archivo original user.ini
+1. Copiar el archivo original ```user.ini```
 
-{: .important}
->#Ruta Origen
+```
+#Ruta Origen
 %TEKLA%\STD\INI FILES\user.ini
+```
+
 
 2. Pegar el archivo en el siguiente directorio. El año dependerá de la versión de TEKLA que se trate. La carpeta AppData está oculta, por lo que debe habilitarse en Windows la visión de carpetas ocultas.
 
-{: .note}
->#Ruta Destino
+
+```
+#Ruta Destino
 C:\Users\<USUARIO>\AppData\Local\Trimble\Tekla Structures\2022.0\UserSettings
+```
 
 ![elementos_ocultos](../img/setup/elementos_ocultos.png)
 *Figura 4: Permitir elementos ocultos*

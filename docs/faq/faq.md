@@ -2,22 +2,20 @@
 title: Preguntas Frecuentes
 layout: default_with_reading_time
 nav_order: 11
-toc: true
+has_toc: true
 ---
-
 
 # Preguntas Frecuentes (FAQ)
+{: .no_toc }
 
-[← Volver al inicio](index.md)
+## Tabla de Contenidos
+{: .no_toc .text-delta }
 
-## Índice
-- [Instalación y Configuración](#instalación-y-configuración)
-  - [Validación IT: ¿está correctamente instalado?](#validación-it-está-correctamente-instalado)
-- [Uso General](#uso-general)
-- [Solución de Problemas](#solución-de-problemas)
-- [Características Avanzadas](#características-avanzadas)
+1. TOC
+{:toc}
 
----
+
+[← Volver al inicio](../index.md)
 
 ## Instalación y Configuración
 
