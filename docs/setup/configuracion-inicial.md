@@ -3,22 +3,23 @@ title: Configuración inicial
 layout: default
 parent: Setup - Primeros pasos
 nav_order: 2
-toc: true
+has_toc: true
 ---
 
 # Configuración inicial
+{: .no_toc }
 
-{:toc}
 
 [← Volver al inicio](index.md)
 
 ## Inicio del programa
-
+{:toc}
 Primero, deberá validarse que el programa fue instalado correctamente ingresando al mismo y pudiendo visualizar.
 
 Al abrirse, se pedirá loguearse en Trimble. Crear cuenta en caso de no contar con una y compartirla con IT para que se sume al equipo.
 
 ## Cliente de Onedrive
+{:toc}
 
 Actualmente, todo el departamento hace uso de una carpeta civil de Onedrive donde se guardan los modelos.
 
@@ -28,10 +29,12 @@ Deberá validarse lo siguiente previo a seguir:
 
 
 ## Manejo de licencias
+{:toc}
 
 Las licencias podrán ser ancladas al servidor o con suscripción. Debe validarse con el coordinador de IT que su usuario sea sumado al equipo e informar las licencias que están disponibles
 
 ## Archivos de inicialización
+{:toc}
 
 El TEKLA debe poder llamar a una carpeta en común de la empresa, donde quedan guardadas configuraciones personalizadas, rótulos de empresa, imágenes, reportes, etc. 
 
@@ -42,13 +45,15 @@ Todo el equipo debe poder visualizar la misma información, por lo que para eso 
 
 
 ### Definición de variable de entorno
+{:toc}
 
 Actualmente la empresa trabaja los modelos del programa en un servidor de Onedrive. Esto ocasiona que los directorios de cada usuario sean distintos, ya que el cliente de Onedrive se instala por usuario y no por sistema.
 
 Por lo tanto, debemos definir una variable de entorno **%TEKLA%**
 
 {: .note}
->Una variable de entorno es una variable dinámica que puede afectar al comportamiento de los procesos en ejecución en un ordenador.
+>Una variable de entorno es una **variable dinámica** que puede afectar al comportamiento de los procesos en ejecución en un ordenador.
+\
 \
 Son parte del entorno en el que se ejecuta un proceso. Por ejemplo, un proceso en ejecución puede consultar el valor de la variable de entorno TEMP para descubrir una ubicación adecuada para almacenar archivos temporales, o la variable HOME o USERPROFILE para encontrar la estructura de directorios propiedad del usuario que ejecuta el proceso.
 
@@ -59,16 +64,19 @@ Son parte del entorno en el que se ejecuta un proceso. Por ejemplo, un proceso e
 2. Crear 
 
 ### Copiado de archivo .ini
+{:toc}
 
 En la siguiente ruta 
 
 {: .note}
-> Un archivo INI es un archivo de texto simple usado comúnmente en informática y programación para almacenar configuraciones de software. Es un formato sencillo y ampliamente compatible que organiza la información en secciones y pares clave-valor. Puedes pensar en él como una forma estructurada de guardar las preferencias para diversos aspectos de un programa.
+> Un archivo INI es un archivo de texto simple usado comúnmente en informática y programación para almacenar configuraciones de software. Es un formato sencillo y ampliamente compatible que organiza la información en secciones y pares clave-valor. Puedes pensar en él como una forma estructurada de **guardar las preferencias para diversos aspectos de un programa**.
 
 
 ## Verificación
+{:toc}
 
 ## Próximos Pasos
+{:toc}
 
 - Leer el apartado de generalidades, para ver como se trabaja internamente la maqueta en la empresa y que herramientas utilizamos.
 - Comenzar a modelar con auxilio de esta guía.
