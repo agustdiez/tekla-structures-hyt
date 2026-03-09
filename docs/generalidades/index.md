@@ -14,6 +14,8 @@ Esta sección cubre generalidades propias del programa así como del ecosistema 
 Se cubren los siguientes apartados
 
 - [Generalidades TEKLA](generalidades.md) - Generalidades del programa y similares
-- [BIM](BIM.md) - Generalidades del TEKLA y BIM
+- [Modelado Fases](modelado_fases.md) - Modelado por fases
 - [Modelo 3D](modelo_3d.md) - Uso de la maqueta dentro de Hytech
+- [BIM](BIM.md) - Generalidades del TEKLA y BIM
+- [BIM Publisher](bim_publisher.md) - Herramienta para extracción de modelos
 

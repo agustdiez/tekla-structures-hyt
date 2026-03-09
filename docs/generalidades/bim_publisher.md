@@ -1,5 +1,5 @@
 ---
-title: Modelo 3D
+title: BIM Publisher
 layout: default_with_reading_time.html
 parent: Generalidades
 nav_order: 5
