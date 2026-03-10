@@ -40,6 +40,8 @@ Deberá validarse lo siguiente previo a seguir:
 ![Posibilidades Onedrive](../img/setup/onedrive_link.png)
 *Figura 1: las dos posibilidades de tener archivos en el cliente de OneDrive*
 
+
+
 {: .warning}
 > Las carpetas compartidas de OneDrive **NO** se borran para eliminarlas de forma local ya que todo el equipo cuenta con permisos de escritura. Esto quiere decir que un archivo que se borra en la carpeta, todo el equipo ve reflejado los mismos cambios.
 >
@@ -70,6 +72,7 @@ Todo el equipo debe poder visualizar la misma información, por lo que para eso 
 Actualmente la empresa trabaja los modelos del programa en un servidor de Onedrive. Esto ocasiona que los directorios de cada usuario sean distintos, ya que el cliente de Onedrive se instala por usuario y no por sistema.
 
 Por lo tanto, debemos definir una variable de entorno ```%TEKLA%```
+
 
 {: .note}
 >Una variable de entorno es una **variable dinámica** que puede afectar al comportamiento de los procesos en ejecución en un ordenador.

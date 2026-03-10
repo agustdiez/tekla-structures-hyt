@@ -35,5 +35,5 @@ A través del número de fase es posible copiar *ciertos elementos* de un modelo
 
 Las fases pueden cambiarse en cualquier momento desde el gestor de fases.
 
-
+(imagen de fases o gif para cambiarlos)
 

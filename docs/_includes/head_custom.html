@@ -1,0 +1,27 @@
+<!-- Mermaid.js -->
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ 
+    startOnLoad: true,
+    theme: 'default'
+  });
+</script>
+
+<script>
+  mermaid.initialize({ 
+    startOnLoad: true,
+    theme: 'default',  // 'default', 'dark', 'forest', 'neutral'
+    themeVariables: {
+      primaryColor: '#0066cc',
+      primaryTextColor: '#fff',
+      primaryBorderColor: '#004499',
+      lineColor: '#333',
+      fontSize: '16px',
+      fontFamily: 'Arial, sans-serif'
+    },
+    flowchart: {
+      curve: 'basis',
+      padding: 20
+    }
+  });
+</script>
