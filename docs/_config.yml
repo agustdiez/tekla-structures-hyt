@@ -25,10 +25,8 @@ toc:
   max_level: 3  # Hasta H3 (###)
 
 mermaid:
-  enable: True
-  # Version of mermaid library
-  # Pick an available version from https://cdn.jsdelivr.net/npm/mermaid/
-  version: "9.1.3"
+  enable: true
+  version: "10.6.1"
 
 # Configuración opcional
 show_downloads: false

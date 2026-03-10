@@ -49,6 +49,7 @@ Esta sección tiene la finalidad de condensar ciertos conceptos asociados a la m
 Se presenta un diagrama, indicando los software que utiliza cada disciplina y como los archivos del modelo federado pasan a formar parte del modelo integrado.
 
 ```mermaid
+
 flowchart LR
     Start[Disciplinas] --> Procesos[Procesos]
     Start --> Cañerias[Cañerías]
@@ -91,6 +92,7 @@ flowchart LR
     Area1 --> Final[Integración Final]
     Area2 --> Final
     AreaN --> Final
+    
 ```
 
 [← Volver al inicio](index.md)
