@@ -6,7 +6,7 @@ nav_order: 5
 has_toc: true
 ---
 
-# Configuración inicial
+# BIM Publisher
 {: .no_toc }
 
 ## Tabla de Contenidos
@@ -17,3 +17,7 @@ has_toc: true
 
 
 [← Volver al inicio](index.md)
+
+## ¿Qué es BIM Publisher?
+
+## Seteo y configuración
