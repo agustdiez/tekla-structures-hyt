@@ -31,7 +31,7 @@ Por ejemplo, es posible crear un filtro de selección en Tekla Structures basado
 
 ### Exports
 
-![Exports_BIM](image.png))
+![Exports_BIM](../img/generalidades/publisher_1.png))
 
 1. Figuran los modelos cargados. Se tildan previo a tocar el botón de "Run" para correr el Publisher
 2. Se asigna la carpeta del modelo, la carpeta donde irá el archivo a exportar y el nombre que tendrá el archivo.
