@@ -6,7 +6,7 @@ nav_order: 1
 has_toc: true
 ---
 
-# Configuración inicial
+# Editor de cuadros
 {: .no_toc }
 
 ## Tabla de Contenidos
@@ -80,9 +80,9 @@ When you create a new row in the template, you should select a content type for 
 ![editor_cuadros_2](../img/reportes/editor_cuadros_2.png)
 *Figura 2: visualizacion de los tipos de contenido de fila*
 
-Debajo se presenta tabla con todos los tipos de **```CONTENT TYPE```**
+Debajo se presenta tabla con todos los tipos de **```CONTENT TYPE```**:
 
-<details>
+<details open>
 <summary>Ver tabla completa</summary>
 
 | Content Type | Descripción |
@@ -134,6 +134,7 @@ Debajo se presenta tabla con todos los tipos de **```CONTENT TYPE```**
 | `WELD` | Crea listas de soldaduras |
 
 </details>
+
 Tomar de referencia cuadros existentes del programa para entender distintas posibilidades
 
 ### Filtrado sobre tipo de objeto
