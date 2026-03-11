@@ -5,6 +5,7 @@ description: "Documentación y guía de uso"
 # O cualquier theme de GitHub
 remote_theme: just-the-docs/just-the-docs
 
+markdown: kramdown
 kramdown:
   parse_block_html: true
 

@@ -6,7 +6,7 @@ nav_order: 2
 has_toc: true
 ---
 
-# Configuración inicial
+# Cuadros de rótulos
 {: .no_toc }
 
 ## Tabla de Contenidos

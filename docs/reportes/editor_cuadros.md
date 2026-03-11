@@ -82,8 +82,9 @@ When you create a new row in the template, you should select a content type for 
 
 Debajo se presenta tabla con todos los tipos de **```CONTENT TYPE```**:
 
-<details open><summary>Ver tabla completa</summary>
-<br>
+<details open>
+<summary>Ver tabla completa</summary>
+
 
 | Content Type | Descripción |
 |:-------------|:------------|
@@ -133,7 +134,6 @@ Debajo se presenta tabla con todos los tipos de **```CONTENT TYPE```**:
 | `WASHER` | Crea listas de arandelas. Contiene todas las arandelas para bulones asociados a partes seleccionadas |
 | `WELD` | Crea listas de soldaduras |
 
-</br>
 </details>
 
 Tomar de referencia cuadros existentes del programa para entender distintas posibilidades
