@@ -8,7 +8,7 @@ toc: true
 
 # Instalación
 
-[← Volver al inicio](index.md)
+
 
 ## Versión del programa
 
@@ -54,5 +54,5 @@ Para mayor información de Connect, referir al apartado [Trimble Connect](../con
 - Hacer los ajustes de [Configuracion inicial](configuracion-inicial.md)
 
 
-
+[← Volver al inicio](index.md)
 

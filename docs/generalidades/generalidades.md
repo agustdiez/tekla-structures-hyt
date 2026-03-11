@@ -16,7 +16,7 @@ has_toc: true
 {:toc}
 
 
-[← Volver al inicio](index.md)
+
 
 ## Modelos
 
@@ -126,12 +126,16 @@ Son los elementos principales de la estructura.
    - **Pile**: Pilotes
    - **Concrete Panel**: Paneles de hormigón
 
-2. **PERNOS/SOLDADURAS**: se pueden modelar individualmente pero en general se aplican a través de componentes.
-3. **ARMADURAS**: hay distintos tipos de armaduras. Ver apartado dentro del capítulo [Armaduras](../hormigon/armaduras.md) para mayor detalle.
-4. **ASSEMBLIES**: la licencia actual es de piezas de hormigón por lo que se podrán crear lo que se denominan unidades de colada
-5. **ELEMENTOS AUXILIARES**: aquello que auxiliará durante el modelado.
+{: note}
+> Los objetos más usuales a usar en estos proyectos se basan en BEAMS, PAD FOOTING, COLUMN y PLATE. En función del tipo de objeto, los atributos a presentar pueden variar y ser distinto, por lo que es importante modelar con un mismo criterio
+
+1. **PERNOS/SOLDADURAS**: se pueden modelar individualmente pero en general se aplican a través de componentes.
+2. **ARMADURAS**: hay distintos tipos de armaduras. Ver apartado dentro del capítulo [Armaduras](../hormigon/armaduras.md) para mayor detalle.
+3. **ASSEMBLIES**: la licencia actual es de piezas de hormigón por lo que se podrán crear lo que se denominan unidades de colada
+4. **ELEMENTOS AUXILIARES**: aquello que auxiliará durante el modelado.
    1. Grillas
    2. Objetos de construcción (linea, planos, circulos)
    3. Puntos
-6. **COMPONENTES**: los componentes actúan como *macros de Excel* que permiten modelar objetos de forma automática de cuestiones que se repiten (por ejemplo, una viga de encadenado o una placa base). Cada sección de [Hormigón](../hormigon/index.md) o [Acero](../acero/index.md) cuenta con una biblioteca de componentes usuales para utilizar.
+5. **COMPONENTES**: los componentes actúan como *macros* que permiten modelar objetos de forma automática de cuestiones que se repiten (por ejemplo, una viga de encadenado o una placa base). Cada sección de [Hormigón](../hormigon/index.md) o [Acero](../acero/index.md) cuenta con una biblioteca de componentes usuales para utilizar.
 
+[← Volver al inicio](index.md)

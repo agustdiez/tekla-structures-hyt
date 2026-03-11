@@ -32,9 +32,15 @@ Objetivos:
 Se recomienda consultar los manuales internos de Hytech sobre metodología BIM y gestión de modelos federados.
 
 
+
 ## Documentación oficial
 
 Se indica debajo documentación del programa a la cual se hará referencia en varios apartados.
+
+- [Atajos Teclado](manuales/2022-Tekla-Structures-EN-KB-Shortcuts-flyer.pdf)
+- [Editor de cuadros](manuales/TE_USG_420_en_Template_editor_user_guide.pdf)
+- [Editor de símbolos](manuales/SE_USG_300_en_Symbol_editor_user_guide.pdf)
+- [Propiedades avanzadas](manuales/TS_REF_2022_en_Reference.pdf)
 
 
 

@@ -16,7 +16,7 @@ has_toc: true
 {:toc}
 
 
-[← Volver al inicio](index.md)
+
 
 ## ¿Qué colocar en cada modelo?
 
@@ -37,3 +37,4 @@ Las fases pueden cambiarse en cualquier momento desde el gestor de fases.
 
 (imagen de fases o gif para cambiarlos)
 
+[← Volver al inicio](index.md)

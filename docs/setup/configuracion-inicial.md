@@ -16,8 +16,6 @@ has_toc: true
 {:toc}
 
 
-[← Volver al inicio](index.md)
-
 ## Inicio del programa
 
 En primer lugar, validar que el programa fue instalado correctamente ingresando al mismo y pudiendo atravesar la ventana de seleccion de licencia.
@@ -140,4 +138,4 @@ Cualquier desvío o consulta particular, referir al [FAQ](../faq/faq.md) o al li
 - Leer el apartado de generalidades, para ver como se trabaja internamente la maqueta en la empresa y que herramientas utiliza el equipo Civil.
 - Comenzar a modelar con auxilio de esta guía. Referir al [Índice](../index.md)
 
-
+[← Volver al inicio](index.md)

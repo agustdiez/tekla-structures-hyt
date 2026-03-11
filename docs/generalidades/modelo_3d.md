@@ -74,8 +74,9 @@ Depende del proyecto (declarado en Plan de Ejecución):
 - **02-MODULES:** Módulos y skids
 
 {: .important}
-> Las rutinas deben dejar los archivos en las carpetas de ```3D-MODEL``` 
-> correspondientes. Los .nwd que se quieran tomar estarán en ```VIEWER```
+> Las rutinas deben dejar los archivos en las carpetas de ```3D-MODEL``` correspondientes. 
+>
+> Los .nwd que se quieran tomar estarán en ```VIEWER```
 
 ## Pautas Generales de Modelado
 

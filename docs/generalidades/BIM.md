@@ -20,6 +20,7 @@ Esta sección tiene la finalidad de condensar ciertos conceptos asociados a la m
 {:toc}
 
 
+
 ## Conceptos Clave
 
 **Modelo Federado:** Combinación de modelos individuales en entorno coherente (*.nwf), mantiene autonomía de edición.
@@ -92,7 +93,7 @@ flowchart LR
     Area1 --> Final[Integración Final]
     Area2 --> Final
     AreaN --> Final
-    
+
 ```
 
 [← Volver al inicio](index.md)
