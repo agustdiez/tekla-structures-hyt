@@ -82,8 +82,7 @@ When you create a new row in the template, you should select a content type for 
 
 Debajo se presenta tabla con todos los tipos de **```CONTENT TYPE```**:
 
-<details open>
-<summary>Ver tabla completa</summary>
+<details open><summary>Ver tabla completa</summary>
 
 | Content Type | Descripción |
 |:-------------|:------------|
