@@ -159,6 +159,17 @@ Archivos de instalación
 
 ---
 
+## Editor de cuadros
+
+### No veo imágenes en el editor de cuadros
+
+
+### ¿Cómo ordeno las filas en un cuadro?
+
+### No sé cuál puede ser el atributo buscado
+
+
+
 ## BIM Publisher
 
 El BIM Publisher es una herramienta provista en el Tekla Warehouse que permite:
@@ -168,6 +179,10 @@ El BIM Publisher es una herramienta provista en el Tekla Warehouse que permite:
 - Extraer de forma automática múltiples modelos en una sola sesión sin hacerlo de forma manual.
 
 Para mayor detalle referir al manual
+
+### Tengo errores cuando comienza a intentar abrir modelos
+
+### Lo corro y no pasa nada
 
 ## Trimble Connect
 
