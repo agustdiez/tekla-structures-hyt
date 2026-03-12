@@ -22,7 +22,7 @@ has_toc: true
 
 Los elementos a colocar dentro de un modelo es a criterio del coordinador del modelo 3D del proyecto, y responde a la etapa de la ingeniería que se trate y la documentación a realizar para el proyecto.
 
-Sin embargo, es buena práctica separar la **estructura metálica**, **estructuras de hormigón** y **fundaciones** en modelos distintos, ya que en general sus memorias de cálculo son independientes.
+Es buena práctica separar la **estructura metálica**, **estructuras de hormigón** y **fundaciones** en modelos distintos, ya que en general sus memorias de cálculo son independientes. A su vez, sistemas de drenajes, cámaras y underground asociado a E&I, modelo de enterrado existente, etc. deberán ser tratados como modelos aislados e independientes.
 
 ## Fases
 

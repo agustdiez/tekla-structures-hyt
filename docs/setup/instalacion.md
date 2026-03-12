@@ -7,22 +7,29 @@ toc: true
 ---
 
 # Instalación
+{: .no_toc }
 
+## Tabla de Contenidos
+{: .no_toc .text-delta }
 
+1. TOC
+{:toc}
+
+----
 
 ## Versión del programa
 
 La versión de referencia utilizada para este portal es Tekla Structures 2022. La documentación presentada mantiene un enfoque general, por lo que los conceptos y procedimientos son aplicables a versiones posteriores del software.
 
-Los cambios que pudiesen existir por cambios de interfaz o nuevas funcionalidades del programa no estarán reflejados.
+Los cambios que pudiesen existir por cambios de interfaz o nuevas funcionalidades del programa no estarán indicados aunque aparezca expresamente indicado.
 
-El programa base de Tekla Structures requiere la instalación de **entornos** específicos, los cuales agregan reportes, bases de datos de perfiles y configuraciones regionales. En HYTECH, el entorno estándar utilizado es **SouthAmerica**.
+El programa base de Tekla Structures requiere la instalación de **entornos** específicos, los cuales agregan reportes, bases de datos de perfiles y configuraciones regionales. En la empresa, el entorno estándar utilizado es **SouthAmerica**.
 
 ## Descarga del programa
 
 {: .warning} 
 
-> La instalación del programa es responsabilidad del departamento de IT de la empresa. Los pasos 1 a 3 descriptos a continuación son gestionados exclusivamente por IT-Hytech. El paso 4 debe ser completado por cada usuario según las indicaciones en [Configuración inicial](configuracion-inicial.md).
+> La instalación del programa es responsabilidad del departamento de IT de la empresa. Los pasos 1 a 3 descriptos a continuación son gestionados exclusivamente por IT. El paso 4 debe ser completado por cada usuario según las indicaciones en [Configuración inicial](configuracion-inicial.md).
 
 Para garantizar tener instalado el programa correctamente, se deben seguir los siguiente pasos:
 

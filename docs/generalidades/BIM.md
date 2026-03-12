@@ -39,6 +39,46 @@ Esta sección tiene la finalidad de condensar ciertos conceptos asociados a la m
 - **LOD 400:** Construcción/fabricación
 - **LOD 500:** As Built (estado final verificado in situ)
 
+
+## Roles BIM en Civil
+
+De acuerdo con lo indicado en [Modelo 3D](modelo_3d.md), donde se indican los roles que hay a nivel empresa, a nivel departamental podemos distinguir 4 roles claros. Dependiendo de la magnitud y complejidad del proyecto, estas 4 figuras podrán ser fusionadas o no en distintos integrantes del equipo.
+
+1. Responsable **_MODELO 3D CIVIL GENERAL_**
+2. Coordinador de **_MODELO 3D PROYECTO GENERAL_**
+3. Responsable de **_MODELO 3D CIVIL PROYECTO_**
+4. **_MODELADOR_**
+
+El siguiente diagrama muestra a modo de ejemplo distintas tareas que desarrollan a lo largo del proyecto, considerando que solamente interactuaremos con el responsable civil a nivel general
+
+```mermaid
+sequenceDiagram
+    participant RMCG as Responsable MODELO 3D CIVIL GENERAL
+    participant CMP as Coordinador MODELO 3D PROYECTO GENERAL
+    participant RMCP as Responsable MODELO 3D CIVIL PROYECTO
+    participant MOD as MODELADOR
+
+    
+    RMCG-->>RMCP: Define estándares generales de modelado
+    RMCP-->>RMCG: Evacúa consultas de procesos iniciales
+    CMP->>RMCP: Coordina los modelos e indica codificación
+    RMCP->>MOD: Distribuye tareas de modelado
+    MOD->>RMCP: Notifica sobre modelo
+    RMCP->>CMP: Corrige y distribuye entregables en modelo federado
+    CMP->>RMCP: Solicita cambios a nivel proyecto que impactan en modelo CIVIL
+    RMCP->>MOD: Aplica correcciones a modelos existentes
+    MOD->>RMCP: Toma comentarios de coordinador Civil/LEP
+    CMP->>RMCP: El cliente solicita entregar información adicional en el modelo
+    RMCP->>RMCG: Solicita asistencia para implementar los cambios pedidos por el cliente
+    RMCG->>RMCP: Realiza las modificaciones solicitadas y arma instructivo puntual
+    RMCP->>MOD: Distribuye las tareas a realizar
+    MOD->>RMCP: Entrega modelos finales
+    RMCP->>CMP: Distribuye archivos a modelos federados
+    
+    RMCP->>CMP: Reporta avance y asiste a Design Review con cliente
+    CMP-)RMCG: Notifica estado general de situación de la disciplina en el proyecto
+```
+
 ## ¿Cómo estamos involucrados?
 
 - Proyectistas/ingenieros trabajan sobre modelos en el directorio de OneDrive.

@@ -15,10 +15,10 @@ has_toc: true
 1. TOC
 {:toc}
 
+---
 
 
-
-## Modelos
+## Antes de modelar
 
 Se describen a continuación distintos apartados generales del modelado que deben tenerse en cuenta previo a comenzar un proyecto.
 
@@ -26,7 +26,7 @@ Se describen a continuación distintos apartados generales del modelado que debe
 
 Previo al inicio de un proyecto, existen tareas que deben realizarse con antelación:
 
-1. **Armado de rótulos**: de forma genérica se deberán crear 5 archivos de rótulos distintos. Referir a [Cuadros Rótulos](../reportes/cuadros-rotulos.md) para mayor detalle.
+1. **Armado de rótulos**: de forma genérica se deberán crear 5 archivos de rótulos distintos en distintos tamaños. Referir a [Cuadros Rótulos](../reportes/cuadros-rotulos.md) para mayor detalle.
 2. **Armado de template**: en caso de ser un cliente nuevo en la empresa deberá armarse un template del cliente. 
 
 {: .note}
@@ -92,17 +92,19 @@ LLENAR MATI CON FOTO
 
 ### Definición Punto Base
 
-Los proyectos suelen tener un punto base (un 0,0 local) que está correlacionado con una coordenada geográfica.
+Los proyectos suelen tener un punto base (`(0,0)` local) que está correlacionado con una coordenada geográfica del proyecto que se define al inicio del mismo. Dicho punto en coordenadas POSGAR quedará indicado en documentación del proyecto.
 
-Se debe definir un BASEPOINT de proyecto dentro del modelo, que en general se corresponde con (0,0,100.000) para que los modelos al exportar sean adecuados para la maqueta.
+Sin embargo, las maquetas de los proyectos se trabajan en coordenadas locales y en `mm` en general.
 
-Referir a [Modelo 3D](modelo_3d.md)
+Se debe definir un BASEPOINT de proyecto dentro del modelo, que en general se corresponde con `(0,0,100.000)` para que los modelos al exportar sean adecuados para la maqueta.
+
+Referir a [Modelo 3D](modelo_3d.md) para detalle respecto al modelo federado.
 
 (Foto mati)
 
 ### Referencias externas
 
-Las referencias externas son aquellos archivos que se le cargan al modelo para ayudar durante el modelado. Las referencias externas pueden subirse localmente (siempre en la carpeta ```./xref``` del modelo) o bien a Trimble Connect y cargar directamente la referencia/modelo en el TEKLA.
+Las referencias externas son aquellos archivos que se le cargan al modelo para auxiliar durante el modelado. Las referencias externas pueden subirse localmente (siempre en la carpeta ```./xref``` del modelo) o bien a Trimble Connect y cargar directamente la referencia/modelo en el TEKLA.
 
 Instalar la extensión que permite cargar .nwd en el programa 
 
