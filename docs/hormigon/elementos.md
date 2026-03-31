@@ -24,6 +24,12 @@ No es alcance de este instructivo mostrar cuestiones básicas del modelado de el
 
 ---
 
+## Ribbon
+
+## Tipos de elementos
+
+
+
 ## 2. Elementos Estructurales de Hormigón
 
 ### 2.1 Columnas (Concrete Column)
