@@ -24,9 +24,112 @@ No es alcance de este instructivo mostrar cuestiones básicas del modelado de el
 
 ---
 
-## Ribbon
+## Descripción de elementos
 
-## Tipos de elementos
+Aca iría la descripcion de los elementos de TEKLA de hormigón, cuándo usar cada uno, con usos recomendados
+
+Foto del ribbon
+
+### Footing
+
+### Beam
+
+### Column / Columna
+
+### Item
+
+### Unidad de colada
+
+---
+
+## Antes de modelar
+
+- Referemcoas de connect
+- Referencias externas de cliente
+- Referencias internas del proyecto de otras disciplinas
+
+EL Lep deberá indicar a quien modele lo que debe tomar como información valida y tener en cuenta
+
+Para referencias de Connect, ver [Connect - Ejecutor](../connect/connect-ejecutor.md)
+
+## Atributos a modelar
+
+Va a depender de IB/ID, definiciones de proyecto, pero en caracter general:
+
+
+
+## Diseño de armaduras
+
+Ver [Armaduras](./armaduras.md) para detalle de cómo modelar, tipo de armaduras, y reportes asociados.
+
+## Componentes
+
+
+## Miscelaneos
+
+### Diseño de anclajes
+
+Referir a los componentes que lo modelan y derivar a la tabla de conexiones
+
+
+### Antimaterial
+
+### Tipo de fundaciones
+
+Se presenta listado de tipo de fundaciones.
+
+Lo complejo suele ser el armado de las mismas. para esas definciiones ver [Armaduras](./armaduras.md)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
