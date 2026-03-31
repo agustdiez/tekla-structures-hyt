@@ -22,13 +22,14 @@ Contiene los estándares y procedimientos para el modelado de estructuras de hor
 
 No es alcance de este instructivo mostrar cuestiones básicas del modelado de elementos si no brindar pautas de diseño y guiar en el proceso.
 
+
 ---
 
 ## Descripción de elementos
 
-Aca iría la descripcion de los elementos de TEKLA de hormigón, cuándo usar cada uno, con usos recomendados
+Tekla permite modelar estructuras de hormigon armado, este capitulo se centra en la creación de objetos de H°. Hay 4 principales opciones en el modelado. 
 
-Foto del ribbon
+![RIBBON-H°A°](../img/hormigon/RIBBON-H°.png)
 
 ### Footing
 
@@ -52,18 +53,23 @@ EL Lep deberá indicar a quien modele lo que debe tomar como información valida
 
 Para referencias de Connect, ver [Connect - Ejecutor](../connect/connect-ejecutor.md)
 
+---
+
 ## Atributos a modelar
 
 Va a depender de IB/ID, definiciones de proyecto, pero en caracter general:
 
-
+---
 
 ## Diseño de armaduras
 
 Ver [Armaduras](./armaduras.md) para detalle de cómo modelar, tipo de armaduras, y reportes asociados.
 
+---
+
 ## Componentes
 
+---
 
 ## Miscelaneos
 
