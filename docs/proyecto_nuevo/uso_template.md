@@ -1,8 +1,8 @@
 ---
-title: Generalidades TEKLA
+title: Crear template de proyecto
 layout: default_with_reading_time
-parent: Generalidades
-nav_order: 1
+parent: Un proyecto nuevo...
+nav_order: 2
 has_toc: true
 ---
 

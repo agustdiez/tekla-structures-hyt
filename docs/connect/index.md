@@ -5,31 +5,19 @@ nav_order: 9
 has_children: true
 ---
 
-# TS 2022 - Guía de uso
+# Trimble Connect
 
-TOdo lo documentado en este sitio se encuentra por igual en los manuales de uso en formato documentos indicados debajo
+Esta sección cubre aspectos y funcionalidades del Trimble Connect. Se trata de la herramienta propia de Trimble (empresa desarrolladora del TEKLA) que integra los distintos modelos en el marco de un proyecto, y nos permite operar sobre ellos.
 
-## Contenido del sitio
+Por ello, es distinto el uso y la funcionalidad para quien ejecuta como para quien revisa los modelos.
 
-- [Introducción](introduccion.md) - Comenzar a utilizar el programa
-- [Generalidades](generalidades.md) - Generalidades del TEKLA y BIM
-- [Instalación](instalacion.md) - Instalación del programa
-- [Modelado - Hormigón](modelado_hormigon.md) - Generalidades del modelado en hormigón
-- [Modelado - Acero](modelado_acero.md) - Generalidades del modelado en acero
-- [Modo Dibujo](modo_dibujo.md) - Modo dibujo: guía de uso y parámetros
-- [Editor de cuadros](editor_cuadros.md) - Editor de cuadros: generalidades y alcances de la aplicación
-- [Ejemplos Prácticos de reportes](ejemplos.md) - Ejemplos prácticos
-- [Preguntas Frecuentes (FAQ)](faq.md) - Preguntas frecuentes
+## Contenido
 
-## Documentos
+Se cubren los siguientes apartados
 
-Se indica en la tabla debajo la ubicación de los documentos asociadoas al uso.
-
-### BIM
+- [Trimble Connect](./connect_general.md) - Generalidades de Trimble Connect
+- [Connect - Ejecutor](./connect-ejecutor.md) - Responsabilidades en Trimble Connect para quien modela o ejecuta
+- [Connect - Revisor](./connect-revisor.md) - Responsabilidades en Trimble Connect para quienes revisan documentacion
 
 
-- BIM por CIVIL Y ESTRUCTURAS
-- Plan de ejecución del modelo 3D 
-
-### TEKLA Structures
 

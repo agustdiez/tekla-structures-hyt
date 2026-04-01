@@ -25,7 +25,10 @@ Este apartado busca automatizar los flujos de generación de modelos y su import
 
 Como regla práctica, si se tienen más de 20 modelos y reuniones semanales de maqueta, definir estos scripts resulta sumamente necesario para no tener errores y no perder demasiado tiempo copiando modelos.
 
-A lo largo de los ejemplos, se definirán ciertos conceptos necesarios para adaptar las rutinas. **Es obligatorio que quien maneje los scripts tenga conocimientos mínimos de programación ya que son rutinas que copian, pegan y borran archivos. Un error no controlado puede significar que se pierdan archivos que no puedan recuperarse.**
+A lo largo de los ejemplos, se definirán ciertos conceptos necesarios para adaptar las rutinas. 
+
+{: .important}
+>**Es obligatorio que quien maneje los scripts/rutinas tenga conocimientos mínimos de programación ya que son rutinas que copian, pegan y borran archivos. Un error no controlado puede significar que se pierdan archivos que no puedan recuperarse.**
 
 ----
 
