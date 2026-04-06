@@ -33,9 +33,43 @@ Tekla permite modelar estructuras de hormigon armado, este capitulo se centra en
 
 ### Footing
 
+
+
+
 ### Beam
 
-### Column / Columna
+### Column:
+![RIBBON COLUMNA](../img/hormigon/GIF-COLUMNA.gif)
+
+Son elementos verticales que transmiten cargas axiales y momentos desde niveles superiores hacia la fundación.
+Atributos especificos del modelado:
+
+![DESCRIPCIÓN COLUMNNA](../img/hormigon/COLUM-H°.png)
+
+**Atributos Críticos**:
+
+| Atributo | Descripción | Valor Ejemplo |
+|----------|-------------|---------------|
+| **Name** | Identificador del elemento | `COLUMNA` |
+| **Profile** | Dimensiones del elemento | `300*300` |
+| **Material** | Material del elemento | `H30` |
+| **Class** | Clase del elemento  | `8` |
+| **IFC export** | Config. de exportación | - |
+| **User field / UDAS** | Atributos del elementos  | - |
+| **Altura** | Altura del elemento |`3600` |
+
+
+
+- **Name**: Nombre del elemento, generalmente se suele definir antes del empezar el proyecto, como valor recomendado se puede definir "COLUMNA"
+- **Profile**: Dimension del elemento, tienen dos maneras de editarse, en la pestaña de propiedades o en la parte superior o inferior del elemento.
+- **Material**: Material del elemento, dependen de la base de datos de materiales, suele ser H25/H30/H35
+- **Class**: Color del elemento, generalmente se suele definir antes del empezar el proyecto, como valor recomendado se puede definir "8", puede variar.
+- **IFC** Export: Atributos y configuraciones de la exportación a IFC.
+- **User field / UDAS**: Atributos tanto definidos por el usuario como los "userfield" estas filas tienen varios usos, tanto como la numeración, o especificaciones, estas filas pueden usarse para tablas, reportes, cuadros.
+- **Altura**: Altura del elemento, se edita desde el elemento.
+
+
+
 
 ### Item
 
