@@ -14,6 +14,17 @@ has_toc: true
 
 1. TOC
 {:toc}
+---
+## TIPOS DE ARMADURA
 
+### CONJUNTO DE ARMADURA
+
+### EL OTRO
+
+---
+## PROPIEDADES
+
+---
+## LISTADO DE COMPONENTES
 
 [← Volver al inicio](index.md)

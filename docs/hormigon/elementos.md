@@ -33,21 +33,77 @@ Tekla permite modelar estructuras de hormigon armado, este capitulo se centra en
 
 ### Footing
 
+Elementos en contacto con el suelo que distribuyen las cargas provenientes de la estructura. `Suele ser la función mas utilizada para modelar cualquier fundación independientemente de la forma`
 
+![RIBBON FOOTING](../img/hormigon/RIBBON-FOOTING.gif)
+ 
+![DESCRIPCIÓN FOOTING](../img/hormigon/DESCRIPCIÓN%20FOOTING.png)
+
+**Atributos importantes**:
+
+| Atributo | Descripción | Valor Ejemplo |
+|----------|-------------|---------------|
+| **Name** | Identificador del elemento | `ZAPATA` |
+| **Profile** | Base y altura del elemento | `700*400` |
+| **Material** | Material del elemento | `H30` |
+| **Class** | Clase del elemento  | `8` |
+| **Position** | Desplazamiento del elemento  | `-100` |
+| **IFC export** | Config. de exportación | - |
+| **User field / UDAS** | Atributos del elementos  | - |
+| **Alto** | Alto del elemento |`400` |
+
+- **1- Name**: Nombre del elemento, generalmente se suele definir antes del empezar el proyecto, como valor recomendado se puede definir "ZAPATA" o "BASE AISLADA"
+- **2- Profile**: Base y altura del elemento, tienen dos maneras de editarse, en la pestaña de propiedades o en la parte superior o inferior del elemento.
+- **3- Material**: Material del elemento, dependen de la base de datos de materiales, suele ser H25/H30/H35
+- **4- Class**: Color del elemento, generalmente se suele definir antes del empezar el proyecto, como valor recomendado se puede definir "8", puede variar.
+- **5-Position**: Desplazamiento del elemento, se puede modificar los puntos de inicio y final del elemento en cualquiera de sus ejes (X/Y/Z). 
+- **6- IFC Export** : Atributos y configuraciones de la exportación a IFC.
+- **7- User field / UDAS**: Atributos tanto definidos por el usuario como los "userfield" estas filas tienen varios usos, tanto como la numeración, o especificaciones, estas filas pueden usarse para tablas, reportes, cuadros.
+- **8- Altura**: Altura del elemento, se edita desde el elemento
+
+![PROCEDIMIENTO FOOTING](../img//hormigon/PROCEDIMIENTO-FOOTING.gif)
 
 
 ### Beam
 
-### Column:
-![RIBBON COLUMNA](../img/hormigon/GIF-COLUMNA.gif)
+Son elementos horizontales o inclinados que transmiten cargas por flexión.
+![RIBBON BEAM](../img/hormigon/RIBBON-%20BEAM.gif)
+
+![DESCRIPCIÓN VIGA](../img/hormigon/VIGA%20H°.png)
+
+**Atributos importantes**:
+
+| Atributo | Descripción | Valor Ejemplo |
+|----------|-------------|---------------|
+| **Name** | Identificador del elemento | `VIGA` |
+| **Profile** | Base y altura del elemento | `700*400` |
+| **Material** | Material del elemento | `H30` |
+| **Class** | Clase del elemento  | `8` |
+| **Offset** | Desplazamiento del elemento  | `-100` |
+| **IFC export** | Config. de exportación | - |
+| **User field / UDAS** | Atributos del elementos  | - |
+| **Largo** | Largo del elemento |`6000` |
+
+- **1- Name**: Nombre del elemento, generalmente se suele definir antes del empezar el proyecto, como valor recomendado se puede definir "VIGA"
+- **2- Profile**: Base y altura del elemento, tienen dos maneras de editarse, en la pestaña de propiedades o en la parte superior o inferior del elemento.
+- **3- Material**: Material del elemento, dependen de la base de datos de materiales, suele ser H25/H30/H35
+- **4- Class**: Color del elemento, generalmente se suele definir antes del empezar el proyecto, como valor recomendado se puede definir "8", puede variar.
+- **5-Offset**: Desplazamiento del elemento, se puede modificar los puntos de inicio y final del elemento en cualquiera de sus ejes (X/Y/Z). 
+- **6- IFC Export** : Atributos y configuraciones de la exportación a IFC.
+- **7- User field / UDAS**: Atributos tanto definidos por el usuario como los "userfield" estas filas tienen varios usos, tanto como la numeración, o especificaciones, estas filas pueden usarse para tablas, reportes, cuadros.
+- **8- Altura**: Altura del elemento, se edita desde el elemento.
+
+![PROCEDIMIENTO VIGA](../img/hormigon/PROCEDIMIENTO%20VIGA.gif)
+
+### Column
 
 Son elementos verticales que transmiten cargas axiales y momentos desde niveles superiores hacia la fundación.
-Atributos especificos del modelado:
+
+![RIBBON COLUMNA](../img/hormigon/GIF-COLUMNA.gif)
 
 ![DESCRIPCIÓN COLUMNNA](../img/hormigon/COLUM-H°.png)
 
-**Atributos Críticos**:
-
+**Atributos importantes:**
 | Atributo | Descripción | Valor Ejemplo |
 |----------|-------------|---------------|
 | **Name** | Identificador del elemento | `COLUMNA` |
@@ -58,28 +114,63 @@ Atributos especificos del modelado:
 | **User field / UDAS** | Atributos del elementos  | - |
 | **Altura** | Altura del elemento |`3600` |
 
+- **1- Name**: Nombre del elemento, generalmente se suele definir antes del empezar el proyecto, como valor recomendado se puede definir "COLUMNA"
+- **2- Profile**: Dimension del elemento, tienen dos maneras de editarse, en la pestaña de propiedades o en la parte superior o inferior del elemento.
+- **3- Material**: Material del elemento, dependen de la base de datos de materiales, suele ser H25/H30/H35
+- **4- Class**: Color del elemento, generalmente se suele definir antes del empezar el proyecto, como valor recomendado se puede definir "8", puede variar.
+- **5- IFC Export** : Atributos y configuraciones de la exportación a IFC.
+- **6- User field / UDAS**: Atributos tanto definidos por el usuario como los "userfield" estas filas tienen varios usos, tanto como la numeración, o especificaciones, estas filas pueden usarse para tablas, reportes, cuadros.
+- **7- Altura**: Altura del elemento, se edita desde el elemento.
 
+![PROCEDIMIENTO COLUMNA 1](../img/hormigon/PROCEDIMIENTO%20COLUMNA.gif)
 
-- **Name**: Nombre del elemento, generalmente se suele definir antes del empezar el proyecto, como valor recomendado se puede definir "COLUMNA"
-- **Profile**: Dimension del elemento, tienen dos maneras de editarse, en la pestaña de propiedades o en la parte superior o inferior del elemento.
-- **Material**: Material del elemento, dependen de la base de datos de materiales, suele ser H25/H30/H35
-- **Class**: Color del elemento, generalmente se suele definir antes del empezar el proyecto, como valor recomendado se puede definir "8", puede variar.
-- **IFC** Export: Atributos y configuraciones de la exportación a IFC.
-- **User field / UDAS**: Atributos tanto definidos por el usuario como los "userfield" estas filas tienen varios usos, tanto como la numeración, o especificaciones, estas filas pueden usarse para tablas, reportes, cuadros.
-- **Altura**: Altura del elemento, se edita desde el elemento.
+### Slab
 
+Son elementos superficiales horizontales o inclinados que trabajan en dos direcciones.
 
+![RIBBON SLAB](../img/hormigon/RIBBON%20SLAB.gif)
 
+![DESCRIPCIÓN SLAB](../img/hormigon/DESCRIPCIÓN%20SLAB.png)
 
+**Atributos importantes:**
+| Atributo | Descripción | Valor Ejemplo |
+|----------|-------------|---------------|
+| **Name** | Identificador del elemento | `LOSA` |
+| **Thickness** | Espesor del elemento | `200` |
+| **Material** | Material del elemento | `H30` |
+| **Class** | Clase del elemento  | `8` |
+| **Position** | Posición del elemento  | `+-200` |
+| **IFC export** | Config. de exportación | - |
+| **User field / UDAS** | Atributos del elementos  | - |
+| **Dimensiones** | Largo y ancho del elemento |`3000 X 2400` |
+
+- **1- Name**: Nombre del elemento, generalmente se suele definir antes del empezar el proyecto, como valor recomendado se puede definir "LOSA"
+- **2- Profile**: Dimension del elemento, tienen dos maneras de editarse, en la pestaña de propiedades o en la parte superior o inferior del elemento.
+- **3- Material**: Material del elemento, dependen de la base de datos de materiales, suele ser H25/H30/H35
+- **4- Class**: Color del elemento, generalmente se suele definir antes del empezar el proyecto, como valor recomendado se puede definir "8", puede variar.
+- **5- Position**: Modifica el punto o linea de inserción del elemento, en su profundidad
+- **6- IFC Export** : Atributos y configuraciones de la exportación a IFC.
+- **7- User field / UDAS**: Atributos tanto definidos por el usuario como los "userfield" estas filas tienen varios usos, tanto como la numeración, o especificaciones, estas filas pueden usarse para tablas, reportes, cuadros.
+- **8- Dimensiones**: Largo y ancho, se edita desde el elemento.
+
+![PROCEDIMIENTO SLAB](../img/hormigon/PROCEDIMIENTO%20SLAB.gif)
 ### Item
 
+Son objetos modelados en 3D, que permiten colocarse en el modelo, dependen del Shape Catalog. Sus materiales son editables en base a la base de datos de materiales, son identificados por el organizer como elementos. 
+
+![PROCEDIMIENTO ITEM](../img/hormigon/PROCEDIMIENTO%20ITEM.gif)
+
 ### Unidad de colada
+
+
+
+
 
 ---
 
 ## Antes de modelar
 
-- Referemcoas de connect
+- Referencias de connect
 - Referencias externas de cliente
 - Referencias internas del proyecto de otras disciplinas
 
@@ -113,6 +204,25 @@ Referir a los componentes que lo modelan y derivar a la tabla de conexiones
 
 
 ### Antimaterial
+
+Los antimateriales son piezas que generan un vacio en otro elemento, suelen utilizarse principalmente en las estructuras de hormigón.
+
+![ANTIMATERIAL](../img/hormigon/ANTIMATERIAL.gif) 
+
+1. Para crear un antimaterial, se debe crear una parte del tamaño a recortar (Para identificarlo mejor, se puede aumentar su altura y cambiar la clase.)
+
+2. Al tener las dimensiones correctas, se coloca en la parte a recortar, luego en la pestaña de "edit" se selecciona "part cut" y se genera el corte.
+
+3. Se elimina la parte cortante y el corte queda hecho
+
+
+![PROCEDIMIENTO ANTIMATERIAL](../img/hormigon/PROCEDIMIENTO%20ANTIMATERIAL.gif)
+
+`NOTA: los antimateriales quedan representados con una linea punteada, representando su corte en el material, son invisibles y no se exportan, sus propiedades otorgan que el material recortado aparezca como una pieza monolítica si así fue modelada.`
+
+Los antimateriales modelados pueden aparecer o no, para reiniciar su forma de representación se puede tocar la opcion "Redraw View" para que se escondan, o borrar el material cortado y volver hacia atras para que vuelva a aparecer:
+
+![REAPARICIÓN DE ANTIMATERIALES](../img/hormigon/PROCEDIMIENTO%20REAPARECER%20UN%20ANTIMATERIAL.gif)
 
 ### Tipo de fundaciones
 
@@ -173,252 +283,7 @@ Lo complejo suele ser el armado de las mismas. para esas definciiones ver [Armad
 
 
 
-## 2. Elementos Estructurales de Hormigón
 
-### 2.1 Columnas (Concrete Column)
-
-**Descripción**: Elementos verticales que transmiten cargas axiales y momentos desde niveles superiores hacia la fundación.
-
-**Herramienta**: Ribbon > Concrete > Column
-
-**Geometría**:
-- Punto de inserción inferior
-- Punto superior o altura
-- Orientación del perfil
-
-**Atributos Críticos**:
-
-| Atributo | Descripción | Valor Ejemplo |
-|----------|-------------|---------------|
-| **Profile** | Sección transversal | `REC400*400` |
-| **Material** | Calidad de hormigón | `H30`, `H21` |
-| **Class** | Clase estructural (para filtros) | `7` (columnas) |
-| **Name** | Identificador | `C-1`, `COL-TIPO-A` |
-| **Position** | Sistema de posicionamiento | Middle / Depth: middle |
-| **Start/End Offset** | Ajustes en extremos | `0` / `-50` (si empotra en losa) |
-| **Pour Object** | Unidad de colada | Auto / Manual |
-| **Cast Unit Type** | Tipo de unidad de colada | `CAST_IN_PLACE` |
-
-**UDAs Recomendados**:
-- `ELEMENT_MARK`: Marca de planilla
-- `DRAWING_STATUS`: Estado de documentación
-- `POUR_PHASE`: Fase de hormigonado
-
-**Consideraciones**:
-- Verificar empotramientos en fundaciones (offset negativo)
-- Coordinar cambios de sección con detalles de empalme
-- Definir Position correctamente para interferencias
-
----
-
-### 2.2 Vigas (Concrete Beam)
-
-**Descripción**: Elementos horizontales o inclinados que transmiten cargas por flexión.
-
-**Herramienta**: Ribbon > Concrete > Beam
-
-**Geometría**:
-- Punto inicial
-- Punto final
-- Orientación (rotación sobre eje longitudinal)
-
-**Atributos Críticos**:
-
-| Atributo | Descripción | Valor Ejemplo |
-|----------|-------------|---------------|
-| **Profile** | Sección transversal | `REC300*600` |
-| **Material** | Calidad de hormigón | `H30` |
-| **Class** | Clase estructural | `8` (vigas) |
-| **Name** | Identificador | `V-1`, `BEAM-AXIS-A` |
-| **Position** | Plano de trabajo y profundidad | Plane: Middle, Depth: Middle |
-| **Rotation** | Giro sobre eje longitudinal | `0°`, `90°` |
-| **Start/End Offset** | Ajustes en extremos | `-150` (si empotra en columna) |
-| **Pour Object** | Unidad de colada | Auto (se une a losas) |
-| **Camber** | Contraflecha | `L/500` o valor absoluto |
-
-**UDAs Recomendados**:
-- `ELEMENT_MARK`
-- `CONCRETE_VOLUME`: Para cubicaciones
-- `FORMWORK_AREA`: Encofrados
-
-**Consideraciones**:
-- Offset negativos para empotramientos en nudos
-- Rotation correcta para vigas de borde o invertidas
-- Camber según especificaciones estructurales
-
----
-
-### 2.3 Losas (Concrete Slab / Slab Panel)
-
-**Descripción**: Elementos superficiales horizontales o inclinados que trabajan en dos direcciones.
-
-**Herramienta**: Ribbon > Concrete > Slab
-
-**Geometría**:
-- Polígono cerrado (picando vértices o seleccionando contorno)
-- Espesor
-- Elevación
-
-**Atributos Críticos**:
-
-| Atributo | Descripción | Valor Ejemplo |
-|----------|-------------|---------------|
-| **Thickness** | Espesor de losa | `150`, `200` |
-| **Material** | Calidad de hormigón | `H21`, `H30` |
-| **Class** | Clase estructural | `9` (losas) |
-| **Name** | Identificador | `SLAB-L1`, `DECK-ROOF` |
-| **Position** | Referencia vertical | Depth: Middle / Below |
-| **Elevation** | Cota inferior o superior | `3000` (cota sup) |
-| **Pour Object** | Unidad de colada | Auto |
-| **Edge Chamfers** | Chaflanes en bordes | Para bordes expuestos |
-
-**UDAs Recomendados**:
-- `SLAB_TYPE`: Tipo (maciza, nervada, etc.)
-- `LOAD_CAPACITY`: Sobrecarga de diseño
-- `FINISH`: Terminación superficial
-
-**Consideraciones**:
-- Separar losas por juntas de dilatación
-- Usar contour plates para geometrías complejas
-- Definir edge chamfers en bordes vistos
-
----
-
-### 2.4 Muros (Concrete Panel / Wall)
-
-**Descripción**: Elementos verticales superficiales que resisten cargas axiales, cortantes y momentos en su plano.
-
-**Herramienta**: Ribbon > Concrete > Wall / Panel
-
-**Geometría**:
-- Polígono vertical
-- Espesor
-- Altura
-
-**Atributos Críticos**:
-
-| Atributo | Descripción | Valor Ejemplo |
-|----------|-------------|---------------|
-| **Thickness** | Espesor del muro | `200`, `250` |
-| **Material** | Calidad de hormigón | `H30` |
-| **Class** | Clase estructural | `14` (muros) |
-| **Name** | Identificador | `WALL-A-1`, `SHEAR-WALL-X1` |
-| **Position** | Referencia horizontal | Plane: Middle / Left / Right |
-| **Height** | Altura del panel | `3000` |
-| **Elevation** | Cota base | `0`, `3000` |
-| **Pour Object** | Unidad de colada | Manual (separar por etapas) |
-
-**UDAs Recomendados**:
-- `WALL_FUNCTION`: Estructural / Arquitectónico
-- `FIRE_RATING`: Resistencia al fuego
-- `ACOUSTIC_RATING`: Aislación acústica
-
-**Consideraciones**:
-- Usar Position correctamente para alineaciones
-- Separar por juntas constructivas
-- Coordinar con aberturas (Component o Cut)
-
----
-
-### 2.5 Fundaciones (Footings / Pile Caps / Mat Foundation)
-
-**Descripción**: Elementos en contacto con el suelo que distribuyen cargas de la superestructura.
-
-#### 2.5.1 Zapatas Aisladas (Pad Footing)
-
-**Herramienta**: Ribbon > Concrete > Footing > Pad Footing
-
-**Atributos Críticos**:
-
-| Atributo | Descripción | Valor Ejemplo |
-|----------|-------------|---------------|
-| **Profile** | Dimensiones en planta | `2000*2000` |
-| **Material** | Calidad de hormigón | `H21` |
-| **Class** | Clase estructural | `11` (fundaciones) |
-| **Name** | Identificador | `FTG-1`, `FOOTING-C1` |
-| **Thickness** | Alto de zapata | `600` |
-| **Position** | Centrado o excéntrico | Middle-Middle |
-
-#### 2.5.2 Zapatas Corridas (Strip Footing)
-
-**Herramienta**: Ribbon > Concrete > Footing > Strip Footing
-
-**Atributos Adicionales**:
-- **Width**: Ancho de zapata corrida
-- **Length**: Se define por geometría
-
-#### 2.5.3 Cabezales de Pilotes (Pile Cap)
-
-**Atributos Específicos**:
-- **Pile Group**: Conexión con pilotes
-- **Pile Spacing**: Distancia entre pilotes
-
-**UDAs Recomendados para Fundaciones**:
-- `SOIL_TYPE`: Tipo de suelo
-- `ALLOWABLE_BEARING`: Capacidad portante
-- `DEPTH_FROM_GL`: Profundidad desde nivel natural
-
----
-
-### 2.6 Escaleras (Concrete Stairs)
-
-**Descripción**: Elementos de circulación vertical compuestos por peldaños, descansos y vigas zancas.
-
-**Herramienta**: Components > Cast In Place > Stairs
-
-**Componentes**:
-- **Flight**: Tramo de escalera
-- **Landing**: Descanso
-- **Stringer**: Viga zanca/lateral
-
-**Atributos Críticos**:
-
-| Atributo | Descripción | Valor Ejemplo |
-|----------|-------------|---------------|
-| **Material** | Calidad de hormigón | `H21` |
-| **Tread** | Huella | `280` |
-| **Riser** | Contrahuella | `170` |
-| **Width** | Ancho de escalera | `1200` |
-| **Thickness** | Espesor de losa de escalera | `150` |
-| **Stringer Type** | Tipo de zanca | Lateral / Central / Ninguna |
-
-**UDAs Recomendados**:
-- `STAIR_ID`: Identificador de escalera
-- `FIRE_ESCAPE`: Si es escape de incendios
-- `HANDRAIL_TYPE`: Tipo de baranda
-
----
-
-### 2.7 Elementos Prefabricados (Precast)
-
-**Descripción**: Elementos fabricados fuera del sitio y montados en obra.
-
-**Tipos Comunes**:
-- Vigas pretensadas
-- Paneles de muro
-- Losas alveolares
-- Columnas prefabricadas
-
-**Atributo Diferenciador**:
-
-| Atributo | Valor |
-|----------|-------|
-| **Cast Unit Type** | `PRECAST` |
-
-**Atributos Adicionales**:
-
-| Atributo | Descripción | Valor Ejemplo |
-|----------|-------------|---------------|
-| **Precast ID** | Identificador de elemento | `PC-BEAM-01` |
-| **Production Site** | Planta de fabricación | `PLANT-A` |
-| **Erection Sequence** | Secuencia de montaje | `1`, `2`, `3` |
-| **Lifting Points** | Puntos de izaje | Coordenadas |
-
-**UDAs Recomendados**:
-- `PRECAST_MARK`: Marca de prefabricado
-- `WEIGHT`: Peso para logística
-- `TRANSPORT_LENGTH`: Largo máximo transporte
-- `ERECTION_ZONE`: Zona de montaje
 
 ---
 
@@ -684,8 +549,7 @@ Fecha: 2024-03-20
 
 ---
 
-### 3.10 Buenas Prácticas
-
+### 3.10 RECOMENDACIONES
 #### ✅ Hacer
 
 1. **Definir fases temprano**: Establecer convención de nombres
@@ -707,16 +571,6 @@ Fecha: 2024-03-20
 
 ---
 
-### 3.11 Configuración Avanzada
-
-#### Tolerancia de Unión
-
-**Ruta**: `File > Settings > Options > Pour Management`
-```
-Default tolerance: 20 mm
-```
-
-Aumentar si geometrías con gaps pequeños deben unirse.
 
 #### Numeración Automática
 
@@ -857,36 +711,6 @@ Zapatas:  F-<COLUMNA>       → F-C1, F-A1
 ```
 CU-<FASE>-<SECUENCIA>  → CU-FOUND-01, CU-L1-COL-01
 ```
-
----
-
-## 8. Integración con Otras Disciplinas
-
-### Arquitectura
-
-- Coordinar aberturas en losas y muros
-- Validar niveles de piso terminado (NPT)
-- Verificar espesores para instalaciones
-
-### Estructuras (Análisis)
-
-- Exportar modelo a software de análisis (SAP2000, ETABS)
-- Importar resultados para dimensionamiento de armaduras
-- Validar secciones y materiales
-
-### MEP
-
-- Reservar pasos en losas (sleeves)
-- Coordinar nichos en muros
-- Validar alturas libres
-
-### Construcción
-
-- Exportar secuencia de colada a cronograma 4D
-- Generar listados de encofrados
-- Proveer volúmenes para logística
-
----
 
 
 [← Volver al inicio](index.md)

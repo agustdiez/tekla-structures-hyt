@@ -141,7 +141,7 @@ En líneas generales se sugiere:
 
 ### ¿Cuál es la estructura de carpetas obligatoria en el modo dibujo?
 
-### 
+###
 --- 
 
 ## Lectura de archivos
