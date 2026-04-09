@@ -53,12 +53,12 @@ _Figura 2: Base de datos Legacy_
 Para importar en TEKLA se debe,
 
 1. Crear una instancia de modelo FEM en el programa
-![alt text](TeklaStructures_5N6ITk9S0O.gif)
+![FEM](../img/acero/TeklaStructures_5N6ITk9S0O.gif)
 
 
 2. Definir propiedades generales
 
-![alt text](image.png)
+![alt text](../img/acero/propiedades_gen.png)
 
 ```
 (1): ruta al archivo .std (el modelo de STAAD)
@@ -72,8 +72,10 @@ Para importar en TEKLA se debe,
 
 Para sintaxis del archivo ver el siguiente apartado.
 
+{: .warning}
+>La configuración actual permitirá traer doble ángulo, pero no permite disponerlos en cruz (no es posible lograrlo), por lo que se omite la conversión en ese caso, para que sea explicito que debe modelarse el `Twin Profile` directamente en TEKLA.
 
-![alt text](image-1.png)
+![ConversionFIle](../img/acero/conversion_files.png)
 
 
 >{: .higlight}
@@ -81,7 +83,7 @@ Para sintaxis del archivo ver el siguiente apartado.
 
 ### Archivos de conversión
 
-Se deja a continuación los archivos definidos. En caso de requerir modificarlo, descargar el mismo y ubicarlo en la carpeta del modelo donde se precise
+Se deja a continuación los archivos definidos. En caso de requerir algún perfil que no esté en el listado, guardar el archivo sumándolo y dejarlo a nivel modelo para su lectura.
 
 
 
