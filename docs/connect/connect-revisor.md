@@ -24,7 +24,10 @@ Se entiende por revisores a los ingenieros que estén revisando los modelos que 
 Iniciado el proyecto, el LEP deberá haber hecho lo siguiente:
 
 - Solicitar cuadros y layouts del proyecto (ver [Un proyecto nuevo...](../proyecto_nuevo/index.md) para indicaciones previas a crear un proyecto).
-- Solicitar crear el total de los modelos que compondrán el proyecto con el template del proyecto. La nomenclatura de los modelos debe seguir lo indicado en [Modelo 3D - Generalidades](../generalidades/generalidades.md). A fines de estimar tiempos, lograr esto para 50 modelos no debería llevar más de 2 días de trabajo.
+- Solicitar crear el total de los modelos que compondrán el proyecto con el template del proyecto. La nomenclatura de los modelos debe seguir lo indicado en [Modelo 3D - Generalidades](../generalidades/generalidades.md). 
+
+{: .important}
+>A fines de estimar tiempos, lograr esto para 50 modelos no debería llevar más de 2 días de trabajo.
 
 Es responsabilidad del LEP de proyecto las siguientes tareas que se describirán a continuación:
 
@@ -32,29 +35,32 @@ Es responsabilidad del LEP de proyecto las siguientes tareas que se describirán
 - Asignar un responsable que actuará de administrador de modelos. Este rol es necesario en proyectos grandes y tendrá distintas tareas, descriptas debajo.
 - Definir atributos requeridos en el modelo. Estos atributos se definen en pos de tener toda la información requerida para un listado de materiales o cualquier cosa adicional que se precise.
 - Hacer seguimiento día a día del proyecto, comunicándose con los ejecutores a través de ToDo's, teniendo una especie de _**action tracker 3D**_ del proyecto.
-- Manejar las herramientas que tiene el programa con fluidez
+- Manejar las herramientas de Connect con fluidez
+
+## 1. Estructura del proyecto
+
+## 2. Administrador de modelos
+
+## 3. Atributos en Connect
+
+## 4. Seguimiento de modelos
+
+### 4.1 ToDo
+
+### 4.2 Herramientas para revisión
+
+#### Medición
+
+#### Filtros de visualización
+
+#### Lista de materiales
 
 
-## Estructura del proyecto
 
-## Administrador de modelos
+### 5. Atributos adicionales
 
-## Atributos en Connect
+### 6. Data Table
 
-## Seguimiento de modelos
-
-### ToDo
-
-## Herramientas para revisión
-
-### Medición
-
-### Filtros de visualización
-
-### Atributos adicionales
-
-### Data Table
-
-### Exportación
+### 7. Exportación
 
 [← Volver al inicio](index.md)

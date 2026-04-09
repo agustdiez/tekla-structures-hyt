@@ -35,31 +35,44 @@ Se accede desde [web.connect.trimble.com](https://web.connect.trimble.com/)
 
 Hay principalmente cuatro grandes cosas que podemos subir a los proyectos de Trimble Connect. Se describe cada uno a continuación, y tanto quienes ejecutan como quienes revisan tienen incidencia sobre cada uno de ellos, con un nivel distinto de profundidad.
 
-### 1. **Projects (Proyectos)**
+### 1. Proyectos
 
 Contenedor principal que organiza toda la información del proyecto. Allí encontraremos distintas cosas.
 ```
 Proyecto PAM25026/
 ├── Modelos             # Modelos cargados
-├── Archivos            # Documentos (PDF, Excel, etc.)
+├── Archivos            # Documentos (PDF)
 ├── ToDos               # Tareas
-└── Usuarios            # Otorgamiento de permisos
+└── Usuarios            # Otorgar permisos
+```
+![alt text](../img/connect/home_connect.png)
+_Figura 1: Home de Connect con proyectos creados_
+
+![alt text](../img/connect/estructura_connect_carpetas.png)
+_Figura 2: Estructura dentro de un proyecto_
+
+```
+1. Carpetas dentro del proyecto
+2. Tareas pendientes del proyecto
+3. Equipo y los roles de edición dentro
+4. Set de propiedades personalizadas
 ```
 
 **Funciones del LEP:**
 - Crear y gestionar proyectos
 - Configurar estructura de carpetas. Ver [Trimble Connect - Revisor](./connect-revisor.md)
 - Gestionar permisos por rol (Admin, Contributor, Viewer)
+- Definir set de propiedades particulares que precise usar. Ver [Trimble Connect - Revisor](./connect-revisor.md)
 
-### 2. **Modelos (Modelos 3D)**
+### 2. Modelos
 
-Visor federado de modelos BIM:
+Visor federado de modelos BIM, con las características:
 
 - **Carga automática**: Detecta cambios en archivos sincronizados y notifica
 - **Clash Detection**: Detección de interferencias
 - **Mediciones**: Herramientas de medición directa en 3D
 - **Cortes**: Podemos hacer cortes sobre los modelos
-- **Viewpoints**: Guardar capturas para reuniones
+- **Viewpoints**: Guardar cápturas de cierto momento del proyecto.
 
 **Formatos Soportados:**
 - IFC (todas las versiones)
@@ -68,17 +81,16 @@ Visor federado de modelos BIM:
 - SketchUp (.skp)
 - AutoCAD (.dwg, .dxf)
 
-### 3. **Files (Documentos)**
+### 3. Documentos
 
 Connect permite subir documentación en PDF y cuenta con un visor y posibilidad de hacer comentarios sobre el mismo.
 
 - Planos en PDF
 
-**Características:**
-- Versionado automático (mantiene historial)
-- Posibilidad de hacer comentarios y asignar un ToDo
+{: .warning}
+> La herramienta para comentar PDF no es del todo robusta, por lo que solamente debe usarse si no se estima estar pisando continuamente el PDF.
 
-### 4. **ToDos (Tareas/Incidencias)**
+### 4. ToDos (Tareas)
 
 Sistema de seguimiento de problemas vinculado a modelos 3D:
 
@@ -90,6 +102,7 @@ Sistema de seguimiento de problemas vinculado a modelos 3D:
 4. Actualizar estado (Abierto → En Progreso → Cerrado)
 5. Generar reportes de seguimiento exportando los ToDo
 
+---
 
 ## Casos de Uso
 
@@ -110,12 +123,16 @@ flowchart LR
 1. Cada ejecutar sube sus modelos al proyecto
 2. Trimble Connect tiene una estructura ya predefinida de carpetas
 3. Se nuclean los modelos y se integran
-4. Aparecen comentarios e idas y vueltas con los ejecutores
+4. Aparecen comentarios entre quienes modelan y revisan.
 5. Listado de materiales
 
 Para entender cada una de las tareas descriptas y responsabilidades en cada caso, revisar [Connect - Ejecutor](./connect-ejecutor.md) y [Connect - Revisor](./connect-revisor.md).
 
+### Revisión documentación
 
+En modelos que tengan documentación asociada, puede ayudarse sumar a cada modelo PDF de los equipos a colocar, o como herramienta de control documental.
+
+Este uso está limitado en función de que tanta trazabilidad se interese guardar dentro de los modelos.
 
 
 ---
