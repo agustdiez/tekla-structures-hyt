@@ -140,4 +140,18 @@ Son los elementos principales de la estructura.
    3. Puntos
 5. **COMPONENTES**: los componentes actúan como *macros* que permiten modelar objetos de forma automática de cuestiones que se repiten (por ejemplo, una viga de encadenado o una placa base). Cada sección de [Hormigón](../hormigon/index.md) o [Acero](../acero/index.md) cuenta con una biblioteca de componentes usuales para utilizar.
 
+## Herramientas de modelado
+
+Se describen herramientas de modelado a continuación que resultan indispensables para el modelado rápido y eficas de las partes.
+
+### Selectores de partes y unidades de colada
+
+### Modificación directa (Crtl+D)
+
+
+#### Alargar varios objetos
+
+#### Desplazar algunos puntos del objeto
+
+
 [← Volver al inicio](index.md)
