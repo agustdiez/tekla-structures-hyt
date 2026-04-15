@@ -75,7 +75,11 @@ C:\TeklaStructures\2022.0
 
 Sí. El editor de cuadros y de símbolos maneja rutas independientes al programa. Ciertas propiedades avanzadas deben indicarse explícitamente.
 
+Indicarlas entrando a 
+
 ## Modelado
+
+
 
 ### IB/IBE vs ID
 ```
@@ -128,6 +132,17 @@ En líneas generales se sugiere:
 - Utilizar continuamente Trimble Connect para hacer comentarios, obtener listados de cantidades, etc.
 - En fase de ID, utilizar de forma obligatoria Trimble Connect para garantizar el mismo preset de propiedades en todos los modelos.
 - En fase de ID, utilizar de forma obligatoria rutinas para mover archivos a las rutas del servidor y armar carpetas de trazabilidad de modelos.
+  
+### Quiero crear un filtro ¿Cómo hago?
+
+Ver..
+
+### A veces veo las partes de una forma y otra vez de otra
+
+Explicar los modos de representación (Crtl+1 a 5)
+
+### C
+
 
 ## Dibujos
 
@@ -182,7 +197,9 @@ Para mayor detalle referir al manual
 
 ### Tengo errores cuando comienza a intentar abrir modelos
 
-### Lo corro y no pasa nada
+### Lo corro y no pasa nada o tengo errores
+
+
 
 ## Trimble Connect
 

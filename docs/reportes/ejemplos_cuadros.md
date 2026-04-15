@@ -1,12 +1,12 @@
 ---
-title: Creación de rótulos
+title: Ejemplos de cuadros
 layout: default_with_reading_time
 parent: Cuadros y Reportes
 nav_order: 2
 has_toc: true
 ---
 
-# Cuadros de rótulos
+# Ejemplos de cuadros
 {: .no_toc }
 
 ## Tabla de Contenidos

@@ -36,7 +36,7 @@ Previo al inicio de un proyecto, existen tareas que deben realizarse con antelac
 
 4. Realizados estos pasos, cualquier usuario podrá ver los templates de cliente disponibles al abrir el programa.
 
-(imagen templates)
+![Templates TEKLA](../img/generalidades/templates.png)
 
 ### Codificación de modelos
 
@@ -48,20 +48,21 @@ Los códigos de los modelos deberán ser definidos de forma temprana en el proye
 Se propone la siguiente codificación completa para modelos:
 
 ```
-<COD_PROYECTO>-<LETRA>-<AREA>-<DESCRIPCION>
+<CAT>-<#AREA>-<ÚLTIMOS 4 DÍGITOS DEL DOC>-<DESCRIPCIÓN>
 ```
-Por ejemplo, ```PAM25026-S_EM-04-SE_PRIN``` indica que se trata de un modelo:
-- Perteneciente al proyecto ```PAM25026```
-- ```S_EM``` nos indica en este caso que se trata de un modelo de senda y de estructura metálica
-- ```04``` el área a la que pertenece
-- ```SE_PRIN``` un texto que nos permite describir al modelo (en este caso, de la senda principal)
 
-Otras letras que se sugieren son:
-- ```FD```
-- ```EM```
-- ```L```
-- ```S_FD``` o ```S_EM``` para indicar modelos de sendas
-- ```ENT``` para modelos de enterrados
+`<CAT>` corresponde a la categoría del modelo. Las categorías habilitadas son las siguientes:
+- *`LY`* : Layouts de cualquier naturaleza.
+- *`TIP`* : Típicos de cualquier naturaleza (cámaras, pasarelas, barandas, escaleras, fundaciones típicas, entre otros).
+- *`EM`* : Estructura metálica.
+- *`FD`* : Fundación.
+- *`EH`* : Estructura de hormigón.
+
+Por ejemplo, ```LY-02-1256-SOPORTES_AREA02``` indica que se trata de un modelo:
+- De categoría ```LAYOUT```
+- ```02``` nos indica el área del modelo
+- ```1256``` los últimos 4 dígitos del documento en el proyecto
+- ```SOPORTES_AREA02``` una descripción del documento para rápida referencia.
 
 Para definición del área de proyecto, referir a [Modelo 3D](modelo_3d.md)
 
@@ -70,7 +71,7 @@ Para definición del área de proyecto, referir a [Modelo 3D](modelo_3d.md)
 
 El Trimble Connect es la herramienta de seguimiento que tiene el lider de especialidad o ingenieros para validar lo modelado y realizar comentarios. El flujo de uso del programa está definido en el capítulo de la documentación [Trimble Connect](../connect/index.md).
 
-Por lo tanto, cualquier modelo deberá seguir el siguiente flujo
+Cualquier modelo deberá seguir el siguiente flujo básico:
 
 ```mermaid
 graph LR
@@ -82,7 +83,7 @@ graph LR
 ```
 El proyectista/ingeniero realiza cambios sobre el modelo y debe subirlos a la carpeta del proyecto de Trimble Connect.
 
-Referir al apartado [Trimble Connect](../connect/index.md) para seteo del proyecto. Se menciona la propiedad avanzada que figura en el diagrama de flujo ya que se aconseja en proyectos grandes sectorizar los modelos en carpetas.
+Referir al apartado [Trimble Connect](../connect/index.md) para seteo del proyecto. Se enfatiza el uso de la propiedad avanzada que figura en el diagrama de flujo ya que se aconseja en proyectos grandes sectorizar los modelos en carpetas y no tener nucleados todos los modelos bajo una misma carpeta.
 
 ### Atributos de proyecto
 
@@ -92,23 +93,23 @@ LLENAR MATI CON FOTO
 
 ### Definición Punto Base
 
-Los proyectos suelen tener un punto base (`(0,0)` local) que está correlacionado con una coordenada geográfica del proyecto que se define al inicio del mismo. Dicho punto en coordenadas POSGAR quedará indicado en documentación del proyecto.
+Los proyectos suelen tener un punto base (`(0,0)` local) correlacionado con una coordenada geográfica que se define al inicio. Dicho punto en coordenadas POSGAR estará indicado en la documentación del proyecto.
 
-Sin embargo, las maquetas de los proyectos se trabajan en coordenadas locales y en `mm` en general.
+Sin embargo, las maquetas de los proyectos se trabajan en coordenadas locales y en `mm` generalmente.
 
-Se debe definir un BASEPOINT de proyecto dentro del modelo, que en general se corresponde con `(0,0,100.000)` para que los modelos al exportar sean adecuados para la maqueta.
+Definir un BASEPOINT de proyecto dentro del modelo, que generalmente corresponde a `(0,0,100.000)`, para que los modelos sean adecuados al exportar a la maqueta.
 
-Referir a [Modelo 3D](modelo_3d.md) para detalle respecto al modelo federado.
+Referir a [Modelo 3D](modelo_3d.md) para más detalles respecto al modelo federado.
 
 (Foto mati)
 
 ### Referencias externas
 
-Las referencias externas son aquellos archivos que se le cargan al modelo para auxiliar durante el modelado. Las referencias externas pueden subirse localmente (siempre en la carpeta ```./xref``` del modelo) o bien a Trimble Connect y cargar directamente la referencia/modelo en el TEKLA.
+Las referencias externas son archivos que se cargan al modelo para auxiliar durante el modelado. Pueden subirse localmente (siempre en la carpeta `./xref` del modelo) o bien a Trimble Connect para cargar directamente la referencia/modelo en Tekla.
 
 Instalar la extensión que permite cargar .nwd en el programa 
 
-Si la maqueta está en continuo cambio, se recomienda armar una rutina que recopile los .nwd de cada área y los suba a Connect. Ver [Gestion de archivos](../avanzado/gestion_archivos.md) para mayor detalle.
+Si la maqueta está en continuo cambio, se recomienda armar una rutina que recopile los .nwd de cada área y los suba a Connect. Ver [Gestión de archivos](../avanzado/gestion_archivos.md) para mayor detalle.
 
 ## Tipos de elementos
 
@@ -124,21 +125,20 @@ Son los elementos principales de la estructura.
    - **Orthogonal Beam**: Vigas ortogonales
    - **Contour Plate (Placa de Contorno)**: Placas definidas por contorno
    - **Pad Footing (Zapata)**: Fundaciones tipo zapata
-   - **Strip Footing (Zapata Corrida)**: Fundaciones corridas
-   - **Pile**: Pilotes
-   - **Concrete Panel**: Paneles de hormigón
+
+
 
 {: note}
 > Los objetos más usuales a usar en estos proyectos se basan en BEAMS, PAD FOOTING, COLUMN y PLATE. En función del tipo de objeto, los atributos a presentar pueden variar y ser distinto, por lo que es importante modelar con un mismo criterio
 
-1. **PERNOS/SOLDADURAS**: se pueden modelar individualmente pero en general se aplican a través de componentes.
-2. **ARMADURAS**: hay distintos tipos de armaduras. Ver apartado dentro del capítulo [Armaduras](../hormigon/armaduras.md) para mayor detalle.
-3. **ASSEMBLIES**: la licencia actual es de piezas de hormigón por lo que se podrán crear lo que se denominan unidades de colada
-4. **ELEMENTOS AUXILIARES**: aquello que auxiliará durante el modelado.
+2. **PERNOS/SOLDADURAS**: se pueden modelar individualmente pero en general se aplican a través de componentes.
+3. **ARMADURAS**: hay distintos tipos de armaduras. Ver apartado dentro del capítulo [Armaduras](../hormigon/armaduras.md) para mayor detalle.
+4. **ASSEMBLIES**: la licencia actual es de piezas de hormigón por lo que se podrán crear lo que se denominan unidades de colada y que se cubre en los capitulos correspondientes dentro de [Hormigón](../hormigon/index.md).
+5. **ELEMENTOS AUXILIARES**: aquello que auxiliará durante el modelado.
    1. Grillas
    2. Objetos de construcción (linea, planos, circulos)
    3. Puntos
-5. **COMPONENTES**: los componentes actúan como *macros* que permiten modelar objetos de forma automática de cuestiones que se repiten (por ejemplo, una viga de encadenado o una placa base). Cada sección de [Hormigón](../hormigon/index.md) o [Acero](../acero/index.md) cuenta con una biblioteca de componentes usuales para utilizar.
+6. **COMPONENTES**: los componentes actúan como *macros* que permiten modelar objetos de forma automática de cuestiones que se repiten (por ejemplo, una viga de encadenado o una placa base). Cada sección de [Hormigón](../hormigon/index.md) o [Acero](../acero/index.md) cuenta con una biblioteca de componentes usuales para utilizar.
 
 ## Herramientas de modelado
 
@@ -147,7 +147,6 @@ Se describen herramientas de modelado a continuación que resultan indispensable
 ### Selectores de partes y unidades de colada
 
 ### Modificación directa (Crtl+D)
-
 
 #### Alargar varios objetos
 

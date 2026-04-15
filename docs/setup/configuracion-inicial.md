@@ -18,22 +18,23 @@ has_toc: true
 
 ## Inicio del programa
 
-En primer lugar, validar que el programa fue instalado correctamente ingresando al mismo y pudiendo atravesar la ventana de seleccion de licencia.
+En primer lugar, validar que el programa fue instalado correctamente ingresando al mismo y pudiendo pasar con éxito la ventana de seleccion de licencia. Las licencias deberán consultarse con IT para saber qué tipo de licencias hay disponibles.
+
+La gestión de licencias tipo suscripción quedan a cargo del equipo, a través del siguiente enlace: [Online Admin Tool](https://admin.account.tekla.com/#/)
 
 Al abrirse, el programa solicita hacer *login* en Trimble. Crear cuenta en caso de no contar con una y compartirla con IT o el coordinador Civil para que se sume el nuevo usuario a la carpeta compartida.
 
 ## Cliente de OneDrive 
 
+El departamento usa una carpeta civil de OneDrive donde se guardan los modelos. Solicitar acceso al coordinador civil o líder de disciplina si no se cuenta con él.
 
-El departamento hace uso de una carpeta civil de OneDrive donde se guardan los modelos. Se debe solicitar acceso en caso de no contar con el mismo al coordinador civil o lider de disciplina.
+La carpeta organiza los modelos por proyecto e incluye una carpeta con todas las configuraciones de la empresa (FIRM).
 
-La carpeta ordena a los modelos por proyecto y cuenta con una carpeta con todas las configuraciones de la empresa (FIRM).
+Validar lo siguiente antes de continuar:
 
-Deberá validarse lo siguiente previo a seguir:
-
-1. Validar estar invitado y agregar la carpeta al cliente de OneDrive ([Agregar atajo a carpeta](https://support.microsoft.com/en-us/office/add-shortcuts-to-shared-folders-in-onedrive-d66b1347-99b7-4470-9360-ffc048d35a33))
-2. Darle tiempo al cliente para mapear todos los archivos del directorio (puede demorar bastante)
-3. Una vez que en ajustes del cliente se puedan seleccionar carpetas, buscar "Mantener en este dispositivo" la carpeta vinculada a ajustes del programa de la empresa (FIRM) y todos aquellos proyectos que se hará uso. El resto puede quedar en "Liberar espacio"
+1. Validar que se tiene acceso y agregar la carpeta al cliente de OneDrive  ([Agregar atajo a carpeta](https://support.microsoft.com/en-us/office/add-shortcuts-to-shared-folders-in-onedrive-d66b1347-99b7-4470-9360-ffc048d35a33))
+2. Dar tiempo al cliente para mapear todos los archivos del directorio (puede tardar bastante)
+3.  Una vez que en ajustes del cliente se puedan seleccionar carpetas, marcar como "Mantener en este dispositivo" la carpeta FIRM y todos los proyectos que se vayan a usar. El resto puede quedar en "Liberar espacio"
 
 ![Posibilidades Onedrive](../img/setup/onedrive_link.png)
 *Figura 1: las dos posibilidades de tener archivos en el cliente de OneDrive*
@@ -41,16 +42,16 @@ Deberá validarse lo siguiente previo a seguir:
 
 
 {: .warning}
-> Las carpetas compartidas de OneDrive **NO** se borran para eliminarlas de forma local ya que todo el equipo cuenta con permisos de escritura. Esto quiere decir que un archivo que se borra en la carpeta, todo el equipo ve reflejado los mismos cambios.
+> NO borrar las carpetas compartidas de OneDrive para eliminarlas localmente, ya que todo el equipo tiene permisos de escritura. Si se borra un archivo en la carpeta, todos verán ese cambio reflejado.
 >
->En caso de no querer ver ciertos modelos o archivos, dejar de sincronizar la carpeta o dejar en modo "Liberar espacio" para que no ocupe espacio del disco C:/
+>Si no se quieren ver ciertos modelos o archivos, dejar de sincronizar la carpeta o ponerla en modo "Liberar espacio" para no ocupar espacio en el disco C:/
 
 ## Manejo de licencias
 
 
-Las licencias podrán ser ancladas al servidor o con suscripción. Debe validarse con el coordinador de IT que su usuario sea sumado al equipo e informar las licencias que están disponibles,
+Las licencias pueden estar ancladas al servidor o ser por suscripción. Validar con el coordinador de IT que el usuario esté sumado al equipo y consultar qué licencias están disponibles.
 
-No se indica mayor detalle en este instructivo ya que depende en cada momento las licencias disponibles. Las asignaciones de licencias no ancladas al servidor se realizan por el portal provisto por Trimble
+No se dan más detalles en este instructivo porque depende de las licencias disponibles en cada momento. Las asignaciones de licencias no ancladas al servidor se realizan por el portal que provee Trimble.
 
 {: .important}
 > Administración de licencias
@@ -96,7 +97,7 @@ Son parte del entorno en el que se ejecuta un proceso. Por ejemplo, un proceso e
 
 ### Copiado de archivo .ini
 
-Dentro de la carpeta FIRM se encuentra el archivo ```user.ini``` a tomar
+Dentro de la carpeta FIRM se encuentra el archivo ```user.ini``` a tomar. Para descripción de que es cada línea ver [Archivos de configuración](./user_ini.md).
 
 {: .note}
 > Un archivo INI es un archivo de texto simple usado comúnmente en informática y programación para almacenar configuraciones de software. Es un formato sencillo y ampliamente compatible que organiza la información en secciones y pares clave-valor. Puedes pensar en él como una forma estructurada de **guardar las preferencias para diversos aspectos de un programa**.
@@ -111,7 +112,7 @@ Dentro de la carpeta FIRM se encuentra el archivo ```user.ini``` a tomar
 
 2. Pegar el archivo en el siguiente directorio. El año dependerá de la versión de TEKLA que se trate. La carpeta AppData está oculta, por lo que debe habilitarse en Windows la visión de carpetas ocultas.
 
-
+v
 ```
 #Ruta Destino
 C:\Users\<USUARIO>\AppData\Local\Trimble\Tekla Structures\2022.0\UserSettings

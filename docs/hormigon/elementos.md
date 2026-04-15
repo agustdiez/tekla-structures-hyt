@@ -200,6 +200,7 @@ Son elementos superficiales que trabajan en una o dos direcciones
 ![DESCRIPCIÓN SLAB](../img/hormigon/DESCRIPCIÓN%20SLAB.png)
 
 **Atributos importantes:**
+
 | Atributo | Descripción | Valor Ejemplo |
 |----------|-------------|---------------|
 | **Name** | Identificador del elemento | `LOSA` |
@@ -386,14 +387,3 @@ Los antimateriales modelados pueden aparecer o no, para reiniciar su forma de re
 Aca podemos describir como guardar una serie de objetos (por ejemplo dado 1, y extenderlo a todo un proyecto, ya que ahora contamos con XS_PROJECT dentro de cada template)
 
 Se indicarán pasos a modo de ejemplo con un dado de 60x60 con chapa embebida y armadura phi 8 c/15 tipo jaula. LLamarlo DADO_1_PAM25026
-
-### Tipo de fundaciones
-
-<span style="color: red;">
-Eliminemos este apartado porque medio que lo describimos ahora dentro de cada tipo de elemento
-  
-</span>
-
-Se presenta listado de tipo de fundaciones.
-
-Lo complejo suele ser el armado de las mismas. para esas definciiones ver [Armaduras](./armaduras.md)
