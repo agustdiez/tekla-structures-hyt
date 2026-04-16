@@ -1,8 +1,8 @@
 ---
-title: Crear template de proyecto
+title: Uso del template
 layout: default_with_reading_time
 parent: Un proyecto nuevo...
-nav_order: 2
+nav_order: 3
 has_toc: true
 ---
 

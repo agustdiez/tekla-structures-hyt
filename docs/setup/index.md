@@ -18,4 +18,5 @@ Se cubren los siguientes apartados
 
 - [Instalacion](instalacion.md) - Comenzar a utilizar el programa
 - [Configuración inicial](configuracion-inicial.md) - Generalidades del TEKLA y BIM
+- [Archivos de configuración inicial](user_ini.md) - Archivos de inicialización: qué son y cómo usarlos.
 

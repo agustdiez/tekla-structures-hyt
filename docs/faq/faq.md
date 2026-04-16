@@ -142,7 +142,8 @@ Ver..
 Explicar los modos de representación (Crtl+1 a 5)
 
 ### C
-
+### actualizacion de template local en modelos nuevos 
+16/4/26 fer mati 
 
 ## Dibujos
 
@@ -182,6 +183,14 @@ Archivos de instalación
 ### ¿Cómo ordeno las filas en un cuadro?
 
 ### No sé cuál puede ser el atributo buscado
+
+### Quiero rotar 90° mi texto
+
+### Cómo hago condiciones sobre string
+
+Los strings van entre ''. NO usar los "" para identifciarlos.l
+
+
 
 
 

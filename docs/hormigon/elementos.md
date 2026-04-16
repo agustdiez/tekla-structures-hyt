@@ -22,7 +22,6 @@ Contiene los estándares y procedimientos para el modelado de estructuras de hor
 
 No es alcance de este instructivo mostrar cuestiones básicas del modelado de elementos si no brindar pautas de diseño y guiar en el proceso.
 
-<span style="color: red;">
 El objeto de este instructivo es mencionar los estándares y procedimientos para el modelado de estructuras de hormigón armado en Tekla Structures, a fin de mantener un modelado homogeneo a nivel empresa. 
 
 Se cubriran los siguientes aspectos para cada elemento:
@@ -32,29 +31,19 @@ Se cubriran los siguientes aspectos para cada elemento:
 
 No es alcance de este instructivo mostrar cuestiones básicas del modelado de elementos si no brindar pautas de diseño y guiar en el proceso. Para pautas más básicas de modelado, referir a la bibliografía de la home (link a home)
 
-</span>
-
 ---
 
 ## Descripción de elementos
 
-<span style="color: red;">
-Agregar epigrafes a figuras en italics, como Figura X: descripcion
-</span>
 
 Tekla permite modelar estructuras de hormigon armado, este capitulo se centra en la creación de objetos de H°. Hay 4 principales opciones en el modelado. 
 
-<span style="color: red;">
-En todos los casos de Name y class dejar ejemplos (después te digo que valores darle), pero referir a un nuevo ### Atributos obligatorios
-</span>
-
 ![RIBBON-H°A°](../img/hormigon/RIBBON-H°.png)
-
+*Figura 1: Ribbon ubicación concrete*
 ### Footing
 
-Elementos en contacto con el suelo que distribuyen las cargas provenientes de la estructura. `Suele ser la función mas utilizada para modelar cualquier fundación independientemente de la forma`
+Elementos en contacto con el suelo que distribuyen las cargas provenientes de la estructura. 
 
-<span style="color: red;">
 #### Usos
 
 - Dados
@@ -64,26 +53,19 @@ Elementos en contacto con el suelo que distribuyen las cargas provenientes de la
 - Plateas
 - Zapata corrida
   
-</span>
-
+  {: .note}
+>Suele ser la función mas utilizada para modelar cualquier fundación independientemente de la forma
 
 ![RIBBON FOOTING](../img/hormigon/RIBBON-FOOTING.gif)
  
 ![DESCRIPCIÓN FOOTING](../img/hormigon/DESCRIPCIÓN%20FOOTING.png)
+*Figura 2: Atributos footing*
 
 **Atributos importantes**:
 
-<span style="color: red;">
-Agregar epigrafes a figuras en italics, como Figura X: descripcion
-</span>
-
-<span style="color: red;">
-Qué sería lo de IFC Export? Lo estamos usando?
-</span>
-
 | Atributo | Descripción | Valor Ejemplo |
 |----------|-------------|---------------|
-| **Name** | Identificador del elemento | `ZAPATA` |
+| **Name** | Identificador del elemento | `BA` |
 | **Profile** | Base y altura del elemento | `700*400` |
 | **Material** | Material del elemento | `H30` |
 | **Class** | Clase del elemento  | `8` |
@@ -102,24 +84,22 @@ Qué sería lo de IFC Export? Lo estamos usando?
 - **8- Altura**: Altura del elemento, se edita desde el elemento
 
 ![PROCEDIMIENTO FOOTING](../img//hormigon/PROCEDIMIENTO-FOOTING.gif)
-
+*Figura 2.5: Como crear una footing*
 
 ### Beam
 
 Son elementos horizontales o inclinados que transmiten cargas por flexión.
 
-<span style="color: red;">
 #### Usos
 
 - Vigas de encadenado
 - Vigas en estructura de hormigón
 - Anillos de tanques
-  
-</span>
 
 ![RIBBON BEAM](../img/hormigon/RIBBON-%20BEAM.gif)
 
 ![DESCRIPCIÓN VIGA](../img/hormigon/VIGA%20H°.png)
+*Figura 3: Atributos Beam*
 
 **Atributos importantes**:
 
@@ -135,7 +115,7 @@ Son elementos horizontales o inclinados que transmiten cargas por flexión.
 | **Largo** | Largo del elemento |`6000` |
 
 - **1- Name**: Nombre del elemento, generalmente se suele definir antes del empezar el proyecto, como valor recomendado se puede definir "VIGA"
-- **2- Profile**: Base y altura del elemento, tienen dos maneras de editarse, en la pestaña de propiedades o en la parte superior o inferior del elemento.
+- **2- Profile**: Base y altura del elemento, tienen dos maneras de editarse, en la pestaña de propiedades o en la parte superior o inferior del elemento. Tocando los 3 puntos del lado derecho, se obtiene acceso a la biblioteca de perfiles, la cual da accede a una gran variedad de formas totalmente parametrizables. 
 - **3- Material**: Material del elemento, dependen de la base de datos de materiales, suele ser H25/H30/H35
 - **4- Class**: Color del elemento, generalmente se suele definir antes del empezar el proyecto, como valor recomendado se puede definir "8", puede variar.
 - **5-Offset**: Desplazamiento del elemento, se puede modificar los puntos de inicio y final del elemento en cualquiera de sus ejes (X/Y/Z). 
@@ -144,22 +124,21 @@ Son elementos horizontales o inclinados que transmiten cargas por flexión.
 - **8- Altura**: Altura del elemento, se edita desde el elemento.
 
 ![PROCEDIMIENTO VIGA](../img/hormigon/PROCEDIMIENTO%20VIGA.gif)
+*Figura 3.5: Como crear una beam*
 
 ### Column
 
 Son elementos verticales que transmiten cargas axiales y momentos desde niveles superiores hacia la fundación.
 
-<span style="color: red;">
+
 #### Usos
 
 - Columnas sobre estructuras de hormigón
   
-</span>
-
-
 ![RIBBON COLUMNA](../img/hormigon/GIF-COLUMNA.gif)
 
 ![DESCRIPCIÓN COLUMNNA](../img/hormigon/COLUM-H°.png)
+*Figura 4: Atributos Column*
 
 **Atributos importantes:**
 | Atributo | Descripción | Valor Ejemplo |
@@ -181,23 +160,22 @@ Son elementos verticales que transmiten cargas axiales y momentos desde niveles 
 - **7- Altura**: Altura del elemento, se edita desde el elemento.
 
 ![PROCEDIMIENTO COLUMNA 1](../img/hormigon/PROCEDIMIENTO%20COLUMNA.gif)
+*Figura 4.5: Como crear una column*
 
 ### Slab
 
 Son elementos superficiales que trabajan en una o dos direcciones
 
-<span style="color: red;">
 #### Usos
 
 - Losas en estructuras de hormigón.
 - **No** usar para plateas de fundación
   
-</span>
-
 
 ![RIBBON SLAB](../img/hormigon/RIBBON%20SLAB.gif)
 
 ![DESCRIPCIÓN SLAB](../img/hormigon/DESCRIPCIÓN%20SLAB.png)
+*Figura 5: Atributos slab*
 
 **Atributos importantes:**
 
@@ -222,33 +200,31 @@ Son elementos superficiales que trabajan en una o dos direcciones
 - **8- Dimensiones**: Largo y ancho, se edita desde el elemento.
 
 ![PROCEDIMIENTO SLAB](../img/hormigon/PROCEDIMIENTO%20SLAB.gif)
+*Figura 5.5: Como crear una slab*
+
 ### Item
 
 Son objetos modelados en 3D, que permiten colocarse en el modelo, dependen del Shape Catalog. Sus materiales son editables en base a la base de datos de materiales, son identificados por el organizer como elementos. 
 
 ![PROCEDIMIENTO ITEM](../img/hormigon/PROCEDIMIENTO%20ITEM.gif)
+*Figura 6: Como crear un item*
 
 ---
 
 ## Unidad de colada
 
-<span style="color: red;">
-Describir qué es una unidad de colada
+Una unidad de colada es un valor numerico creado por el usuario que establece la union monolitica de dos o mas partes de hormigón. Por defecto cada parte de hormigón modelada se considera su propia unidad de colada. Al modelar partes de hormigón en Tekla, debe crear unidades de colada cuando hay varias partes de hormigón que se deben fundir como una estructura monolítica.
 
 Previo a usar unidades de colada, familiarizarse con las herramientas de selección de elementos, descriptas en... [Herramientas de modelado](../generalidades/generalidades.md#herramientas-de-modelado)
 
 La unidad de colada es mandatoria para realizar reportes de armadura (planillas de doblado). Su creación, modificación y numeración se describe en el apartado del manual [Armaduras](./armaduras.md).
 
-</span>
-
 ## Antes de modelar
 
 Para modelar y ubicarnos respecto al proyecto debemos usar referencias externas a nuestro modelo, que permiten ubicar la estructura a modelar en el espacio.
 
-<span style="color: red;">
-El proyecto en el que estén modelando ya tendrá un modelo de Connect asociado. Allí habrá referencias a otros modelos y de otras disciplinas. Ver [Trimble - Ejecutor](../connect/connect-ejecutor.md) para detalle. En caracter general se describen cómo pueden tomar las referencias
-  
-</span>
+
+El proyecto en el que se esté modelando ya tendrá un modelo de Connect asociado. Allí habrá referencias a otros modelos y de otras disciplinas. Ver [Trimble - Ejecutor](../connect/connect-ejecutor.md) para detalle. En caracter general se describen cómo pueden tomar las referencias
 
 - Referencias de Trimble Connect 
 - Referencias externas del cliente
@@ -272,7 +248,7 @@ Va a depender de IB/ID, definiciones de proyecto, pero en caracter general y com
 - UDAs (_Atributos definidos por el usuario_): es responsabilidad del LEP indicar cuáles se precisan, de acuerdo al preset de propiedades creado, descripto en [Preset Propiedades](../proyecto_nuevo/preset_propiedades.md)).
 
 
-### NAME
+### Name
 
 Tabla de nombres posibles
 
@@ -293,12 +269,31 @@ Tabla de nombres posibles
 | Bulones de Anclaje 1° Etapa   | ANCLAJE_1         |
 | Bulones de Anclaje 2° Etapa   | ANCLAJE_2         |
 
-### CLASS
+### Clases
+Hay 14 clases/colores definidos en tekla, esta sirve para discriminar elementos en Trimble Connect con colores. 
 
-La clase solo nos servirá para discriminar elementos en Trimble Connect con colores. Por simplicidad, seguir lo siguiente:
+![CLASES POSIBLES](../img/hormigon/CLASES.png)
 
-(no estoy encontrando online la cantidad total de clases con los colores..). Tenemos que armar una tabla con el numero de clase, el color (imagen en tabla) y objetos donde aplica
+Por simplicidad, seguir lo siguiente:
 
+
+
+| Elemento                      | Nomenclatura      | Clase                               |
+|:------------------------------|:------------------|:----------------------------------- |
+| Sleeper                       | SL                |![CLASE](../img/hormigon/CLASE_8.png)|
+| Platea                        | PLATEA            |![CLASE](../img/hormigon/CLASE_8.png)|
+| Base Aislada                  | BA                |![CLASE](../img/hormigon/CLASE_8.png)|
+| Viga de Encadenado            | VE                |![CLASE](../img/hormigon/CLASE_6.png)|
+| Zapata Corrida                | ZC                |![CLASE](../img/hormigon/CLASE_8.png)|
+| Cabezal                       | CAB               |![CLASE](../img/hormigon/CLASE_8.png)|
+| Pilote                        | PIL               |![CLASE](../img/hormigon/CLASE_8.png)|
+| Hormigón de Limpieza          | HL                |![CLASE](../img/hormigon/CLASE_13.png)|
+| Grout                         | GROUT             |![CLASE](../img/hormigon/CLASE_5.png)|
+| Columna de H°A                | COL               |![CLASE](../img/hormigon/CLASE_8.png)|
+| Viga de H°A                   | VIG               |![CLASE](../img/hormigon/CLASE_8.png)|
+| Placa Base/Chapa Embebida     | PB_<# Secuencial> |![CLASE](../img/hormigon/CLASE_9.png)|
+| Bulones de Anclaje 1° Etapa   | ANCLAJE_1         |![CLASE](../img/hormigon/CLASE_2.png)|
+| Bulones de Anclaje 2° Etapa   | ANCLAJE_2         |![CLASE](../img/hormigon/CLASE_2.png)|
 
 ---
 
@@ -363,7 +358,7 @@ Las filas no las tengo del todo definidas aún, pero en columnas saltaremos de 5
 Los antimateriales son piezas que generan un vacio en otro elemento, suelen utilizarse principalmente en las estructuras de hormigón.
 
 ![ANTIMATERIAL](../img/hormigon/ANTIMATERIAL.gif) 
-
+*Figura 7: Efecto del antimaterial*
 1. Para crear un antimaterial, se debe crear una parte del tamaño a recortar (Para identificarlo mejor, se puede aumentar su altura y cambiar la clase.)
 
 2. Al tener las dimensiones correctas, se coloca en la parte a recortar, luego en la pestaña de "edit" se selecciona "part cut" y se genera el corte.
@@ -372,6 +367,7 @@ Los antimateriales son piezas que generan un vacio en otro elemento, suelen util
 
 
 ![PROCEDIMIENTO ANTIMATERIAL](../img/hormigon/PROCEDIMIENTO%20ANTIMATERIAL.gif)
+*Figura 7.5: Como crear un antimaterial*
 
 {: .note}
 
@@ -380,7 +376,7 @@ Los antimateriales son piezas que generan un vacio en otro elemento, suelen util
 Los antimateriales modelados pueden aparecer o no, para reiniciar su forma de representación se puede tocar la opcion "Redraw View" para que se escondan, o borrar el material cortado y volver hacia atras para que vuelva a aparecer:
 
 ![REAPARICIÓN DE ANTIMATERIALES](../img/hormigon/PROCEDIMIENTO%20REAPARECER%20UN%20ANTIMATERIAL.gif)
-
+*Figura 8: Como regenerar el antimaterial*
 
 ### Publicar una fundación (NUEVO)
 

@@ -79,12 +79,13 @@ Por lo tanto, debemos definir una variable de entorno ```%TEKLA%```
 \
 Son parte del entorno en el que se ejecuta un proceso. Por ejemplo, un proceso en ejecución puede consultar el valor de la variable de entorno TEMP para descubrir una ubicación adecuada para almacenar archivos temporales, o la variable HOME o USERPROFILE para encontrar la estructura de directorios propiedad del usuario que ejecuta el proceso.
 
-1. Desde Configuracion/Settings ir a editar las variables locales del sistema
+1. Desde Configuracion/Settings ir a editar las variables locales del sistema.
 
 ![variables_entono_sistema](../img/setup/variables_entorno.png)
 *Figura 2: Acceso a variables de entorno*
 
 2. Crear la variable y llamarla TEKLA. La ruta a colocar es personal y depende de cada PC en donde esté ubicada la carpeta TEKLA de la carpeta compartida
+
 ![variables_entono_sistema](../img/setup/asignacion_variable.png)
 *Figura 3: Acceso a variables de entorno*
 
@@ -103,17 +104,12 @@ Dentro de la carpeta FIRM se encuentra el archivo ```user.ini``` a tomar. Para d
 > Un archivo INI es un archivo de texto simple usado comúnmente en informática y programación para almacenar configuraciones de software. Es un formato sencillo y ampliamente compatible que organiza la información en secciones y pares clave-valor. Puedes pensar en él como una forma estructurada de **guardar las preferencias para diversos aspectos de un programa**.
 
 1. Copiar el archivo original ```user.ini```
+2. Pegar el archivo en el siguiente directorio. El año dependerá de la versión de TEKLA que se trate. La carpeta AppData está oculta, por lo que debe habilitarse en Windows la visión de carpetas ocultas.
 
 ```
 #Ruta Origen
 %TEKLA%\STD\INI FILES\user.ini
-```
 
-
-2. Pegar el archivo en el siguiente directorio. El año dependerá de la versión de TEKLA que se trate. La carpeta AppData está oculta, por lo que debe habilitarse en Windows la visión de carpetas ocultas.
-
-v
-```
 #Ruta Destino
 C:\Users\<USUARIO>\AppData\Local\Trimble\Tekla Structures\2022.0\UserSettings
 ```

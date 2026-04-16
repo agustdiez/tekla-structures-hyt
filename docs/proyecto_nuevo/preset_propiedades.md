@@ -1,5 +1,5 @@
 ---
-title: Crear template de proyecto
+title: Preset de configuraciones de modelos
 layout: default_with_reading_time
 parent: Un proyecto nuevo...
 nav_order: 2

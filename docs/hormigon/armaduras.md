@@ -15,7 +15,7 @@ has_toc: true
 1. TOC
 {:toc}
 ---
-## TIPOS DE ARMADURA
+## Tipos de armadura
 Tekla permite modelar armaduras, siendo estas elementos cilindricos lineales, la forma esta definida por el "rebar shape catalog". Actualmente se encuentran disponibles 4 catalogos dependiendo de la calidad y tipo de acero. Estos catalogos definen el tamaño de la barra:
 
 - ADN-420
@@ -27,17 +27,17 @@ Tekla permite modelar armaduras, siendo estas elementos cilindricos lineales, la
 
 {: .note}
 
-> La definición de la armadura, queda a cargo del Revisor / Ingeniero / LEP. **Puede variar según avanza el proyecto** (tanto en cantidad, separación y tamaño)
+> La definición de la armadura, queda a cargo del Revisor / Ingeniero / LEP. **Puede variar según avanza el proyecto** (tanto en cantidad, separación y diametro)
 
 Existen varias maneras de modelar la armadura de una estructura, las mas utilizadas suelen ser: 
 
-### BAR GROUP (GRUPO DE BARRAS):
+### Bar group (Grupo de barras):
 
 Modelar armadura por grupo de barras permite diseñar la forma de la armadura y repetirla a lo largo de un recorrido a reforzar. Una vez establecida la forma y el patron crea un camino editable en cuanto a la separación de armadura definida por el usuario.
 
 1. **Definición de propiedades:** inicialmente, se selecciona la calidad de la armadura, el tamaño de la barra y finalmente la clase
 
-![ARMADURA_CONFIGURACIÓN](TeklaStructures_Ik2Rhab8Ka.gif)
+![ARMADURA_CONFIGURACIÓN](../img/hormigon/ARMADURA_PROPIEDADES.gif)
 
 2. **Definición de forma**: Se selecciona la parte a reforzar y se dibuja la forma de la armadura.
 3. **Patron a reforzar**: Luego de definir la forma se debe indicar el camino que reforzará la armadura.
@@ -45,10 +45,10 @@ Modelar armadura por grupo de barras permite diseñar la forma de la armadura y 
 ![ARMADURA_PROCEDIMIENTO](../img/hormigon/ARMADURA_PROCEDIMIENTO.gif)
 
 4. **Separación**: Una vez generada la armadura, se debe modificar la separación, hay varias opciones para modificarla
-   1. Equal distribution: distribuye las barras equitativamente bajo dos opciones, por cantidad de barras o por un espaciado objetivo.
-   2. By exact spacings: Distribuye las barras según una separación exacta. Tiene varias posibilidades de edición: 
-        1. By exact spacing with flexible last and first space siendo la primera y ultima posición variables 
-        2.  By exact spacing with flexible middle siendo las posiciones del 
+   1. `Equal distribution`: distribuye las barras equitativamente bajo dos opciones, por cantidad de barras o por un espaciado objetivo.
+   2. `By exact spacings`: Distribuye las barras según una separación exacta. Tiene varias posibilidades de edición: 
+        1. `By exact spacing with flexible last and first space` siendo la primera y ultima posición variables 
+        2.  `By exact spacing with flexible middle` siendo las posiciones del 
         medio variables
 
 ![ARMADURA_SEPARACIÓN](../img/hormigon/ARMADURA_SEPARACIÓN.gif)
@@ -59,37 +59,33 @@ Modelar armadura por grupo de barras permite diseñar la forma de la armadura y 
 
 ![ARMADURA_HOOKS](../img/hormigon/ARMADURA_HOOKS.gif)
 
+### Rebar set 
 
-
-
-
-### REBAR SET 
-
-### MESH (MALLA)
+### Malla (Malla)
 
 ---
-## PROPIEDADES
+## Propiedades
 
-## UNIDAD DE COLADA
+## Unidad de colada
 ARMADURA EN PARTES PARTES A UNIDAD DE COLADA 
 
-### PROPIEDADES DE UNIDAD DE COLADA
+### Propiedades de la unidad de colada
 NO USAR PRECAST, USAR VERTIDO EN SITIO 
 
 PEDIR EMA NUMERACIÓN (en proceso)
 
 
-## NUMERACIÓN
+## Numeración
 
-## PLANILLA DE DOBLADO (PDH)
+## Planilla de doblado (PDH)
 
-## EMPALMES
+## Empalmes
 
-## ANCLAJES
+## Anclajes
 
 
 
 ---
-## LISTADO DE COMPONENTES
+## Listado de componentes
 
 [← Volver al inicio](index.md)

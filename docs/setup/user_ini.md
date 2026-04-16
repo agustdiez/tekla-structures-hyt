@@ -50,7 +50,7 @@ set XS_TEMPLATE_DIRECTORY=%XS_FIRM%\templates # Carpetas de cuadros y reportes
 
 ```
 
-%TEKLA% es la variable de entorno seteada de acuerdo a [Variables de entorno](configuracion-inicial.md#definición-de-variable-de-entorno)
+`%TEKLA%` es la variable de entorno seteada de acuerdo a [Variables de entorno](configuracion-inicial.md#definición-de-variable-de-entorno)
 
 La responsabilidad de edición sobre este archivo recae exclusivamente en el administrador de disciplina de modelos 3D. 
 
