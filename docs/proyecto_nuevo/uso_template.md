@@ -6,7 +6,7 @@ nav_order: 3
 has_toc: true
 ---
 
-# Generalidades TEKLA
+# Uso del template
 {: .no_toc }
 
 ## Tabla de Contenidos

@@ -236,7 +236,6 @@ Para referencias de Connect, ver [Connect - Ejecutor](../connect/connect-ejecuto
 
 ---
 
-
 ## Atributos a modelar
 
 Va a depender de IB/ID, definiciones de proyecto, pero en caracter general y como obligatorios tenemos los siguientes:

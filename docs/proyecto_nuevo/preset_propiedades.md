@@ -6,7 +6,7 @@ nav_order: 2
 has_toc: true
 ---
 
-# Generalidades TEKLA
+# Preset de configuraciones de modelos
 {: .no_toc }
 
 ## Tabla de Contenidos
