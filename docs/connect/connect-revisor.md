@@ -37,6 +37,7 @@ Es responsabilidad del LEP de proyecto las siguientes tareas que se describirán
 - Hacer seguimiento día a día del proyecto, comunicándose con los ejecutores a través de ToDo's, teniendo una especie de _**action tracker 3D**_ del proyecto.
 - Manejar las herramientas de Connect con fluidez
 
+
 Todas estas tareas se describen a continuación en cada apartado.
 
 ## 1. Estructura del proyecto

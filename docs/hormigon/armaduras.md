@@ -163,13 +163,60 @@ Una planilla de doblado de hierros es Un documento técnico que detalla, de form
 *Figura 15: Bloques del 1 a 6*
 7. En caso de sacar múltiples planillas de doblado en la misma sesión, ir pisando el archivo PLANTILLA_BASE.xlsx y el informe que saca el TEKLA (borrar a mano archivo de requerirse) y correr bloques 3 a 6 nuevamente. El bloque 2 no debe ejecutarse más veces.
 
-## Longitud de empalme
+
 
 ## Longitud de anclaje
 
+La longitud de anclaje es la longitud final que debe tener la barra para desarrollar la resistencia de diseño en una sección crítica. Se puede desarrollar de forma recta o a través de ganchos.
 
+### Barras rectas
+
+Su cálculo se encuentra indicado en CIRSOC 201-2005 bajo Art.12.2 (a responsabilidad del ingeniero en caso de tratarse de un lugar con poco espacio para anclar armadura) pero de manera simplificada se presenta la siguiente tabla:
+
+| $d_b$ | $l_{dh} $ |
+|----|-----|
+| $\phi$ 6  | 300 mm |
+| $\phi$ 8  | 305 mm |
+| $\phi$ 10 | 380 mm |
+| $\phi$ 12 | 460 mm |
+| $\phi$ 16 | 600 mm |
+| $\phi$ 20 | 760 mm |
+
+{: .note}
+> Los resultados de la tabla son para barras ADN-420 y hormigón H30.
+
+Para el caso de ganchos (en extremos de barras con algún filo de hormigón, vale lo de la siguiente imagen)
+
+![Ganchos-cirsoc](../img/hormigon/ganchos_cirsoc.png)
+*Figura 15: ganchos de acuerdo a CIRSOC 201-05*
+
+| $$d_b$$ | $$l_{dh}$$ | $$L_{gancho,\min}$$ |
+|---------|------------|---------------------|
+| $\phi$ 6    | 150 mm        | 72 mm                  |
+| $\phi$ 8      | 150 mm        | 96 mm                  |
+| $\phi$ 10     | 150 mm        | 120 mm                 |
+| $\phi$ 12   | 150 mm        | 144 mm                 |
+| $\phi$ 16  | 150 mm        | 192 mm                 |
+| $\phi$ 20      | 160 mm        | 240 mm                 |
+
+## Longitud de empalme
+
+Para el caso de barras de gran longitud o que deban separarse en tramos, aparece el empalme, que es una longitud donde ambas barras deben ir juntas (empalme por yuxtaposición). Un par de reglas:
+
+- Las barras pueden estar alejadas solo hasta el máximo de 1/5 de la longitud de empalme o 150mm.
+- La longitud es 1,3 veces la de anclaje recto.
+- Escalonar empalmes cuando sea posible
+
+
+
+### Modelar empalmes
+
+Hay componentes dentro del programa que permiten hacer splice de barras, aunque si se trata de una estructura particular donde debe estar pensado, es buena alternativa hacerlo manualmente e indicarlo en el plano de manera correcta.
+
+De forma general, las longitudes de empalme deben considerarse como $1,3 $
 
 ---
+
 ## Listado de componentes
 
 [← Volver al inicio](index.md)

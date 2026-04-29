@@ -15,5 +15,16 @@ has_toc: true
 1. TOC
 {:toc}
 
+## Marcas
+
+## Cotas
+
+## Detallar armadura
+
+## Notas
+
+## Textos
+
+## Simbolos
 
 [← Volver al inicio](index.md)

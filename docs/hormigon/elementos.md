@@ -219,6 +219,9 @@ Previo a usar unidades de colada, familiarizarse con las herramientas de selecci
 
 La unidad de colada es mandatoria para realizar reportes de armadura (planillas de doblado). Su creación, modificación y numeración se describe en el apartado del manual [Armaduras](./armaduras.md).
 
+
+---
+
 ## Antes de modelar
 
 Para modelar y ubicarnos respecto al proyecto debemos usar referencias externas a nuestro modelo, que permiten ubicar la estructura a modelar en el espacio.

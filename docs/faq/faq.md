@@ -157,7 +157,74 @@ Explicar los modos de representación (Crtl+1 a 5)
 
 ### ¿Cuál es la estructura de carpetas obligatoria en el modo dibujo?
 
-###
+### no levanta el doc de referencia cargado en proyecto
+
+### no levanta el doc de referencia cargado en dibujo
+
+### no LEVANTA ATRIBUTOS A LA HORA DE CREAR UN TEMPLATE 
+
+### Definición de punto base 
+
+### Configurar grillas
+
+
+### Especificaciiones tecnicas 
+
+### Cargar referencias 
+
+### Memorias de calculo, información 
+
+
+### Redondeo de coordenadas
+
+
+### Ubicación de fundaciones
+
+### edicion de cuadro con guardar como
+editar en creacion de tpls
+
+
+### Perfil CBUILT para crear canaletas
+ver modelo recinto proyecto pam25026 
+ver modelo loc repulpin rti26011
+
+
+### Anillos de fundación
+para realizar mirar opción D900 (diametro) footing
+
+
+### concrete stairs
+
+
+### Vistas isometricas en tekla
+
+
+### OCTGON4800-4800
+
+### Modelado correcto de la armadura
+
+### Creación de antimaterial para chanfle a 45°
+mta. ver modelo del proyecto rti26011, modelado del recinto
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 --- 
 
 ## Lectura de archivos

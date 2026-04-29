@@ -27,6 +27,7 @@ Se describen a continuación distintos apartados generales del modelado que debe
 Se debe de crear un nuevo modelo sin ninguna plantilla para evitar trasladar errores, se sugiere nombrar como "Template PROY" por ej: `Template RTI26011`
 
 ![MODELO NUEVO](../img/proyecto_nuevo/CREACIÓN%20MODELO%20NUEVO.gif)
+*Figura 1: Crear modelo nuevo*
 
 ### Definición de atributos
 
@@ -42,10 +43,20 @@ Se deben de completar los atributos que se vayan a utilizar  tanto a nivel proye
 | **Description**    | Descripción del plano/proyecto  | -  |  
 
 ![ATRIBUTOS DE PROYECTO](../img/proyecto_nuevo/PROJECT%20PROPERTIES.png)
+*Figura 2: Proyect properties a completar en el template*
 
 ### Definición de rotulo
 
 Se debe de crear un rotulo acorde al proyecto, estos formatos son definidos por control de documentos. Para ver el paso a paso [Cuadros Rótulos](../reportes/cuadro_rotulo.md)
+
+### ATRIBUTOS EN TEMPLATES
+
+
+
+
+
+
+
 
 
 [← Volver al inicio](index.md)

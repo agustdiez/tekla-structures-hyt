@@ -2,7 +2,7 @@
 title: Impresión y exportación
 layout: default_with_reading_time
 parent: Modo dibujo
-nav_order: 6
+nav_order: 5
 has_toc: true
 ---
 
