@@ -17,9 +17,8 @@ has_toc: true
 
 [← Volver al inicio](../index.md)
 
+---
 ## Instalación y Configuración
-
-
 
 ### Validación IT: ¿está correctamente instalado?
 
@@ -77,9 +76,19 @@ Sí. El editor de cuadros y de símbolos maneja rutas independientes al programa
 
 Indicarlas entrando a 
 
-## Modelado
+---
+## Previo a modelar
 
+### Definición de punto base 
 
+### Cargar referencias 
+
+### Especificaciones tecnicas 
+
+### Memorias de calculo, información 
+
+---
+## Modelado / errores comunes
 
 ### IB/IBE vs ID
 ```
@@ -107,7 +116,6 @@ Esta tabla general enumera las etapas de uso del programa en un proyecto de inge
 
 En caso de emitir documentación (planos), se deberán sumar las tareas indicadas que correspondan del siguiente apartado.
 
----
 
 ### Ciclo de vida de modelos - ID
 
@@ -141,10 +149,36 @@ Ver..
 
 Explicar los modos de representación (Crtl+1 a 5)
 
-### C
 ### actualizacion de template local en modelos nuevos 
 16/4/26 fer mati 
 
+### Redondeo de coordenadas
+
+### Configurar grillas
+
+### Ubicación de fundaciones
+
+### edicion de cuadro con guardar como
+editar en creacion de tpls
+
+### Perfil CBUILT para crear canaletas
+ver modelo recinto proyecto pam25026 
+ver modelo loc repulpin rti26011
+
+### Anillos de fundación
+para realizar mirar opción D900 (diametro) footing
+
+### Concrete stairs componente
+
+### Perfil OCTGON4800-4800 para tanques en forma de octogono
+
+### Modelado correcto de la armadura
+
+### Creación de antimaterial para chanfle a 45°
+mta. ver modelo del proyecto rti26011, modelado del recinto
+
+
+---
 ## Dibujos
 
 ### ¿Cómo creo un dibujo nuevo?
@@ -161,68 +195,7 @@ Explicar los modos de representación (Crtl+1 a 5)
 
 ### no levanta el doc de referencia cargado en dibujo
 
-### no LEVANTA ATRIBUTOS A LA HORA DE CREAR UN TEMPLATE 
-
-### Definición de punto base 
-
-### Configurar grillas
-
-
-### Especificaciiones tecnicas 
-
-### Cargar referencias 
-
-### Memorias de calculo, información 
-
-
-### Redondeo de coordenadas
-
-
-### Ubicación de fundaciones
-
-### edicion de cuadro con guardar como
-editar en creacion de tpls
-
-
-### Perfil CBUILT para crear canaletas
-ver modelo recinto proyecto pam25026 
-ver modelo loc repulpin rti26011
-
-
-### Anillos de fundación
-para realizar mirar opción D900 (diametro) footing
-
-
-### concrete stairs
-
-
 ### Vistas isometricas en tekla
-
-
-### OCTGON4800-4800
-
-### Modelado correcto de la armadura
-
-### Creación de antimaterial para chanfle a 45°
-mta. ver modelo del proyecto rti26011, modelado del recinto
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 --- 
@@ -239,13 +212,11 @@ Archivos de instalación
 |___ XS_PROJECT
 |____ MODELO
 
-
 ---
 
 ## Editor de cuadros
 
 ### No veo imágenes en el editor de cuadros
-
 
 ### ¿Cómo ordeno las filas en un cuadro?
 
@@ -257,10 +228,11 @@ Archivos de instalación
 
 Los strings van entre ''. NO usar los "" para identifciarlos.l
 
+### No levanta atributos a la hora de cargar un template
 
+### Al generar una exclusion en la sintaxis de un rotulo  usar ** y no ""
 
-
-
+---
 ## BIM Publisher
 
 El BIM Publisher es una herramienta provista en el Tekla Warehouse que permite:
@@ -275,8 +247,7 @@ Para mayor detalle referir al manual
 
 ### Lo corro y no pasa nada o tengo errores
 
-
-
+---
 ## Trimble Connect
 
 Trimble Connect es una herramienta que permite:
@@ -292,9 +263,6 @@ Se trata de una herramienta central para el desarrollo del proyecto, ya que act�
 
 Para mayor detalle referir al manual
 
-## Errores comunes
-
-### 
 
 ## Características Avanzadas
 
@@ -302,3 +270,4 @@ Para mayor detalle referir al manual
 ---
 
 ## ¿Sin respuesta?
+???

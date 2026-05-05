@@ -6,31 +6,15 @@ has_children: true
 has_toc: false
 ---
 
-# TS 2022 - Guía de uso
-
-TOdo lo documentado en este sitio se encuentra por igual en los manuales de uso en formato documentos indicados debajo
+# Modo dibujo
+En este capitulo se describe como utilizar el modo dibujo, desde su creación, impresión y exportación  hasta los simbolos y marcas, incluye una serie de verificaciones.
 
 ## Contenido del sitio
 
-- [Introducción](introduccion.md) - Comenzar a utilizar el programa
-- [Generalidades](generalidades.md) - Generalidades del TEKLA y BIM
-- [Instalación](instalacion.md) - Instalación del programa
-- [Modelado - Hormigón](modelado_hormigon.md) - Generalidades del modelado en hormigón
-- [Modelado - Acero](modelado_acero.md) - Generalidades del modelado en acero
-- [Modo Dibujo](modo_dibujo.md) - Modo dibujo: guía de uso y parámetros
-- [Editor de cuadros](editor_cuadros.md) - Editor de cuadros: generalidades y alcances de la aplicación
-- [Ejemplos Prácticos de reportes](ejemplos.md) - Ejemplos prácticos
-- [Preguntas Frecuentes (FAQ)](faq.md) - Preguntas frecuentes
-
-## Documentos
-
-Se indica en la tabla debajo la ubicación de los documentos asociadoas al uso.
-
-### BIM
-
-
-- BIM por CIVIL Y ESTRUCTURAS
-- Plan de ejecución del modelo 3D 
-
-### TEKLA Structures
+- [Generalidades dibujo](generalidades_dibujo.md) - Caracteristicas generales del modo dibujo
+- [Vistas](vistas_dibujo.md) - Caracteristicas de las vistas.
+- [Marcas, simbolos y notas](generalidades_dibujo.md) - Caracteristicas generales de las marcas simbolos y notas
+- [Elementos graficos](elementos_graficos.md) - Uso de elementos graficos, como tablas e imagenes.
+- [Impresión y exportación](impresion_exportacion.md) - Uso de la impresión y exportación de un dibujo
+- [Verificaciones](verificaciones.md) - Listado de verificaciones previo durante y despues del modelado.
 

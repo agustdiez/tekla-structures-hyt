@@ -5,24 +5,12 @@ nav_order: 3
 has_children: true
 ---
 
-# TS 2022 - Guía de uso
-
-TOdo lo documentado en este sitio se encuentra por igual en los manuales de uso en formato documentos indicados debajo
+# Un proyecto nuevo:
+En este capitulo se describe todo lo necesario para iniciar un nuevo proyecto en tekla, desde la creación de un template hasta como utilizarlo. 
 
 ## Contenido del sitio
 
-- [Introducción](introduccion.md) - Comenzar a utilizar el programa
+- [Creación del template](creacion_template.md) - Modelado de armaduras.
+- [Uso del Template](uso_template.md) - Modelado de elementos de hormigón.
 
-
-## Documentos
-
-Se indica en la tabla debajo la ubicación de los documentos asociadoas al uso.
-
-### BIM
-
-
-- BIM por CIVIL Y ESTRUCTURAS
-- Plan de ejecución del modelo 3D 
-
-### TEKLA Structures
 

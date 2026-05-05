@@ -62,11 +62,11 @@ Estas verificaciones estan pensadas para el modelado de fundaciones en una ingen
 
 | Paso | Descripción |  Responsable | Check |
 |------|-------------|-------|-------|
-| 4.1 | [¿La armadura está dentro de la parte?](../faq/faq.md#modelado-correcto-de-la-armadura) | [ ] | [ ] |
-| 4.2 | [¿La armadura tiene la separación correcta?](../faq/faq.md#modelado-correcto-de-la-armadura) | [ ] | [ ] |
-| 4.5 | [¿El recubrimiento de la armadura es correcto?](../faq/faq.md#modelado-correcto-de-la-armadura) | [ ] | [ ] |
-| 4.6 | [¿Los ganchos y empalmes están correctamete modelados?](../faq/faq.md#modelado-correcto-de-la-armadura) | [ ] | [ ] |
-| 4.3 | [¿La armadura está correctamente modelada?](../faq/faq.md#modelado-correcto-de-la-armadura)  | [ ] | [ ] |
+| 4.1 | [¿La armadura está dentro de la parte?](../faq/faq.md#modelado-correcto-de-la-armadura) | EJE | [ ] |
+| 4.2 | [¿La armadura tiene la separación correcta?](../faq/faq.md#modelado-correcto-de-la-armadura) | EJE | [ ] |
+| 4.5 | [¿El recubrimiento de la armadura es correcto?](../faq/faq.md#modelado-correcto-de-la-armadura) | EJE | [ ] |
+| 4.6 | [¿Los ganchos y empalmes están correctamete modelados?](../faq/faq.md#modelado-correcto-de-la-armadura) | EJE | [ ] |
+| 4.3 | [¿La armadura está correctamente modelada?](../faq/faq.md#modelado-correcto-de-la-armadura)  | EJE | [ ] |
 
 
 

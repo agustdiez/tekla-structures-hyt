@@ -29,7 +29,7 @@ Se cubriran los siguientes aspectos para cada elemento:
 - Propiedades a completar
 - Buenas prácticas
 
-No es alcance de este instructivo mostrar cuestiones básicas del modelado de elementos si no brindar pautas de diseño y guiar en el proceso. Para pautas más básicas de modelado, referir a la bibliografía de la home (link a home)
+No es alcance de este instructivo mostrar cuestiones básicas del modelado de elementos si no brindar pautas de diseño y guiar en el proceso. Para pautas más básicas de modelado, referir a la [bibliografía](../index.md#documentación-oficial)
 
 ---
 
@@ -211,17 +211,6 @@ Son objetos modelados en 3D, que permiten colocarse en el modelo, dependen del S
 
 ---
 
-## Unidad de colada
-
-Una unidad de colada es un valor numerico creado por el usuario que establece la union monolitica de dos o mas partes de hormigón. Por defecto cada parte de hormigón modelada se considera su propia unidad de colada. Al modelar partes de hormigón en Tekla, debe crear unidades de colada cuando hay varias partes de hormigón que se deben fundir como una estructura monolítica.
-
-Previo a usar unidades de colada, familiarizarse con las herramientas de selección de elementos, descriptas en... [Herramientas de modelado](../generalidades/generalidades.md#herramientas-de-modelado)
-
-La unidad de colada es mandatoria para realizar reportes de armadura (planillas de doblado). Su creación, modificación y numeración se describe en el apartado del manual [Armaduras](./armaduras.md).
-
-
----
-
 ## Antes de modelar
 
 Para modelar y ubicarnos respecto al proyecto debemos usar referencias externas a nuestro modelo, que permiten ubicar la estructura a modelar en el espacio.
@@ -239,7 +228,18 @@ Para referencias de Connect, ver [Connect - Ejecutor](../connect/connect-ejecuto
 
 ---
 
-## Atributos a modelar
+## Conceptos generales:
+
+### Unidad de colada
+
+Una unidad de colada es un valor numerico creado por el usuario que establece la union monolitica de dos o mas partes de hormigón. Por defecto cada parte de hormigón modelada se considera su propia unidad de colada. Al modelar partes de hormigón en Tekla, debe crear unidades de colada cuando hay varias partes de hormigón que se deben fundir como una estructura monolítica.
+
+Previo a usar unidades de colada, familiarizarse con las herramientas de selección de elementos, descriptas en... [Herramientas de modelado](../generalidades/generalidades.md#herramientas-de-modelado)
+
+La unidad de colada es mandatoria para realizar reportes de armadura (planillas de doblado). Su creación, modificación y numeración se describe en el apartado del manual [Armaduras](./armaduras.md).
+
+
+### Atributos a modelar
 
 Va a depender de IB/ID, definiciones de proyecto, pero en caracter general y como obligatorios tenemos los siguientes:
 
@@ -247,12 +247,12 @@ Va a depender de IB/ID, definiciones de proyecto, pero en caracter general y com
 - CLASS
 - PROFILE
 - MATERIAL
-- UDAs (_Atributos definidos por el usuario_): es responsabilidad del LEP indicar cuáles se precisan, de acuerdo al preset de propiedades creado, descripto en [Preset Propiedades](../proyecto_nuevo/preset_propiedades.md)).
+- UDAs (_Atributos definidos por el usuario_): es responsabilidad del LEP indicar cuáles se precisan, de acuerdo al preset de propiedades creado, descripto en [Preset Propiedades](../proyecto_nuevo/preset_propiedades.md).
 
 
-### Name
+#### Name
 
-Tabla de nombres posibles
+Tabla de nombres:
 
 | Elemento                      | Nomenclatura      |
 |:------------------------------|:------------------|
@@ -271,7 +271,7 @@ Tabla de nombres posibles
 | Bulones de Anclaje 1° Etapa   | ANCLAJE_1         |
 | Bulones de Anclaje 2° Etapa   | ANCLAJE_2         |
 
-### Clases
+#### Clases
 Hay 14 clases/colores definidos en tekla, esta sirve para discriminar elementos en Trimble Connect con colores. 
 
 ![CLASES POSIBLES](../img/hormigon/CLASES.png)

@@ -149,7 +149,7 @@ Una planilla de doblado de hierros es Un documento técnico que detalla, de form
     2. **Bloque Rev A**: Contiene información sobre la primera revisión:
         1. `1°Rev`: Letra o numero de la primera revisión.
         2. `By`: Nombre del ejecutor de la planilla
-        3. `Checked`: Nombre del revisior de la planilla (suele ser el LEP)
+        3. `Checked`: Nombre del revisor de la planilla (suele ser el LEP)
         4. `Aproved`: Nombre del lider del proyecto
         5. `Date`: Fecha de emisión de la planilla
         6. `Description`: Carácter de emisión de la planilla 
@@ -218,5 +218,9 @@ De forma general, las longitudes de empalme deben considerarse como $1,3 $
 ---
 
 ## Listado de componentes
+
+
+
+
 
 [← Volver al inicio](index.md)

@@ -203,8 +203,15 @@ Los modelos complejos, pueden ser dificiles de trbajar cuando hay muchos objetos
 
 La modificación directa permite redimensionar, remodelar y mover el modelo objetos utilizando pestañas de modificación directa. Cuando se selecciona un objeto, Tekla muestra las cotas y dimensiones de modificación directa que son específico para ese objeto modelado. 
 
+
+![MODIFICADORES](../img/generalidades/MODIFICADORES.png)
+
+(EXPLAYAR)
+
+
+
 {: .note}
-> La modificación directa se activa y desactiva con el comando CONTROL+D y viene activada por defecto, a veces puede desactivarse sola, se vuelve a activar usando el comando. 
+> La modificación directa se activa y desactiva con la letra `D` y viene activada por defecto, a veces puede desactivarse sola, se vuelve a activar usando el comando. 
 
 
 #### Alargar varios objetos
