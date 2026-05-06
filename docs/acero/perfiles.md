@@ -212,9 +212,15 @@ Son elementos laminares planos que sirven para la creación de complementos a la
 - **Stand-alone bent plate:** Crea una placa cilindrica o cónica, sin necesidad de placas de referencia. 
 - **Lofted plate**: Crea una placa alabeada al seleccionar dos objetos de construcción o puntos.
 
+![PLATE ATRIBUTOS](../img/acero/DESCRIPCIÓN_PLATE_ACERO.png)
+
+
+
+
+
 ![PROCEDIMIENTO PLATE](../img/acero/PROCEDIMIENTO_PLATE_ACERO.gif)
 
-![alt text](image.png)
+
 
 
 

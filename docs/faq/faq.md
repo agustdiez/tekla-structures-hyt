@@ -266,8 +266,3 @@ Para mayor detalle referir al manual
 
 ## Características Avanzadas
 
-
----
-
-## ¿Sin respuesta?
-???

@@ -29,6 +29,25 @@ Para colocarla en el dibujo hay que seguir los siguientes pasos:
 ![ejemplo part mark](../img/dibujo/ejemplo%20part%20mark.gif)
 *Figura 1: Ejemplo "Part mark"*
 
+#### Propiedades de la marca
+
+### Weld Mark
+Los pasos para hacer una marca de soldadura son:
+1. Seleccionar `Weld mark`
+2. Hacer click en el punto donde estará ubicada la soldadura.
+3. Mover el cursor hacia donde estará ubicada la nota de la soldadura y hacer click.
+
+#### Propiedades de la marca:
+
+
+
+### Weld Mark
+
+
+
+
+
+
 ## Cotas
 Como fue mencionado en [Views](../dibujo/generalidades_dibujo.md#descripción-del-modo-dibujo), los tipos más utilizados de cotas son la horizontal, vertical, free y la angular.
 Para realizar las tres primeras se debe hacer lo siguiente:
@@ -46,7 +65,7 @@ Para realizar las tres primeras se debe hacer lo siguiente:
 
 Para realizar la cota angular se deben seguir los siguientes pasos:
 
-1. Seleccionar la cota angular ![cota angular](../img/dibujo/cota%20angular.png)
+1. Seleccionar la cota angular cota angular <img src="../img/dibujo/cota%20angular.png" alt="drawing" width="30"/>
 2. Hacer click en el punto de intersección de los lados a acotar.
 3. Clickear en el primer lado de la cota, separado del punto de intersección lo suficiente para que entre el valor numérico del ángulo.
 4. Clickear en el segundo lado siguiendo la trayectoria circular desde el click anterior.
@@ -55,13 +74,12 @@ Para realizar la cota angular se deben seguir los siguientes pasos:
 ![cota angular](../img/dibujo/cota%20angular.gif)
 
 Por último, los pasos para una cota curva son los siguientes:
-
-1. Seleccionar la cota curva con lineas de referencia radiales ![cota curva logo](image-1.png). Hay otra opción con lineas de referencia ortogonales pero no la solemos usar.
+1. Seleccionar la cota curva con lineas de referencia radiales ![cota curva logo](../img/dibujo/cota%20curva%20logo.png). Hay otra opción con lineas de referencia ortogonales pero no la solemos usar.
 2. Seleccionar el primer punto del radio interior de la curva a acotar.
 3. Seleccionar el punto medio de la curva interior y el punto final.
 4. Luego sobre la curva exterior seleccionar los puntos donde se desea realizar las cotas.
 5. Por último perpendicular a la cota ubicar donde se quiera el valor numérico.
-6. 
+6. Cuando esté colocada donde se desea, hacer click con el `botón central del mouse`.
 
 ## Detallar armadura
 
