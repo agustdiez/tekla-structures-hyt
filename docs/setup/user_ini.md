@@ -29,7 +29,7 @@ Para consultar qué archivos se han leído cuando se inicia Tekla Structures y e
 Lo importante y que en general se respeta es que si algo se define múltiples veces, el orden de escritura es desde FIRM a Modelo.
 
 
-### `user.ini`
+### Archivo `user.ini`
 
 Este archivo contiene configuraciones personales de cada usuario.
 Se describe cada propiedad avanzada seteada dentro del archivo user.ini debajo:
@@ -52,7 +52,7 @@ La responsabilidad de edición sobre este archivo recae exclusivamente en el adm
 {: .important}
 > La ubicación del `user.ini` local es en la siguiente ruta. Se debe habilitar visualización de carpetas ocultas `C:\Users\<USUARIO>\AppData\Local\Trimble\Tekla Structures\2022.0\UserSettings`
 
-### `options.ini`
+### Archivo `options.ini`
 
 Los archivos options.ini que contienen configuraciones del modelo específicas de la empresa o del proyecto se guardan y se leen en las ubicaciones definidas por el usuario especificadas con las opciones avanzadas XS_​FIRM y XS_​PROJECT. Para usar estos archivos, debe copiar o mover un archivo options.ini a estas ubicaciones.
 
