@@ -13,7 +13,7 @@ Esta sección cubre aspectos avanzados del programa o de su uso. La sección ser
 
 Se cubren los siguientes apartados
 
-- [Gestion de archivos](gestion_archivos.md) - Gestión de archivos para modelos federados
+- [Gestion de archivos](gestion_archivos.md) - Gestión de archivos para modelos federados y copiado automático de estos
 
 
 

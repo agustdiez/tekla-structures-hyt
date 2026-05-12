@@ -20,15 +20,15 @@ has_toc: true
 
 En primer lugar, validar que el programa fue instalado correctamente ingresando al mismo y pudiendo pasar con éxito la ventana de seleccion de licencia. Las licencias deberán consultarse con IT para saber qué tipo de licencias hay disponibles.
 
-La gestión de licencias tipo suscripción quedan a cargo del equipo, a través del siguiente enlace: [Online Admin Tool](https://admin.account.tekla.com/#/)
+La gestión de licencias tipo suscripción quedan a cargo del equipo, a través del siguiente enlace: [Online Admin Tool](https://admin.account.tekla.com/#/). Las licencias ancladas al servidor deberá solicitarse al departamento IT la IP a colocar en la ventana de la administración de licencias.
 
 Al abrirse, el programa solicita hacer *login* en Trimble. Crear cuenta en caso de no contar con una y compartirla con IT o el coordinador Civil para que se sume el nuevo usuario a la carpeta compartida.
 
 ## Cliente de OneDrive 
 
-El departamento usa una carpeta civil de OneDrive donde se guardan los modelos. Solicitar acceso al coordinador civil o líder de disciplina si no se cuenta con él.
+El departamento usa una carpeta civil de OneDrive donde se guardan los modelos. Solicitar acceso al coordinador civil o líder de disciplina si no se cuenta con acceso al mismo.
 
-La carpeta organiza los modelos por proyecto e incluye una carpeta con todas las configuraciones de la empresa (FIRM).
+La carpeta organiza los modelos por proyecto e incluye una carpeta con todas las configuraciones de la empresa (FIRM). Referir a [BIM por Civil y Estructuras](../)
 
 Validar lo siguiente antes de continuar:
 
@@ -47,7 +47,6 @@ Validar lo siguiente antes de continuar:
 >Si no se quieren ver ciertos modelos o archivos, dejar de sincronizar la carpeta o ponerla en modo "Liberar espacio" para no ocupar espacio en el disco C:/
 
 ## Manejo de licencias
-
 
 Las licencias pueden estar ancladas al servidor o ser por suscripción. Validar con el coordinador de IT que el usuario esté sumado al equipo y consultar qué licencias están disponibles.
 
@@ -126,9 +125,9 @@ C:\Users\<USUARIO>\AppData\Local\Trimble\Tekla Structures\2022.0\UserSettings
 
 ## Verificación
 
-Para verificar tener todo correctamente seteado, basta con abrir el programa en "New Model" ya se deberán visualizar los templates de proyecto disponibles, los cuáles
+Para verificar tener todo correctamente seteado, basta con abrir el programa en "New Model" y ya se deberán visualizar los templates de proyecto disponibles.
 
-Cualquier desvío o consulta particular, referir al [FAQ](../faq/faq.md) o al lider de disciplina.
+Cualquier desvío o consulta particular, referir al [FAQ](../faq/faq.md) o al LEP del proyecto.
 
 ## Próximos Pasos
 

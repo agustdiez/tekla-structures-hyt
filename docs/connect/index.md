@@ -9,7 +9,7 @@ has_children: true
 
 Esta sección cubre aspectos y funcionalidades del Trimble Connect. Se trata de la herramienta propia de Trimble (empresa desarrolladora del TEKLA) que integra los distintos modelos en el marco de un proyecto, y nos permite operar sobre ellos.
 
-Por ello, es distinto el uso y la funcionalidad para quien ejecuta como para quien revisa los modelos.
+Por ello, es distinto el uso y la funcionalidad para quien ejecuta como para quien revisa los modelos, por lo cual separamos el análisis en dos con las herramientas que cada rol debe manejar.
 
 ## Contenido
 

@@ -21,7 +21,7 @@ toc: true
 
 La versión de referencia utilizada para este portal es Tekla Structures 2022. La documentación presentada mantiene un enfoque general, por lo que los conceptos y procedimientos son aplicables a versiones más recientes del programa.
 
-No documentamos cambios específicos de interfaz o nuevas funcionalidades que aparezcan en versiones posteriores. El enfoque está dado por las funcionalidades y no por encontrar cada comando dentro del programa.
+No se documentarán cambios específicos de interfaz o nuevas funcionalidades que aparezcan en versiones posteriores. El enfoque está dado por las funcionalidades y no por encontrar cada comando dentro del programa o explicar su uso explícitamente.
 
 El programa base de Tekla Structures requiere la instalación de **entornos** específicos, los cuales agregan reportes, bases de datos de perfiles y configuraciones regionales. En la empresa, el entorno estándar utilizado es **SouthAmerica**.
 

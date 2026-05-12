@@ -7,9 +7,9 @@ has_toc: false
 ---
 
 # Modo dibujo
-En este capitulo se describe como utilizar el modo dibujo, desde su creación, impresión y exportación  hasta los simbolos y marcas, incluye una serie de verificaciones.
+En este capitulo se describe como utilizar el modo dibujo, utilizado para crear la documentación resultante de la ingeniería. Se describirá el proceso desde la creación de un dibujo, las marcas y símbolos, los formatos, hasta la impresión y exportación.
 
-## Contenido del sitio
+## Contenido
 
 - [Generalidades dibujo](generalidades_dibujo.md) - Caracteristicas generales del modo dibujo
 - [Vistas](vistas_dibujo.md) - Caracteristicas de las vistas.

@@ -9,7 +9,7 @@ has_children: true
 
 Este capitulo habla sobre Generación de cuadros de resumen, reportes personalizados y exportación de datos.
 
-
+## Contenido
 
 - [Editor de Cuadros](editor_cuadros.md) - Explicación del editor de cuadros
 - [Cuadro Rotulo](cuadro_rotulo.md) - Explicación del cuadro rotulo
