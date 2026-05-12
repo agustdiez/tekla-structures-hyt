@@ -1,0 +1,145 @@
+% =====================================================
+% preamble.tex — Configuración común de estilo
+% Para enunciados de ejercitación en Tekla Structures
+% =====================================================
+
+% --- Codificación e idioma ---
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish,es-tabla,es-noshorthands]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+
+% --- Geometría de página ---
+\usepackage[a4paper,margin=2.5cm,headheight=14pt]{geometry}
+
+% --- Matemática y unidades ---
+\usepackage{amsmath,amssymb}
+\usepackage{siunitx}
+\sisetup{
+  output-decimal-marker={,},
+  per-mode=symbol,
+  group-separator={.},
+  group-minimum-digits=4
+}
+
+% --- Tablas ---
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{tabularx}
+\usepackage{longtable}
+
+% --- Figuras ---
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{float}
+
+% --- Gráficos vectoriales ---
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,calc,patterns,shapes.geometric}
+
+% --- Listas ---
+\usepackage{enumitem}
+\setlist{itemsep=2pt,parsep=2pt}
+
+% --- Color y cajas ---
+\usepackage{xcolor}
+\definecolor{teklablue}{RGB}{0,87,156}
+\definecolor{boxgray}{RGB}{245,245,245}
+\definecolor{accentorange}{RGB}{230,120,30}
+
+\usepackage[most]{tcolorbox}
+
+% Caja para comandos / atajos
+\newtcolorbox{comando}{
+  colback=boxgray,
+  colframe=teklablue,
+  boxrule=0.5pt,
+  arc=2pt,
+  left=6pt, right=6pt, top=4pt, bottom=4pt,
+  fonttitle=\bfseries,
+  title=Comando Tekla
+}
+
+% Caja para tips / consejos
+\newtcolorbox{tip}{
+  colback=yellow!8,
+  colframe=accentorange,
+  boxrule=0.5pt,
+  arc=2pt,
+  fonttitle=\bfseries,
+  title=Tip
+}
+
+% Caja para entregable
+\newtcolorbox{entregable}{
+  colback=green!5,
+  colframe=green!50!black,
+  boxrule=0.5pt,
+  arc=2pt,
+  fonttitle=\bfseries,
+  title=Entregable
+}
+
+% Caja para advertencia
+\newtcolorbox{advertencia}{
+  colback=red!5,
+  colframe=red!70!black,
+  boxrule=0.5pt,
+  arc=2pt,
+  fonttitle=\bfseries,
+  title=Atención
+}
+
+% --- Código y comandos en línea ---
+\usepackage{listings}
+\lstset{
+  basicstyle=\ttfamily\small,
+  breaklines=true,
+  frame=single,
+  backgroundcolor=\color{boxgray},
+  rulecolor=\color{teklablue}
+}
+
+% Comando para resaltar comandos/menús de Tekla en línea
+% Uso: \tk{File > Open}  o  \tk{Component Catalog}
+\newcommand{\tk}[1]{\textsf{\textbf{\textcolor{teklablue}{#1}}}}
+
+% Comando para nombres de archivo / rutas
+\newcommand{\arch}[1]{\texttt{#1}}
+
+% Comando para teclas / shortcuts
+% Uso: \key{Ctrl+S}
+\newcommand{\key}[1]{\fbox{\footnotesize\texttt{#1}}}
+
+% --- Encabezado y pie de página ---
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\textit{\tituloEjercicio}}
+\fancyhead[R]{\small\thepage}
+\fancyfoot[C]{\small Tekla Structures 2022 — Nivel avanzado}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+% --- Hipervínculos y referencias ---
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=teklablue,
+  urlcolor=teklablue,
+  citecolor=teklablue,
+  pdfborder={0 0 0}
+}
+\usepackage[noabbrev,spanish]{cleveref}
+
+% --- Formato de secciones ---
+\usepackage{titlesec}
+\titleformat{\section}
+  {\Large\bfseries\color{teklablue}}
+  {\thesection.}{0.5em}{}
+\titleformat{\subsection}
+  {\large\bfseries\color{teklablue!80!black}}
+  {\thesubsection.}{0.5em}{}

@@ -1,0 +1,213 @@
+\documentclass[11pt,a4paper]{article}
+
+\input{preamble}
+\input{commands}
+
+\renewcommand{\tituloEjercicio}{Ejercicio de Estructura Metálica}
+\renewcommand{\subtituloEjercicio}{[Subtítulo: tipo de estructura]}
+\renewcommand{\codigoEjercicio}{TEKLA-EM-01}
+
+\begin{document}
+
+% =====================================================
+% PORTADA
+% =====================================================
+\begin{titlepage}
+\centering
+\vspace*{2cm}
+{\Huge\bfseries\color{teklablue} \tituloEjercicio \par}
+\vspace{0.5cm}
+{\Large \subtituloEjercicio \par}
+\vspace{2cm}
+\rule{0.6\textwidth}{0.4pt}\par
+\vspace{1cm}
+\begin{tabular}{rl}
+\textbf{Código:} & \codigoEjercicio \\
+\textbf{Curso:} & \nombreCurso \\
+\textbf{Nivel:} & \nivelEjercicio \\
+\textbf{Duración estimada:} & \duracionEjercicio \\
+\textbf{Software:} & \versionTekla \\
+\textbf{Docente:} & \autorEnunciado \\
+\textbf{Fecha:} & \fechaEjercicio \\
+\end{tabular}
+\vfill
+\end{titlepage}
+
+\tableofcontents
+\newpage
+
+% =====================================================
+\section{Objetivos de aprendizaje}
+% =====================================================
+\begin{itemize}
+    \item [Objetivo 1: ej. modelar elementos con \tk{Steel Beam}, \tk{Steel Column}, \tk{Steel Plate}]
+    \item [Objetivo 2: ej. aplicar conexiones del \CC]
+    \item [Objetivo 3: ej. crear un \tk{Custom Component} para una unión no estándar]
+    \item [Objetivo 4: ej. trabajar con \tk{Assemblies} y \tk{Sub-Assemblies}]
+    \item [Objetivo 5: ej. producir planos de taller y lista de bulones]
+\end{itemize}
+
+% =====================================================
+\section{Descripción del proyecto}
+% =====================================================
+[Descripción breve del proyecto y contexto profesional.]
+
+% =====================================================
+\section{Datos de partida}
+% =====================================================
+\subsection{Geometría general}
+\begin{itemize}
+    \item [Luces, alturas, cantidad de pórticos]
+    \item [Cargas o solicitaciones de referencia (si aplica)]
+\end{itemize}
+
+\subsection{Perfiles y materiales}
+\begin{table}[H]
+\centering
+\begin{tabular}{lll}
+\toprule
+\textbf{Elemento} & \textbf{Perfil} & \textbf{Acero} \\
+\midrule
+[Columnas]        & [HEB / W]   & [F-24 / A572] \\
+[Vigas principales]& [IPE / W]   & [F-24] \\
+[Vigas secundarias]& [UPN / C]   & [F-24] \\
+[Arriostramientos]& [L / 2L]    & [F-24] \\
+[Chapas]          & [PL XX]     & [F-24] \\
+\bottomrule
+\end{tabular}
+\caption{Perfiles y aceros del proyecto.}
+\end{table}
+
+\subsection{Bulones}
+\begin{itemize}
+    \item Calidad: [A325 / 8.8 / etc.]
+    \item Diámetros principales: [M16, M20, M24]
+\end{itemize}
+
+\subsection{Normativa de referencia}
+\begin{itemize}
+    \item [CIRSOC 301 / 304 / AISC 360 / EN 1993]
+    \item [Estándar de planos de taller]
+\end{itemize}
+
+% =====================================================
+\section{Esquema de referencia}
+% =====================================================
+\begin{figure}[H]
+\centering
+\fbox{\parbox[c][6cm][c]{0.8\textwidth}{\centering\textit{[Esquema de referencia: planta, cortes y elevaciones]}}}
+\caption{Esquema general del proyecto.}
+\end{figure}
+
+% =====================================================
+\section{Consigna paso a paso}
+% =====================================================
+
+\subsection{Configuración inicial}
+\begin{enumerate}
+    \item Crear modelo nuevo con el entorno \entornoTekla.
+    \item Configurar \tk{Project Properties}.
+    \item Definir \tk{Grids} y \tk{Levels}.
+    \item Configurar perfiles y materiales en \tk{Catalogs}.
+\end{enumerate}
+
+\subsection{Modelado de la estructura primaria}
+\begin{enumerate}
+    \item Modelar columnas con \tk{Steel Column}.
+    \item Modelar vigas principales con \tk{Steel Beam}.
+    \item Modelar arriostramientos.
+    \item Verificar continuidad y conexiones lógicas.
+\end{enumerate}
+
+\subsection{Conexiones estándar}
+\begin{enumerate}
+    \item Aplicar conexiones desde el \CC.
+    \item Configurar parámetros de cada conexión: [tipo, espesores, bulones].
+    \item Verificar con \tk{Inquire Component} y revisar warnings.
+\end{enumerate}
+
+\begin{comando}
+[Detalle de un componente clave: número y configuración recomendada]
+\end{comando}
+
+\subsection{Custom Component}
+\begin{enumerate}
+    \item Crear un \tk{Custom Component} tipo \textit{Connection / Detail / Part} para [unión específica].
+    \item Definir variables paramétricas en \tk{Custom Component Editor}.
+    \item Configurar \tk{Distance Variables} y \tk{Reference Models}.
+    \item Probar el componente en al menos 3 casos distintos para validar paramétricamente.
+\end{enumerate}
+
+\begin{tip}
+[Tip sobre cómo estructurar las variables del custom component]
+\end{tip}
+
+\subsection{Numeración y assemblies}
+\begin{enumerate}
+    \item Configurar \tk{Numbering Settings}.
+    \item Ejecutar \tk{Numbering > Number Modified Objects}.
+    \item Revisar \tk{Assemblies} y \tk{Sub-Assemblies} resultantes.
+\end{enumerate}
+
+\subsection{Planos de taller y reportes}
+\begin{enumerate}
+    \item Generar \tk{General Arrangement Drawings}.
+    \item Generar \tk{Assembly Drawings} de los conjuntos clave.
+    \item Generar \tk{Single Part Drawings} de piezas representativas.
+    \item Producir reportes: lista de materiales, lista de bulones, peso total.
+\end{enumerate}
+
+% =====================================================
+\section{Entregables}
+% =====================================================
+\begin{entregable}
+\begin{enumerate}
+    \item Archivo de modelo \arch{.db1} comprimido.
+    \item \tk{Custom Component} exportado como \arch{.uel}.
+    \item Planos de conjunto (assembly drawings) en PDF.
+    \item Lista de materiales y lista de bulones.
+    \item Documento con capturas de hitos clave.
+\end{enumerate}
+\end{entregable}
+
+% =====================================================
+\section{Criterios de evaluación}
+% =====================================================
+\begin{table}[H]
+\centering
+\begin{tabularx}{\textwidth}{Xcc}
+\toprule
+\textbf{Criterio} & \textbf{Puntaje} & \textbf{Obtenido} \\
+\midrule
+Geometría y perfiles correctos & 15 & \\
+Aplicación de conexiones estándar & 20 & \\
+Calidad y robustez del custom component & 25 & \\
+Coherencia de numeración y assemblies & 10 & \\
+Calidad de planos de taller & 20 & \\
+Completitud de entregables & 10 & \\
+\midrule
+\textbf{Total} & \textbf{100} & \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+% =====================================================
+\section{Tips y errores comunes}
+% =====================================================
+\begin{tip}
+[Tip 1]
+\end{tip}
+
+\begin{advertencia}
+[Error frecuente]
+\end{advertencia}
+
+% =====================================================
+\section{Referencias y documentación}
+% =====================================================
+\begin{itemize}
+    \item Tekla User Assistance: \url{https://support.tekla.com/}
+    \item [Otras referencias]
+\end{itemize}
+
+\end{document}

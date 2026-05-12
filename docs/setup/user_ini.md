@@ -54,6 +54,9 @@ set XS_TEMPLATE_DIRECTORY=%XS_FIRM%\templates # Carpetas de cuadros y reportes
 
 La responsabilidad de edición sobre este archivo recae exclusivamente en el administrador de disciplina de modelos 3D. 
 
+{. :important}
+> La ubicación del `user.ini` local es en la siguiente ruta. Se debe habilitar visualización de carpetas ocultas `C:\Users\<USUARIO>\AppData\Local\Trimble\Tekla Structures\2022.0\UserSettings`
+
 ### options.ini
 
 Los archivos options.ini que contienen configuraciones del modelo específicas de la empresa o del proyecto se guardan y se leen en las ubicaciones definidas por el usuario especificadas con las opciones avanzadas XS_​FIRM y XS_​PROJECT. Para usar estos archivos, debe copiar o mover un archivo options.ini a estas ubicaciones.

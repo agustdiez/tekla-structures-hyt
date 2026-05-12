@@ -197,6 +197,9 @@ mta. ver modelo del proyecto rti26011, modelado del recinto
 
 ### Vistas isometricas en tekla
 
+### ¿Que pasa si elimino la marca de una vista?
+se guarda la vista pero pierde la referencia y la posibilidad de editarse
+
 
 --- 
 
@@ -265,4 +268,10 @@ Para mayor detalle referir al manual
 
 
 ## Características Avanzadas
+
+### Como crear un material nuevo?
+
+### al abrir tekla no aparece en la pantalla
+MTA IT MAXIMIZAR
+
 

@@ -79,7 +79,7 @@ Luego en `Attributes/Label` se encuentra el lugar donde se puede editar el texto
 ![Attributes Label](../img/dibujo/Attributes%20Label.png)
 *Figura 8: Attributes-Label*
 
-Una vez dentro, por cada rengloón tendremos a la izquierda opciones parametrizadas de diferentes marcas para agregar según se requiera
+Una vez dentro, por cada renglón tendremos a la izquierda opciones parametrizadas de diferentes marcas para agregar según se requiera.
 
 ![A1](../img/dibujo/A1.png)
 *Figura 9: Edición de marcas en renglón `A1`*
@@ -120,7 +120,7 @@ Luego en `Appearance` ponemos la opción en `outline`(1) y podemos configurar el
 
 Se pueden crear vistas y detalles a partir de Area in model view o Entire model view. Para esto una vez dentro de la vista:
 
-1. Detail View:
+1. ### Detail View:
 i. Asegurarse estar dentro de la vista donde se desee hacer el detalle
 ii. Hacer click en el botón `Detail view`.
 iii. Hacer click en el punto central del lugar donde se desea hacer el detalle.
@@ -133,7 +133,23 @@ vi. Por último para asignarle un lugar a la vista detalle se clickea en el luga
 ![detail view](../img/dibujo/detail%20view.gif)
 *Figura 14: Ejemplo de creación de una "Detail view"*
 
-2. Section view
+Las propiedades de esta vista se dividen en tres: View label, Detail boundary y Detail mark
+
+- View label: Como su nombre lo dice, representa el texto que va a colocarse en la vista que se creo en base al circulo del detalle, suele usarse solo el renglón A1 y la parte de Symbol de abajo no se usa en ninguno de los casos.
+![View label](../img/dibujo/View%20label.png)
+*Figura 15: Propiedades View label*
+
+
+- Detail boundary: Representa el circulo que determina la ubicación del detalle, puede usarse otra forma geometrica (aunque no es recomendable) o cambiar el color.
+![Detail boundary](../img/dibujo/Detail%20boundary.png)
+*Figura 16: Propiedades Detail boundary*
+
+- Detail mark: Como su nombre lo indica es la marca que acompaña al "Detail Boundary", suele ser "DETALLE X" y unicamente suele usarse el A1.
+![Detail mark](../img/dibujo/Detail%20mark.png)
+*Figura 17: Propiedades Detail mark*
+
+
+2. ### Section view:
 i. Asegurarse estar dentro de la vista donde se desee hacer la sección.
 ii. Hacer click en el botón `Section view`.
 iii. Se deberá hacer dos clicks que definirán el sentido de la vista, y en su defecto de la flecha
@@ -145,6 +161,20 @@ v. Se hace un último click para definir la ubicación del dibujo de la sección
 ![Section view](../img/dibujo/Section%20view.gif)
 *Figura 15: Ejemplo de creación de una "Section view"*
 
+Las propiedades de esta vista se dividen en tres: Cutting line, Section mark y View.
+
+- Cutting line: Representa la morfología de las flechas de la marca.
+![Cutting line](../img/dibujo/Cutting%20line.png)
+*Figura 18: Propiedades Cutting line*
+
+- Section mark: Representa el texto que acompaña a la "Cutting line".
+![Section mark](../img/dibujo/Section%20mark.png)
+*Figura 19: Propiedades Section mark*
+
+- View label: Como su nombre lo dice, representa el texto que va a colocarse en la vista que se creo en base al circulo del detalle, suele usarse solo el renglón A1 y la parte de Symbol de abajo no se usa en ninguno de los casos.
+![View label section](../img/dibujo/View%20label%20section.png)
+*Figura 20: Propiedades View label*
+
 ### Otro modelo de TEKLA
 
 Se pueden copiar las vistas de un `GAdrawing` a otro, siguiendo estos pasos:
@@ -153,10 +183,10 @@ Se pueden copiar las vistas de un `GAdrawing` a otro, siguiendo estos pasos:
 3. Aparecerán todas las vistas del dibujo como un bloque, si se quiere una en particular se pueden borrar las demás, ya que en el drawing original seguirán los dibujos intactos.
 
 ![copiar H2](../img/dibujo/copiar%20H2.png)
-*Figura 16: hoja 2 con los dibujos a copiar*
+*Figura 21: hoja 2 con los dibujos a copiar*
 
 ![copiar eh h1](../img/dibujo/copiar%20eh%20h1.gif)
-*Figura 17: ejemplo copiar hoja 2 en la hoja 1*
+*Figura 22: ejemplo copiar hoja 2 en la hoja 1*
 
 
 

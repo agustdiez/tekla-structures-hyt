@@ -172,7 +172,7 @@ Son elementos horizontales o inclinados que transmiten cargas por flexión.
 
 
 ![DESCRIPCION BEAM ACERO](../img/acero/DESCRIPCION_BEAM_ACERO.png)
-*Figura 3: Atributos Beam Acero*
+*Figura 4: Atributos Beam Acero*
 
 **Atributos importantes:**
 | Atributo | Descripción | Valor Ejemplo |
@@ -187,8 +187,8 @@ Son elementos horizontales o inclinados que transmiten cargas por flexión.
 | **Altura** | Altura del elemento |`3500` |
 
 
-- **1- Name**: Nombre del elemento, generalmente se suele definir antes del empezar el proyecto, como valor recomendado se puede definir "COLUMNA"
-- **2- Profile**: Perfil normalizado de la columna
+- **1- Name**: Nombre del elemento, generalmente se suele definir antes del empezar el proyecto, como valor recomendado se puede definir "VIGA"
+- **2- Profile**: Perfil normalizado de la viga
 - **3- Material**: Material del elemento, dependen de la base de datos de materiales, suele ser F24
 - **4- Class**: Color del elemento, generalmente se suele definir antes del empezar el proyecto, como valor recomendado se puede definir "1", puede variar.
 - **5- Position** : Posición de la parte, puede modificarse en vertical/rotación/horizontal/superior.
@@ -196,7 +196,7 @@ Son elementos horizontales o inclinados que transmiten cargas por flexión.
 - **7- Largo**: Largo de la parte, se edita desde el elemento.
 
 ![PROCEDIMIENTO BEAM](../img/acero/PROCEDIMIENTO_BEAM_ACERO.gif)
-*Figura 3.5: Como crear una Beam*
+*Figura 4.5: Como crear una Beam*
 
 ### Plate
 
@@ -213,30 +213,39 @@ Son elementos laminares planos que sirven para la creación de complementos a la
 - **Lofted plate**: Crea una placa alabeada al seleccionar dos objetos de construcción o puntos.
 
 ![PLATE ATRIBUTOS](../img/acero/DESCRIPCIÓN_PLATE_ACERO.png)
+*Figura 5: Atributos plates acero*
 
 
+**Atributos importantes:**
+| Atributo | Descripción | Valor Ejemplo |
+|----------|-------------|---------------|
+| **Name** | Identificador del elemento | `VIGA` |
+| **Profile** | Perfil de la columna | `PL100 ` |
+| **Material** | Material del elemento | `F24` |
+| **Class** | Clase del elemento  | `1` |
+| **Position** | Posición de la parte | - |
+| **IFC export** | Atributos de exportación  | - |
+| **UDAS** | Atributos definidos por el usuario |- |
+| **Largo** | Altura del elemento |`3500` |
 
-
+- **1- Name**: Nombre del elemento, generalmente se suele definir antes del empezar el proyecto, como valor recomendado se puede definir "PLACA/GRATING"
+- **2- Profile**: Espesor normalizado de la placa, se puede definir con el prefijo `PL`+ espesor `150`: `PL150`, crea una placa de espesor 150mm
+- **3- Material**: Material del elemento, dependen de la base de datos de materiales, suele ser F24
+- **4- Class**: Color del elemento, generalmente se suele definir antes del empezar el proyecto, como valor recomendado se puede definir "1", puede variar.
+- **5- Position** : Posición de la parte, puede modificarse en vertical/rotación/horizontal/superior.
+- **6- IFC export / UDAS**: Atributos y configuraciones de la exportación a IFC. Atributos tanto definidos por el usuario como los "userfield" estas filas tienen varios usos, tanto como la numeración, o especificaciones, estas filas pueden usarse para tablas, reportes, cuadros.
+- **7- Largo**: Largo de la placa, se edita desde el elemento.
 
 ![PROCEDIMIENTO PLATE](../img/acero/PROCEDIMIENTO_PLATE_ACERO.gif)
-
-
-
-
-
-
-
-
+*Figura 5.5: Como crear una plate*
 
 
 ### Bolt
 
-Describir para qué sirve y como se modela a nivel propiedaees. Va a componentes de forma automatica
-
-### Weld
-
-Describir para qué sirve y como se modela a nivel propiedaees. Va a componentes de forma automatica
-
+Los bulones son elementos de fijación cilíndricos que se utilizan para unir piezas trasmitir cargas de elementos.
+Generalmente se suele usar los [componentes](./conexiones.md)
+![PROCEDIMIENTO BOLT](../img/acero/PROCEDIMIENTO_BOLT_ACERO.gif)
+*Figura 6.5: Como crear un bolt*
 
 ---
 
@@ -288,7 +297,6 @@ Las soldaduras siempre deberán hacerse a través de componentes, pero es necesa
 >Las soldaduras se indican de acuerdo con [AWS (American Welding Society)](https://en.wikipedia.org/wiki/American_Welding_Society).
 
 
-
 ![Soldaduras](../img/acero/soldaduras.png)
 *Figura 1: Pestaña soladduras del programa*
 
@@ -302,6 +310,12 @@ Respecto a la simbología a indicar en (1) y (2), se indican a continuación las
 El cateto de soldadura se indicará donde la misma esté expresamente calculada. Caso contrario, existirá una nota en el plano que defina de manera genérica su espesor.
 
 Cualquier otro detalle deberá entenderse como una solución particular que deberá ser concensuada con ingeniería.
+
+{: .important}
+> La soldadura suele hacerse en la ID a la hora de confeccionar un plano en el [modo dibujo](../dibujo/marcas_simbolos_notas.md) también pueden hacerse en el modelo. 
+
+![PROCEDIMIENTO WELD](../img/acero/PROCEDIMIENTO_WELD_ACERO.gif)
+*Figura 7: Como crear una weld (modelo)*
 
 
 ### Chapas de nudo
@@ -368,14 +382,15 @@ Se deberá definir con ingeniería:
 
 El grating se modela con elementos de placa. Se deberá seleccionar el material de acuerdo con los siguientes. 
 
+1. `REJILLA 3050 - 25x25`
+2. `REJILLA 3050 - 32x2`
+3. `REJILLA 3050 - 32x4.5`
+4. `REJILLA 3050 - 38x3`
+5. `REJILLA 3050 - 38x4.5`
 
-
-En caso de requerir una rejilla que se aparte de lo indicado, se deberá crear el material, asignarle su densidad para el espesor buscado.
+En caso de requerir una rejilla que se aparte de lo indicado, se deberá [crear el material](../faq/faq.md#como-crear-un-material-nuevo), asignarle su densidad para el espesor buscado.
 
 A fines de validar que esté modelada correctamente, las placas creadas como Grating y asignadas al material adecuado deberán pintarse de verde con el filtro de representación.
-
-
-
 
 
 [← Volver al inicio](index.md)
