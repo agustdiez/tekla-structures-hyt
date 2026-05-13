@@ -6,7 +6,7 @@ nav_order: 2
 has_toc: true
 ---
 
-# Configuración inicial
+# Diseño de armaduras
 {: .no_toc }
 
 ## Tabla de Contenidos
@@ -16,7 +16,7 @@ has_toc: true
 {:toc}
 ---
 ## Tipos de armadura
-Tekla permite modelar armaduras, siendo estas elementos cilindricos lineales, la forma esta definida por el "rebar shape catalog". Actualmente se encuentran disponibles 4 catalogos dependiendo de la calidad y tipo de acero. Estos catalogos definen el tamaño de la barra:
+Tekla permite modelar armaduras, siendo estas elementos cilindricos lineales, la forma esta definida por el "rebar shape catalog". Actualmente se encuentran disponibles 4 catalogos dependiendo de la calidad y tipo de acero. Estos catalogos definen el tamaño de la barra, geometría de ganchos, etc.:
 
 - ADN-420
 - AL-220
@@ -58,8 +58,8 @@ Modelar armadura por grupo de barras permite diseñar la forma de la armadura y 
 *Figura 4: Separación*
 
 5. **Retoque de propiedades**: Por ultimo, se pueden modificar propiedades especificas, o que quedan en segundo plano a la hora de dibujar la armadura. 
-    1. Hooks: pueden ser editados tanto al principio como al final de la armadura. Se recomienda empezar con alguna de las opciones por defecto ya que establecen el radio de doblado permitido por el tamaño y calidad de la barra. Si se quiere editar el largo del gancho, o cambiar el angulo, se recomienda editarlo con la opcion "Custom Hook"
-    2. Cover thickness: Permite modificar el recubrimiento de la armadura, tanto en plano como en largo. 
+    1. `Hooks`: pueden ser editados tanto al principio como al final de la armadura. Se recomienda empezar con alguna de las opciones por defecto ya que establecen el radio de doblado permitido por el tamaño y calidad de la barra. Si se quiere editar el largo del gancho, o cambiar el angulo, se recomienda editarlo con la opcion "Custom Hook"
+    2. `Cover thickness`: Permite modificar el recubrimiento de la armadura, tanto en plano como en largo. 
 
 ![ARMADURA_HOOKS](../img/hormigon/ARMADURA_HOOKS.gif)
 *Figura 5:  Hooks*
@@ -92,14 +92,14 @@ Cuando se modela un elemento que contiene varias partes de H° y las mismas cont
 ![UNIDAD DE COLADA ARMADURA EN PARTES](../img/hormigon/ARMADURA_COLADA2.png)
 *Figura 10: Armadura en parte, fases de colada 1*
 ### Propiedades de la unidad de colada
-Las unidades de colada, tienen propiedades, es recomendable **no** usar `PRECAST`, ya que a la hora de sacar el reporte saldrá con errores. Tambien, seleccionando la unidad de colada, se podrá modificar, el nombre, numeración y modificar los atributos definidos por el usuario. 
+Las unidades de colada, tienen propiedades, **no** usar `PRECAST`, ya que a la hora de sacar el reporte saldrá con errores. Tambien, seleccionando la unidad de colada, se podrá modificar, el nombre, numeración y modificar los atributos definidos por el usuario. 
 
 ![PROPIEDADES UNIDAD DE COLADA](../img/hormigon/ARMADURA_COLADA_2.gif)
 *Figura 11: Unidad de colada propiedades*
 
 ## Numeración
 
-La numeración es el proceso mediante el cual Tekla asigna identificadores únicos a las piezas, ensamblajes y elementos del modelo, basándose en sus propiedades geométricas, materiales y atributos, con el fin de generar planos, listas y fabricación sin inconsistencias.
+La numeración es el proceso mediante el cual Tekla asigna identificadores únicos a las piezas, ensamblajes y elementos del modelo, basándose en sus propiedades geométricas, materiales y atributos, con el fin de generar planos y listados sin inconsistencias.
 
 ### Como enumerar:
 
@@ -118,6 +118,10 @@ La numeración es el proceso mediante el cual Tekla asigna identificadores únic
 3. Seleccionar en el apartado de "Perform numbering" la opción de `Number series of selected objets` esta, ennumerará **solo** la armadura del objeto seleccionado
 ![ENUMERACIÓN](../img/hormigon/ARMADURA_ENUMERACIÓN.gif)
 *Figura 13: Enumeración de armaduras de una parte*
+
+Luego, validar los prefijos y sufijos dados a cada unidad de colada utilizando los *Inquiry* disponibles para unidades de colada.
+
+(imagen Mati de query)
 
 ## Planilla de doblado de aceros (PDH)
 
@@ -163,7 +167,9 @@ Una planilla de doblado de hierros es Un documento técnico que detalla, de form
 *Figura 15: Bloques del 1 a 6*
 7. En caso de sacar múltiples planillas de doblado en la misma sesión, ir pisando el archivo PLANTILLA_BASE.xlsx y el informe que saca el TEKLA (borrar a mano archivo de requerirse) y correr bloques 3 a 6 nuevamente. El bloque 2 no debe ejecutarse más veces.
 
-
+{: .important}
+> Actualmente no se tiene integrado la PDH con un rótulo y atributos dentro del programa, por la dificultad aparejada de que los mismos se dividen por documento.
+> En consecuencia, cada cliente nuevo o desvío respecto de los templates ya armados por cliente implicará la creación de un nuevo formato dentro del Colab.
 
 ## Longitud de anclaje
 

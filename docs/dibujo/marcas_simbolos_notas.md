@@ -22,15 +22,25 @@ Los usos más frecuentes de este tipo de marca es en perfiles metálicos y en ar
 Para colocarla en el dibujo hay que seguir los siguientes pasos:
 
 1. Seleccionar el objeto al que se colocará la marca
-2. Hacer click en `part mark`.
+2. Hacer click en `Part mark`.
 3. Editar las propiedades.
-4. Seleccionar `modify`.
+4. Seleccionar `Modify`.
 
 ![ejemplo part mark](../img/dibujo/ejemplo%20part%20mark.gif)
 *Figura 1: Ejemplo "Part mark"*
 
-#### Propiedades de la marca
+#### Propiedades:
 
+![Part mark content](../img/dibujo/Part%20mark%20content.png)
+- Dentro del apartado de `content` en (1) seleccionamos lo que queremos que se vea en nuestra marca (en la imagen está puesto "Profile" por ejemplo).
+- En (2) está el panel que controla lo que entra, lo que sale, y el orden como se muestran las marcas. Se pone `add` para agregar marcas desde (1) y `remove` para quitarlas desde (3), luego `Move up/down` para darle un orden linealmente en el renglón.
+- En (3) vemos todas las marcas que hay en el renglón, siendo lo más arriba lo que está mas a la izquierda.
+- En (4) está el panel de edición de las marcas, seleccionando la marca en (3) se puede agregar recuadros, cambiar colores, tamaño de texto, etc.
+
+![Part mark general](../img/dibujo/Part%20mark%20general.png)
+- Dentro del apartado de `General` en (1) podemos asignarle un recuadro alrededor de la marca y modificar el color de esta.
+- En (2) podemos asignarle una flecha que permita mover el texto a diferentes lugares del dibujo sin perder la referencia de lo que se quiere mostrar, pudiendose modificar el tipo de flecha aquí y el color dependerá de (2).
+- En (3) se modifica la posición del texto, aunque se suele modificar con el cursor manualmente.
 
 
 ### Weld Mark
@@ -40,6 +50,44 @@ Los pasos para hacer una marca de soldadura son:
 3. Mover el cursor hacia donde estará ubicada la nota de la soldadura y hacer click.
 
 #### Propiedades:
+
+![content mark weld](../img/dibujo/content%20mark%20weld.png)
+*Figura x: Configuración en "Content"*
+- En el apartado de "Content" encontramos estos diferentes parámetros en (1) y (2):
+
+| Atributo | Descripción | 
+|----------|-------------|
+| **Prefix** | Permite agregar un texto antes del valor de la soldadura. | 
+| **Size** | Tamaño de la soldadura (cateto). | 
+| **Type** | Determina el tipo de soldadura. |
+| **Angle** | Ángulo de la preparación, biseles o ranura de soldadura. |
+| **Contour** | Contorno de tipo de relleno de una soldadura. |
+| **Finish** | G: Amolar ;  M: Mecanizar; C: Cepillar ; ![soldadura nivelada](../img/dibujo/soldadura%20nivelada.png) Soldadura de acabado nivelado ; ![soldadura transición uniforme](../img/dibujo/soldadura%20transición%20uniforme.png) Cara soldadura transición uniforme.
+| **Lenght** | Define el valor de longitud que se muestra en la marca de soldadura.  |
+| **Pitch** | Espacio entre las partes soldadas. |
+| **Effective throat** | Tamaño de soldadura utilizado en el cálculo de fuerza de soldadura. |
+| **Root opening** | Altura de la parte más estrecha dentro de la separación de bordes. |
+| **Reference text** | Se agrega en caso de necesitar escribir alguna aclaración. |
+| **Edge/Around** | Se define si la soldadura es solo en el borde o alrededor. |
+| **Workshop/Site** | Se define si se suelda en taller o en obra. |
+| **Stitch weld** | Soldadura intermitente escalonada. |
+
+>En los tipos de soldadura compuestas se permitirá introducir dos valores de tamaño.
+
+![Apariencia weld mark](../img/dibujo/Apariencia%20weld%20mark.png)
+*Figura x: Configuración en "Appeareance"*
+
+- En (1) se configura el color de la marca, y en (2) se configura el color y la morfología de la flecha.
+
+![alt text](image-1.png)
+*Figura x: Ejemplo de "Weld Mark" en el panel de propiedades*
+
+![alt text](image.png)
+*Figura x: Ejemplo de "Weld Mark" en el dibujo*
+
+![Ejemplo marca soldadura](../img/dibujo/Ejemplo%20marca%20soldadura.png)
+*Figura x: Ejemplo de "Weld Marks"*
+
 
 
 
@@ -128,7 +176,7 @@ Para realizar las tres primeras se debe hacer lo siguiente:
 4. Ya habiendo aparecido el valor numérico, ubicar con el mouse en el sentido perpendicular a la cota el lugar en que esta se desea colocar. 
 5. Cuando esté colocada donde se desea, hacer click con el `botón central del mouse`.
 
->La cota "Free" ![cota free](../img/dibujo/cota%20free.png) funciona de la misma manera que las ortogonales, pudiendo ser paralelas a cualquier elemento que se desee. Puede funcionar como la horizontal o vertical.
+>La cota "Free" ![cota free](../img/dibujo/cota%20free.png) funciona de la misma manera que las ortogonales, pudiendo ser paralela a cualquier elemento que se desee. Puede funcionar como la horizontal o vertical.
 
 ![ejemplo cotas](../img/dibujo/ejemplo%20cotas.gif)
 *Figura 2: Ejemplo cota horizontal*
@@ -144,7 +192,7 @@ Para realizar la cota angular se deben seguir los siguientes pasos:
 ![cota angular](../img/dibujo/cota%20angular.gif)
 
 Por último, los pasos para una cota curva son los siguientes:
-1. Seleccionar la cota curva con lineas de referencia radiales ![cota curva logo](../img/dibujo/cota%20curva%20logo.png). Hay otra opción con lineas de referencia ortogonales pero no la solemos usar.
+1. Seleccionar la cota curva con lineas de referencia radiales ![cota curva logo](../img/dibujo/cota%20curva%20logo.png). Hay otra opción con lineas de referencia ortogonales pero no la solemos usar
 2. Seleccionar el primer punto del radio interior de la curva a acotar.
 3. Seleccionar el punto medio de la curva interior y el punto final.
 4. Luego sobre la curva exterior seleccionar los puntos donde se desea realizar las cotas.
@@ -155,9 +203,9 @@ Por último, los pasos para una cota curva son los siguientes:
 
 1. Seleccionar `Note`.
 2. Hacer click en el lugar al que va a hacer referencia la nota.
-3. hacer otro click donde se va a colocar el texto.
+3. Hacer otro click donde se va a colocar el texto.
 
-### Propiedades
+### Propiedades:
 
 ![propiedades notas](../img/dibujo/propiedades%20notas.png)
 

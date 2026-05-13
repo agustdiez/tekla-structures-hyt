@@ -41,10 +41,41 @@ En el modelado de acero, la pestaña `Profile` se refiere al perfil de la parte 
 - UPN
 - IPN
 - IPE
-- CPN
 - HEA
 - HEB
 - Angulos: L B x B x T* 
+
+### Chapas
+
+Las chapas son los elementos de acero planos, a modelarse como `Plate` como se describe más adelante. Lo importante es saber que los espesores de chapa no son arbitrarios y se basan en espesores comerciales. Se presentan a continuación: 
+
+<table>
+  <thead>
+    <tr><th>Pulgadas</th><th>Milímetros</th></tr>
+  </thead>
+  <tbody>
+    <tr style="background-color:#ffcccc"><td>1/16"</td><td>1,59</td></tr>
+    <tr style="background-color:#ffcccc"><td>3/32"</td><td>2,38</td></tr>
+    <tr style="background-color:#ffcccc"><td>1/8"</td><td>3,17</td></tr>
+    <tr><td>3/16"</td><td>4,76</td></tr>
+    <tr><td>1/4"</td><td>6,35</td></tr>
+    <tr><td>5/16"</td><td>7,94</td></tr>
+    <tr><td>3/8"</td><td>9,53</td></tr>
+    <tr><td>1/2"</td><td>12,70</td></tr>
+    <tr><td>5/8"</td><td>15,88</td></tr>
+    <tr><td>3/4"</td><td>19,05</td></tr>
+    <tr><td>7/8"</td><td>22,23</td></tr>
+    <tr><td>1"</td><td>25,40</td></tr>
+    <tr><td>1-1/4"</td><td>31,75</td></tr>
+    <tr><td>1-1/2"</td><td>38,10</td></tr>
+    <tr><td>2"</td><td>50,80</td></tr>
+  </tbody>
+</table>
+
+Las filas señaladas en rojo se corresponde con espesores no utilizados en aceros tipo F24 o A36 y no debrán ser utilizados para chapas o perfiles.
+
+{: .important}
+>Los espesores a adoptar para los elementos `Plate` como se describen más adelante deben ser consistentes con los "mm" indicados en la tabla.
 
 ### Atributos a modelar:
 
@@ -351,12 +382,19 @@ Al modelar siempre se debe optar por tener la distancia mínima entre bulones. S
 
 (*) $t$ se corresponde con el mínimo espesor de la chapa de unión.
 
+{: .highlight}
+> En aplicaciones de los proyectos de Oil&Gas y para los tamaños de perfiles que se manejan, recordar principalmente lo siguiente:
+> - 60mm para separar bulones de 3/4''. 30mm a borde
+> - 75mm para separar bulones de 1''. 40mm a borde
+
+
+
 
 #### Otras distancias a tener en cuenta
 
 Las uniones en general se darán con encuentros con perfiles, placas base o lugares comprometidos. Se debe asegurar en cualquier unión lugar disponible para poder asegurar que se hará un ajuste firme de estos con una llave.
 
-Dichas distancias se visualizan en el modelo 3D en el proceso, pero se deja de referencia la imagen debajo:
+Dichas distancias se visualizan en el modelo 3D en el proceso, pero tener en cuenta cumplir con las distancias descriptas debajo para ajustes con llave. La segunda imagen se corresponde a distancias usadas con ajuste con herramienta:
 
 ![distancias_perfiles](../img/acero/distancias.png)
 *Figura 4: Distancias en perfiles*
@@ -375,8 +413,10 @@ Se deberá definir con ingeniería:
 - Necesidad o no de rigidizadores
 - Presencia de chapas cuadradas (tipo arandela) a soldar en campo para 2° etapa.
 
+Siempre partir de alguno de las configuraciones prediseñadas en apartado [Diseño de anclajes](../hormigon/elementos.md#diseño-de-anclajes)
+
 {: .important}
->La calidad de los anclajes deberá ser según ASTM F1554 Gr.36 o Gr.55 según corresponda para practicamente cualquier placa base a desarrollar.
+>La calidad de los anclajes deberá ser según ASTM F1554 Gr.36 o Gr.55 según corresponda.
 
 ### Grating
 
@@ -390,7 +430,7 @@ El grating se modela con elementos de placa. Se deberá seleccionar el material 
 
 En caso de requerir una rejilla que se aparte de lo indicado, se deberá [crear el material](../faq/faq.md#como-crear-un-material-nuevo), asignarle su densidad para el espesor buscado.
 
-A fines de validar que esté modelada correctamente, las placas creadas como Grating y asignadas al material adecuado deberán pintarse de verde con el filtro de representación.
+A fines de validar que esté modelada correctamente, las placas creadas como Grating y asignadas al material adecuado deberán pintarse de verde con el filtro de representación de GRATING.
 
 
 [← Volver al inicio](index.md)

@@ -13,7 +13,7 @@ has_toc: true
 {:toc}
 
 
-# Configuración inicial
+# Modo dibujo - General
 {: .no_toc }
 
 Desde el model para crear un dibujo debe dirigirse al "Document Manager", y luego haciendo click en el apartado de "Create GA drawing" se creará la hoja.
@@ -32,7 +32,7 @@ Dentro del panel de propiedades puede optarse por seleccionar propiedades pre-co
 
 También debe completarse los campos de Name; Title 1, Title 2; Title 3; si en el Template que se utiliza esos campos definen algún parámetro dentro del rótulo.
 
-### Views
+## Views
 
 Una de las primeras opciones es el apartado de "Views", donde puede configurarse en la celda de "Layout" (1), el template con el rótulo que se quiere utilizar (2), y definir el tamaño de hoja que se desea (3). También puede optarse por usar alguna pre-configuración de template+tamaño de hoja (4), que puede estar definida por cada proyecto.
 
@@ -79,7 +79,7 @@ Puede filtrarse para únicamente ver los dibujos (GA drawings)(3), los archivos 
 
 ![document manager](../img/dibujo/document%20manager.png)
 
-
+#### crear revision 
 
 descripción 
 
@@ -89,16 +89,7 @@ Ribbon
 
 *Figura 1: foto de prueba*
 
-| Atributo | Descripción | Valor Ejemplo |
-|----------|-------------|---------------|
-| **Name** | Identificador del elemento | `BA` |
-| **Profile** | Base y altura del elemento | `700*400` |
-| **Material** | Material del elemento | `H30` |
-| **Class** | Clase del elemento  | `8` |
-| **Position** | Desplazamiento del elemento  | `-100` |
-| **IFC export** | Config. de exportación | - |
-| **User field / UDAS** | Atributos del elementos  | - |
-| **Alto** | Alto del elemento |`400` |
+
 
 **negrita**
 

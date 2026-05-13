@@ -29,7 +29,7 @@ Se cubriran los siguientes aspectos para cada elemento:
 - Propiedades a completar
 - Buenas prácticas
 
-No es alcance de este instructivo mostrar cuestiones básicas del modelado de elementos si no brindar pautas de diseño y guiar en el proceso. Para pautas más básicas de modelado, referir a la [bibliografía](../index.md#documentación-oficial)
+No es alcance de este instructivo mostrar cuestiones básicas del modelado de elementos si no brindar pautas de diseño y guiar en el proceso. Para pautas más básicas de modelado, referir a la [Bibliografía](../index.md#documentación-oficial)
 
 ---
 
@@ -247,7 +247,7 @@ Va a depender de IB/ID, definiciones de proyecto, pero en caracter general y com
 - CLASS
 - PROFILE
 - MATERIAL
-- UDAs (_Atributos definidos por el usuario_): es responsabilidad del LEP indicar cuáles se precisan, de acuerdo al preset de propiedades creado, descripto en [Preset Propiedades](../proyecto_nuevo/preset_propiedades.md).
+- UDAs (_Atributos definidos por el usuario_): es responsabilidad del LEP indicar cuáles se precisan, de acuerdo al preset de propiedades creado, descripto en [Preset Propiedades](../proyecto_nuevo/uso_template.md#).
 
 
 #### Name
@@ -321,37 +321,34 @@ Los materiales disponibles para anclajes son los siguientes. Si se precisa otro,
 A través del nombre del anclaje se indicará ANCLAJE_1 o ANCLAJE_2 de acuerdo a si se trata de primera o segunda etapa.
 
 
-Para acelerar el análisis, utilizar el componente 1047 del TEKLA para modelar placas base, donde ya se encuentran varias configuraciones guardadas para distinto
+Para acelerar el análisis, utilizar el componente 1047 del TEKLA para modelar placas base, donde ya se encuentran varias configuraciones guardadas para distintas configuraciones.
 
 
 {: .important}
 > El largo por default de estas configuraciones será $12d_o$ para longitud embebida. La proyección siempre se considerará con doble tuerca. Ajustar de acuerdo a ingeniería en cada caso.
 
-mati, para las configuraciones vamos a dejar lo siguiente:
+Las configuraciones guardadas consideran lo siguiente:
+
 - Doble tuerca superior
 - Tuerca de nivelacion inferior
 - Espesor de PB igual al diámetro considerado
-- La proyección del anclaje (lo que sale del hormigon) será: Proyeccion = espesor grout + espesor PB + 3.0 X Diametros (redondeado a cm hacia arriba).
-- El grout será 25mm hasta 3/4''. De 1'' para arriba ponemos 30mm
-
-Los nombres de las configuraciones serán `HYT-200x200-6x15_1` y las haremos con el componente 1047. La idea del nombre es indicar tamaño, perfil asociado, y si es primera o segunda etapa. 
-
-Las filas no las tengo del todo definidas aún, pero en columnas saltaremos de 50 en 50 como está ahora
+- El grout será 25mm hasta 3/4''. De 1'' para arriba se considera 30mm para que entre la tuerca de nivelación
 
 
-| Perfil / Etapa | PB 200x200 | PB 250x250 | PB 300x300 | PB 350x350 | PB 400x400 |
-|:---------------|:----------:|:----------:|:----------:|:----------:|:----------:|
-| **W6x15 - 1°** | Config A1  | Config A2  | -          | -          | -          |
-| **W6x15 - 2°** | Config B1  | Config B2  | -          | -          | -          |
-| **UPN140 CAJON - 1°**| Config C1  | Config C2  | Config C3  | -          | -          |
-| **UPN140 CAJON - 2°**| Config D1  | Config D2  | Config D3  | -          | -          |
-| **W8 - 1°**    | Config E1  | Config E2  | Config E3  | Config E4  | -          |
-| **W8 - 2°**    | Config F1  | Config F2  | Config F3  | Config F4  | -          |
-| **W10 - 1°**   | -          | Config G2  | Config G3  | Config G4  | Config G5  |
-| **W10 - 2°**   | -          | Config H2  | Config H3  | Config H4  | Config H5  |
-| **W12 - 1°**   | -          | -          | Config I3  | Config I4  | Config I5  |
-| **W12 - 2°**   | -          | -          | Config J3  | Config J4  | Config J5  |
-| **W14 - 1°**   | -          | -          | -          | Config K4  | Config K5  |
+
+| Perfil | 200x200 | 250x250 | 300x300 | 350x350 | 400x400 | 450x450 |
+|:---|:---:|:---:|:---:|:---:|:---:|:---:|
+| **W6x15** | Articulada 1° | – | Empotrada 1° | Empotrada 2° | – | – |
+| **W8x18** | – | Articulada 1° | – | Empotrada 1° | Empotrada 2° | – |
+| **W8x31** | – | Articulada 1° + 2° | – | Empotrada 1° | Empotrada 2° | – |
+| **W10x45** | – | – | Articulada 1° | – | Empotrada 1° | Empotrada 2° |
+| **W12x50** | – | – | – | Articulada 1° | – | Empotrada 1° |
+| **W14x74** | – | – | – | – | Articulada 1° | Empotrada 1° |
+| **HEB160** | Articulada 1° | – | Empotrada 1° | Empotrada 2° | – | – |
+| **HEB200** | – | Articulada 1° | – | – | Empotrada 1° | Empotrada 2° |
+| **UPN140C** | – | Empotrada 1° (250x200) | Empotrada 2° (300x250) | – | – | – |
+| **UPN180C** | – | – | Empotrada 1° (300x250) | Empotrada 2° (350x300) | – | – |
+| **UPN220C** | – | – | – | – | Empotrada 1° (400x300) | Empotrada 2° (450x350) |
 
 
 
