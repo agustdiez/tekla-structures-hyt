@@ -6,6 +6,10 @@ nav_order: 2
 has_toc: true
 ---
 
+# Creación de vistas
+{: .no_toc }
+
+
 ## Tabla de Contenidos
 {: .no_toc .text-delta }
 

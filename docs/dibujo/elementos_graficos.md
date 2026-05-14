@@ -6,7 +6,7 @@ nav_order: 3
 has_toc: true
 ---
 
-# Configuración inicial
+# Elementos gráficos
 {: .no_toc }
 
 ## Tabla de Contenidos

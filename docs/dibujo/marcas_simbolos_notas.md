@@ -6,7 +6,7 @@ nav_order: 4
 has_toc: true
 ---
 
-# Configuración inicial
+# Marcas, símbolos y notas
 {: .no_toc }
 
 ## Tabla de Contenidos

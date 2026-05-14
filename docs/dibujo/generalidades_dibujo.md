@@ -6,6 +6,10 @@ nav_order: 1
 has_toc: true
 ---
 
+## Modo dibujo - General
+{: .no_toc .text-delta }
+
+
 ## Tabla de Contenidos
 {: .no_toc .text-delta }
 
@@ -13,8 +17,6 @@ has_toc: true
 {:toc}
 
 
-# Modo dibujo - General
-{: .no_toc }
 
 Desde el model para crear un dibujo debe dirigirse al "Document Manager", y luego haciendo click en el apartado de "Create GA drawing" se creará la hoja.
 
