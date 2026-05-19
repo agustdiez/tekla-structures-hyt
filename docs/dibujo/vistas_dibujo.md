@@ -44,8 +44,6 @@ Esta opción lo que permite es desde una vista, mostrar únicamente una parte qu
 ![Area in model view](../img/dibujo/Area%20in%20model%20view.gif)
 *Figura 3: Creación de vista con "Area in model view"*
 
-## Propiedades de la vista
-
 ### Mover vista
 
 Una vez que se haya creado la vista, desde la pestaña window se vuelve a la pestaña "G [x]" (siendo x el numero de hoja que se está haciendo el plano)

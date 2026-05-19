@@ -18,7 +18,7 @@ has_toc: true
 
 ## Introducción
 
-Estas verificaciones estan pensadas para el modelado de estructuras de acero en una ingenieria de detalle, en caso de estar en ingenieria básica se deben de omitir los pasos referidos al diseño de conexiones (Salvo en casos de IB especiales). Las mismas detallan un responsable dentro del proceso, siendo:
+Estas verificaciones estan pensadas para el modelado de estructuras de acero en una ingenieria de detalle, en caso de estar en ingenieria básica se deben de omitir los pasos referidos al diseño de conexiones (salvo en casos de IB especiales o donde se pretenda mostrar como se modularizan las piezas). Las mismas detallan un responsable dentro del proceso o quien debe proveer el dato de entrada, siendo:
 
 1. **LEP** (Lider de especialidad de proyecto) 
 2. **EJE** (Ejecutor)

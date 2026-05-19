@@ -45,6 +45,9 @@ En el modelado de acero, la pestaña `Profile` se refiere al perfil de la parte 
 - HEB
 - Angulos: L B x B x T* 
 
+
+PARA CADA FAMILIA ESPECIFICAR CON NOMENCLATURA EN TEKLA
+
 ### Chapas
 
 Las chapas son los elementos de acero planos, a modelarse como `Plate` como se describe más adelante. Lo importante es saber que los espesores de chapa no son arbitrarios y se basan en espesores comerciales. Se presentan a continuación: 

@@ -7,7 +7,7 @@ has_toc: true
 ---
 
 ## Modo dibujo - General
-{: .no_toc .text-delta }
+{: .no_toc }
 
 
 ## Tabla de Contenidos

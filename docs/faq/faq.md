@@ -178,6 +178,8 @@ para realizar mirar opción D900 (diametro) footing
 mta. ver modelo del proyecto rti26011, modelado del recinto
 
 
+### En la numeración aparece el valor `Z0(?)`
+
 ---
 ## Dibujos
 

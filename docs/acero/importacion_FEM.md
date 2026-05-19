@@ -19,21 +19,23 @@ has_toc: true
 
 `FEM = Finite Element Method`
 
-Por modelo de elementos finitos entendemos a métodos numéricos para resolver ecuaciones diferenciales sobre elementos simples con cierta condición de borde, llamados elementos finitos.
+Por modelo de elementos finitos entendemos a métodos numéricos para resolver ecuaciones diferenciales sobre elementos simples (barras, placas) con cierta condición de borde.
 
 A fines de este alcance, basta con entender a los FEM como aquellos modelos de barras que serán datos de entrada para el TEKLA y modelado de partes. Esto significará traer al TEKLA múltiples elementos de barra separados por nodos, con una determinada geometría.
 
 ## Opciones de importación
 
-El TEKLA presenta las siguientes opciones. Se indica en la foto debajo cada pestaña. **En la empresa, el STAAD Pro es el programa de modelación de elementos finitos que usaremos siempre**. No se cubren otros programas los cuales el TEKLA puede importar como puede ser el SAP 2000.
+El TEKLA presenta las siguientes opciones. Se indica en la foto debajo cada pestaña. **En la empresa, se utiliza principalmente el STAAD Pro**. No se cubren aquí otros programas los cuales el TEKLA puede importar como puede ser el SAP 2000.
 
 ## Importar desde STAAD
 
-Dividamos por roles las cuestiones a tener en cuenta, tanto para el ingeniero que realiza el FEM como para quien lo toma desde TEKLA.
+Se dan a continuación requisitos a tener en cuenta en ambos programas para importar los modelos
 
 ### Requisitos STAAD
 
-En versiones recientes de STAAD, se incorporan bases de datos adicionales al programa.**Se deben utilizar siemnpre las bases hoy llamadas LEGACY**, para lograr que al importar los perfiles se vean de acuerdo nombre.
+En versiones recientes de STAAD, se incorporan bases de datos adicionales al programa.
+
+**Se deben utilizar las bases hoy llamadas LEGACY**, para lograr que al importar los perfiles se vean de acuerdo con el nombre.
 
 ![BD_Standard](../img/acero/BD_STD.gif)
 _Figura 1: Base de datos Standard_
@@ -78,12 +80,14 @@ Para sintaxis del archivo ver el siguiente apartado.
 ![ConversionFIle](../img/acero/conversion_files.png)
 
 
->{: .higlight}
->Los archivos de conversión son archivos de texto simples que contienen el nombre de Tekla Structures en la primera columna y el nombre utilizado en el otro paquete de software en la segunda columna. Las columnas están separadas por un espacio. Todos los perfiles paramétricos deben ingresarse en el archivo de conversión de perfiles.
+
 
 ### Archivos de conversión
 
-Se deja a continuación los archivos definidos. En caso de requerir algún perfil que no esté en el listado, guardar el archivo sumándolo y dejarlo a nivel modelo para su lectura.
+{: .highlight}
+>Los archivos de conversión son archivos de texto simples que contienen el nombre de Tekla Structures en la primera columna y el nombre utilizado en el otro paquete de software en la segunda columna. Las columnas están separadas por un espacio. Todos los perfiles paramétricos deben ingresarse en el archivo de conversión de perfiles.
+
+Se deja a continuación los perfiles que están en el archivo de conversión. En caso de requerir algún perfil que no esté en el listado, guardar el archivo sumándolo y dejarlo a nivel modelo para su lectura.
 
 
 

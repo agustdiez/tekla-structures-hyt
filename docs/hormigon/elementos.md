@@ -238,6 +238,10 @@ Previo a usar unidades de colada, familiarizarse con las herramientas de selecci
 
 La unidad de colada es mandatoria para realizar reportes de armadura (planillas de doblado). Su creación, modificación y numeración se describe en el apartado del manual [Armaduras](./armaduras.md).
 
+Para verificar que la unidad de colada sea la correcta a la hora de numerar y trabajarla se debe de hacer una verificación con la herramienta `Inquire objets`.
+![Inquire](../img/hormigon/INQUIRE%20OBJETS.png)
+Al utilizar esta herramienta la misma brindará la información sobre la unidad de colada, su nombre, posición, etc. 
+
 
 ### Atributos a modelar
 

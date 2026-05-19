@@ -23,11 +23,24 @@ Si bien TEKLA permite de forma nativa plantear una conexión/unión con todas la
 
 Por lo tanto, el proceso consta en:
 
-1. Identificar componente que nos aproxime a lo que se desea resolver (por ej, una chapa de nudo de ciertas dimensiones).
-2. Encontrar el componente adecuado
+1. Identificar componente que nos aproxime a lo que se desea resolver (por ejemplo, una chapa de nudo de reticulado).
+2. Encontrar el componente adecuado. Muchas veces puede haber más de uno que resuelva el problema, y se diferencian principalmente en el grado de complejidad del detalle.
 3. Leer la documentación para entender cómo utilizar el componente.
 4. Setear todas las partes creadas por el componente de acuerdo con los estándares descriptos en [Perfiles](perfiles.md) a nivel materiales y atributos requeridos.
 5. Realizar modificaciones sobre los objetos como `Partes` en todo aquello donde el componente "no llega". Por ejemplo, si la chapa de nudo se precisa en otra dimensión arbitraria y no es posible setearse en el componente, deberá agrandarse la placa a mano.
+
+
+### Alternar entre selección de componentes y partes
+
+(foto del selector)
+
+Una vez modelado el componente con las partes involucradas, se deberá tener conocimiento del uso de selector entre `Parte` y `Componente`. Esto se hace a través del ribbon que se ve debajo.
+
+Los componentes si están correctamente modelados figurarán en verde, en amarillo si hay alguna advertencia (por ejemplo, no cumplir distancia a borde) y en rojo si directamente hay un error en el modelado.
+
+En caso de tener que refinar algo por fuera del alcance del componente, deberá pasarse al selector de `Parte` y modificar manualmente las partes involucradas.
+
+
 
 ---
 
@@ -77,7 +90,7 @@ En función de lo comentado en [Diseño de anclajes](../hormigon/elementos.md#di
 | ID | Componente | Descripción | Imagen | Referencia |
 |----|------------|-------------|--------|------------|
 | **10** | Corte 3D | Para recortar partes arbitrarias |![10](../img/acero/id_10.png) | |
-| **1003** | Rigidizadores en perfiles | Rigidizadores |![1003](../img/acero/id_1003.png) ![1003_1](id_1003_1.png) | Crea 1 o 2 rigidizadores, de ala a ala |
+| **1003** | Rigidizadores en perfiles | Rigidizadores |![1003](../img/acero/id_1003.png) ![1003_1](../img/acero/id_1003_1.png) | Crea 1 o 2 rigidizadores, de ala a ala |
 | **1024** | Barandas | Barandilla | ![1024](../img/acero/id_1024.png)| No permite mover verticalmente el guardapie |
 | **1034** | Rigidizadores genérico | Rigidizadores | ![1034](../img/acero/id_1034.png)| Permite crear varios rigidizadores con el mismo componente |
 | **1041** | Rigidizadores PG | Rigidizadores |![1041](../img/acero/id_1041.png) | |
