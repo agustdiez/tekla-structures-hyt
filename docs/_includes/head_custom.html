@@ -22,14 +22,26 @@
 
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.36.8/tocbot.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.36.8/tocbot.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.36.8/tocbot.min.js" defer></script>
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    // Solo si la página tiene headings suficientes
-    const content = document.querySelector('.main-content');
-    if (!content || content.querySelectorAll('h2, h3').length < 2) return;
+  window.addEventListener('load', function() {
+    console.log('tocbot disponible?', typeof tocbot);
     
-    // Inyectar el contenedor de la TOC
+    if (typeof tocbot === 'undefined') {
+      console.error('tocbot no se cargó');
+      return;
+    }
+    
+    const content = document.querySelector('.main-content');
+    if (!content) {
+      console.error('no se encontró .main-content');
+      return;
+    }
+    
+    const headings = content.querySelectorAll('h2, h3');
+    console.log('headings encontrados:', headings.length);
+    if (headings.length < 2) return;
+    
     const aside = document.createElement('aside');
     aside.className = 'toc-sidebar';
     aside.innerHTML = '<p class="toc-title">En esta página</p><div class="js-toc"></div>';
@@ -43,5 +55,7 @@
       headingsOffset: 60,
       scrollSmoothOffset: -60,
     });
+    
+    console.log('tocbot inicializado');
   });
 </script>
