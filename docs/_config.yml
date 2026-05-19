@@ -38,7 +38,7 @@ google_analytics: # Tu código GA si lo necesitas
 heading_anchors: true
 
 # Color scheme supports "light" (default) and "dark"
-color_scheme: nil  # nil permite que el usuario elija
+color_scheme: light  # nil permite que el usuario elija
 
 # Habilitar el selector de tema en el UI
 # Permite cambiar entre light/dark
