@@ -19,3 +19,29 @@
 </script>
 
 <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script"></script>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.36.8/tocbot.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.36.8/tocbot.min.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Solo si la página tiene headings suficientes
+    const content = document.querySelector('.main-content');
+    if (!content || content.querySelectorAll('h2, h3').length < 2) return;
+    
+    // Inyectar el contenedor de la TOC
+    const aside = document.createElement('aside');
+    aside.className = 'toc-sidebar';
+    aside.innerHTML = '<p class="toc-title">En esta página</p><div class="js-toc"></div>';
+    document.body.appendChild(aside);
+    
+    tocbot.init({
+      tocSelector: '.js-toc',
+      contentSelector: '.main-content',
+      headingSelector: 'h2, h3',
+      hasInnerContainers: true,
+      headingsOffset: 60,
+      scrollSmoothOffset: -60,
+    });
+  });
+</script>
