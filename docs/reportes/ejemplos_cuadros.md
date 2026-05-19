@@ -124,7 +124,6 @@ Sino se le pone filtro alguno tomará todas las "PARTE" de Hormigón y generará
 Ganchos Izaje AL-220
 Insertos AL-220
 
-
 1. En este caso pensaremos en tomar partes únicamente.
 2. Cada fila deberá estar atada por material y le haremos el formato.
 3. Como en este caso nos interesa obtener materiales totales, buscaremos combinar las filas de salida.
@@ -137,6 +136,18 @@ Previzualización:
 ## 3.1. En el Editor de Cuadros 
 
 Utilzaremos los siguientes atributos:
+> - CAST_UNIT.NUMBER
+> - VOLUME
+> - MATERIAL
+> - LENGHT
+> - SIZE
+> - NUMBER
+> - HEIGHT
+> - LENGTH
+> - WEIGHT_NET
+> - 
+> -
+
 
 
 

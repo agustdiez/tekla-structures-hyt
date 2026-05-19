@@ -79,10 +79,20 @@
 }
 
 .main-content table {
-  display: block;
-  overflow-x: auto;
+  display: table;        // volver a comportamiento normal
+  width: auto;
   max-width: 100%;
-  white-space: nowrap;
+  margin: 1.5rem 0;
+
+  th, td {
+    vertical-align: middle;
+    white-space: normal;
+  }
+}
+
+// Wrapper opcional para scroll si la tabla es muy ancha
+.main-content table {
+  overflow-x: auto;
 }
 
 .main-content table img {
@@ -92,4 +102,13 @@
   height: auto;
   margin: 0.5rem auto;
   object-fit: contain;
+}
+
+.main-content table img {
+  cursor: zoom-in;
+  transition: opacity 0.2s;
+
+  &:hover {
+    opacity: 0.85;
+  }
 }

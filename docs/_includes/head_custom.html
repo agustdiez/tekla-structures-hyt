@@ -59,3 +59,29 @@
     console.log('tocbot inicializado');
   });
 </script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+<script>
+  window.addEventListener('load', function() {
+    // Envolver cada imagen dentro de tablas con un <a> que apunte a sí misma
+    document.querySelectorAll('.main-content table img').forEach(function(img) {
+      // Evitar doble wrap si la imagen ya está dentro de un link
+      if (img.parentElement.tagName === 'A') return;
+
+      const link = document.createElement('a');
+      link.href = img.src;
+      link.className = 'glightbox';
+      link.setAttribute('data-gallery', 'tabla');
+      img.parentNode.insertBefore(link, img);
+      link.appendChild(img);
+    });
+
+    // Inicializar lightbox
+    GLightbox({
+      selector: '.glightbox',
+      touchNavigation: true,
+      loop: true,
+    });
+  });
+</script>
