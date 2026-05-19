@@ -69,3 +69,10 @@
 @media (max-width: 1400px) {
   .toc-sidebar { display: none; }
 }
+
+.main-content table {
+  display: block;
+  overflow-x: auto;
+  max-width: 100%;
+  white-space: nowrap;
+}
