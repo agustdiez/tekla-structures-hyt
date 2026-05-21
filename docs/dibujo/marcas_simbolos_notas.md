@@ -95,10 +95,10 @@ Los pasos para hacer una marca de soldadura son:
 
 {: .warning}
 >Las soldaduras más utilizadas en los proyectos dentro de la empresa tienen las siguientes características:
-    - La gran mayoria son soldaduras de filete, en las cuales no se suele indicar el cateto ya que el mismo termina siendo indicado por notas (salvo que expresamente haya sido calculado o lo queramos indicar).(`Size - Type`)
-    - Para placas base se suele indicar penetración parcial.
-    - La banderita indicando que se suelda en campo es usual en anclajes en 2° etapa (para arandelas cuadradas) o soportes menores.
-    - Si se suelda todo el perímetro, indicarlo con el círculo en el símbolo de soldadura (`Edge/Around`).
+>   - La gran mayoria son soldaduras de filete, en las cuales no se suele indicar el cateto ya que el mismo termina siendo indicado por notas (salvo que expresamente haya sido calculado o lo queramos indicar).(`Size - Type`)
+>   - Para placas base se suele indicar penetración parcial.
+>    - La banderita indicando que se suelda en campo es usual en anclajes en 2° etapa (para arandelas cuadradas) o soportes menores.
+>    - Si se suelda todo el perímetro, indicarlo con el círculo en el símbolo de soldadura (`Edge/Around`).
 
 ![Apariencia weld mark](../img/dibujo/Apariencia%20weld%20mark.png)
 *Figura 5: Configuración en "Appeareance"*
