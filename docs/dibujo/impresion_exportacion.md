@@ -15,5 +15,16 @@ has_toc: true
 1. TOC
 {:toc}
 
+## Print drawings (PDF)
+
+### Options
+
+### Line properties
+
+## Export drawings (.dwg)
+
+### Options
+
+### Layer rules
 
 [← Volver al inicio](index.md)

@@ -81,45 +81,30 @@ Puede filtrarse para únicamente ver los dibujos (GA drawings)(3), los archivos 
 
 ![document manager](../img/dibujo/document%20manager.png)
 
-#### crear revision 
+#### Crear revision 
 
 descripción 
 
-Ribbon 
+### Panel lateral
 
-!¨[gesdrgdg](../hormigon/elementos.md#objeto-y-alcance)
+#### Libreria 2d
 
-*Figura 1: foto de prueba*
+#### Instructor
 
+#### Drawing content manager
 
+#### Tekla online
 
-**negrita**
+#### Applications & components
 
-1. prtkjiewr
-    1. plokertype
-        1. r,elpkmye
+### Barra de herramientas inferior
 
-`all models` slt 96
+### Barra de estado
 
+### Menú (Panel lateral izquierdo)
 
-  {: .note}
->Suele ser la función mas utilizada para modelar cualquier fundación independientemente de la forma
+### Significado de simbolos en atributos de textos/notas...
 
-
-
-### Colocar un layout en el dibujo
-
-
-### Descripción generlaz del ribbon
----
-## Atributos del documento
-
-## Creacion de vistas
-
-Derivá a vistas_dibujo
-
-### DOCUMENT MANAGER
-
-dentro de model y modo dibujo
+### 
 
 [← Volver al inicio](index.md)

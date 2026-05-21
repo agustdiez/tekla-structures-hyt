@@ -33,12 +33,16 @@ Para colocarla en el dibujo hay que seguir los siguientes pasos:
 #### Propiedades:
 
 ![Part mark content](../img/dibujo/Part%20mark%20content.png)
+*Figura 2: Propiedades en `content`*
+
 - Dentro del apartado de `content` en (1) seleccionamos lo que queremos que se vea en nuestra marca (en la imagen está puesto "Profile" por ejemplo).
 - En (2) está el panel que controla lo que entra, lo que sale, y el orden como se muestran las marcas. Se pone `add` para agregar marcas desde (1) y `remove` para quitarlas desde (3), luego `Move up/down` para darle un orden linealmente en el renglón.
 - En (3) vemos todas las marcas que hay en el renglón, siendo lo más arriba lo que está mas a la izquierda.
 - En (4) está el panel de edición de las marcas, seleccionando la marca en (3) se puede agregar recuadros, cambiar colores, tamaño de texto, etc.
 
 ![Part mark general](../img/dibujo/Part%20mark%20general.png)
+*Figura 3: Propiedades en `General`*
+
 - Dentro del apartado de `General` en (1) podemos asignarle un recuadro alrededor de la marca y modificar el color de esta.
 - En (2) podemos asignarle una flecha que permita mover el texto a diferentes lugares del dibujo sin perder la referencia de lo que se quiere mostrar, pudiendose modificar el tipo de flecha aquí y el color dependerá de (2).
 - En (3) se modifica la posición del texto, aunque se suele modificar con el cursor manualmente.
@@ -47,12 +51,12 @@ Para colocarla en el dibujo hay que seguir los siguientes pasos:
 
 | Descripción marca | Contenido marca | Output |
 |-------------------|-----------------|--------|
-| Perfil metálico | <img src="../img/dibujo/P.M. PERFIL.png" width="400"> | ![P.M. PERFIL OUTPUT](../img/dibujo/P.M.%20PERFIL%20OUTPUT.png)|
-| Perfil metálico + símbolo | <img src="../img/dibujo/P.M. PERFIL + simbolo.png" width="400"> <img src="../img/dibujo/P.M. PERFIL + simbolo.png" width="400"> | ![P.M. PERFIL + simbolo OUTPUT](../img/dibujo/P.M.%20PERFIL%20+%20simbolo%20OUTPUT.png)
+| Perfil metálico |  ![P.M. PERFIL OUTPUT](../img/dibujo/P.M.%20PERFIL%20OUTPUT.png)| <img src="../img/dibujo/P.M. PERFIL.png" width="400">|
+| Perfil metálico + símbolo | <img src="../img/dibujo/P.M.%20PERFIL%20+%20simbolo%20OUTPUT.png" width="300">  |  <img src="../img/dibujo/P.M. PERFIL + simbolo.png" width="800">
 | Dimensión de pedestal + nombre | . |
 | Marca de anclaje | . |
 | Marca de armadura | . |
-| Marca de coordenada | .| 
+| Marca de coordenada | .|
 | Marca de texto | .  |
 
 >Tener en cuenta que estas marcas pueden realizarse tanto como una `Note` como con un `Text`.
@@ -66,7 +70,7 @@ Los pasos para hacer una marca de soldadura son:
 #### Propiedades:
 
 ![content mark weld](../img/dibujo/content%20mark%20weld.png)
-*Figura x: Configuración en "Content"*
+*Figura 4: Configuración en "Content"*
 - En el apartado de "Content" encontramos estos diferentes parámetros en (1) y (2):
 
 | Atributo | Descripción | 
@@ -95,18 +99,18 @@ Los pasos para hacer una marca de soldadura son:
     - Si se suelda todo el perímetro, indicarlo con el círculo en el símbolo de soldadura (`Edge/Around`).
 
 ![Apariencia weld mark](../img/dibujo/Apariencia%20weld%20mark.png)
-*Figura x: Configuración en "Appeareance"*
+*Figura 5: Configuración en "Appeareance"*
 
 - En (1) se configura el color de la marca, y en (2) se configura el color y la morfología de la flecha.
 
 ![weld mark trimble ref](../img/dibujo/weld%20mark%20trimble%20ref.png)
-*Figura x: Ejemplo de "Weld Mark" en el panel de propiedades*
+*Figura 6: Ejemplo de "Weld Mark" en el panel de propiedades*
 
 ![weld mark trimble ejemplo](../img/dibujo/weld%20mark%20trimble%20ejemplo.png)
-*Figura x: Ejemplo de "Weld Mark" en el dibujo*
+*Figura 7: Ejemplo de "Weld Mark" en el dibujo*
 
 ![Ejemplo marca soldadura](../img/dibujo/Ejemplo%20marca%20soldadura.png)
-*Figura x: Ejemplo de "Weld Marks"*
+*Figura 8: Ejemplo de "Weld Marks"*
 
 ### Level mark
 Los pasos para hacer una marca de nivel son:
@@ -115,18 +119,18 @@ Los pasos para hacer una marca de nivel son:
 3. Mover el cursor hacia donde estará ubicada la nota del nivel y hacer click.
 
 ![level mark](../img/dibujo/level%20mark.gif)
-*Figura 1: Ejemplo colocación de `Level mark`*
+*Figura 9: Ejemplo colocación de `Level mark`*
 
 #### Propiedades:
 
 ![Level mark general](../img/dibujo/Level%20mark%20general.png)
-*Figura x: Configuración en "General" del "Level Mark"*
+*Figura 10: Configuración en "General" del "Level Mark"*
 
 - En (1) dentro del apartado "General" se seleccionan todas las cosas que se desean mostrar, o no, en la marca de nivel, como por ejemplo el valor numérico, el signo "+" y algún texto como postfijo,etc.
 - En (2) se elije el formato del valor numérico que aparecerá en la marca, si es que en (1) se decidió colocar.
 
 ![Level mark apariencia](../img/dibujo/Level%20mark%20apariencia.png)
-*Figura x: Configuración en "Appearance" del "Level Mark"*
+*Figura 11: Configuración en "Appearance" del "Level Mark"*
 
 - En (1) dentro del apartado "Appearance" se configuran las características del texto en la marca, como puede ser el color o el tamaño.
 - En (2) se configura la apariencia de la flecha que marca el nivel, su morfología, colores, etc.
@@ -139,7 +143,7 @@ Los pasos para hacer una marca de nivel son:
 4. Mover el cursor hacia donde estará ubicada la nota de la soldadura y hacer click.
 
 ![section mark](../img/dibujo/section%20mark.gif)
-*Figura 2: Ejemplo colocación de `Section mark`*
+*Figura 12: Ejemplo colocación de `Section mark`*
 
 >Aclaración: Como fue mencionado en generalidades, la section mark no suele usarse, ya que la vista de sección ya incluye el simbolo.
 
@@ -154,6 +158,7 @@ Los pasos para hacer una marca de detalle son:
 4. Hacer click para definir la circunferencia, ubicar con el cursor donde se colocará la marca del detalle y hacer click.
 
 ![Detail mark](../img/dibujo/Detail%20mark.gif)
+*Figura 13: Ejemplo colocación de `Detail mark`*
 
 #### Propiedades:
 Las propiedades son similares a las detalladas en [Detail View](../dibujo/vistas_dibujo.md/#detail-view), solo que en este caso el apartado de "View label" no tiene ninguna utilidad.
@@ -164,6 +169,7 @@ Las propiedades son similares a las detalladas en [Detail View](../dibujo/vistas
 2. Hacer click en el lugar donde se desea colocar la marca. Posteriormente editar las propiedades.
 
 ![Revisión mark](../img/dibujo/Revisión%20mark.gif)
+*Figura 14: Ejemplo colocación de `Revisión mark`*
 
 > Aclaración 1: Antes de colocar la Revisión Mark se recomienda completar los campos de revisión del drawing que se esté editando, así ciertas propiedades se completan automaticamente.
 > Aclaración 2: Pueden utilizarse simbolos para marcar las revisiones, aunque estos no tendrán configurados los parámetros de la revisión que uno le asigna.
@@ -171,13 +177,13 @@ Las propiedades son similares a las detalladas en [Detail View](../dibujo/vistas
 #### Propiedades:
 
 ![Marca revisión propiedades](../img/dibujo/Marca%20revisión%20propiedades.png)
-*Figura x: Propiedades de marcas de revisión.*
+*Figura 15: Propiedades de marcas de revisión.*
 
 - Dentro del apartado (1) se pueden guardar la configuración de la apariencia de marcas de revisión que se hayan hecho en otro momento, siendo útil ya que suelen ser siempre de la misma forma.
 - Una vez que en (1) se carguen las configuraciones de apariencia, en (2) se seleccionará el número de revisión al que se hará alución, de las revisiones cargadas previamente.
 
 ![Marca revisión apariencia](../img/dibujo/Marca%20revisión%20apariencia.png)
-*Figura x: Ejemplo de configuración de apariencia de marcas de revisión.*
+*Figura 16: Ejemplo de configuración de apariencia de marcas de revisión.*
 
 - Si fuera el caso que se desee editar la apariencia de la marca, como se ve en la Figura x, puede editarse la geometría, tamaño del texto, colores, etc.
 
@@ -194,7 +200,7 @@ Para realizar las tres primeras se debe hacer lo siguiente:
 >La cota "Free" ![cota free](../img/dibujo/cota%20free.png) funciona de la misma manera que las ortogonales, pudiendo ser paralela a cualquier elemento que se desee. Puede funcionar como la horizontal o vertical.
 
 ![ejemplo cotas](../img/dibujo/ejemplo%20cotas.gif)
-*Figura 2: Ejemplo cota horizontal*
+*Figura 17: Ejemplo cota horizontal*
 
 Para realizar la cota angular se deben seguir los siguientes pasos:
 
@@ -205,6 +211,7 @@ Para realizar la cota angular se deben seguir los siguientes pasos:
 5. Definir la ubicación con un último click. Suele suceder que la cota se mueve un poco del lugar que se asigna, pudiendose mover posteriormente con el click izquierdo del mouse hacia la ubicación deseada.
 
 ![cota angular](../img/dibujo/cota%20angular.gif)
+*Figura 18: Ejemplo cota angular*
 
 Por último, los pasos para una cota curva son los siguientes:
 1. Seleccionar la cota curva con lineas de referencia radiales ![cota curva logo](../img/dibujo/cota%20curva%20logo.png). Hay otra opción con lineas de referencia ortogonales pero no la solemos usar
@@ -219,7 +226,7 @@ Por último, los pasos para una cota curva son los siguientes:
 ### Propiedades
 
 ![Propiedades general de cota](../img/dibujo/Propiedades%20general%20de%20cota.png)
-*Figura x: Propiedades general de cota*
+*Figura 19: Propiedades general de cota*
 
 - Dentro de `General`, en (1) se podrá modificar la disposición de el texto de las cotas según se desee.
 - En (2) podremos editar el formato de dichos textos, las unidades, la precisión, los decimales, etc.
@@ -227,13 +234,13 @@ Por último, los pasos para una cota curva son los siguientes:
 - En (4) tendremos nuestras propiedades de cotas guardadas, siendo que en la empresa utilizamos `HY-COTA`.
 
 ![Propiedades appeareance de cota](../img/dibujo/Propiedades%20appeareance%20de%20cota.png)
-*Figura x: Propiedades appeareance de cota*
+*Figura 20: Propiedades appeareance de cota*
 
 - Dentro de `Appearance`, en (1) podremos modificar la apariencia del texto, la ubicación, el color, el tamaño, etc.
 - En (2) podremos modificar la linea de cota, el tipo de flecha, el color y las medidas, ya que hay veces que las medidas por default de las cotas son muy grandes para dimensionar ciertos elementos.
 
 ![Propiedades marks de cota](../img/dibujo/Propiedades%20marks%20de%20cota.png)
-*Figura x: Propiedades marks de cota*
+*Figura 21: Propiedades marks de cota*
 
 - Dentro de `Marks`, en (1) podremos decidir que se ve y que no en el texto de la cota, si queremos que aparezca o no el valor numérico, o agregarle un prefijo/postfijo. A continuación se muestra un ejemplo, donde había que referenciar un tipo de soporte, y se uso un postfijo "(B,C)".
 ![ejemplo postfijo cota](../img/dibujo/ejemplo%20postfijo%20cota.png)
@@ -244,7 +251,7 @@ Por último, los pasos para una cota curva son los siguientes:
 ![exagerar cota](../img/dibujo/exagerar%20cota.png)
 
 ![Propiedades tags de cota](../img/dibujo/Propiedades%20tags%20de%20cota.png)
-*Figura x: Propiedades tags de cota*
+*Figura 22: Propiedades tags de cota*
 
 - Dentro de `Tags`, en (1) podremos agregar textos por fuera de el lugar donde se encuentre el valor numérico/postfijo/prefijo. Esos tags podrán contar con las propiedades de cualquier Note/Text/Part mark como simbolos, perfiles, coordenadas, etc, por lo que es una herramienta muy versátil si se quisiera aclarar algo.
 
@@ -258,15 +265,19 @@ Por último, los pasos para una cota curva son los siguientes:
 3. Hacer otro click donde se va a colocar el texto.
 
 ![poner nota ejemplo](../img/dibujo/poner%20nota%20ejemplo.gif)
+*Figura 23: Ejemplo colocar `Note`*
 
 ### Propiedades:
 
 ![propiedades notas](../img/dibujo/propiedades%20notas.png)
+*Figura 24:  Configuración en "Content"*
 
 - En (1) seleccionamos lo que queremos que se vea en nuestra nota.
 - En (2) está el panel que controla lo que entra, lo que sale, y el orden como se muestran las marcas. Se pone `add` para agregar marcas desde (1) y `remove` para quitarlas desde (3), luego `Move up/down` para darle un orden linealmente en el renglón.
 - En (3) vemos todas las marcas que hay en el renglón, siendo lo más arriba lo que está mas a la izquierda.
 - En (4) está el panel de edición de las marcas, seleccionando la marca en (3) se puede agregar recuadros, cambiar colores, tamaño de texto, etc.
+
+Luego en General podemos configurar lo relacionado a la apariencia de la nota.
 
 ## Textos
 Como texto pueden colocarse dos tipos diferentes, `Text` y `Rich text`.
@@ -278,12 +289,12 @@ Como texto pueden colocarse dos tipos diferentes, `Text` y `Rich text`.
 Se coloca haciendo click en `Text` y seleccionando el lugar donde se desea colocar.
 
 ![colocar texto](../img/dibujo/colocar%20texto.gif)
-*Figura x: Colocación de texto*
+*Figura 25: Colocación de texto*
 
 > Si el texto que se quiere colocar está pensado para tener una flecha referenciando algún lugar, es conveniente que se coloque en el lugar donde irá la punta de la flecha, y posteriormente al configurarlo, mover el texto hacia el lugar que se desee.
 
 ![propiedades de texto](../img/dibujo/propiedades%20de%20texto.png)
-*Figura x: propiedades de texto*
+*Figura 26: propiedades de texto*
 
 - En (1) podemos editar todo lo relacionado al texto en sí, lo que se quiere incluir, el tamaño, colores, alineación, etc.
 - En (2) podemos configurar el entorno de ese texto, como flechas, recuadros y el color de estos.
@@ -292,10 +303,10 @@ Se coloca haciendo click en `Text` y seleccionando el lugar donde se desea coloc
 > Tip 2: El texto al modificarse en base a otro porque se quieren adoptar las mismas propiedades, puede que pierda el formato (2), por lo que hay que tener en consideración la edición posterior de este parámetro. Con el método del tip 1 no pasa esto.
 
 ![ejemplo copiar pegar texto](../img/dibujo/ejemplo%20copiar%20pegar%20texto.gif)
-*Figura x: Ejemplo Tip 1*
+*Figura 27: Ejemplo Tip 1*
 
 ![ejemplo no frame](../img/dibujo/ejemplo%20no%20frame.gif)
-*Figura x: Ejemplo Tip 2*
+*Figura 28: Ejemplo Tip 2*
 
 ### Rich text
 
@@ -309,11 +320,11 @@ Pasos para colocar el texto:
 
 
 ![ejemplo texto enriquecido](../img/dibujo/ejemplo%20texto%20enriquecido.gif)
-*Figura x: Ejemplo `Rich text`*`
+*Figura 29: Ejemplo `Rich text`*`
 
 >Aclaración: La altura de los textos se adoptan de los parámetros del archivo de texto importado, pero puede escalarse según se necesite desde este programa, aunque es recomendable editar el tamaño desde el archivo original.
 
-## Simbolos
+## [Simbolos](../index.md#documentación-oficial)
 1. Para colocar símbolos seleccionamos `Symbol`.
 2. Seleccionamos el lugar donde se va a colocar.
 3. Se colocará por defecto un simbolo cualquiera, se debe ingresar a las propiedades desde ese simbolo y modificarlo según se desee.
@@ -321,7 +332,7 @@ Pasos para colocar el texto:
 ### Propiedades
 
 ![Propiedades simbolos](../img/dibujo/Propiedades%20simbolos.png)
-*Figura x: Selección de simbolos*
+*Figura 30: Selección de simbolos*
 
 - Dentro de (1) podremos seleccionar en `File` el archivo del cual se van a tomar los diferentes simbolos que podremos agregar haciendo click en `Select...`. Los archivos que aparezcan para seleccionar, de extensión ".sym" y que contienen los simbolos, estarán dentro de `custom firm/symbols`, pudiendo editarse dentro del programa "Editor simbolos" incluído con la descarga del programa.
 
@@ -330,14 +341,14 @@ Pasos para colocar el texto:
 - En (2) podremos configurar, clickeando en `Place`, que nuestro simbolo mantenga la ubicación que le asignamos en el dibujo. Para esto hay que asegurarnos que se encuentre en `fixed` y no en `free`.
 
 ![Simbolos home appearance](../img/dibujo/Simbolos%20home%20appearance.png)
-*Figura x: Apariencia de simbolos*
+*Figura 31: Apariencia de simbolos*
 
 - En appearance tendremos la posibilidad en (1) de modificar el color y las dimensiones del simbolo, aunque si viene de un archivo ".dwg" no podrán hacerse modificaciones del color, ya que respetará los que vienen de dicho archivo. En (2) se podrá agregar un marco a nuestro simbolo si así lo quisieramos.
 
 ### Editor de símbolos
 
 ![Editor de simbolos](../img/dibujo/Editor%20de%20simbolos.png)
-*Figura x: Propiedades editor de simbolos*
+*Figura 32: Propiedades editor de simbolos*
 
 - Dentro del editor de simbolos en "Home" encontraremos las herramientas de dibujo para crear nuestros simbolos (1). Podremos dibujar en (6) siguiendo el grillado provisto por el programa. Este grillado se puede configurar en (4) según la separación que se desee, además de poder agregar una imagen de fondo o dibujar "hatchs" o grillas, entre otras cosas.
 - En (2) podremos copiar, pegar, eliminar, diferentes simbolos creados en el programa, pero no podremos copiar estos simbolos entre diferentes archivos ".sym"
@@ -346,13 +357,14 @@ Pasos para colocar el texto:
 - En (7) podremos importar dibujos de autocad que pasarán a ser simbolos dentro de nuestro archivo.
 
 ![Simbolos import](../img/dibujo/Simbolos%20import.png)
-*Figura x: Panel de importación de archivos ".dwg"*
+*Figura 33: Panel de importación de archivos ".dwg"*
 
 - Dentro de "Import" nos dará la posibilidad en (1) de traer un archivo ".dwg" para transformalo en un simbolo.
 - En (2) podremos modificar la escala del dibujo y la ubicación del mismo.
 
 ![Ejemplo simbolo](../img/dibujo/Ejemplo%20simbolo.gif)
-*Figura x: Ejemplo de colocación de simbolo en base a un archivo ".dwg"*
+*Figura 34: Ejemplo de colocación de simbolo en base a un archivo ".dwg"*
+
 
 ## Detallar armadura
 
@@ -367,7 +379,7 @@ Cuando se tenga la vista con las barras, se podrá optar dentro de las propiedad
 - En (3) podremos elegir como se visualizará el extremo recto de la barra o el extremo curvo de esta.
 
 ![apariencia de barras](../img/dibujo/apariencia%20de%20barras.png)
-*Figura x: Propiedades de apariencia de barras*
+*Figura 35: Propiedades de apariencia de barras*
 
 - Dentro de `Appeareance`, en (1) podremos configurar el color de las lineas de las barras y el tipo de estas.
 - En (2), si hubiesemos elegido que se visualicen lineas ocultas, podremos asignarles el color y tipo de linea que deseemos.
@@ -390,6 +402,8 @@ Cuando se tenga la vista con las barras, se podrá optar dentro de las propiedad
 ### Marcas armadura
 Para detallar armadura podemos optar por hacerlo de dos formas diferentes, mediante un componente o con `Part mark`.
 
+> Aclaración: Antes de comenzar a hacer las marcas, es necesario realizar la numeración de la armadura y en lo posible tener la PDH para constatar que las posiciones de cada barra sea la correcta, y que no falte señalar a ninguna.
+
 #### Utilizando un componente
 El componente que se utiliza para la marca de armaduras en grupo de barras es el siguiente:
 ![componente armadura](../img/dibujo/componente%20armadura.png)
@@ -407,17 +421,43 @@ Para colocarlo se deben seguir los siguientes pasos:
 Para la configuración de la marca, podremos modificar los siguientes parámetros:
 
 ![Geometria marca grupo de barras](../img/dibujo/Geometria%20marca%20grupo%20de%20barras.png)
+*Figura 36: Marca grupo de barras (Geometry)*
+
+- En (1) podremos asignar la orientación del texto de referencia del grupo de barras respecto a este.
+- En (2) podremos darle una inclinación a la linea que contiene la marca de las barras.
+- En (3) podremos asignar la ubicación del texto respecto al punto P2, que este es el punto verde a la derecha sobre la linea que contiene las marcas.
+- En (4) tenemos la posibilidad de editar los textos que aparecerán en las `Mark 1`, `Mark 2` y `Mark 3`, y estos estarán colocados como se ve en (1).
+- En (5) podremos guardar una configuración personalizada de la marca de la barra.
 
 ![mark 1 marca grupo de barras](../img/dibujo/mark%201%20marca%20grupo%20de%20barras.png)
+*Figura 37: Marca grupo de barras (Mark 1)*
+
+- En (1) podremos elegir que se desea mostrar en las marcas de armaduras, y debe estar la marca con "Create" en `yes` para que aparezcan estas. Las propiedades también deberán asignarse según algunas configuradas previamente, no podrá configurarse el texto desde aquí.
+- En (2) podremos agregar una marca antes o después de la `Mark 1`, esto asignandolo en el apartado de "Create". Luego se configura como cualquier marca.
 
 ![lines and symbols marca grupo de barras](../img/dibujo/lines%20and%20symbols%20marca%20grupo%20de%20barras.png)
+*Figura 38: Marca grupo de barras (Lines and symbol)* 
+
+- En (1) en `Distribution line` asignaremos el aspecto de las lineas que acompañan a la marca del lado exterior a las cotas, y en `Leader line` la linea que se encuentra dentro de las cotas.
+- En (2) podremos elegir si poner un simbolo en lugar de la cota derecha.
 
 ![Symbols on rebars marca grupo de barras](../img/dibujo/Symbols%20on%20rebars%20marca%20grupo%20de%20barras.png)
+*Figura 39: Marca grupo de barras (Symbols on rebars)*
 
+- En (1) podremos elegir si en las barras que aparezcan en el dibujo se les colocará una linea señalando a estas o si solo marcaremos el rango en el que se encuentran.
+- En (2) podremos configurar las lineas perpendiculares de la cota, si se coloca, su longitud, color, etc.
+- En (3) definiremos el lugar donde se encuentre el "P1" y la distancia que tendrá este con la proxima marca de una barra.
+
+![ejemplo planta marca grupo de barras](../img/dibujo/ejemplo%20planta%20marca%20grupo%20de%20barras.png)
+*Figura 40: Ejemplo de marca de grupo de barras en un plano*
 
 #### Utilizando `Part mark`
-Este se suele usar para barras individuales...
+Esta forma se suele usar para barras individuales, ya que no solemos utilizar un componente para estas. Esto no significa que no exista un componente que pueda realizar la marca. 
 
+La manera de realizarlo es análoga a la explicada en [Part mark](../dibujo/marcas_simbolos_notas.md#part-mark), solo que en este caso los atributos que contendrá la marca serán estos:
+
+![armadura part mark](../img/dibujo/armadura%20part%20mark.png)
+*Figura 41: Ejemplo Part mark en barra individual.
 
 
 [← Volver al inicio](index.md)

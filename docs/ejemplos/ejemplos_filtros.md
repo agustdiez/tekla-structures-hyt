@@ -6,7 +6,7 @@ nav_order: 3
 has_toc: true
 ---
 
-# Configuración inicial
+# Ejemplos Filtros
 {: .no_toc }
 
 ## Tabla de Contenidos
@@ -14,6 +14,16 @@ has_toc: true
 
 1. TOC
 {:toc}
+
+## Descripción de filtros
+
+Aca tenes que cubrir los 3 filtros, para qué sirven y como se aplican. Habla del atajo
+
+Los filtros definen grupos de objetos
+
+## Filtros de representacion
+
+
 
 
 [← Volver al inicio](index.md)

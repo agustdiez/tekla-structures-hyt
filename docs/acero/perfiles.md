@@ -91,26 +91,27 @@ Va a depender de IB/ID, definiciones de proyecto, pero en caracter general y com
 - UDAs (_Atributos definidos por el usuario_): es responsabilidad del LEP indicar cuáles se precisan, de acuerdo al preset de propiedades creado, descripto en [Preset Propiedades](../proyecto_nuevo/preset_propiedades.md).
 
 
-#### Name (MODIFICAR CON NOMBRES ACERO)
+#### Name
 
 Tabla de nombres
 
 | Elemento                      | Nomenclatura      |
 |:------------------------------|:------------------|
-| Sleeper                       | SL                |
-| Platea                        | PLATEA            |
-| Base Aislada                  | BA                |
-| Viga de Encadenado            | VE                |
-| Zapata Corrida                | ZC                |
-| Cabezal                       | CAB               |
-| Pilote                        | PIL               |
-| Hormigón de Limpieza          | HL                |
-| Grout                         | GROUT             |
-| Columna de H°A                | COL               |
-| Viga de H°A                   | VIG               |
 | Placa Base/Chapa Embebida     | PB_<# Secuencial> |
 | Bulones de Anclaje 1° Etapa   | ANCLAJE_1         |
 | Bulones de Anclaje 2° Etapa   | ANCLAJE_2         |
+| Estructura metálica:          | M <TIPO ELEMENTO> |
+| COLUMNA                       | M_COLUMNA         |
+| VIGA                          | M_VIGA            |
+| ARRIOSTRAMIENTO               | M_ARRIOSTRAMIENTO |
+| PORTICO                       | M_PORTICO         |
+| Escalera típica               | _ESC              |
+| Plataforma típica             | _PLAT             |
+| Barandas                      | _BAR              |
+| Grating                       | _GRATING          |
+
+
+
 
 #### Clases (MODIFICAR CON NOMBRES ACERO)
 Hay 14 clases/colores definidos en tekla, esta sirve para discriminar elementos en Trimble Connect con colores. 

@@ -95,7 +95,7 @@ Una vez dentro, por cada renglón tendremos a la izquierda opciones parametrizad
 ![ejemplo scale](../img/dibujo/ejemplo%20scale.gif)
 *Figura 10: Ejemplo agregar marca "scale"*
 
-### Filter
+### [Filter](../ejemplos/ejemplos_filtros.md)
 Se usan principalmente para excluir de la vista a distintos elementos de modelo. Puede filtrarse por nombre, material, perfil, etc. 
 
 ![FILTRO H15](../img/dibujo/FILTRO%20H15.gif)
@@ -117,6 +117,15 @@ Luego en `Appearance` ponemos la opción en `outline`(1) y podemos configurar el
 
 >Aclaración 1: El tiempo de carga de los modelos de referencia en la vista dependerá de la cantidad que haya de estos para cargar y cuanto contenido haya dentro de cada uno.
 >Aclaración 2: La visibilidad de los objetos estará supeditada a la profundidad a la que se haya modelado, y en la ubicación en que se encuentren, siendo que deberá ajustarse estos parámetros de la vista para que aparezcan en la solapa de visibilidad.
+
+### Archivo .ifc
+
+
+### Archivo .nwd
+
+
+### Archivo .dwg (CadWorx)
+
 
 ## Crear vista a partir de vista existente
 
@@ -190,10 +199,5 @@ Se pueden copiar las vistas de un `GAdrawing` a otro, siguiendo estos pasos:
 ![copiar eh h1](../img/dibujo/copiar%20eh%20h1.gif)
 *Figura 22: ejemplo copiar hoja 2 en la hoja 1*
 
-
-
-### Archivo .ifc
-### Archivo .nwd
-### Archivo .dwg (CadWorx)
 
 [← Volver al inicio](index.md)

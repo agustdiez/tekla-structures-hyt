@@ -180,6 +180,10 @@ mta. ver modelo del proyecto rti26011, modelado del recinto
 
 ### En la numeración aparece el valor `Z0(?)`
 
+
+### En el componente 1047 no aparecen mis bulones
+modif separación
+
 ---
 ## Dibujos
 

@@ -52,7 +52,7 @@ El cómo usar componente se describe con extenso detalle en el siguiente documen
 
 ### Placa base
 
-En función de lo comentado en [Diseño de anclajes](../hormigon/elementos.md#diseño-de-anclajes), se aconseja el uso del componente 1047 ya que viene con los anclajes correctamente modelado. Se presentan los otros con los que cuenta el programa en la siguiente tabla:
+En función de lo comentado en [Diseño de anclajes](../hormigon/elementos.md#diseño-de-anclajes), se aconseja el uso del **componente 1047** ya que viene con los anclajes correctamente modelado. Se presentan los otros con los que cuenta el programa en la siguiente tabla:
 
 | ID | Componente | Descripción | Imagen | Comentario |
 |----|------------|-------------|--------|------------|
@@ -95,6 +95,65 @@ En función de lo comentado en [Diseño de anclajes](../hormigon/elementos.md#di
 | **1034** | Rigidizadores genérico | Rigidizadores | ![1034](../img/acero/id_1034.png)| Permite crear varios rigidizadores con el mismo componente |
 | **1041** | Rigidizadores PG | Rigidizadores |![1041](../img/acero/id_1041.png) | |
 | **S86** | Componente personalizado | Montantes - Barandillas - Placas inferiores |![S86](../img/acero/id_s86.png) | Este componente utiliza otros 3 componentes: uno para los postes (S76), uno para el pasamanos y guardarodilla (S77) y otro para el guardapie (S75) |
+
+## Componente 1047
+El componente es utilizado para el diseño de placas base, se utiliza este componente porque permite generar rigidizadores, agregar taco de corte y generar uniones de placas base, abulonadas o con anclajes:
+
+(foto del selccionador)
+
+### Atributos a completar
+1. `Picture`: contiene el recorte de los rigidizadores  y su distancia a los bordes de la Placa Base.
+![Pestaña PROFILE](../img/acero/1047_PROFILE.png)
+*Figura 1: Pestaña profile del componente*
+
+2. `Parts`: Define las partes a modelar, como la placa base, los rigidizadores, el taco de corte. Y modificar atributso respecto a su tamaño, material, clase  y nombre. como comentario adicional, se puede completar la pestaña coment y finish.
+![Pestaña PARTS](../img/acero/1047_PARTS.png) 
+*Figura 2: Pestaña parts del componente*
+    1. `Plate`: Dimensiones de la placa base, espesor largo y ancho
+    2. `Stiffeners`: Dimensiones de los rigidizadores 
+    3. `Key profile`: Permite generar un taco de corte automatico, puede ponerse perfiles del catalogo de materiales. 
+    4. `Dimensiones`: Material y nombre y clase del los puntos 1  / 2  /  3
+
+3. Las pestañas `Parameters` y `General` no suelen utilizarse en este componente
+4. `Bolts`: permite la configuración de bulones
+![Pestaña BOLTS](../img/acero/1047_BOLTS.png)
+*Figura 3: Pestaña Bolts del componente*
+    1. `Bolts configuration`: permite la configuración de los bulones, tanto su tamaño como el standar del mismo
+    2. `Separación entre bulones`: Permite modificar la [separación entre bulones](../faq/faq.md#en-el-componente-1047-no-aparecen-mis-bulones) y su cantidad en ambos ejes de la PB.
+    3. `Separación a borde` Permite modificar la separación a borde de los bulones/anclajes a la placa base.
+
+5. `Stiffeners`: permite la configuración de rigidizadores, su posición y cantidad a visualizar. pueden separarse del las alas o almas del perfil estableciendo distancias en los recuadros blancos. 
+![Pestaña STIFFENERS](../img/acero/1047_STIFFENERS.png)
+*Figura 4: Pestaña Stiffeners del componente*
+El recuadro superior `Stiffeners positions`permite generar los rigidizadores que se indiquen con su numero de posición.
+
+6. `Anchor rods`: permite la configuración de anclajes
+
+![Pestaña ANCHOR RODS](../img/acero/1047_ANCHOR_RODS.png)
+*Figura 5: Pestaña Anchor rods del componente*
+    1. `Rod profile`: Permite elegir el perfil de anclaje, para anclajes se recomienda usar los perfiles metricos: 
+    ![ROD PROFILE](../img/acero/1047_ROD_PROFILE.png)
+    2. `Nut profile`: Perfil de la tuerca, se recomienda usar los siguientes perfiles:
+    ![WASHER PROFILE](../img/acero/1047_NUT_PROFILE.png)
+    3. `Washer profile`: Perfil de la arandela, 
+    ![WASHER PROFILE](../img/acero/1047_WASHER_PROFILE.png)
+    4. `Plate Washer`: Perfil cuadrado de la arandela, este se modifica agregando medidas a los campos que aparecen vacios por defecto. Se completa el largo ancho y espesor.
+    5. `Grout`: Se completa el espesor del mismo, se modifica según MC.
+    6. `Propiedades`: Material, nombre y clase de los puntos 1 al 5, para un correcto desarollo verificar nombres de [acero](../acero/perfiles.md#clases-modificar-con-nombres-acero) y de [hormigón](../hormigon/elementos.md#clases)
+    7. `Largo de anclaje`: Largo total del anclaje, se modifica según MC
+    8. `Proyección sobre placa`: Largo total de la proyección sobre la placa base, se modifica según MC.
+    9. `Creación de partes`: Modifica la creación de partes, se recomienda seleccionar `YES` a las partes que se crean según los puntos 1 a 5.
+
+7. Las pestañas `Analisis` y `Extra plates`  no solemos usarla en este componente
+
+
+
+
+
+
+
+
+
 
 
 [← Volver al inicio](index.md)
