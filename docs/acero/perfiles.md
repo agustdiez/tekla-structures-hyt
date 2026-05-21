@@ -111,9 +111,7 @@ Tabla de nombres
 | Grating                       | _GRATING          |
 
 
-
-
-#### Clases (MODIFICAR CON NOMBRES ACERO)
+#### Clases
 Hay 14 clases/colores definidos en tekla, esta sirve para discriminar elementos en Trimble Connect con colores. 
 
 ![CLASES POSIBLES](../img/hormigon/CLASES.png)
@@ -124,20 +122,18 @@ Por simplicidad, seguir lo siguiente:
 
 | Elemento                      | Nomenclatura      | Clase                               |
 |:------------------------------|:------------------|:----------------------------------- |
-| Sleeper                       | SL                |![CLASE](../img/hormigon/CLASE_8.png)|
-| Platea                        | PLATEA            |![CLASE](../img/hormigon/CLASE_8.png)|
-| Base Aislada                  | BA                |![CLASE](../img/hormigon/CLASE_8.png)|
-| Viga de Encadenado            | VE                |![CLASE](../img/hormigon/CLASE_6.png)|
-| Zapata Corrida                | ZC                |![CLASE](../img/hormigon/CLASE_8.png)|
-| Cabezal                       | CAB               |![CLASE](../img/hormigon/CLASE_8.png)|
-| Pilote                        | PIL               |![CLASE](../img/hormigon/CLASE_8.png)|
-| Hormigón de Limpieza          | HL                |![CLASE](../img/hormigon/CLASE_13.png)|
-| Grout                         | GROUT             |![CLASE](../img/hormigon/CLASE_5.png)|
-| Columna de H°A                | COL               |![CLASE](../img/hormigon/CLASE_8.png)|
-| Viga de H°A                   | VIG               |![CLASE](../img/hormigon/CLASE_8.png)|
-| Placa Base/Chapa Embebida     | PB_<# Secuencial> |![CLASE](../img/hormigon/CLASE_9.png)|
-| Bulones de Anclaje 1° Etapa   | ANCLAJE_1         |![CLASE](../img/hormigon/CLASE_2.png)|
-| Bulones de Anclaje 2° Etapa   | ANCLAJE_2         |![CLASE](../img/hormigon/CLASE_2.png)|
+| Placa Base/Chapa Embebida     | PB_<# Secuencial> |![CLASE](../img/hormigon/CLASE_4.png)|
+| Bulones de Anclaje 1° Etapa   | ANCLAJE_1         |![CLASE](../img/hormigon/CLASE_5.png)|
+| Bulones de Anclaje 2° Etapa   | ANCLAJE_2         |![CLASE](../img/hormigon/CLASE_5.png)|
+| COLUMNA                       | M_COLUMNA         |![CLASE](../img/hormigon/CLASE_7.png)|
+| VIGA                          | M_VIGA            |![CLASE](../img/hormigon/CLASE_3.png)|
+| ARRIOSTRAMIENTO               | M_ARRIOSTRAMIENTO |![CLASE](../img/hormigon/CLASE_6.png)|
+| PORTICO                       | M_PORTICO         |![CLASE](../img/hormigon/CLASE_7.png)|
+| Escalera típica               | _ES               |![CLASE](../img/hormigon/CLASE_1.png)|
+| Plataforma típica             | _PLAT             |![CLASE](../img/hormigon/CLASE_1.png)|
+| Barandas                      | _BAR              |![CLASE](../img/hormigon/CLASE_1.png)|
+| Grating                       | _GRATING          |![CLASE](../img/hormigon/CLASE_1.png)|
+
 
 ---
 ## Descripción de elementos

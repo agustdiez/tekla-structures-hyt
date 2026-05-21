@@ -92,7 +92,7 @@ En ROW están configurados todos los atributos correspondientes a cada fundació
 
 ![excel](..\img\hormigon\TABLA-COORD-01.png)
 
-## 2.2. En el Dibujo
+### En el Dibujo
 
 1. A nivel dibujo es importante que la Vista debe contener los objetos/partes a computar en el el Cuadro, en este caso son 9:
 
@@ -110,7 +110,7 @@ Quedando con la numeración correcta:
 
 ![dib05](..\img\hormigon\TABLA-COORD-DIB-05.png)
 
-### 2.3 Observacíon:
+### Observacíon:
 A nivel de "Edición de Cuadro" se puede generar un "filtro" para que, si hay más de un tipo de "fundaciones", el cuadro sólo tome la que estamos buscando. Ese filtro deberá realizarse en el "ROW".
 También se puede crear otras filas para que busque esas fundaciones y genere un listado mixto, con varios tipos de fundación.
 Sino se le pone filtro alguno tomará todas las "PARTE" de Hormigón y generará la Tabla. 
@@ -141,7 +141,7 @@ Previzualización cuadro "P-COMPUTO_HA-AC-.tpl":
 ![TABLA01](..\img\hormigon\TABLA-MAT.png)
 
 
-## 3.1. En el Editor de Cuadros 
+### En el Editor de Cuadros 
 
 1. Utilzaremos los siguientes atributos:
 - CAST_UNIT.NUMBER
@@ -171,7 +171,7 @@ Siendo su resultado esta línea/fila:
 3.2. En la misma fila se computa la Cantidad Unitaria,"ARMTOT", con el mismo procedimiento, pero sumando los pesos parciales: _Sum("PESO_6")+Sum("PESO_8")+Sum("PESO_10")+Sum("PESO_12")+Sum("PESO_16")+Sum("PESO_20")+Sum("PESO_25")_
 3.3. El otro campo de valor es "MATERIAL_4", se utiliza el atributo: "MATERIAL".
 
-## 3.2. En el Dibujo
+### En el Dibujo
 
 1. A nivel dibujo es importante que la Vista/S debe contener los objetos/partes a computar en el el Cuadro.
 
@@ -211,13 +211,15 @@ Previzualización cuadro "COORDS_PARTES MODELO.tpl":
 
 Hay una sola fila para generar el cuadro, dónde se utilizan todos los atributos del punto 1.
 
-3. Desarrolaremos algunos puntos principales:
+3. Desarrollaremos algunos puntos principales:
 3.1.El filtro de la fila será la siguiente:
 ![COORDMOD03](..\img\hormigon\TABLA-COORD-MOD-02.png)
 
-- 3.1.1 GetValue("MATERIAL_TYPE") == "STEEL": Buscará todas las partes que - sean "acero".
-- 3.1.2. GetValue("NAME") != "PLACA": Descarta las Placas, no aparecen.
-- 3.1.3. CopyField("CAMPO") != 1: Todos las filas donde el valor del Campo de Valor "CAMPO" sea 1 la fila no aparece.
+- 3.1.1 GetValue("MATERIAL_TYPE") == "STEEL": El argumento "==" es un "son igual", buscará todas las partes que sean "acero".
+- 3.1.2. GetValue("NAME") != "PLACA": El argumento "!=" es un "no igual" descarta las Placas, no aparecen.
+- 3.1.3. CopyField("CAMPO") != 1: Las filas donde el valor del Campo de Valor "CAMPO" sea 1 la fila no aparece.
+La unión entre cada argumento es "&&" que es un "y lógico", "ambas condiciones deben ser verdaderas".
+
 
 4. Los campos de valor INICIOX, INICIOY e INICIOZ, toman los atributos "START_X", "START_Y", "START_Z" respectivamente. Son las coordenadas de inicio de la pieza.
 
@@ -236,6 +238,10 @@ Hay una sola fila para generar el cuadro, dónde se utilizan todos los atributos
 
 9. La última fila, CANTIDAD TOTAL, suma todos los perfiles que están "fuera de línea" con la operación:Sum("NUM_2").
 Suma todas la cantidades de la columna "CANT" (Campo de Valor= "NUM_2", Atributo= "NUMBER").
+
+10. Dejo un cuadro con el resumen de atributos:
+![COORDMOD09](..\img\hormigon\TABLA-COORD-MOD-09.png)
+
 
 ### En la Vista - Modo Trabajo o Modelado - Selección Manual.
 
@@ -264,8 +270,20 @@ Suma todas la cantidades de la columna "CANT" (Campo de Valor= "NUM_2", Atributo
 
 ### En la Vista - Modo Trabajo o Modelado - Por propiedades de vista.
 
+En construcción...
+
+### En el Dibujo
+
+1. A nivel dibujo es importante que la Vista/S debe contener los objetos/partes a Auditar en el Cuadro.
+
+2. Es aconsejable ubicar este cuadro fuera del Área de Dibujo/Rótulo, funcionará como un Auditor de la Estructura Metálica. Se sugiere borrar este cuadro cuando se genere el archivo CAD o DWG.
+
+2. A medida que se van resolviendo las incongruencias de alineación de las piezas el cuadro irá disminuyendo su cantidad de filas hasta quedar sólo el encabezado y la cantidad total en "0"
+
+![COORDMOD08](..\img\hormigon\TABLA-COORD-MOD-08.png)
 
 
+[__Descarga Listado__]
 
 
 [← Volver al inicio](index.md)
