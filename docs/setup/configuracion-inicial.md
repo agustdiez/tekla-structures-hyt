@@ -123,11 +123,30 @@ C:\Users\<USUARIO>\AppData\Local\Trimble\Tekla Structures\2022.0\UserSettings
 {: .highlight}
 >Al pisar el archivo, todas las opciones avanzadas que son vistas por los miembros del equipo son las mismas, pudiendo acceder a las mismas bases de datos, reportes, templates, etc.
 
+## Instalación de extensiones
+
+En la empresa utilizamos de forma común ciertas extensiones del programa. Las extensiones se descargan de Tekla Warehouse, el portal que nuclea todos los desarrollos realizados por usuarios del programa. 
+
+Las extensiones vienen en formato `.tsep` y se instalan previo a iniciar el programa una vez que se ejecuta cada una siguiendo los pasos. 
+
+
+{: .note}
+>Para referir a consultas puntuales del uso de las extensiones, referir a la documentación
+
+| Nombre | Descripción | Enlace Warehouse |
+|---|---|---|
+| [*ExcelToDrawing*](../../ref/Extensiones/ExcelToDrawing_V1.7.tsep) | Inserta tablas de archivos Excel (.xls/.xlsx) directamente en planos de Tekla Structures. Requiere Microsoft Excel instalado. | [Tekla Warehouse](https://warehouse.tekla.com/#/search/results?search_e=ExcelToDrawing) |
+| [*NWDPlugin*](../../ref/Extensiones/NWDPlugin-1.19_x64.tsep) | Permite insertar archivos Navisworks (.nwd) como modelos de referencia en Tekla Structures (v2019+). | [Tekla Warehouse](https://warehouse.tekla.com/#/catalog/details/67ef20f4-d238-4949-8758-3332c1d2d183) |
+| [*ReferenceModelRefresher*](../../ref/Extensiones/ReferenceModelRefresher_1.0.tsep) | Actualiza (refresca) modelos de referencia vinculados en el modelo de Tekla sin necesidad de hacerlo manualmente uno a uno. | [Tekla Warehouse](https://warehouse.tekla.com/#/search/results?search_e=ReferenceModelRefresher) |
+| [*SelectSimilar*](../../ref/Extensiones/SelectSimilar_2.3.tsep) | Selecciona todos los objetos del modelo similares al objeto actualmente seleccionado, filtrando por atributos como nombre, perfil o longitud. | [Tekla Warehouse](https://warehouse.tekla.com/#/search/results?search_e=SelectSimilar) |
+
 ## Verificación
 
 Para verificar tener todo correctamente seteado, basta con abrir el programa en "New Model" y ya se deberán visualizar los templates de proyecto disponibles.
 
-Cualquier desvío o consulta particular, referir al [FAQ](../faq/faq.md) o al LEP del proyecto.
+Cualquier desvío o consulta particular, referir al [FAQ](../faq/faq.md) o al LEP del proyecto. 
+
+
 
 ## Próximos Pasos
 

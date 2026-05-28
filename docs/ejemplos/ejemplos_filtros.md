@@ -18,6 +18,9 @@ has_toc: true
 ## Descripción de filtros
 Vamos a explicar el uso de los filtros mediante un ejemplo, en este caso el filtro del "Grating". La idea de este filtro es visualizar dentro del model cuando un grating modelado no cumple con ciertos requerimientos comerciales. Por ende para esto crearemos dos filtros de selección.
 
+{: .important}
+> Este filtro es importante para quienes modelan, ya que el peso extraido de los elementos depende de que estén visualizando correctamente el grating que se modele.
+
 {: .warning}
 >Previamente se crearon los materiales con los dichos requerimientos comerciales para ser utilizados en el filtro, y estos se podrán visualizar en el [Material catalog](../generalidades/generalidades.md#material-catalog).
 

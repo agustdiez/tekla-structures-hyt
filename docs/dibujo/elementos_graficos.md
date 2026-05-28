@@ -19,10 +19,12 @@ has_toc: true
 Como elementos gráficos tenemos el uso de [tablas](../dibujo/elementos_graficos.md#tablas), [imagenes](../dibujo/elementos_graficos.md#imágenes) o [Xref - AutoCAD](../dibujo/elementos_graficos.md#xref---autocad).
 
 {: .note}
->Para el uso de estos elementos tener en cuenta que se debe crear una carpeta dentro del modelo (como puede ser "/imagenes", "/Excel", o generalizando "/Xref") y siempre eliminar la ruta de referencia al colocar cualquier archivo hasta dicha carpeta local.
+>Para el uso de estos elementos tener en cuenta que se debe crear una carpeta dentro del modelo (como puede ser `/imagenes`, `/Excel`, o generalizando `/Xref`) y siempre eliminar la ruta de referencia al colocar cualquier archivo hasta dicha carpeta local.
+>
+> **Esto es sumamente importante para que la referencia sea vista por alguien más del equipo si abre el modelo**
 
 ## Tablas
-Para crear una tabla dentro del dibujo se suelen usar dos métodos: Crearlas mediante el [editor de cuadros de Tekla Structures](../reportes/editor_cuadros.md) o utilizando **Excel + un Plugin**:
+Para crear una tabla dentro del dibujo se suelen usar dos métodos: Crearlas mediante el [editor de cuadros de Tekla Structures](../reportes/editor_cuadros.md) o utilizando **Excel + un Plugin**. Para biblioteca de referencias a instalar referir a [Extensiones](../setup/configuracion-inicial.md#instalación-de-extensiones):
 
 ### Excel + Plugin
 
@@ -34,14 +36,14 @@ El objetivo principal es que a partir de un archivo de excel, este se pueda impo
 
 ![Excel general properties](../img/dibujo/Excel%20general%20properties.png)
 
-- Dentro de las "General properties" la primer carpeta al lado del renglón de "Excel file" (2) permite abrir un archivo desde su ubicación en el ordenador, y la otra carpeta a la derecha (3) se utiliza para abrir un archivo una vez ya colocado el excel para editarlo si fuera necesario. 
-- Dentro de (4) se puede editar la escala, la alineación al colocarlo, y si está encima o debajo de la ubicación que le asignamos.
+- Dentro de las "General properties" la primer carpeta al lado del renglón de "Excel file" `(2)` permite abrir un archivo desde su ubicación en el ordenador, y la otra carpeta a la derecha `(3)` se utiliza para abrir un archivo una vez ya colocado el excel para editarlo si fuera necesario. 
+- Dentro de `(4)` se puede editar la escala, la alineación al colocarlo, y si está encima o debajo de la ubicación que le asignamos.
 
 ![Excel cell and text](../img/dibujo/Excel%20cell%20and%20text.png)
 
 
-- En "Cell and text properties" podemos seleccionar si deseamos que diferentes propiedades de la tabla en (1), sean las definidas en el excel o las definidas en este apartado (2). 
-- En (3) si se decide configurar el tamaño de los parámetros desde aquí se deberá colocar el valor que se desee.
+- En "Cell and text properties" podemos seleccionar si deseamos que diferentes propiedades de la tabla en `(1)`, sean las definidas en el excel o las definidas en este apartado `(2)`. 
+- En `(3)` si se decide configurar el tamaño de los parámetros desde aquí se deberá colocar el valor que se desee.
 
 Para importar una tabla hay que seguir los siguientes pasos:
 
@@ -61,15 +63,15 @@ Para colocar una imagen primero se debe tener en cuenta la configuración que se
 ![Propiedades de imagen](../img/dibujo/Propiedades%20de%20imagen.png)
 *Figura x: Propiedades de imagen*
 
-- Dentro de (1) en la parte de `Type`podemos elegir si la imagen se adaptará a un recuadro que nosotros asignemos (`Scale to fit`), o si los escalamos con valores XY a partir del tamaño de nuestra imagen (`XY`)
+- Dentro de `(1)` en la parte de `Type`podemos elegir si la imagen se adaptará a un recuadro que nosotros asignemos (`Scale to fit`), o si los escalamos con valores XY a partir del tamaño de nuestra imagen (`XY`)
 ![Tipo de imagen](../img/dibujo/Tipo%20de%20imagen.png)
 
 {: .note}
 >En el caso de `XY`solemos dejarlo en X:1.00 e Y:1.00 si la imagen viene con la medida que se desea.
 
-- Luego también dentro de (1)en `Frame` podemos asignarle o no un recuadro a la imagen, con un determinado color.
+- Luego también dentro de `(1)`en `Frame` podemos asignarle o no un recuadro a la imagen, con un determinado color.
 
-- (2): En `File` es de donde se toma la ruta de nuestra imagen.
+- `(2)`: En `File` es de donde se toma la ruta de nuestra imagen.
 
 Para colocar una imagen se siguen los siguientes pasos:
 
@@ -83,14 +85,16 @@ Para colocar una imagen se siguen los siguientes pasos:
 *Figura x: Ejemplo colocación de imagen*
 
 {: .warning}
-> Dentro de nuestro modelo es recomendable tener una carpeta llamada "Imágenes", para almacenar las imagenes que se utilicen en el dibujo. La idea de esto es que en cualquier imagen que coloquemos, la ruta sea absoluta para cualquier persona que abra nuestro modelo, por lo que esta deberá comenzar con `./Imágenes`.
+> Dentro de nuestro modelo es recomendable tener una carpeta llamada `/imagenes`, para almacenar las imagenes que se utilicen en el dibujo. La idea de esto es que en cualquier imagen que coloquemos, la ruta sea relativa para cualquier persona que abra nuestro modelo, por lo que esta deberá comenzar con `./imagenes`.
 
-## Xref - AutoCAD
+## xref - AutoCAD
 En el caso de un archivo ".dwg" las propiedades y la configuración funciona de la misma manera que en las [imagenes](../dibujo/elementos_graficos.md#imágenes).
 
 {: .warning}
-> - Tener en cuenta que esta importación toma todo el dibujo dentro del "model" de AutoCAD como una imagen, sin posibilidad de hacer modificaciones desde nuestro programa.
+> - Tener en cuenta que esta importación toma todo el dibujo dentro del `MODEL` de AutoCAD como una imagen, sin posibilidad de hacer modificaciones desde nuestro programa.
 > - Es recomendable que el archivo de origen de AutoCAD esté lo más "limpio" posible para evitar ralentizar la carga del archivo, pudiendo usarse el comando "purge" o cualquier herramienta útil para esto.
+
+Lo ideal con los `.dwg` es siempre post-procesarlos o dibujar exclusivamente lo necesario para el dibujo, para que al colocarlo en el dibujo no sature y pueda hacer inusable el programa.
 
 {: .note}
 > Cualquier cosa que se esté cargando como un dibujo menor es recomendable hacerlo desde el [editor de simbolos](../dibujo/marcas_simbolos_notas.md#editor-de-símbolos).
