@@ -32,7 +32,7 @@ Los cuadros enunciados a modo de ejemplo se encuentran para descargar al fin de 
 ---
 ## 2. Cuadro de coordenadas
 
->Se busca extraer una tabla de coordenadas y niveles de todas las fundaciones de un modelo, ordenándolas, en este caso, primero por Área de Ubicación y luego por Nombre de Fundación. Este Ejemplo se encuentra con el nombre de "SAC_COORDS_INY QUIM.tpl":
+>Se busca extraer una tabla de coordenadas y niveles de todas las fundaciones de un modelo, ordenándolas, en este caso, primero por Área de Ubicación y luego por Nombre de Fundación. Este Ejemplo se encuentra con el nombre de "SAC_COORDS_INY QUIM.tpl". Ver en Descargas ("SAC_COORDS_INY QUIM.tpl"):
 
 !["SAC_COORDS_INY QUIMICOS.tpl"](..\img\hormigon\TABLA-COORD.png)
 
@@ -54,7 +54,7 @@ Los "USERDEFINED.USER_FIELD_1/2/3" son configurados en el entorno modelo, y corr
 
 3. Entonces, debemos iterar por todas las PARTES con nombre "FUNDACIONES" y generando como salida las coordenadas en X e Y, niveles y campos de ususario de cada una.
 
-4. A su vez, debemos ordenar por tag a las distintas PARTES. Hacemos uso de los datos dentro de la fila por ese atributo (Ver apartado 2.3. Observación:)
+4. A su vez, debemos ordenar por tag a las distintas PARTES. Hacemos uso de los datos dentro de la fila por ese atributo (Ver apartado Observación:)
 
 ### En el Editor de Cuadros 
 
@@ -86,11 +86,12 @@ En ROW están configurados todos los atributos correspondientes a cada fundació
 
 7. El Pié de Página tiene la única "fórmula" que genera el conteo total de fundaciones, sumando todos los Campos de Valor "NUM_2", en definitiva suma todos los atributos "NUMBER" de cada fila. La "fórmula" es: Sum("NUM_2")
 
-8. Como el Tekla 2020 no puede generar el conteo por fila se adosa en el dibujo un Excel para numerar las filas, en este caso denominado ""numeración.xlsx". Ver apartado 4.3.
+8. Como el Tekla 2020 no puede generar el conteo por fila se adosa en el dibujo un Excel para numerar las filas, en este caso denominado ""numeración.xlsx". Ver apartado 4.3. y en zona de "Descargas".
 
-9. Les dejo una captura con un cuadro con las características principales de la Tabla:
+9. Les dejo una captura con un cuadro con las características principales de la Tabla. Ver en Descargas ("Cuadro Coordenada.xlsx"):
 
 ![excel](..\img\hormigon\TABLA-COORD-01.png)
+
 
 ### En el Dibujo
 
@@ -102,7 +103,7 @@ En ROW están configurados todos los atributos correspondientes a cada fundació
 
 ![dib02](..\img\hormigon\TABLA-COORD-DIB-02.png)
 
-3. Como decía en apartado "En el Editor de Cuadros" (3.8) el conteo de fila deberá ser actualizado en forma manual:
+3. Como decía en apartado "En el Editor de Cuadros" (3.8) el conteo de fila deberá ser actualizado en forma manual, excel (numeración.xlsx) Ver Zona de Descarga:
 
 ![dib03](..\img\hormigon\TABLA-COORD-DIB-03.png)
 
@@ -115,8 +116,14 @@ A nivel de "Edición de Cuadro" se puede generar un "filtro" para que, si hay m�
 También se puede crear otras filas para que busque esas fundaciones y genere un listado mixto, con varios tipos de fundación.
 Sino se le pone filtro alguno tomará todas las "PARTE" de Hormigón y generará la Tabla. 
 
+### Descargas
 
-[__Descarga coordenadas__]
+[__Descarga Excel "numeración.xlsx"__](../../ref/Cuadros/numeración.xlsx)
+
+[__Descarga Excel "CuadroCompMat.xlsx"__](../../ref/Cuadros/CuadroCompMat.xlsx)
+
+[__Descarga Cuadro "SAC_COORDS_INY QUIM"__](../../ref/Cuadros/SAC_COORDS_INY%20QUIM.tpl)
+
 
 
 ## 3. Listado de materiales
@@ -179,7 +186,7 @@ Siendo su resultado esta línea/fila:
 
 ## 4. Verificar coordenadas de modelado
 
->Las estructuras, sin importar si son de hormigón o acero siempre se ubican sobre un grillado o siguen ángulos rectos. Se busca armar un cuadro que valide que todas las partes no tengan errores casi imperceptibles en el modelado.
+>Las estructuras de acero siempre se ubican sobre un grillado o siguen ángulos rectos. Se busca armar un cuadro que valide que todas las partes no tengan errores casi imperceptibles en el modelado.
 
 1. Iteraremos sobre elementos tipo vigas o columnas en este caso.
 2. Para qué algo sea ortogonal, deberemos comparar coordenadas de inicio y de fin en 3D y que sigan la dirección de algún eje (es decir, que tengan igual coordenadas en X, Y o Z en inicio y fin).
@@ -189,7 +196,7 @@ Siendo su resultado esta línea/fila:
 2.4. Al final cuando da 1 esas filas no las necesito, puedo descartarlas, pero puede suceder que sean más largas que lo previsto, eso no lo contempla este cuadro. Cuando da 2 o 3  esa fila entrará en el resultado del cuadro.
 
 
-Previzualización cuadro "COORDS_PARTES MODELO.tpl":
+Previzualización cuadro "COORDS_PARTES MODELO.tpl" (Ver Descargas):
 
 ![COORDMOD01](..\img\hormigon\TABLA-COORD-MOD.png)
 
@@ -215,7 +222,7 @@ Hay una sola fila para generar el cuadro, dónde se utilizan todos los atributos
 3.1.El filtro de la fila será la siguiente:
 ![COORDMOD03](..\img\hormigon\TABLA-COORD-MOD-02.png)
 
-- 3.1.1 GetValue("MATERIAL_TYPE") == "STEEL": El argumento "==" es un "son igual", buscará todas las partes que sean "acero".
+- 3.1.1 GetValue("MATERIAL_TYPE") == "STEEL": El argumento "==" es un "son igual", buscará todas las partes que sean "acero". Si se quisiera usar en hormigón se debería eliminar esta fila.
 - 3.1.2. GetValue("NAME") != "PLACA": El argumento "!=" es un "no igual" descarta las Placas, no aparecen.
 - 3.1.3. CopyField("CAMPO") != 1: Las filas donde el valor del Campo de Valor "CAMPO" sea 1 la fila no aparece.
 La unión entre cada argumento es "&&" que es un "y lógico", "ambas condiciones deben ser verdaderas".
@@ -232,14 +239,14 @@ La unión entre cada argumento es "&&" que es un "y lógico", "ambas condiciones
  - En la a) genero el desvío en milimetros, sin signos ("fabs"), se realiza por cada dirección.
 - En el b) convierte ese dato en "1" y "0". La operación lógica "if" verifica que el resultado sea mayor a "0", si es verdadero pone "1", si es falso "0". De aquí sale la matriz (x,y,z) en "1" y "0"
 
-7. La columna conteo suma los valores x,y,z de "1" y "0", dando los resultados 1,2 y 3. Esto se materializa en el Campo de Valor denominado "CAMPO", es el que se utiliza en las condiciones de Fila (Apartado 3.3.1) para que las filas con valor 1 no salgan en el cuadro.
+7. La columna CONTEO suma (CopyField("X")+CopyField("Y")+CopyField("Z")) los valores X,Y,Z en "1" y "0", dando los resultados 1,2 y 3. Esto se materializa en el Campo de Valor denominado "CAMPO", es el que se utiliza en las condiciones de Fila (Apartado 3.3.1) para que las filas con valor 1 no salgan en el cuadro.
 
 8. La última fila "GUID" presenta el Globally Unique Identifier (Identificador Único Global), con el cual se puede identificar la pieza "fuera de línea". 
 
 9. La última fila, CANTIDAD TOTAL, suma todos los perfiles que están "fuera de línea" con la operación:Sum("NUM_2").
-Suma todas la cantidades de la columna "CANT" (Campo de Valor= "NUM_2", Atributo= "NUMBER").
+Suma todas la cantidades de la columna "CANT" (Campo de Valor= "NUM_2", Atributo= "NUMBER") de los perfiles que deben ser corregidos o sean visibles en la tabla.
 
-10. Dejo un cuadro con el resumen de atributos:
+10. Dejo una previsualización del cuadro con el resumen de Atributos y los Campos de Valor ("CuadroCompMat.xlsx", ver Descargas):
 ![COORDMOD09](..\img\hormigon\TABLA-COORD-MOD-09.png)
 
 
@@ -270,21 +277,199 @@ Suma todas la cantidades de la columna "CANT" (Campo de Valor= "NUM_2", Atributo
 
 ### En la Vista - Modo Trabajo o Modelado - Por propiedades de vista.
 
-En construcción...
+En proceso...
 
 ### En el Dibujo
 
 1. A nivel dibujo es importante que la Vista/S debe contener los objetos/partes a Auditar en el Cuadro.
 
-2. Es aconsejable ubicar este cuadro fuera del Área de Dibujo/Rótulo, funcionará como un Auditor de la Estructura Metálica. Se sugiere borrar este cuadro cuando se genere el archivo CAD o DWG.
+2. Es aconsejable ubicar este cuadro fuera del Área de Dibujo/Rótulo, funcionará como un Auditor de la Estructura Metálica. Se sugiere borrar este cuadro en el DWG que se genere, para evitar confusión con el Comitente.
 
-2. A medida que se van resolviendo las incongruencias de alineación de las piezas el cuadro irá disminuyendo su cantidad de filas hasta quedar sólo el encabezado y la cantidad total en "0"
+2. A medida que se van resolviendo las incongruencias de alineación de las piezas el cuadro irá disminuyendo su cantidad de filas hasta quedar sólo el encabezado y la cantidad total en "0", eso se hace en tiempo real.
 
 ![COORDMOD08](..\img\hormigon\TABLA-COORD-MOD-08.png)
 
+### Descargas
 
-[__Descarga Listado__]
 
+[__Descarga Listado en Excel "CuadroCompMat.xlsx"__](../../ref/Cuadros/CuadroCompMat.xlsx)
+
+[__Descarga Cuadro "COORDS_PARTES MODELO.tpl"__](../../ref/Cuadros/COORDS_PARTES%20MODELO.tpl)
+
+## 5. PDH para mallas de Acero tipo Sima.
+
+>Este cuadro es una variación del informe "HYT-PDH.tpl", dónde se logra materializar la información de las mallas en el detalle de formas de las armadura y en el resumen de armadura.
+
+1. Iteraremos sobre elementos tipo columnas, vigas, fundaciones, fustes, losas o muros de hormigón.
+2. El gráfico de armaduras y mallas será diferenciada, para describir los dos tipo de geometrías.
+3. Esta tabla está utilizada sobre un recinto (losa) con mallas, AM500, de dos tipos (Q335 Sup. y Q524 Inf.) y armaduras ADN420 para generar los caballetes, armadura de cordón y uniones entre malla superior e inferior.
+4. En la zona gráfica de armaduras se describirá los diámetros de doblado para la armadura ADN420.
+5. Se genera un informe para la armadura ADN420 Y AM500.
+
+Previsualización cuadro/pdf "P_HYT-PDH_PL_ADN420-MALLA.tpl" (Ver Descargas):
+![malla01](..\img\hormigon\TABLA-MALLA-01.png)
+
+### En el Editor de Cuadros 
+
+1. Utilzaremos los siguientes atributos:
+- CAST_UNIT_NAME
+- MODEL_TOTAL
+- REBAR_POS
+- SIZE
+- GRADE
+- NAME
+- PULLOUT
+- DIM_R_ALL
+- GROUP_POS
+- CATALOG_NAME
+- CUSTOM.MESH_LENGTH_NET
+- CUSTOM.MESH_WIDTH_NET
+- CUSTOM.MESH_SIZE_NET
+- AREA
+- NUMBER
+- SIZE
+- LENGTH
+
+2. La topología del cuadro se verá de la siguiente forma:
+![malla02](..\img\hormigon\TABLA-MALLA-02.png)
+2.1. La zona 1 genera todas las filas de las piezas de armadura ADN420.
+![malla03](..\img\hormigon\TABLA-MALLA-03.png)
+2.2. La 2 las mallas AM500.
+![malla04](..\img\hormigon\TABLA-MALLA-04.png)
+2.3. La 3 el Resumen de Cómputo de la armadura ADN420.
+![malla05](..\img\hormigon\TABLA-MALLA-05.png)
+2.4. La 4 el Resumen de Cómputo de las mallas AM500.
+![malla06](..\img\hormigon\TABLA-MALLA-06.png)
+
+3. La fila que busca los ADN420 tiene un condicionante, la condición instruye al programa a filtrar o seleccionar únicamente aquellos elementos que no tienen asignada la forma "A" (o cuyo nombre de forma es diferente a "A").
+![malla07](..\img\hormigon\TABLA-MALLA-07.png)
+Cómo es una fila que extraera datos de la Armadura ADN420 solamente, cada campo valor está asociado a un atributo en particular.
+Esta fila trabaja con Loongitudes de las Armaduras y sus cantidades, de acuerdo a su forma, de ahí su 
+ Ver Excel "Cuadro Mallas.xlsx".
+4. La fila de las mallas, material AM500, tiene también el mismo condicionante del párrafo 3. 
+![malla08](..\img\hormigon\TABLA-MALLA-08.png)
+Ver Excel "Cuadro Mallas.xlsx".
+
+5. El resumen de ADN420, calcula por tipo de diámetro la cantidad total de acero, una fila por cada tipo de diámetro, de ahí la cantidad de filas:
+![malla09](..\img\hormigon\TABLA-MALLA-09.png)
+Ver Excel "Cuadro Mallas.xlsx".
+
+6. El resumen de AM500, calcula por tipo de Malla la cantidad total de acero, una fila por cada tipo de Malla:
+![malla10](..\img\hormigon\TABLA-MALLA-10.png)
+Ver Excel "Cuadro Mallas.xlsx".
+
+### En la Vista - Modo Trabajo o Modelado
+
+1. Las Mallas pueden generarse, en la etapa de "Básica" como una malla única que ocupe todo la superficie de la pieza.
+![malla11](..\img\hormigon\TABLA-MAlla-11.png)
+Se deberá generar con el "Tipo de malla" como "Polígono", de tal forma que pueda abarcar toda la pieza.
+
+2. En la etapa de "Detalle" pueden generarse con las dimensiones comerciales de 2400x6000mm.
+![malla12](..\img\hormigon\TABLA-MAlla-12.png)
+Se deberá generar con el "Tipo de malla" como "Rectángulo", de tal forma que tendrá las dimensiones comerciales. Este se podrá copiar a lo largo y ancho de la pieza. Recortándola en los brodes.
+
+3. Si existen agujeros, el programa calculará la supericie descontando los mismos.
+
+### En el Dibujo
+
+1. A nivel dibujo es importante que en la/s Vista/s  se vean las armaduras.
+
+2. Si se utiliza este cuadro como un auditor de armaduras y mallas podría estar fuera del Área de impresión. Borrar en el DWG cuando se genere.
+
+### Descargas
+
+
+[__Descarga Listado en Excel "Cuadro Mallas.xlsx"__](../../ref/Cuadros/Cuadro%20Mallas.xlsx)
+
+[__Descarga Cuadro "P_HYT-PDH_PL_ADN420-MALLA.tpl" para insertar en un plano.__](../../ref/Cuadros/P_HYT-PDH_PL_ADN420-MALLA.tpl)
+
+[__Descarga Cuadro "P_HYT-PDH_ADN420-MALLA.tpl" para el "Colab".__](../../ref/Cuadros/P_HYT-PDH_ADN420-MALLA.pdf.rpt)
+
+## 6. Cuadro resumen de Poligono Cerrado de Coordenadas
+
+>El uso de poligonales es uno de los procedimientos topográficos más relevantes en un obra. Se usa para establecer puntos de control y puntos de apoyo para el levantamiento de detalles y elaboración de planos, para el replanteo de proyectos y para el control de ejecución de obras.
+Este cuadro genera un informe de dicho polígono.
+
+1. Trabaja con una parte denominada "COORDENADA", pequeño cilindro de "hormigón" Ø10mm y unos milimetros de altura (BARRA D10, H30, Clase 7). Es importante generar el material en "hormigón", la tabla está diseñada para ese tipo de material.
+2. El cuadro presenta las coordenadas de cada punto de la poligonal y la distancia entre ellos.
+3. Está diseñada para hasta 10 puntos, pero es posible adpatarla para más puntos.
+
+4. Previzualización cuadro "COORDS_POLIGONO.tpl" (Ver Descargas):
+
+![COORDPOL01](..\img\hormigon\TABLA-COORD-POL.png)
+
+### En el Editor de Cuadros 
+
+1. Utilzaremos los siguientes atributos:
+- USERDEFINED.USER_FIELD_1
+- USERDEFINED.USER_FIELD_2
+- COG_X_BASEPOINT
+- COG_Y_BASEPOINT
+- BOUNDING_BOX_MAX_Z_BASEPOINT
+- NUMBER
+
+2. La topología del cuadro se verá de la siguiente forma:
+
+![COORDPOL01](..\img\hormigon\TABLA-COORD-POL-01.png)
+
+3. La zona "1" es la parte visible, la "2" está oculta y se utiliza para generar las longitudes entre puntos fijos (Ver Punto 7). 
+
+4. En el Campo de Valor "NUM" tenemos el atributo "USERDEFINED.USER_FIELD_1" el que deberemos cargar por cada "COORDENADA" que ubiquemos. Es el Número de Orden que deberemos poner en un Orden de sentido horario: 
+ ![COORDPOL02](..\img\hormigon\TABLA-COORD-POL-02.png)
+ El dato interesante es que ésta columna definirá el orden de las filas, por eso está seleccionado en "Orden:" como "Ascendente".
+
+
+5. En el Campo de Valor "NUM1" está el atributo "USERDEFINED.USER_FIELD_2", este es el Nombre del Punto:
+![COORDPOL02](..\img\hormigon\TABLA-COORD-POL-08.png)
+
+6. En los campos de Valor "COORDS_X", "COORDS_Y" y "NIVEL", se utilizarán los atributos "COG_X_BASEPOINT", "COG_Y_BASEPOINT" y "BOUNDING_BOX_MAX_Z_BASEPOINT". Los dos primeros con prefijo "COG" Toman el centro de gravedad de la parte "COORDENADA" y el "BOUNDING_BOX..." tomará la partes superior del mismo, por eso es importante poner en nivel adecuado la parte "COORDENADA".
+![COORDPOL03](..\img\hormigon\TABLA-COORD-POL-03.png)
+Prácticamente la parte "COORDENADA" actúa como el Hierro en Obra que materializa el punto.
+
+7. La zona Oculta:
+7.1. Es la zona dónde se realizan:
+        a. Operaciones de búsqueda de los puntos subsiguientes.
+        b. Los cálculos de las distancias entre puntos.
+        ![COORDPOL04](..\img\hormigon\TABLA-COORD-POL-09.png)
+Sólo a título informativo, desarrollaremos en forma conceptual los anteriores puntos (a,b).
+7.2. Operaciones de búsqueda de los puntos subsiguientes:
+![COORDPOL04](..\img\hormigon\TABLA-COORD-POL-10.png)
+El Campo "NUMACT_1" (2) define el siguiente punto, mientras sea inferior al numero total "TOT" (3) sumará una unidad a "NUMACT" (1). Si "NUMACT"es igual al total de puntos fijos "TOT" colocará "1" en dicho campo. Así se generan los pares 1-2 hasta 8-1. Con el segundo dígito se buscarán las coordenadas "X" e "Y" del siguiente punto (4).
+7.3. Cálculo de distancia entre puntos.
+![COORDPOL04](..\img\hormigon\TABLA-COORD-POL-11.png)
+Se realizan las siguientes operaciones: Resta entre punto final e inicial (1), el cuadrado de la resta (2), la suma de los cuadrados (3) y la raíz cuadrada de la suma (4). Se efectuó segmentado para ir homologando los resultados con una planilla auxiliar.
+
+8. Dejo una previsualización del cuadro con el resumen de Atributos y los Campos de Valor ("Cuadro Poligono.xlsx", ver Descargas):
+![COORDPOL04](..\img\hormigon\TABLA-COORD-POL-06.png)
+
+### En el Dibujo
+
+1. A nivel dibujo es importante que la Vista/s debe contener todas las partes "COORDENADA".
+![COORDPOL05](..\img\hormigon\TABLA-COORD-POL-05.png)
+En este ejemplo están dibujadas algunas fundaciones de un ejemplo anterior.
+
+### Descargas
+
+[__Descarga Listado en Excel "Cuadro Poligono.xlsx"__](../../ref/Cuadros/Cuadro%20Poligono.xlsx)
+
+[__Descarga Cuadro "COORDS_POLÍGONO.tpl"__](../../ref/Cuadros/COORDS_POLÍGONO.tpl)
+
+## 7. Listado y Cómputo de Materiales en Estructuras de Acero
+
+>Se busca armar un listado de partes metálicas, cantidades y pesos para incorporar dentro del plano. Se debe buscar lo siguiente:
+> - Perfiles
+> - 
+
+
+1. Trabaja con
+
+### En el Editor de Cuadros 
+
+### En la Vista - Modo Trabajo o Modelado
+
+### En el Dibujo
+
+### Descargas
 
 [← Volver al inicio](index.md)
 

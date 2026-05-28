@@ -15,7 +15,7 @@ Se cubren los siguientes apartados
 
 - [Gestion de archivos](gestion_archivos.md) - Gestión de archivos para modelos federados y copiado automático de estos
 
-
+- [organizador](organizador.md) - Organizador 
 
 
 

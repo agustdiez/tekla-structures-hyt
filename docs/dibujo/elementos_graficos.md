@@ -18,6 +18,7 @@ has_toc: true
 ## Generalidades
 Como elementos gráficos tenemos el uso de [tablas](../dibujo/elementos_graficos.md#tablas), [imagenes](../dibujo/elementos_graficos.md#imágenes) o [Xref - AutoCAD](../dibujo/elementos_graficos.md#xref---autocad).
 
+{: .note}
 >Para el uso de estos elementos tener en cuenta que se debe crear una carpeta dentro del modelo (como puede ser "/imagenes", "/Excel", o generalizando "/Xref") y siempre eliminar la ruta de referencia al colocar cualquier archivo hasta dicha carpeta local.
 
 ## Tablas
@@ -25,7 +26,11 @@ Para crear una tabla dentro del dibujo se suelen usar dos métodos: Crearlas med
 
 ### Excel + Plugin
 
-El objetivo principal es que a partir de un archivo de excel, este se pueda importar mediante un plugin a nuestro dibujo.
+El objetivo principal es que a partir de un archivo de excel, este se pueda importar mediante un plugin a nuestro dibujo. 
+
+{: .note}
+>El [plugin](../../ref/ExcelToDrawing_V2.0.tsep) podrá ser descargado desde [Tekla Warehouse](https://warehouse.tekla.com/#/), más precisamente en este caso desde [Excel to drawing](https://warehouse.tekla.com/#/packages/u05d51531-1b65-4085-a7eb-422e97dd3b06), debiendo buscar la versión del plugin que se adapte a la versión que se tenga de Tekla Structures.
+
 
 ![Excel general properties](../img/dibujo/Excel%20general%20properties.png)
 
@@ -34,12 +39,13 @@ El objetivo principal es que a partir de un archivo de excel, este se pueda impo
 
 ![Excel cell and text](../img/dibujo/Excel%20cell%20and%20text.png)
 
+
 - En "Cell and text properties" podemos seleccionar si deseamos que diferentes propiedades de la tabla en (1), sean las definidas en el excel o las definidas en este apartado (2). 
 - En (3) si se decide configurar el tamaño de los parámetros desde aquí se deberá colocar el valor que se desee.
 
 Para importar una tabla hay que seguir los siguientes pasos:
 
-1. Buscar el plugin "ExcelToDrawing" dentro de `Applications & components` en el panel vertical de la derecha y hacer click derecho para acceder a las propiedades
+1. Una vez descargado, buscar el plugin "ExcelToDrawing" dentro de `Applications & components` en el panel vertical de la derecha y hacer click derecho para acceder a las propiedades
 2. Seleccionamos la carpeta de la izquierda de la siguiente imagen: ![Excel file](../img/dibujo/Excel%20file.png) y buscamos en nuestro ordenador el archivo de extensión ".xlsx" (Excel) que tenga la tabla que queremos añadir, luego le damos click izquierdo al archivo y tocamos `Abrir`.
 3. Luego en la ruta que queda en el renglón de "Excel file" debemos colocar un punto antes de la barra que separa a una carpeta dentro del modelo para que la ruta no se limite unicamente a nuestro dispositivo.
 4. Clickear en `Modify`, `Apply`, `OK` y se cerrará la ventana del plugin.
@@ -57,6 +63,8 @@ Para colocar una imagen primero se debe tener en cuenta la configuración que se
 
 - Dentro de (1) en la parte de `Type`podemos elegir si la imagen se adaptará a un recuadro que nosotros asignemos (`Scale to fit`), o si los escalamos con valores XY a partir del tamaño de nuestra imagen (`XY`)
 ![Tipo de imagen](../img/dibujo/Tipo%20de%20imagen.png)
+
+{: .note}
 >En el caso de `XY`solemos dejarlo en X:1.00 e Y:1.00 si la imagen viene con la medida que se desea.
 
 - Luego también dentro de (1)en `Frame` podemos asignarle o no un recuadro a la imagen, con un determinado color.
@@ -74,10 +82,18 @@ Para colocar una imagen se siguen los siguientes pasos:
 ![Ejemplo colocación de imagen](../img/dibujo/Ejemplo%20colocación%20de%20imagen.gif)
 *Figura x: Ejemplo colocación de imagen*
 
+{: .warning}
+> Dentro de nuestro modelo es recomendable tener una carpeta llamada "Imágenes", para almacenar las imagenes que se utilicen en el dibujo. La idea de esto es que en cualquier imagen que coloquemos, la ruta sea absoluta para cualquier persona que abra nuestro modelo, por lo que esta deberá comenzar con `./Imágenes`.
+
 ## Xref - AutoCAD
 En el caso de un archivo ".dwg" las propiedades y la configuración funciona de la misma manera que en las [imagenes](../dibujo/elementos_graficos.md#imágenes).
 
->Tener en cuenta que esta importación toma todo el dibujo dentro del "model" de AutoCAD como una imagen, sin posibilidad de hacer modificaciones desde nuestro programa.
+{: .warning}
+> - Tener en cuenta que esta importación toma todo el dibujo dentro del "model" de AutoCAD como una imagen, sin posibilidad de hacer modificaciones desde nuestro programa.
+> - Es recomendable que el archivo de origen de AutoCAD esté lo más "limpio" posible para evitar ralentizar la carga del archivo, pudiendo usarse el comando "purge" o cualquier herramienta útil para esto.
+
+{: .note}
+> Cualquier cosa que se esté cargando como un dibujo menor es recomendable hacerlo desde el [editor de simbolos](../dibujo/marcas_simbolos_notas.md#editor-de-símbolos).
 
 
 [← Volver al inicio](index.md)

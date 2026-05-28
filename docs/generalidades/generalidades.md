@@ -206,10 +206,6 @@ La modificación directa permite redimensionar, remodelar y mover el modelo obje
 
 ![MODIFICADORES](../img/generalidades/MODIFICADORES.png)
 
-(EXPLAYAR)
-
-
-
 {: .note}
 > La modificación directa se activa y desactiva con la letra `D` y viene activada por defecto, a veces puede desactivarse sola, se vuelve a activar usando el comando. 
 
@@ -226,7 +222,9 @@ Las partes estan compuestas por puntos perimetrales de modificación perimetrale
 ![Desplazamiento de puntos](../img/generalidades/DESPLAZAMIENTOS%20DE%20PUNTOS.gif)
 *Figura 7: Desplazamiento de puntos y subpuntos*
 
+### Material catalog
 
+Proximamente...
 
 
 [← Volver al inicio](index.md)

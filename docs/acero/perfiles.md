@@ -100,6 +100,9 @@ Tabla de nombres
 | Placa Base/Chapa Embebida     | PB_<# Secuencial> |
 | Bulones de Anclaje 1° Etapa   | ANCLAJE_1         |
 | Bulones de Anclaje 2° Etapa   | ANCLAJE_2         |
+| Tuerca                        | TUERCA            |
+| Arandela                      | ARANDELA          |
+| Arandela Cuadrada             | ARANDELA_CUAD     |
 | Estructura metálica:          | M <TIPO ELEMENTO> |
 | COLUMNA                       | M_COLUMNA         |
 | VIGA                          | M_VIGA            |
@@ -125,6 +128,9 @@ Por simplicidad, seguir lo siguiente:
 | Placa Base/Chapa Embebida     | PB_<# Secuencial> |![CLASE](../img/hormigon/CLASE_4.png)|
 | Bulones de Anclaje 1° Etapa   | ANCLAJE_1         |![CLASE](../img/hormigon/CLASE_5.png)|
 | Bulones de Anclaje 2° Etapa   | ANCLAJE_2         |![CLASE](../img/hormigon/CLASE_5.png)|
+| Tuerca                        | TUERCA            |![CLASE](../img/hormigon/CLASE_5.png)|
+| Arandela                      | ARANDELA          |![CLASE](../img/hormigon/CLASE_5.png)|
+| Arandela Cuadrada             | ARANDELA_CUAD     |![CLASE](../img/hormigon/CLASE_5.png)|
 | COLUMNA                       | M_COLUMNA         |![CLASE](../img/hormigon/CLASE_7.png)|
 | VIGA                          | M_VIGA            |![CLASE](../img/hormigon/CLASE_3.png)|
 | ARRIOSTRAMIENTO               | M_ARRIOSTRAMIENTO |![CLASE](../img/hormigon/CLASE_6.png)|
@@ -431,6 +437,5 @@ El grating se modela con elementos de placa. Se deberá seleccionar el material 
 En caso de requerir una rejilla que se aparte de lo indicado, se deberá [crear el material](../faq/faq.md#como-crear-un-material-nuevo), asignarle su densidad para el espesor buscado.
 
 A fines de validar que esté modelada correctamente, las placas creadas como Grating y asignadas al material adecuado deberán pintarse de verde con el filtro de representación de GRATING.
-
-
+[hwjhd](../../ref/
 [← Volver al inicio](index.md)
