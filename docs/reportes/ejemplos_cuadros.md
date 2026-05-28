@@ -15,7 +15,7 @@ has_toc: true
 1. TOC
 {:toc}
 
-## 1. Introducción
+## Introducción
 
 Los siguientes ejemplos buscan ejemplificar el armado de ciertos cuadros, siguiendo la lógica para crearlos.
 
@@ -30,7 +30,7 @@ Los cuadros enunciados a modo de ejemplo se encuentran para descargar al fin de 
 
    
 ---
-## 2. Cuadro de coordenadas
+## Cuadro de coordenadas
 
 >Se busca extraer una tabla de coordenadas y niveles de todas las fundaciones de un modelo, ordenándolas, en este caso, primero por Área de Ubicación y luego por Nombre de Fundación. Este Ejemplo se encuentra con el nombre de "SAC_COORDS_INY QUIM.tpl". Ver en Descargas ("SAC_COORDS_INY QUIM.tpl"):
 
@@ -58,7 +58,7 @@ Los "USERDEFINED.USER_FIELD_1/2/3" son configurados en el entorno modelo, y corr
 
 ### En el Editor de Cuadros 
 
-1. Al abrir el cuadro nos encontraremos con esta configuración:
+Al abrir el cuadro nos encontraremos con esta configuración:
 
 ![EDITOR](..\img\hormigon\TABLA-COORD-EDIT-01.png)
 
@@ -66,29 +66,29 @@ En ROW están configurados todos los atributos correspondientes a cada fundació
 
 ![CAMPO1](..\img\hormigon\TABLA-COORD-ATRIB-01.png)
 
-2. La fila (ROW) ha sido configurada para que busque y selecciones todos las partes cuyo nombre sea "FUNDACION":
+La fila (ROW) ha sido configurada para que busque y selecciones todos las partes cuyo nombre sea "FUNDACION":
 
 ![EDITOR2](..\img\hormigon\TABLA-COORD-EDIT-02.png)
 
-3. Si ingresamos al partado "Avanzado", podremos configurar el tipo de selección, editando el tipo de parte o atributo. Hay que mencionar que en el desplegable "Predefinido" podremos encontrar otro tipo de selección.
+Si ingresamos al partado "Avanzado", podremos configurar el tipo de selección, editando el tipo de parte o atributo. Hay que mencionar que en el desplegable "Predefinido" podremos encontrar otro tipo de selección.
 
 ![EDITOR3](..\img\hormigon\TABLA-COORD-EDIT-03.png)
 
-4. A modo de Ejemplo abrimos el Campo de valor "COORD_E" y observamos el atributo asociado:
+A modo de Ejemplo abrimos el Campo de valor "COORD_E" y observamos el atributo asociado:
 
 ![CAMPO2](..\img\hormigon\TABLA-COORD-ATRIB-02.png)
 
-5. En este punto es importante señalar que debemos configurar bien el tipo de dato, en este caso, número con decimales y las unidades deben coincidir con el tipo de dato que queremos visualizar. En este lugar también están todos las variables del estilo de Texto.
+1. En este punto es importante señalar que debemos configurar bien el tipo de dato, en este caso, número con decimales y las unidades deben coincidir con el tipo de dato que queremos visualizar. En este lugar también están todos las variables del estilo de Texto.
 
-6. Si fuera una columna para poner un orden a la lista, en la sección "Orden" podríamos seleccionar "Ascendente" o "Descendente".
+2. Si fuera una columna para poner un orden a la lista, en la sección "Orden" podríamos seleccionar "Ascendente" o "Descendente".
 
 ![EDITOR3](..\img\hormigon\TABLA-COORD-EDIT-04.png)
 
-7. El Pié de Página tiene la única "fórmula" que genera el conteo total de fundaciones, sumando todos los Campos de Valor "NUM_2", en definitiva suma todos los atributos "NUMBER" de cada fila. La "fórmula" es: Sum("NUM_2")
+El Pié de Página tiene la única "fórmula" que genera el conteo total de fundaciones, sumando todos los Campos de Valor "NUM_2", en definitiva suma todos los atributos "NUMBER" de cada fila. La "fórmula" es: Sum("NUM_2")
 
-8. Como el Tekla 2020 no puede generar el conteo por fila se adosa en el dibujo un Excel para numerar las filas, en este caso denominado ""numeración.xlsx". Ver apartado 4.3. y en zona de "Descargas".
+Como el Tekla 2020 no puede generar el conteo por fila se adosa en el dibujo un Excel para numerar las filas, en este caso denominado ""numeración.xlsx". Ver apartado 4.3. y en zona de "Descargas".
 
-9. Les dejo una captura con un cuadro con las características principales de la Tabla. Ver en Descargas ("Cuadro Coordenada.xlsx"):
+Una captura con un cuadro con las características principales de la Tabla. Ver en Descargas ("Cuadro Coordenada.xlsx"):
 
 ![excel](..\img\hormigon\TABLA-COORD-01.png)
 
@@ -111,22 +111,25 @@ Quedando con la numeración correcta:
 
 ![dib05](..\img\hormigon\TABLA-COORD-DIB-05.png)
 
-### Observacíon:
-A nivel de "Edición de Cuadro" se puede generar un "filtro" para que, si hay más de un tipo de "fundaciones", el cuadro sólo tome la que estamos buscando. Ese filtro deberá realizarse en el "ROW".
-También se puede crear otras filas para que busque esas fundaciones y genere un listado mixto, con varios tipos de fundación.
-Sino se le pone filtro alguno tomará todas las "PARTE" de Hormigón y generará la Tabla. 
+
+{: .highlight}
+> A nivel de "Edición de Cuadro" se puede generar un "filtro" para que, si hay más de un tipo de "fundaciones", el cuadro sólo tome la que estamos buscando. Ese filtro deberá realizarse en el "ROW".
+> 
+>También se pueden crear otras filas para que busque esas fundaciones y genere un listado mixto, con varios tipos de fundación.
+
+> Si no se le pone filtro alguno, tomará todas las "PARTE" de Hormigón y generará la Tabla. 
 
 ### Descargas
 
-[__Descarga Excel "numeración.xlsx"__](../../ref/Cuadros/numeración.xlsx)
+[__Descarga Excel "numeración.xlsx"__](../ref/Cuadros/numeración.xlsx)
 
-[__Descarga Excel "CuadroCompMat.xlsx"__](../../ref/Cuadros/CuadroCompMat.xlsx)
+[__Descarga Excel "CuadroCompMat.xlsx"__](../ref/Cuadros/CuadroCompMat.xlsx)
 
-[__Descarga Cuadro "SAC_COORDS_INY QUIM"__](../../ref/Cuadros/SAC_COORDS_INY%20QUIM.tpl)
+[__Descarga Cuadro "SAC_COORDS_INY QUIM"__](../ref/Cuadros/SAC_COORDS_INY%20QUIM.tpl)
 
 
 
-## 3. Listado de materiales
+## Listado de materiales
 
 >Se busca armar un listado de cantidades para incorporar dentro del plano. Se debe buscar lo siguiente:
 > - Hormigón estructural
@@ -135,15 +138,14 @@ Sino se le pone filtro alguno tomará todas las "PARTE" de Hormigón y generará
 > - Grout
 > - Placas F-24
 > - Anclajes por diámetro
-> - También:
-Ganchos Izaje AL-220
-Insertos AL-220
+> Ganchos Izaje AL-220
+> Insertos AL-220
 
 1. En este caso tomaremos partes únicamente.
 2. Cada fila deberá estar atada por material y le haremos el formato.
 3. Como en este caso nos interesa obtener materiales totales, buscaremos combinar las filas de salida.
 
-Previzualización cuadro "P-COMPUTO_HA-AC-.tpl":
+El objetivo final es lograr un cuadro como `P-COMPUTO_HA-AC-.tpl`:
 
 ![TABLA01](..\img\hormigon\TABLA-MAT.png)
 
@@ -167,36 +169,50 @@ Previzualización cuadro "P-COMPUTO_HA-AC-.tpl":
 
 Los atributos se encuetran en varios "Campo de valor" con diferente nombre, cada fila contempla el cómputo de cada material, descriptos del lado derecho: H30, H15, ADN-420, SIKAGROUT 212, F24 y ASTM 1554 Gr.36. Las filas denominadas de reserva son aquellas que pueden generar el cómputo de otros materiales, como los insertos, relleno, etc.
 
-3. Sólo como ejemplo desarrollamos la fila ADN-420.
+A modo de ejemplo, solo desarrollamos la fila ADN-420.
 ![TABLA01](..\img\hormigon\TABLA-MAT-EDIT-01.png)
 Siendo su resultado esta línea/fila:
 ![TABLA01](..\img\hormigon\TABLA-MAT-EDIT-03.png)
 
 3.1. La fila se configura filtrando el material ADN-420:
 ![TABLA01](..\img\hormigon\TABLA-MAT-EDIT-02.png)
-3.1. El material ADN-420, se computa en base a las filas "OCULTA 3" (es una copia de parte del informe "HYT-PDH.pdf", eso uniforme la salida de los datos). La fila ADN-420 suma en el campo de valor: "ARMTOT-1", la fórmula es: _Sum("PESOT_6")+Sum("PESOT_8")+Sum("PESOT_10")+Sum("PESOT_12")+Sum("PESOT_16")+Sum("PESOT_20")+Sum("PESOT_25")_
-3.2. En la misma fila se computa la Cantidad Unitaria,"ARMTOT", con el mismo procedimiento, pero sumando los pesos parciales: _Sum("PESO_6")+Sum("PESO_8")+Sum("PESO_10")+Sum("PESO_12")+Sum("PESO_16")+Sum("PESO_20")+Sum("PESO_25")_
+
+3.1. El material ADN-420, se computa en base a las filas "OCULTA 3" (es una copia de parte del informe "HYT-PDH.pdf", eso uniforme la salida de los datos). La fila ADN-420 suma en el campo de valor: "ARMTOT-1", la fórmula es: `Sum("PESOT_6")+Sum("PESOT_8")+Sum("PESOT_10")+Sum("PESOT_12")+Sum("PESOT_16")+Sum("PESOT_20")+Sum("PESOT_25")`.
+
+3.2. En la misma fila se computa la Cantidad Unitaria,"ARMTOT", con el mismo procedimiento, pero sumando los pesos parciales: `Sum("PESO_6")+Sum("PESO_8")+Sum("PESO_10")+Sum("PESO_12")+Sum("PESO_16")+Sum("PESO_20")+Sum("PESO_25")`
+
 3.3. El otro campo de valor es "MATERIAL_4", se utiliza el atributo: "MATERIAL".
 
 ### En el Dibujo
 
-1. A nivel dibujo es importante que la Vista/S debe contener los objetos/partes a computar en el el Cuadro.
+A nivel dibujo es importante que la Vista/S debe contener los objetos/partes a computar en el el Cuadro.
 
-[__Descarga Listado__]
+### Descargas
 
-## 4. Verificar coordenadas de modelado
+[__Descarga cuadro "P-COMPUTO_HA-AC-.tpl""__](../ref/Cuadros/P_COMPUTO_HA-AC-.tpl)
+
+
+
+## Verificar coordenadas de modelado
 
 >Las estructuras de acero siempre se ubican sobre un grillado o siguen ángulos rectos. Se busca armar un cuadro que valide que todas las partes no tengan errores casi imperceptibles en el modelado.
 
 1. Iteraremos sobre elementos tipo vigas o columnas en este caso.
+   
 2. Para qué algo sea ortogonal, deberemos comparar coordenadas de inicio y de fin en 3D y que sigan la dirección de algún eje (es decir, que tengan igual coordenadas en X, Y o Z en inicio y fin).
-2.1. En el aspecto conceptual, cuando exista un delta positivo, es decir exista una diferencia (DELTA) entre Inicial y Final, en X, Y o Z se genera un dato traducido a "1" o "0". Se generan tres datos, uno en cada dirección. 
-2.2. Cuando sólo hay una dirección con un dato positivo se entenderá que estará alineado con alguno de los ejes X-Y-Z. Por Ejemplo: Si tengo la matriz (1,0,0) está alineado en X, paralelo al eje X. Si los sumo da 1.
-2.3. Si la matriz es (1,1,0), (1,1,1) ó (0,1,1) me indicará que tiene un desvío en algunos de los ejes o en todos, las sumas de estas matricies me darán 2 ó 3.
-2.4. Al final cuando da 1 esas filas no las necesito, puedo descartarlas, pero puede suceder que sean más largas que lo previsto, eso no lo contempla este cuadro. Cuando da 2 o 3  esa fila entrará en el resultado del cuadro.
+
+{: .note}
+>En el aspecto conceptual, cuando exista un delta positivo, es decir exista una diferencia (DELTA) entre Inicial y Final, en X, Y o Z se genera un dato traducido a "1" o "0". Se generan tres datos, uno en cada dirección. 
+>
+>Cuando sólo hay una dirección con un dato positivo se entenderá que estará alineado con alguno de los ejes X-Y-Z. Por Ejemplo: Si tengo la matriz (1,0,0) está alineado en X, paralelo al eje X. Si los sumo da 1.
+>
+> Si la matriz es (1,1,0), (1,1,1) ó (0,1,1) me indicará que tiene un desvío en algunos de los ejes o en todos, las sumas de estas matricies me darán 2 ó 3.
+> 
+> Al final cuando da 1 esas filas no las necesito, puedo descartarlas, pero puede suceder que sean más largas que lo previsto, eso no lo contempla este cuadro. Cuando da 2 o 3  esa fila entrará en el resultado del cuadro.
 
 
-Previzualización cuadro "COORDS_PARTES MODELO.tpl" (Ver Descargas):
+
+Previzualización cuadro `COORDS_PARTES MODELO.tpl` (Ver Descargas):
 
 ![COORDMOD01](..\img\hormigon\TABLA-COORD-MOD.png)
 
@@ -292,11 +308,11 @@ En proceso...
 ### Descargas
 
 
-[__Descarga Listado en Excel "CuadroCompMat.xlsx"__](../../ref/Cuadros/CuadroCompMat.xlsx)
+[__Descarga Listado en Excel "CuadroCompMat.xlsx"__](../ref/Cuadros/CuadroCompMat.xlsx)
 
-[__Descarga Cuadro "COORDS_PARTES MODELO.tpl"__](../../ref/Cuadros/COORDS_PARTES%20MODELO.tpl)
+[__Descarga Cuadro "COORDS_PARTES MODELO.tpl"__](../ref/Cuadros/COORDS_PARTES%20MODELO.tpl)
 
-## 5. PDH para mallas de Acero tipo Sima.
+## PDH para mallas de Acero tipo Sima.
 
 >Este cuadro es una variación del informe "HYT-PDH.tpl", dónde se logra materializar la información de las mallas en el detalle de formas de las armadura y en el resumen de armadura.
 
@@ -379,13 +395,13 @@ Se deberá generar con el "Tipo de malla" como "Rectángulo", de tal forma que t
 ### Descargas
 
 
-[__Descarga Listado en Excel "Cuadro Mallas.xlsx"__](../../ref/Cuadros/Cuadro%20Mallas.xlsx)
+[__Descarga Listado en Excel "Cuadro Mallas.xlsx"__](../ref/Cuadros/Cuadro%20Mallas.xlsx)
 
-[__Descarga Cuadro "P_HYT-PDH_PL_ADN420-MALLA.tpl" para insertar en un plano.__](../../ref/Cuadros/P_HYT-PDH_PL_ADN420-MALLA.tpl)
+[__Descarga Cuadro "P_HYT-PDH_PL_ADN420-MALLA.tpl" para insertar en un plano.__](../ref/Cuadros/P_HYT-PDH_PL_ADN420-MALLA.tpl)
 
-[__Descarga Cuadro "P_HYT-PDH_ADN420-MALLA.tpl" para el "Colab".__](../../ref/Cuadros/P_HYT-PDH_ADN420-MALLA.pdf.rpt)
+[__Descarga Cuadro "P_HYT-PDH_ADN420-MALLA.tpl" para el "Colab".__](../ref/Cuadros/P_HYT-PDH_ADN420-MALLA.pdf.rpt)
 
-## 6. Cuadro resumen de Poligono Cerrado de Coordenadas
+## Cuadro resumen de Poligono Cerrado de Coordenadas
 
 >El uso de poligonales es uno de los procedimientos topográficos más relevantes en un obra. Se usa para establecer puntos de control y puntos de apoyo para el levantamiento de detalles y elaboración de planos, para el replanteo de proyectos y para el control de ejecución de obras.
 Este cuadro genera un informe de dicho polígono.
@@ -450,9 +466,9 @@ En este ejemplo están dibujadas algunas fundaciones de un ejemplo anterior.
 
 ### Descargas
 
-[__Descarga Listado en Excel "Cuadro Poligono.xlsx"__](../../ref/Cuadros/Cuadro%20Poligono.xlsx)
+[__Descarga Listado en Excel "Cuadro Poligono.xlsx"__](../ref/Cuadros/Cuadro%20Poligono.xlsx)
 
-[__Descarga Cuadro "COORDS_POLÍGONO.tpl"__](../../ref/Cuadros/COORDS_POLÍGONO.tpl)
+[__Descarga Cuadro "COORDS_POLÍGONO.tpl"__](../ref/Cuadros/COORDS_POLÍGONO.tpl)
 
 ## 7. Listado y Cómputo de Materiales en Estructuras de Acero
 

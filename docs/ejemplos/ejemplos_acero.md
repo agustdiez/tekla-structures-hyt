@@ -30,9 +30,9 @@ El parral tiene varios niveles de cañería, y en los últimos niveles cuenta co
     - [Area 01](../ref/Ejemplo%20Acero/areas/AREA%2001.nwd)
     - [Area 06](../ref/Ejemplo%20Acero/areas/AREA%2006.nwd)
     - [Area 07](../ref/Ejemplo%20Acero/areas/AREA%2007.nwd.nwd)
-  - [Cañerías](../ref/Ejemplo%20Acero/pip/PIP-03.DWG): `.dwg` con 
-  - [Bandejas Electricidad](../ref/Ejemplo%20Acero/bandejas/ELEC-BPC-03.dwg)
-  - [Bandejas Instrumentos](../ref/Ejemplo%20Acero/bandejas/INSTR-BPC-03.dwg)
+  - [Cañerías](../ref/Ejemplo%20Acero/pip/PIP-03.DWG): `.dwg` con las cañerìas con patines dentro del parral.
+  - [Bandejas Electricidad](../ref/Ejemplo%20Acero/bandejas/ELEC-BPC-03.dwg): `.dwg` con las bandejas de electricidad.
+  - [Bandejas Instrumentos](../ref/Ejemplo%20Acero/bandejas/INSTR-BPC-03.dwg): `.dwg` con las bandejas de instrumentos.
   - [Modelo STAAD](../../ref/Ejemplo%20Acero/PARRAL_SUR.STD)
   - **Punto base**: el punto base del proyecto es (0,0,100000), que es equivalente a que el resto de las disciplinas modela sobre un plano de **+100.000 mm**.
 

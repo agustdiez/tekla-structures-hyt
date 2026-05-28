@@ -65,19 +65,22 @@ En base a este lineamiento, adaptamos la impresión de nuestro documento a los e
 
 Por último haremos click en `Print` para realizar nuestra impresión.
 
+![ejemplo de impresión](../img/dibujo/ejemplo%20de%20impresión.gif)
+*Figura 6: ejemplo de impresión*
+
 ## Export drawings (.dwg)
 
 Para exportar un dibujo como archivo ".dwg" debemos acceder desde el panel lateral izquierdo a `Export drawings`:
 
 ![acceder a export drawing](../img/dibujo/acceder%20a%20export%20drawing.gif)
-*Figura 6: acceder a `Export Drawings`*
+*Figura 7: acceder a `Export Drawings`*
 
 Dentro de la ventana que se abre podremos editar dos pestañas: [Options](impresion_exportacion.md#options-1) y [Layer rules](impresion_exportacion.md#layer-rules)
 
 ### Options
 
 ![exportar drawings](../img/dibujo/exportar%20drawings.png)
-*Figura 7: `Options` dentro de `Export Drawings`*
+*Figura 8: `Options` dentro de `Export Drawings`*
 
 - En `(1)` podemos guardar la configuración que se cree de un ploteo, este archivo se guardará en la carpeta "attributes" de nuestro modelo con la extensión ".dwgsetting".
 
@@ -120,7 +123,7 @@ Dentro de la pestaña `Layer rules` decidiremos a que layer dentro del archivo q
 
     - **Object filtering**: aquí se puede aplicar algún [filtro de objectos](./vistas_dibujo.md#filter), a los objectos seleccionados en "Object".
 
-    - **Target layer**: Aquí elegiremos a que layer pertenercerán los objetos que cumplan con las condiciones de las columnas anteriores.
+    - **Target layer**: Aquí elegiremos a que layer pertenecerán los objetos que cumplan con las condiciones de las columnas anteriores.
 
     - **Color/Line style/Line weight**: aquí decidiremos si los valores de estas columnas estarán determinados por el layer dentro del ".dwg" ![parámetros según dwg](../img/dibujo/parámetros%20según%20dwg.png) o si están dados por los parámetros dentro de nuestro programa ![parámetros según tekla](../img/dibujo/parámetros%20según%20tekla.png)
 
@@ -133,15 +136,16 @@ Dentro de la pestaña `Layer rules` decidiremos a que layer dentro del archivo q
     {: .note}
     > Para la previsualización del archivo se abrirá una ventana donde nos obligará a seleccionar `Refresh preview` para visualizarlo, no puede hacerse zoom pero se apreciarán los colores que estarán en el dwg.
 
+La preconfiguración que usamos dentro de la empresa es la llamada "HYT-EXPORT_DWG" y será de la siguiente manera:
+![preconfiguración HYT-EXPORT_DWG](../img/dibujo/preconfiguración%20HYT-EXPORT_DWG.png) 
+*Figura 9: `HYT-EXPORT_DWG` dentro de `Export Drawings`*
+
+El archivo ".dwg" que contiene los layers será el llamado ["LAYERS.dwg"](../ref/Dibujo/Impresión_Exportación/LAYERS.dwg) dentro de la FIRM.
 
 {: .highlight}
-> [Lineamientos](../../ref/Dibujo/Impresión_Exportación/PR-O-M-008-r6%20Dibujos%20e%20Impresiones.pdf)
+> Todo lo referente a las propiedades que debe cumplir un archivo ".dwg" dentro de la empresa se regirá por este [documento adjunto](../ref/Dibujo/Impresión_Exportación/PR-O-M-008-r6%20Dibujos%20e%20Impresiones.pdf).
 
-
-
-
-
-
-
+![ejemplo de exportacion a dwg](../img/dibujo/ejemplo%20de%20exportacion%20a%20dwg.gif)
+*Figura 10: ejemplo de exportación a ".dwg"*
 
 [← Volver al inicio](index.md)
