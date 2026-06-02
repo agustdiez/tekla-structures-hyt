@@ -40,6 +40,12 @@ Para colocarla en el dibujo hay que seguir los siguientes pasos:
 - En ``(3)`` vemos todas las marcas que hay en el renglón, siendo lo más arriba lo que está mas a la izquierda.
 - En ``(4)`` está el panel de edición de las marcas, seleccionando la marca en ``(3)`` se puede agregar recuadros, cambiar colores, tamaño de texto, etc.
 
+{: .note}
+> ![simbolos dentro de notas](../img/dibujo/simbolos%20dentro%20de%20notas.png) 
+> - El símbolo `< >` representa un espacio entre los atributos que se tienen en un renglón.
+> - El símbolo `<--` ` representa un salto de linea entre los atributos que se tienen en un renglón.
+> - El símbolo `<--` representa un caracter atrás entre los atributos que se tienen en un renglón. quedarán un poco superpuestos cichos atributos.
+
 ![Part mark general](../img/dibujo/Part%20mark%20general.png)
 *Figura 3: Propiedades en `General`*
 
@@ -280,6 +286,7 @@ Por último, los pasos para una cota curva son los siguientes:
 
 > Importante: Las cotas de la empresa tendrán las propiedades de la forma que se mostraron en las figuras anteriores, y se verán en nuestro dibujo de la siguiente manera:
     ![HY-COTA](../img/dibujo/HY-COTA.png)
+
 
 ## Notas
 

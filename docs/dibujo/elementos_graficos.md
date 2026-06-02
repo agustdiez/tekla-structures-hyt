@@ -31,8 +31,7 @@ Para crear una tabla dentro del dibujo se suelen usar dos métodos: Crearlas med
 El objetivo principal es que a partir de un archivo de excel, este se pueda importar mediante un plugin a nuestro dibujo. 
 
 {: .note}
->El [plugin](../../ref/ExcelToDrawing_V2.0.tsep) podrá ser descargado desde [Tekla Warehouse](https://warehouse.tekla.com/#/), más precisamente en este caso desde [Excel to drawing](https://warehouse.tekla.com/#/packages/u05d51531-1b65-4085-a7eb-422e97dd3b06), debiendo buscar la versión del plugin que se adapte a la versión que se tenga de Tekla Structures.
-
+>El [plugin](../ref/ExcelToDrawing_V2.0.tsep) podrá ser descargado desde [Tekla Warehouse](https://warehouse.tekla.com/#/), más precisamente en este caso desde [Excel to drawing](https://warehouse.tekla.com/#/packages/u05d51531-1b65-4085-a7eb-422e97dd3b06), debiendo buscar la versión del plugin que se adapte a la versión que se tenga de Tekla Structures. Para más información ver [Instalación de extensiones](../setup/configuracion-inicial.md#instalación-de-extensiones).
 
 ![Excel general properties](../img/dibujo/Excel%20general%20properties.png)
 
@@ -40,7 +39,6 @@ El objetivo principal es que a partir de un archivo de excel, este se pueda impo
 - Dentro de `(4)` se puede editar la escala, la alineación al colocarlo, y si está encima o debajo de la ubicación que le asignamos.
 
 ![Excel cell and text](../img/dibujo/Excel%20cell%20and%20text.png)
-
 
 - En "Cell and text properties" podemos seleccionar si deseamos que diferentes propiedades de la tabla en `(1)`, sean las definidas en el excel o las definidas en este apartado `(2)`. 
 - En `(3)` si se decide configurar el tamaño de los parámetros desde aquí se deberá colocar el valor que se desee.
@@ -55,13 +53,13 @@ Para importar una tabla hay que seguir los siguientes pasos:
 6. Hacemos click en donde queremos que esté ubicado nuestra tabla.
 
 ![ejemplo exceltodrawing](../img/dibujo/ejemplo%20exceltodrawing.gif)
-*Figura x: Ejemplo de utilización de ExcelToDrawing*
+*Figura 1: Ejemplo de utilización de ExcelToDrawing*
 
 ## Imágenes
 Para colocar una imagen primero se debe tener en cuenta la configuración que se coloca previamente:
 
 ![Propiedades de imagen](../img/dibujo/Propiedades%20de%20imagen.png)
-*Figura x: Propiedades de imagen*
+*Figura 2: Propiedades de imagen*
 
 - Dentro de `(1)` en la parte de `Type`podemos elegir si la imagen se adaptará a un recuadro que nosotros asignemos (`Scale to fit`), o si los escalamos con valores XY a partir del tamaño de nuestra imagen (`XY`)
 ![Tipo de imagen](../img/dibujo/Tipo%20de%20imagen.png)
@@ -82,7 +80,7 @@ Para colocar una imagen se siguen los siguientes pasos:
 5. Volvemos a seleccionar `Image` y colocamos según el Type que se eligió, un solo click si es `XY` o formando un recuadro si es `Scale to fit`.
 
 ![Ejemplo colocación de imagen](../img/dibujo/Ejemplo%20colocación%20de%20imagen.gif)
-*Figura x: Ejemplo colocación de imagen*
+*Figura 3: Ejemplo colocación de imagen*
 
 {: .warning}
 > Dentro de nuestro modelo es recomendable tener una carpeta llamada `/imagenes`, para almacenar las imagenes que se utilicen en el dibujo. La idea de esto es que en cualquier imagen que coloquemos, la ruta sea relativa para cualquier persona que abra nuestro modelo, por lo que esta deberá comenzar con `./imagenes`.

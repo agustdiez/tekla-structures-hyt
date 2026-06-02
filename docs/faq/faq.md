@@ -189,6 +189,10 @@ modif separación
 
 ### ¿Cómo creo un dibujo nuevo?
 
+1. Ver el apartado de [Crear nuevo GA drawing](../dibujo/generalidades_dibujo.md#crear-nuevo-ga-drawing).
+2. 
+
+
 ### ¿Qué herramientas debo usar en el modo dibujo?
 
 ### ¿Cómo es el proceso para crear nuevos rótulos?
@@ -205,6 +209,8 @@ modif separación
 
 ### ¿Que pasa si elimino la marca de una vista?
 se guarda la vista pero pierde la referencia y la posibilidad de editarse
+
+### No se ve mi modelo de referencia en la vista.
 
 
 --- 

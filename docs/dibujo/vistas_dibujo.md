@@ -1,12 +1,12 @@
 ---
-title: Creación de vistas
+title: Vistas dibujo
 layout: default_with_reading_time
 parent: Modo dibujo
 nav_order: 2
 has_toc: true
 ---
 
-# Creación de vistas
+# Vistas dibujo
 {: .no_toc }
 
 
@@ -15,7 +15,6 @@ has_toc: true
 
 1. TOC
 {:toc}
-
 
 ## Crear una nueva vista
 

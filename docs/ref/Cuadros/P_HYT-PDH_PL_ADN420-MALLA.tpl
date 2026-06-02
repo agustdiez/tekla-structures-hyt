@@ -15,7 +15,7 @@ template template_1343
     gridyspacing = 1;
     version = 4.1;
     created = "03.05.2004 13:23";
-    modified = "27.05.2026 15:27";
+    modified = "01.06.2026 11:44";
     notes = "Converted template";
     colors = "153;152;160;161;162;163;164;165;154;155;156;157;158;159;130;131;132;133;";
 
@@ -1014,7 +1014,7 @@ template template_1343
                 height = 30;
                 visibility = TRUE;
                 usecolumns = FALSE;
-                rule = "if (GetValue(\"SHAPE\") != \"A\") then\n  Output()\nelse\n  StepOver()\nendif";
+                rule = "";
                 contenttype = "MESH";
                 sorttype = COMBINE;
 
@@ -1114,7 +1114,7 @@ template template_1343
                     justify = CENTERED;
                     visibility = TRUE;
                     angle = 0;
-                    length = 6;
+                    length = 5;
                     decimals = 0;
                     sortdirection = NONE;
                     fontname = "Arial";
@@ -1125,7 +1125,7 @@ template template_1343
                     fontstyle = 0;
                     fontslant = 0;
                     pen = 6;
-                    oncombine = SUM;
+                    oncombine = CLOSESUM;
                     aligncontenttotop = FALSE;
                 };
 
@@ -1153,7 +1153,7 @@ template template_1343
                     fontstyle = 0;
                     fontslant = 0;
                     pen = 6;
-                    oncombine = NONE;
+                    oncombine = CLOSESUM;
                     unit = "m2";
                     aligncontenttotop = FALSE;
                 };
@@ -1342,7 +1342,7 @@ template template_1343
                     fontstyle = 0;
                     fontslant = 0;
                     pen = 6;
-                    oncombine = NONE;
+                    oncombine = CLOSESUM;
                     unit = "m2";
                     aligncontenttotop = FALSE;
                 };
@@ -1535,19 +1535,88 @@ template template_1343
                 graphicalfield _tmp_0
                 {
                     name = "GraphicalField";
-                    location = (62, 2);
-                    field = "";
-                    height = 24;
-                    width = 49;
+                    location = (72, 7);
+                    field = "TYPE";
+                    height = 15;
+                    width = 32;
                     isalwaysvisible = TRUE;
                     visibilityrule = "";
+                };
 
-                    applicationattribute _tmp_4
-                    {
-                        name = "Dimensions";
-                        type = INTEGER;
-                        value = 1;
-                    };
+                valuefield _tmp_13
+                {
+                    name = "LENGTH";
+                    location = (79.96875, 14);
+                    formula = "GetValue(\"CUSTOM.MESH_LENGTH_NET\")/1000";
+                    maxnumoflines = 1;
+                    datatype = DOUBLE;
+                    class = "Length";
+                    cacheable = TRUE;
+                    formatzeroasempty = FALSE;
+                    justify = RIGHT;
+                    visibility = TRUE;
+                    angle = 0;
+                    length = 8;
+                    decimals = 2;
+                    sortdirection = ASCENDING;
+                    fontname = "Arial";
+                    fontcolor = 153;
+                    fonttype = 2;
+                    fontsize = 1.5;
+                    fontratio = 1;
+                    fontstyle = 0;
+                    fontslant = 0;
+                    pen = 6;
+                    oncombine = NONE;
+                    aligncontenttotop = FALSE;
+                };
+
+                text _tmp_14
+                {
+                    name = "Text_25";
+                    x1 = 88.1532212968322;
+                    y1 = 14.1712183729231;
+                    x2 = 88.1532212968322;
+                    y2 = 14.1712183729231;
+                    string = "*";
+                    fontname = "Arial";
+                    fontcolor = 153;
+                    fonttype = 2;
+                    fontsize = 1.5;
+                    fontratio = 1;
+                    fontslant = 0;
+                    fontstyle = 0;
+                    angle = 0;
+                    justify = RIGHT;
+                    pen = -1;
+                };
+
+                valuefield _tmp_15
+                {
+                    name = "WIDTH";
+                    location = (88.96875, 14);
+                    formula = "GetValue(\"CUSTOM.MESH_WIDTH_NET\")/1000";
+                    maxnumoflines = 1;
+                    datatype = DOUBLE;
+                    class = "Length";
+                    cacheable = TRUE;
+                    formatzeroasempty = FALSE;
+                    justify = LEFT;
+                    visibility = TRUE;
+                    angle = 0;
+                    length = 8;
+                    decimals = 2;
+                    sortdirection = ASCENDING;
+                    fontname = "Arial";
+                    fontcolor = 153;
+                    fonttype = 2;
+                    fontsize = 1.5;
+                    fontratio = 1;
+                    fontstyle = 0;
+                    fontslant = 0;
+                    pen = 6;
+                    oncombine = NONE;
+                    aligncontenttotop = FALSE;
                 };
             };
         };
