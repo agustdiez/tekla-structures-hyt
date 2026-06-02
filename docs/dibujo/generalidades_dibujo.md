@@ -286,7 +286,7 @@ Aquí estarán almacenados todos los componentes que podremos utilizar en el mod
     - En `(1)` tendremos todas las opciones de configuración del modo dibujo.
 
     > En `Advanced options` es importante que se tenga la siguente configuración para crear correctamente las "Draw Clouds":![Draw Clouds](../img/dibujo/Draw%20Clouds.png)
-    Buscando en `(1)` la palabra "Cloud", luego en `(2)` seleccionamos "In all categories" aparecerá para editar el "Value" de "XS_ARC_WIDTH_OF_CLOUD" que deberá tener el número `3`.
+    Buscando en `(1)` la palabra "Cloud", luego en `(2)` seleccionamos "In all categories" aparecerá para editar el "Value" de "XS_ARC_WIDTH_OF_CLOUD" que deberá tener el número `5` (aunque depende de la escala del dibujo, se puede ir probando el valor).
 
     - En `(2)` podremos cambiar la visualización de los colores en el dibujo.
     - En `(3)` podremos configurar nuestros atajos de teclado, podremos personalizar el Ribbon si quiere agregarse o sacarse algo o podremos crear comandos definidos por el usuario.

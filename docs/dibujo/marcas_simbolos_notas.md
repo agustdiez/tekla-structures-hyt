@@ -190,11 +190,11 @@ Las propiedades son similares a las detalladas en [Detail View](../dibujo/vistas
 *Figura 14: Ejemplo colocación de `Revisión mark`*
 
 {: .warning}
-> Aclaración 1: Antes de colocar la Revisión Mark se recomienda completar los campos de revisión del drawing que se esté editando, así ciertas propiedades se completan automaticamente.
+> Aclaración 1: Antes de colocar la Revisión Mark se recomienda completar los campos de [revisión](generalidades_dibujo.md#document-manager) del drawing que se esté editando, así ciertas propiedades se completan automaticamente.
 > 
 > Aclaración 2: Pueden utilizarse simbolos para marcar las revisiones, aunque estos no tendrán configurados los parámetros de la revisión que uno le asigna.
 
-#### Propiedades:
+#### [Propiedades](generalidades_dibujo.md#document-manager)
 
 ![Marca revisión propiedades](../img/dibujo/Marca%20revisión%20propiedades.png)
 *Figura 15: Propiedades de marcas de revisión.*
@@ -205,10 +205,17 @@ Las propiedades son similares a las detalladas en [Detail View](../dibujo/vistas
 ![Marca revisión apariencia](../img/dibujo/Marca%20revisión%20apariencia.png)
 *Figura 16: Ejemplo de configuración de apariencia de marcas de revisión.*
 
-- Si fuera el caso que se desee editar la apariencia de la marca, como se ve en la Figura x, puede editarse la geometría, tamaño del texto, colores, etc.
+- Si fuera el caso que se desee editar la apariencia de la marca, como se ve en la Figura 16, puede editarse la geometría, tamaño del texto, colores, etc.
 
 > Importante: Las marcas de revisión de la empresa se verán en nuestro dibujo de la siguiente manera:
     ![marca revision empresa](../img/dibujo/marca%20revision%20empresa.png)
+
+{: .highlight}
+> Para hacer las "REVCLOUDS" tanto de revisión, como cuando un elemento está en "HOLD", primero hay que configurar el valor en [`Settings/Advanced options`](generalidades_dibujo.md#). Luego para realizar la nube ![simbolo nube](../img/dibujo/simbolo%20nube.png) se deben hacer puntos en los lugares que se necesiten para encuadrar el área que se quiere marcar:
+![EJEMPLO CREACIÓN REVCLOUD](../img/dibujo/EJEMPLO%20CREACIÓN%20REVCLOUD.gif)
+Luego si es una `"REVISIÓN CLOUD"` quedará de la manera que se dibuja por default:
+![revision cloud](../img/dibujo/revision%20cloud.png) mientras que la `"HOLD CLOUD"` deberán configurarse las propiedades de la siguiente manera:
+![hold cloud](../img/dibujo/hold%20cloud.png)
 
 ## Cotas
 Como fue mencionado en [Views](../dibujo/generalidades_dibujo.md#descripción-del-modo-dibujo), los tipos más utilizados de cotas son la horizontal, vertical, free y la angular.
