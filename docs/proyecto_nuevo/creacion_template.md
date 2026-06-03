@@ -42,13 +42,27 @@ Se deben de completar los atributos que se vayan a utilizar  tanto a nivel proye
 
 Se debe de crear un rotulo acorde al proyecto, estos formatos son definidos por control de documentos. Para ver el paso a paso [Cuadros Rótulos](../reportes/cuadro_rotulo.md)
 
-### ATRIBUTOS EN TEMPLATES
+## Guardado del template
+
+Realizado los pasos previos, ya es posible guardar nuestro template en la siguiente ruta:
+
+>`%TEKLA%\STD\FIRM\proyectos`
+
+Dentro de dicha carpeta, debemos nombrar nuestro template como si fuese un cliente, de forma tal que al abrir el programa veamos la posibilidad de crear un modelo de acuerdo con una plantilla.
 
 
 
+{: .highlight}
+> La propiedad avanzada de `set XS_MODEL_TEMPLATE_DIRECTORY` nos dice donde guardar el template
+> Ver [user.ini](../setup/user_ini.md) para mayor detalle.
 
 
+## ¿Cómo cambiar un template existente?
 
+En caso de que sea necesario cambiar un template ya creado, basta con...
+
+{: .important}
+> Al modificar un template existente, modelos ya creados con ese template no tendrán esos cambios reflejados.
 
 
 

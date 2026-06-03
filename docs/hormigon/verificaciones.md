@@ -26,6 +26,17 @@ Se indica en cada caso quien es responsable de suministrar el dato o dónde se p
 3. **ET** (Especificaciones tecnicas)
 4. **MC** (Memoria de calculo)
 
+{: .highlight}
+> Niveles a conocer para planos de estructuras
+> **NSA | TOS**: Nivel Superior de Acero | Top Of Steel
+> **NIA | BOS**: Nivel Inferior de Acero | Bottom of Steel
+> **BOP**: Bottom of Pipe
+> **NSH | TOC**: Nivel Superior de Hormigón | Top of Concrete
+> **NPT**: Nivel de Piso Terminado
+> **NTN**: Nivel de terreno natural
+> **NTT**: Nivel de terreno terminado
+> **EL|ELEV.**: Elevación
+
 ### Paso 1 - Verificaciones previas
 
 | Paso | Descripción | Responsable | Check |

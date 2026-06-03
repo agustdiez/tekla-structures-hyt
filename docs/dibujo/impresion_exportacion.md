@@ -53,7 +53,7 @@ Dentro de la ventana que se abre podremos editar dos pestañas: [Options](impres
 
 - En `(3)` obtendremos una previsualización del documento que exportaremos.
 
-En "Line properties" debemos tener como lineamiento el archivo de [puntas](../../ref/Dibujo/Impresión_Exportación/HYTECH.ctb) que nos otorga la empresa, llamado "Hytech.ctb". Este tiene las siguientes propiedades:
+En "Line properties" debemos tener como lineamiento el archivo de [puntas](../ref/Dibujo/Impresión_Exportación/HYTECH.ctb) que nos otorga la empresa, llamado "Hytech.ctb". Este tiene las siguientes propiedades:
 
 ![Hytech.ctb lineamiento](../img/dibujo/Hytech.ctb%20lineamiento.png)
 *Figura 4: configuración de `Line properties` dentro de `Print Drawings`*

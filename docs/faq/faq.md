@@ -189,8 +189,8 @@ modif separación
 
 ### ¿Cómo creo un dibujo nuevo?
 
-1. Ver el apartado de [Crear nuevo GA drawing](../dibujo/generalidades_dibujo.md#crear-nuevo-ga-drawing).
-2. 
+1. Para crear un dibujo nuevo se recomienda leer el apartado de [Crear nuevo GA drawing](../dibujo/generalidades_dibujo.md#crear-nuevo-ga-drawing).
+2. Luego se recomienda leer [Vistas dibujo](../dibujo/vistas_dibujo.md)
 
 
 ### ¿Qué herramientas debo usar en el modo dibujo?

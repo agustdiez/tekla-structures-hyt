@@ -99,7 +99,7 @@ flowchart LR
     Start --> Electricidad[Electricidad]
     Start --> Instrumentacion[Instrumentación y Control]
 
-    Procesos --> SOFT1[-]
+    Procesos --> SOFT1[P&ID. No aporta directamente]
     Cañerias --> SOFT2[CADWorx]
     EquiposMec --> SOFT3[CADWorx]
     Civil --> SOFT4[Tekla Structures]

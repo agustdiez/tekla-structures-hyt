@@ -117,7 +117,16 @@ Si la maqueta está en continuo cambio, se recomienda armar una rutina que recop
 ---
 ## Creación de vistas
 
-## Comandos
+Las vistas serán la herramienta a utilizar apara generar el modo en que representamos lo modelado y luego llevamos al plano.
+
+La cantidad de vistas deberá ser dentro de todo consistente con la cantidad de plantas/elevaciones/cortes que haremos en el [Modo Dibujo](../dibujo/index.md).
+
+Existen múltiples formas de crear vistas en el programa y no es alcance de esto cubrir cada una de ellas, aunque la más común es a través de un plano, ya que ese modo definirá cuál es nuestra planta.
+
+[Crear vistas (documentación oficial)](https://support.tekla.com/doc/tekla-structures/2026/mod_creating_a_view)
+
+{: .note}
+> Al hacer `Shift+P` llevamos nuestra vista 3D a su visión en planta. Eso nos dirá si nuestra grilla está en planta o en elevación dependiendo del tipo de vista que se haya creado.
 
 
 ---
@@ -222,9 +231,7 @@ Las partes estan compuestas por puntos perimetrales de modificación perimetrale
 ![Desplazamiento de puntos](../img/generalidades/DESPLAZAMIENTOS%20DE%20PUNTOS.gif)
 *Figura 7: Desplazamiento de puntos y subpuntos*
 
-### Material catalog
 
-Proximamente...
 
 
 [← Volver al inicio](index.md)

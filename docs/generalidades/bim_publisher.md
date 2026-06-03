@@ -31,7 +31,8 @@ Por ejemplo, es posible crear un filtro de selección en Tekla Structures basado
 
 ### Exports
 
-![Exports_BIM](../img/generalidades/publisher_1.png))
+![Exports_BIM](../img/generalidades/publisher_1.png)
+*Figura 1: Pestaña Exports*
 
 1. Figuran los modelos cargados. Se tildan previo a tocar el botón de "Run" para correr el Publisher
 2. Se asigna la carpeta del modelo, la carpeta donde irá el archivo a exportar y el nombre que tendrá el archivo.
@@ -44,6 +45,7 @@ Por ejemplo, es posible crear un filtro de selección en Tekla Structures basado
 ### General Settings
 
 ![General Settings_BIM](../img/generalidades/publisher_2.png)
+*Figura 2: Pestaña General Settings*
 
 En este apartado es importante ajustar la version del programa y agregar lo siguiente:
 
@@ -66,6 +68,8 @@ El archivo de bypass es personal permite abrir "a medias" el programa, y se cons
    1. ```XS_DEFAULT_ENVIRONMENT```
    2. ```XS_DEFAULT_ROLE```
    3. ```XS_DEFAULT_LICENSE``` 
+
+Los valores que deben tomar dependerán de la licencia vigente con la que cuente la empresa. De todas formas, todos sus posibles valores aparecen indicados en el archivo a descargar.
 
 ### Scheduling
 

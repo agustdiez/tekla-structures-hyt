@@ -234,12 +234,12 @@ Previzualización cuadro `COORDS_PARTES MODELO.tpl` (Ver Descargas):
 Hay una sola fila para generar el cuadro, dónde se utilizan todos los atributos del punto 1.
 
 3. Desarrollaremos algunos puntos principales:
-3.1.El filtro de la fila será la siguiente:
+a. El filtro de la fila será la siguiente:
 ![COORDMOD03](..\img\hormigon\TABLA-COORD-MOD-02.png)
 
-- 3.1.1 `GetValue("MATERIAL_TYPE") == "STEEL"`: El argumento `==` es un "son igual", buscará todas las partes que sean "acero". Si se quisiera usar en hormigón se debería eliminar esta fila.
-- 3.1.2. `GetValue("NAME") != "PLACA"`: El argumento `!=` es un "no igual" descarta las Placas, no aparecen.
-- 3.1.3. `CopyField("CAMPO") != 1`: Las filas donde el valor del Campo de Valor `CAMPO` sea 1 la fila no aparece.
+-  `GetValue("MATERIAL_TYPE") == "STEEL"`: El argumento `==` es un "son igual", buscará todas las partes que sean "acero". Si se quisiera usar en hormigón se debería eliminar esta fila.
+-  `GetValue("NAME") != "PLACA"`: El argumento `!=` es un "no igual" descarta las Placas, no aparecen.
+-  `CopyField("CAMPO") != 1`: Las filas donde el valor del Campo de Valor `CAMPO` sea 1 la fila no aparece.
 La unión entre cada argumento es `&&` que es un "y lógico", "ambas condiciones deben ser verdaderas".
 
 
