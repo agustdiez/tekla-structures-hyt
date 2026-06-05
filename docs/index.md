@@ -20,6 +20,35 @@ Este portal centraliza las buenas prácticas de uso de TEKLA Structures en Hytec
 > - La versión de la documentación y lo aquí indicado se corresponde con la versión `2022`
 
 ---
+## Cómo usar el sitio
+
+A continuación se describe como recorrer el sitio para distintos roles, o donde se encuentra la información relevante para cada rol, entendiendo como `ejecutores` a proyectistas e ingenieros trabajando día a día con el programa, `revisores` a aquellos que usan el programa desde Trimble Connect como herramienta de gestión. Para nuevos ingresantes o externos comenzando a usar el programa, seguir lo indicado en `Nuevos usuarios`.
+
+### Ejecutor en proyecto en curso
+
+​```mermaid
+flowchart LR
+    A[Seteo del programa] --> B[Hormigon]
+    A --> C[Acero]
+    B --> D[Plano]
+    C --> D
+    E[Reportes] --> D
+    F[Trimble Connect]--> D
+
+
+    click A href "./setup/index.md"
+    click B href "./modulo1.html"
+    click C href "./modulo2.html"
+    click D href "./resultado.html"
+​```
+
+### Ejecutor en nuevo proyecto
+
+### Revisor
+
+### Nuevos usuarios
+
+---
 
 ## Contenido del sitio
 
