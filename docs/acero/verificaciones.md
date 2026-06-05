@@ -58,6 +58,7 @@ Estas verificaciones estan pensadas para el modelado de estructuras de acero en 
 | 2.5 | [Selección y modelar uniones de acuerdo con componentes siguiendo atributos](../acero/conexiones.md#componentes-de-acero) |  EJE  | [ ] |
 | 2.6 | [Modelar las chapas de nudo o cualquier chapa individual con espesores comerciales](../acero/perfiles.md#chapas-de-nudo) | EJE | [  ] | [  ] |
 | 2.7 | [Modelado de placa base](../hormigon/elementos.md#diseño-de-anclajes)  |  EJE  | [  ] |
+| 2.9 | [Asignación de materiales correctos a perfiles, chapas, bulones y anclajes](../hormigon/elementos.md#diseño-de-anclajes)  |  EJE  | [  ] |
 
 ### Paso 3 - Validando lo modelado
 
@@ -72,50 +73,6 @@ Estas verificaciones estan pensadas para el modelado de estructuras de acero en 
 | 3.7 | [¿Los bulones de uniones con calidad correcta, con separaciones mínimas y máximas y posibilidad de torquearse?](../acero/perfiles.md#distancias-entre-bulones-distancias-a-borde-y-distancias-a-perfiles)  |  EJE  | [ ] |
 | 3.8 | [¿Las chapas que componen la estructura está de acuerdo a espesores comerciales?](../acero/perfiles.md#chapas-de-nudo)  |  EJE  | [ ] |
 | 3.9 | [¿Está modelado correctamente las placas que representan el grating?](../ejemplos/ejemplos_filtros.md)  |  EJE  | [ ] |
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

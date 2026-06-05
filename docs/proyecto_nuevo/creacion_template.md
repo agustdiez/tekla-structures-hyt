@@ -65,5 +65,12 @@ En caso de que sea necesario cambiar un template ya creado, basta con...
 > Al modificar un template existente, modelos ya creados con ese template no tendrán esos cambios reflejados.
 
 
+## Agregar una imagen en el template
+
+
+
+
+
+
 
 [← Volver al inicio](index.md)

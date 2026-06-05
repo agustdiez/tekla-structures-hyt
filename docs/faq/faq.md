@@ -184,34 +184,105 @@ mta. ver modelo del proyecto rti26011, modelado del recinto
 ### En el componente 1047 no aparecen mis bulones
 modif separación
 
+## Crear nuevos atributos a modelo existente
+
 ---
 ## Dibujos
 
 ### ¿Cómo creo un dibujo nuevo?
 
-1. Para crear un dibujo nuevo se recomienda leer el apartado de [Crear nuevo GA drawing](../dibujo/generalidades_dibujo.md#crear-nuevo-ga-drawing).
-2. Luego se recomienda leer [Vistas dibujo](../dibujo/vistas_dibujo.md)
-
+Para crear un dibujo nuevo se recomienda leer el apartado de [Crear nuevo GA drawing](../dibujo/generalidades_dibujo.md#crear-nuevo-ga-drawing).
 
 ### ¿Qué herramientas debo usar en el modo dibujo?
 
+Las herramientas que pueden utilizarse en el modo dibujo podrán ser:
+
+- Para crear vistas ver apartado ["Vistas dibujo"](../dibujo/vistas_dibujo.md).
+
+- Para hacer anotaciones dentro de las vistas ver apartado ["Marcas, símbolos y notas"](../dibujo/marcas_simbolos_notas.md).
+
+- Para elementos gráficos podrán ser los detallados en ["Elementos gráficos"](../dibujo/elementos_graficos.md).
+
+- Para imprimir o exportar documentos ver apartado ["Impresión y exportación"](../dibujo/impresion_exportacion.md).
+
+
 ### ¿Cómo es el proceso para crear nuevos rótulos?
+
+Para crear un nuevo rótulo primero se recomienda leer ["Crear un template de proyecto"](../proyecto_nuevo/creacion_template.md) y luego ["Creación de rótulo de proyecto"](../reportes/cuadro_rotulo.md).
 
 ### ¿Cuáles son los atributos que se utilizan en el modo dibujo y dónde se guardan?
 
+Los atributos que se usan en el modo dibujo se guardarán en el archivo del modelo en la carpeta `Attributes`.
+![Attributes](../img/dibujo/Attributes.png)
+dentro de aquí, las extensiones más comunes del modo dibujo son:
+
+| Extensión | Descripción | 
+|----------|-------------|
+| *.dwgsetting* | Propiedades de [exportación](../dibujo/impresion_exportacion.md#export-drawings-dwg) de archivos ".dwg" | 
+| *.lev* | Propiedades de las ["Level marks"](../dibujo/marcas_simbolos_notas.md#level-mark) | 
+| *.note* | Propiedades de las ["Notes"](../dibujo/marcas_simbolos_notas.md#notas) |
+| *.drtxt* | Propiedades de los ["Text"](../dibujo/marcas_simbolos_notas.md#text) |
+| *.wls* | Propiedades de las ["Weld marks"](../dibujo/marcas_simbolos_notas.md#weld-mark) |
+| *.cs* | Propiedades de las ["Section marks"](../dibujo/marcas_simbolos_notas.md#section-mark) |
+| *.detail* | Propiedades de las ["Detail marks"](../dibujo/marcas_simbolos_notas.md#detail-mark) |
+| *.rm* | Propiedades de las ["Part marks"](../dibujo/marcas_simbolos_notas.md#weld-mark) en armadura |
+| *.pm* | Propiedades de las ["Part marks"](../dibujo/marcas_simbolos_notas.md#part-mark) |
+| *.vi* | Propiedades de las ["Vistas"](../dibujo/vistas_dibujo.md#crear-una-nueva-vista) |
+| *.view mark* | Propiedades de los ["View marks"](../dibujo/vistas_dibujo.md#atributos-de-vista) |
+| *.rep ; .adf ; .adnf ; .cuf ; .cunf ; .dsf ; .gdf ; .gdnf ; .OrgObjGrp ; PObjGrp ; SObjGrp ; .vf ; .vnf ; VObjGrp ; .wdf ; .wdnf* | Propiedades de los ["Filtros"](../dibujo/vistas_dibujo.md#filter) |
+| *.lay* | Propiedades de los ["Layouts"](../proyecto_nuevo/creacion_template.md) |
+| *.tpl* | Propiedades de los ["Templates"](../reportes/cuadro_rotulo.md) |
+| *.gpg* | Propiedades de las ["REVCLOUDS"](../dibujo/marcas_simbolos_notas.md#revision-mark) |
+| *.xml* | Propiedades de las ["Marcas armadura"](../dibujo/marcas_simbolos_notas.md#utilizando-un-componente) con un componente |
+
 ### ¿Cuál es la estructura de carpetas obligatoria en el modo dibujo?
 
+La estructura de carpetas obligatorias serán las ubicadas dentro del modelo, donde se almacenarán los archivos para que estos no pierdan la ruta si otra persona lo usa. La carpeta a crear dentro podrá ser por ejemplo:
+
+| Archivo | Ruta ejemplo | 
+|----------|-------------|
+| **Imagen** | *./Imágenes/Picture1.jpg* | 
+|**.dwg** | *./Drawing/Drawing1.dwg* | 
+|**Excel** | *./Excel/Excel1.xlsx* |
+|**Texto** | *./Textos/Richtext1.rtf* |
+|**.Xref**| *./Xref/archivo genérico.extensión genérica* |
+
+{: .highlight}
+> Este último (Xref) es recomendable en el caso en que se tengan pocos archivos vinculados al dibujo, mientras que las demás serán convenientes en los casos donde se tengan muchos archivos de ese tipo.
+
 ### no levanta el doc de referencia cargado en proyecto
+Algunas veces puede suceder que un modelo de referencia no se puede visualizar bien en el modelo, y por ende en el dibujo. 
+Por ejemplo al subir un `DWG 3D` los elementos sólidos pueden verse de forma unifilar. Una solución a esto es llevar el archivo a `Navisworks Manage` y transformar el modelo a `nwd` y luego volver a colocarlo como una referencia.
+...
 
 ### no levanta el doc de referencia cargado en dibujo
 
+
+
 ### Vistas isometricas en tekla
 
+Lo primero a realizar será colocar la vista en el model de forma isométrica, para esto las propiedades deberán ser las siguientes:
+
+![isometrico en tekla](../img/dibujo/isometrico%20en%20tekla.png)
+
+>Los valores de rotación que debe tener la vista serán los detallados en la figura anterior, en nuestro caso usamos el `1-2`
+
+Luego editaremos los parámetros señalados en las propiedades de la vista.
+
+![prop vista isometrico en tekla](../img/dibujo/prop%20vista%20isometrico%20en%20tekla.png)
+
+Por último según las anteriores dos imágenes las propiedades de la vista quedarán de la siguiente manera:
+
+![vista isométrica final](../img/dibujo/vista%20isométrica%20final.png)
+
+
 ### ¿Que pasa si elimino la marca de una vista?
-se guarda la vista pero pierde la referencia y la posibilidad de editarse
+
+Si elimino la marca de una vista al [crearse una vista en base a otra](../dibujo/vistas_dibujo.md#crear-vista-a-partir-de-vista-existente), se guarda la vista pero pierde la referencia y la posibilidad de editarse.
 
 ### No se ve mi modelo de referencia en la vista.
 
+Es probable que esté mal la profundidad de la vista, por ejemplo en nuestro caso las cosas están modeladas en el +100.000, entonces...
 
 --- 
 
@@ -285,5 +356,10 @@ Para mayor detalle referir al manual
 
 ### al abrir tekla no aparece en la pantalla
 MTA IT MAXIMIZAR
+
+## NSA en estructuras
+
+
+
 
 

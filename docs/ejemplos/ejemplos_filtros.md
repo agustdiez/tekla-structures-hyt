@@ -75,6 +75,6 @@ Dentro de `Object representation` crearemos nuestro filtro, teniendo en cuenta q
 {: .warning}
 > Una vez que se haya modelado el Grating, abierto y cerrado el modelo, es probable que los elementos se vean todos con el color del object group "All". Para solucionarlo puede cambiarse un parámetro cualquiera de las propiedades de los gratings para luego volverlo a colocar con su forma original, esto le dará el color que le asignamos en el filtro.
 
-
+<iframe width="" height="" src="https://www.youtube.com/embed/M1iL3ZNzTxY?si=IYVwqx9k9x2LgZFq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay=1 ; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 [← Volver al inicio](index.md)
