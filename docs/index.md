@@ -28,19 +28,41 @@ A continuación se describe como recorrer el sitio para distintos roles, o donde
 
 ```mermaid
 graph LR
-    A[Seteo del programa] --> B[Hormigon]
-    A --> C[Acero]
-    B --> D[Documento]
+    A[Seteo del programa] --> B[Modelar Hormigon]
+    A --> C[Modelar Acero]
+    B --> D[Armar Documento]
     C --> D
-    E[Reportes] --> D
-    F[Trimble Connect] --> D
+    E[Reportes \n Crear cuadros] --> D
+    F[Trimble Connect\n Ejecutor] --> D
     click A href "./setup/index.html"
-    click B href "./modulo1.html"
-    click C href "./modulo2.html"
-    click D href "./resultado.html"
+    click B href "./hormigon/index.md"
+    click C href "./acero/index.md"
+    click D href "./dibujo/index.md"
+    click E href "./reportes/ejemplos_cuadros.md"
+    click F href "./connect/connect-ejecutor.md"
 ```
 
 ### Ejecutor en nuevo proyecto
+
+```mermaid
+graph LR
+    A[Seteo del programa] --> T[Armado de template\nde proyecto]
+    T --> R[Difusión al equipo\n del proyecto]
+    T --> B[Modelar Hormigon]
+    T --> C[Modelar Acero]
+    B --> D[Armar Documento]
+    C --> D
+    E[Reportes\nCrear cuadros] --> D
+    F[Trimble Connect\nEjecutor] --> D
+    click A href "./setup/index.html"
+    click T href "./proyecto_nuevo/creacion_template.md"
+    click R href "./proyecto_nuevo/uso_template.md"
+    click B href "./hormigon/index.md"
+    click C href "./acero/index.md"
+    click D href "./dibujo/index.md"
+    click E href "./reportes/ejemplos_cuadros.md"
+    click F href "./connect/connect-ejecutor.md"
+```
 
 ### Ejecutor + Responsable de maqueta
 
