@@ -26,23 +26,23 @@ A continuación se describe como recorrer el sitio para distintos roles, o donde
 
 ### Ejecutor en proyecto en curso
 
-​```mermaid
-flowchart LR
+```mermaid
+graph LR
     A[Seteo del programa] --> B[Hormigon]
     A --> C[Acero]
-    B --> D[Plano]
+    B --> D[Documento]
     C --> D
     E[Reportes] --> D
-    F[Trimble Connect]--> D
-
-
-    click A href "./setup/index.md"
+    F[Trimble Connect] --> D
+    click A href "./setup/index.html"
     click B href "./modulo1.html"
     click C href "./modulo2.html"
     click D href "./resultado.html"
-​```
+```
 
 ### Ejecutor en nuevo proyecto
+
+### Ejecutor + Responsable de maqueta
 
 ### Revisor
 
