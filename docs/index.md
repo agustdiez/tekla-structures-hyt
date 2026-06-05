@@ -35,11 +35,11 @@ graph LR
     E[Reportes \n Crear cuadros] --> D
     F[Trimble Connect\n Ejecutor] --> D
     click A href "./setup/index.html"
-    click B href "./hormigon/index.md"
-    click C href "./acero/index.md"
-    click D href "./dibujo/index.md"
-    click E href "./reportes/ejemplos_cuadros.md"
-    click F href "./connect/connect-ejecutor.md"
+    click B href "./hormigon/index.html"
+    click C href "./acero/index.html"
+    click D href "./dibujo/index.html"
+    click E href "./reportes/ejemplos_cuadros.html"
+    click F href "./connect/connect-ejecutor.html"
 ```
 
 ### Ejecutor en nuevo proyecto
@@ -55,13 +55,13 @@ graph LR
     E[Reportes\nCrear cuadros] --> D
     F[Trimble Connect\nEjecutor] --> D
     click A href "./setup/index.html"
-    click T href "./proyecto_nuevo/creacion_template.md"
-    click R href "./proyecto_nuevo/uso_template.md"
-    click B href "./hormigon/index.md"
-    click C href "./acero/index.md"
-    click D href "./dibujo/index.md"
-    click E href "./reportes/ejemplos_cuadros.md"
-    click F href "./connect/connect-ejecutor.md"
+    click T href "./proyecto_nuevo/creacion_template.html"
+    click R href "./proyecto_nuevo/uso_template.html"
+    click B href "./hormigon/index.html"
+    click C href "./acero/index.html"
+    click D href "./dibujo/index.html"
+    click E href "./reportes/ejemplos_cuadros.html"
+    click F href "./connect/connect-ejecutor.html"
 ```
 
 ### Ejecutor + Responsable de maqueta
