@@ -25,9 +25,9 @@ No es alcance de este instructivo mostrar cuestiones básicas del modelado de el
 El objeto de este instructivo es mencionar los estándares y procedimientos para el modelado de estructuras de acero en Tekla Structures, a fin de mantener un modelado homogeneo a nivel empresa. 
 
 Se cubriran los siguientes aspectos para cada elemento:
-- Definición
-- Propiedades a completar
-- Buenas prácticas
+- Definición de tipos de elementos
+- Propiedades y atributos obligatorios a completar
+- Buenas prácticas a seguir para proyectar estructuras
 
 No es alcance de este instructivo mostrar cuestiones básicas del modelado de elementos si no brindar pautas de diseño y guiar en el proceso. Para pautas más básicas de modelado, referir a la [bibliografía](../index.md#documentación-oficial)
 
@@ -43,10 +43,9 @@ En el modelado de acero, la pestaña `Profile` se refiere al perfil de la parte 
 - IPE
 - HEA
 - HEB
-- Angulos: L B x B x T* 
+- Angulos: L B x B x t* 
 
-
-PARA CADA FAMILIA ESPECIFICAR CON NOMENCLATURA EN TEKLA
+TEKLA permite acceder a su catálogo de perfiles a través del `Profile Catalog`
 
 ### Chapas
 
@@ -75,20 +74,20 @@ Las chapas son los elementos de acero planos, a modelarse como `Plate` como se d
   </tbody>
 </table>
 
-Las filas señaladas en rojo se corresponde con espesores no utilizados en aceros tipo F24 o A36 y no debrán ser utilizados para chapas o perfiles.
+Las filas hasta 1/8'' con espesores no utilizados en aceros tipo F24 o A36 y no deberán ser utilizados para chapas o perfiles.
 
 {: .important}
 >Los espesores a adoptar para los elementos `Plate` como se describen más adelante deben ser consistentes con los "mm" indicados en la tabla.
 
 ### Atributos a modelar:
 
-Va a depender de IB/ID, definiciones de proyecto, pero en caracter general y como obligatorios tenemos los siguientes:
+Los atributos a llenar dependerá en muchos casos de si se trata de IB/ID, definiciones de proyecto, pero en caracter general y como obligatorios tenemos los siguientes:
 
-- NAME
-- CLASS
-- PROFILE
-- MATERIAL
-- UDAs (_Atributos definidos por el usuario_): es responsabilidad del LEP indicar cuáles se precisan, de acuerdo al preset de propiedades creado, descripto en [Preset Propiedades](../proyecto_nuevo/preset_propiedades.md).
+- `NAME`
+- `CLASS`
+- `PROFILE`
+- `MATERIAL`
+- `UDAs` (_Atributos definidos por el usuario_): es responsabilidad del LEP indicar cuáles se precisan, de acuerdo al preset de propiedades creado, descripto en [Preset Propiedades](../proyecto_nuevo/preset_propiedades.md).
 
 
 #### Name
@@ -115,7 +114,7 @@ Tabla de nombres
 
 
 #### Clases
-Hay 14 clases/colores definidos en tekla, esta sirve para discriminar elementos en Trimble Connect con colores. 
+Hay 14 clases/colores definidos en TEKLA, esta sirve para discriminar elementos en Trimble Connect con colores. 
 
 ![CLASES POSIBLES](../img/hormigon/CLASES.png)
 
@@ -292,19 +291,19 @@ Generalmente se suele usar los [componentes](./conexiones.md)
 - Referencias externas de cliente
 - Referencias internas del proyecto de otras disciplinas
 
-EL Lep deberá indicar a quien modele lo que debe tomar como información valida y tener en cuenta
+EL LEP deberá indicar a quien modele lo que debe tomar como información valida y tener en cuenta para proyectar la estructura.
 
 Para referencias de Connect, ver [Connect - Ejecutor](../connect/connect-ejecutor.md)
 
-Es altamente probable que se tenga un modelo de elementos finitos de la estructura. Ver [Importacion FEM](./importacion_FEM.md) para detalle de como importar modelos.
+Es probable que si la estructura es relevante, se tenga un modelo de elementos finitos de esta. Ver [Importacion FEM](./importacion_FEM.md) para detalle de como importar modelos.
 
 ---
 
 ## Diseño de conexiones
 
-Solo aplicable en ID salvo detalles puntuales en IB. Indicar las conexiones típicas presentas y derivar al capitulo de conexiones
+El diseño de uniones o conexiones es solo aplicable en ID, salvo detalles puntuales en IB. Indicar las conexiones típicas presentas y derivar al capitulo de conexiones
 
-Ver [Conexiones](./conexiones.md) para detalle de cómo modelar, tipo de armaduras, y reportes asociados.
+Ver [Conexiones](./conexiones.md) para detalle de cómo modelar y qué componentes deben utilizarse para distintas uniones.
 
 ## Componentes
 
@@ -315,16 +314,16 @@ Se incluyen los componentes en el apartado [Conexiones](./conexiones.md)
 
 ### Piezas de taller
 
-En ingeniería básica no suele ser necesario modelar uniones y no suele ser parte del alcance modelarlas a no ser que se solicite modelar ciertas uniones que ayuden a entender la estrategia de modularización. 
+En **ingeniería básica** no suele ser necesario modelar uniones y no suele ser parte del alcance modelarlas a no ser que se solicite modelar ciertas uniones que ayuden a entender la estrategia de modularización. 
 
-En ingeniería de detalle, donde ya es necesario modelar uniones y detallarlas en los planos, se debe definir con el ingeniero principalmente dos cosas:
+En **ingeniería de detalle**, donde ya es necesario modelar uniones y detallarlas en los planos, se debe definir con el ingeniero principalmente dos cosas:
 
 - Piezas de taller
 - Uniones abulonadas calculadas
 
 Las piezas de taller tendrán uniones soldadas y se abulonan distintas piezas de taller a través de uniones calculadas.
 
-Consultar con el ingeniero para entender como se debe modularizar la estructura previo a su modelado. Esto definirá qué uniones deben hacerse soldadas y cuáles abulonadas.
+Consultar con el ingeniero para entender como se debe modularizar la estructura previo a su modelado. Esto definirá qué uniones deben hacerse soldadas en taller para transporte y cuáles abulonadas.
 
 ### Soldaduras
 
@@ -372,7 +371,10 @@ A nivel general, el diseño de la chapa en extremos debe seguir el ancho de la s
 
 ### Distancias entre bulones, distancias a borde y distancias a perfiles
 
-El siguiente apartado menciona aspectos referentes a cada tipo de distancia, y que deberá tomar el proyectista en cuenta a la hora de proyectar las uniones. Las distancias indicadas son para agujeros normales. Ovalados tendrán algún requisito adicional que no se cubre en las tablas presentadas.
+El siguiente apartado menciona aspectos referentes a distancas a tener en cuenta en las uniones. 
+
+{: .highlight}
+>Las distancias indicadas son para agujeros normales. Ovalados tendrán algún requisito adicional que no se cubre en las tablas presentadas.
 
 #### Distancia entre bulones y a borde
 
@@ -400,7 +402,7 @@ Al modelar siempre se debe optar por tener la distancia mínima entre bulones. S
 
 Las uniones en general se darán con encuentros con perfiles, placas base o lugares comprometidos. Se debe asegurar en cualquier unión lugar disponible para poder asegurar que se hará un ajuste firme de estos con una llave.
 
-Dichas distancias se visualizan en el modelo 3D en el proceso, pero tener en cuenta cumplir con las distancias descriptas debajo para ajustes con llave. La segunda imagen se corresponde a distancias usadas con ajuste con herramienta:
+Dichas distancias se visualizan directamente en el modelo 3D, pero tener en cuenta cumplir con las distancias descriptas debajo para ajustes con llave. La segunda imagen se corresponde a distancias usadas con ajuste con herramienta de torque:
 
 ![distancias_perfiles](../img/acero/distancias.png)
 *Figura 4: Distancias en perfiles*
@@ -418,11 +420,12 @@ Se deberá definir con ingeniería:
 - Geometría y disposición de anclajes
 - Necesidad o no de rigidizadores
 - Presencia de chapas cuadradas (tipo arandela) a soldar en campo para 2° etapa.
+- Soldaduras especiales que puedan requerirse, especialmente en las alas externas de perfiles.
 
-Siempre partir de alguno de las configuraciones prediseñadas en apartado [Diseño de anclajes](../hormigon/elementos.md#diseño-de-anclajes)
+Se aconseja siempre partir de alguno de las configuraciones prediseñadas en apartado [Diseño de anclajes](../hormigon/elementos.md#diseño-de-anclajes)
 
 {: .important}
->La calidad de los anclajes deberá ser según ASTM F1554 Gr.36 o Gr.55 según corresponda.
+>La calidad de los anclajes deberá ser según ASTM F1554 Gr.36 o Gr.55 según corresponda. La definición de la calidad está atada a ingeniería.
 
 ### Grating
 
@@ -436,6 +439,7 @@ El grating se modela con elementos de placa. Se deberá seleccionar el material 
 
 En caso de requerir una rejilla que se aparte de lo indicado, se deberá [crear el material](../faq/faq.md#como-crear-un-material-nuevo), asignarle su densidad para el espesor buscado.
 
-A fines de validar que esté modelada correctamente, las placas creadas como Grating y asignadas al material adecuado deberán pintarse de verde con el filtro de representación de GRATING.
-[hwjhd](../../ref/
+A fines de validar que esté modelada correctamente, utilizar el filtro creado para tal fin. El filtro se explica en profundidad en [Ejemplos Filtros](../ejemplos/ejemplos_filtros.md)
+
+
 [← Volver al inicio](index.md)

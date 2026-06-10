@@ -15,14 +15,17 @@ has_toc: true
 1. TOC
 {:toc}
 
-## Crear un nuevo modelo 
+## Proceso de creado
+Un template es el conjunto de propiedades con el que se trabaja en un proyecto, estos templates, contienen atributos definido, vistas, documentos de referencia y el rótulo de proyecto. 
+
+## 1. Crear un nuevo modelo 
 
 Se debe de crear un nuevo modelo sin ninguna plantilla para evitar trasladar errores, se sugiere nombrar como "Template PROY" por ej: `Template RTI26011`
 
 ![MODELO NUEVO](../img/proyecto_nuevo/CREACIÓN%20MODELO%20NUEVO.gif)
 *Figura 1: Crear modelo nuevo*
 
-## Definición de atributos
+## 2. Definición de atributos
 
 Se deben de completar los atributos que se vayan a utilizar  tanto a nivel proyecto como atributos que utilicen los cuadros de los dibujos:
 
