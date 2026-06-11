@@ -51,33 +51,31 @@ TEKLA permite acceder a su catálogo de perfiles a través del `Profile Catalog`
 
 Las chapas son los elementos de acero planos, a modelarse como `Plate` como se describe más adelante. Lo importante es saber que los espesores de chapa no son arbitrarios y se basan en espesores comerciales. Se presentan a continuación: 
 
-<table>
-  <thead>
-    <tr><th>Pulgadas</th><th>Milímetros</th></tr>
-  </thead>
-  <tbody>
-    <tr style="background-color:#ffcccc"><td>1/16"</td><td>1,59</td></tr>
-    <tr style="background-color:#ffcccc"><td>3/32"</td><td>2,38</td></tr>
-    <tr style="background-color:#ffcccc"><td>1/8"</td><td>3,17</td></tr>
-    <tr><td>3/16"</td><td>4,76</td></tr>
-    <tr><td>1/4"</td><td>6,35</td></tr>
-    <tr><td>5/16"</td><td>7,94</td></tr>
-    <tr><td>3/8"</td><td>9,53</td></tr>
-    <tr><td>1/2"</td><td>12,70</td></tr>
-    <tr><td>5/8"</td><td>15,88</td></tr>
-    <tr><td>3/4"</td><td>19,05</td></tr>
-    <tr><td>7/8"</td><td>22,23</td></tr>
-    <tr><td>1"</td><td>25,40</td></tr>
-    <tr><td>1-1/4"</td><td>31,75</td></tr>
-    <tr><td>1-1/2"</td><td>38,10</td></tr>
-    <tr><td>2"</td><td>50,80</td></tr>
-  </tbody>
-</table>
+| Pulgadas | Milímetros | kg/m² |
+|----------|-----------|-------|
+| 1/16" | 1,59 | 12,48 |
+| 3/32" | 2,38 | 18,68 |
+| 1/8" | 3,17 | 24,88 |
+| 3/16" | 4,76 | 37,37 |
+| 1/4" | 6,35 | 49,85 |
+| 5/16" | 7,94 | 62,33 |
+| 3/8" | 9,53 | 74,82 |
+| 1/2" | 12,70 | 99,70 |
+| 5/8" | 15,88 | 124,66 |
+| 3/4" | 19,05 | 149,54 |
+| 7/8" | 22,23 | 174,51 |
+| 1" | 25,40 | 199,39 |
+| 1-1/4" | 31,75 | 249,24 |
+| 1-1/2" | 38,10 | 299,09 |
+| 2" | 50,80 | 398,78 |
 
 Las filas hasta 1/8'' con espesores no utilizados en aceros tipo F24 o A36 y no deberán ser utilizados para chapas o perfiles.
 
 {: .important}
 >Los espesores a adoptar para los elementos `Plate` como se describen más adelante deben ser consistentes con los "mm" indicados en la tabla.
+
+{: .highlight}
+>Se debe validar que los kg/m2 de esta tabla sean consistentes con los informados en el reporte de cantidades de acero, descripto en [MTO Acero](../reportes/ejemplos_cuadros.md#listado-de-materiales)
 
 ### Atributos a modelar:
 
@@ -440,6 +438,7 @@ El grating se modela con elementos de placa. Se deberá seleccionar el material 
 En caso de requerir una rejilla que se aparte de lo indicado, se deberá [crear el material](../faq/faq.md#como-crear-un-material-nuevo), asignarle su densidad para el espesor buscado.
 
 A fines de validar que esté modelada correctamente, utilizar el filtro creado para tal fin. El filtro se explica en profundidad en [Ejemplos Filtros](../ejemplos/ejemplos_filtros.md)
+
 
 
 [← Volver al inicio](index.md)

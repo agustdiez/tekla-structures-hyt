@@ -63,7 +63,7 @@ Una vez allí en (1) podremos acceder a `Object representation` y en (2) a `View
 ![propiedades Object representation](../img/dibujo/propiedades%20Object%20representation.png)
 *Figura 3: Propiedades Object representation.*
 
-Dentro de `Object representation` crearemos nuestro filtro, teniendo en cuenta que el orden en que este filtra es descendente desde arriba hacia abajo. La lógica que vemos en la **FIGURA X** sería la siguiente:
+Dentro de `Object representation` crearemos nuestro filtro, teniendo en cuenta que el orden en que este filtra es descendente desde arriba hacia abajo. La lógica que vemos en la **FIGURA 3** sería la siguiente:
 `Lo que corresponde a HYT-GRATING pintarlo de color verde, luego lo que corresponde a HYT-GRATING ERROR pintarlo de rojo y por último el resto de las cosas modeladas pintarlas de gris`.
 
 {: .note}

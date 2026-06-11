@@ -184,7 +184,12 @@ mta. ver modelo del proyecto rti26011, modelado del recinto
 ### En el componente 1047 no aparecen mis bulones
 modif separación
 
-## Crear nuevos atributos a modelo existente
+### Crear nuevos atributos a modelo existente
+
+### Componente 128
+
+generar recorte de ala en vez de ovalado por defecto, a 45°
+
 
 ---
 ## Dibujos
