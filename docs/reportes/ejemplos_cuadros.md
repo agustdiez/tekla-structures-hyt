@@ -173,14 +173,11 @@ A modo de ejemplo, solo desarrollamos la fila ADN-420.
 Siendo su resultado esta línea/fila:
 ![TABLA01](..\img\hormigon\TABLA-MAT-EDIT-03.png)
 
-3.1. La fila se configura filtrando el material ADN-420:
+3 La fila se configura filtrando el material ADN-420:
 ![TABLA01](..\img\hormigon\TABLA-MAT-EDIT-02.png)
 
-3.1. El material `ADN-420`, se computa en base a las filas "OCULTA 3" (es una copia de parte del informe "HYT-PDH.pdf", eso uniforme la salida de los datos). La fila ADN-420 suma en el campo de valor: `ARMTOT-1`, la fórmula es: `Sum("PESOT_6")+Sum("PESOT_8")+Sum("PESOT_10")+Sum("PESOT_12")+Sum("PESOT_16")+Sum("PESOT_20")+Sum("PESOT_25")`.
-
-3.2. En la misma fila se computa la Cantidad Unitaria,`ARMTOT`, con el mismo procedimiento, pero sumando los pesos parciales: `Sum("PESO_6")+Sum("PESO_8")+Sum("PESO_10")+Sum("PESO_12")+Sum("PESO_16")+Sum("PESO_20")+Sum("PESO_25")`
-
-3.3. El otro campo de valor es `MATERIAL_4`, se utiliza el atributo: `MATERIAL`.
+. El material `ADN-420`, se computa en base a las filas "OCULTA 3" (es una copia de parte del informe "HYT-PDH.pdf", eso uniforme la salida de los datos). La fila ADN-420 suma en el campo de valor: `ARMTOT-1`, la fórmula es: `Sum("PESOT_6")+Sum("PESOT_8")+Sum("PESOT_10")+Sum("PESOT_12")+Sum("PESOT_16")+Sum("PESOT_20")+Sum("PESOT_25")`.
+_Atrib_. El otro campo de valor es `MATERIAL_4`, se utiliza el atributo: `MATERIAL`.
 
 ### En el Dibujo
 
@@ -189,6 +186,17 @@ A nivel dibujo es importante que la Vista/S debe contener los objetos/partes a c
 ### Descargas
 
 [__Descarga cuadro "P-COMPUTO_HA-AC-.tpl""__](../ref/Cuadros/P_COMPUTO_HA-AC-.tpl){: .btn .btn-purple }
+
+## Listado de materiales - Uso `USER_FIELD_1`
+
+### En el Editor de Cuadros 
+
+### En la Vista - Modo Trabajo o Modelado
+
+### En el Dibujo
+
+### Descargas
+
 
 
 
@@ -479,7 +487,7 @@ En este ejemplo están dibujadas algunas fundaciones de un ejemplo anterior.
 
 ## Listado y Cómputo de Materiales en Estructuras de Acero
 
->Se busca generar un listado de partes metálicas, cantidades y pesos para incorporar dentro del plano. Se debe buscar lo siguiente:
+>Se busca generar un listado de partes metálicas, de una parte en un estructura, utilizando el cantidades y pesos para incorporar dentro del plano. Se debe buscar lo siguiente:
 > - Placas
 > - Perfiles
 > - Bulones
@@ -511,9 +519,26 @@ Previsualización de la Tabla `P_COMPUTO_ACERO.tpl` (Ver Zona de Descargas):
 a. La Zona 1 contiene el encabezado del cuadro, es sólo texto y líneas.
 b. La Zona 2 trabaja con las Placas, y funciona con dos filas: 
 ![ESMET03](..\img\hormigon\TABLA-ESMET-03.png)
-En el primer nivel se filtra el `MATERIAL_TYPE` con `STEEL` (Acero).
-![ESMET04](..\img\hormigon\TABLA-ESMET-04.png)
-En el Segundo nivel se eligen sólo las Partes que tengan como `PROFILE` las `PL*`. las Placas, al poner el asterisco toma todas sin importar los espesores.
+.En el primer nivel se filtra el `MATERIAL_TYPE` con `STEEL` (Acero). Esta fila está oculta, no se ve en el cuadro.
+![ESMET04](..\img\hormigon\TABLA-esmet-04.png)
+.En el Segundo nivel se eligen sólo las Partes que tengan como `PROFILE` las `PL*`. las Placas, al poner el asterisco toma todas sin importar los espesores.
+Esta fila es la visible.
+Esta fila cuenta con un "verificador" de espesores, cuando no coinciden con las establecidas en la normativa se hace visible, mediante el campo `VERIF`, tres signos de admiración en rojo "!!!" (en el recuadro amarillo):
+ ![ESMET04a](..\img\hormigon\TABLA-ESMET-04a.png)
+Permite saber que las placas o chapas tienen un error de espesor. Lamentablemente Tekla redondea el espesor en el caso de las pulgadas. En el Ejemplo la de 5/8" es de 8mm y la de 3/8" es de 10mm (en el recuadro rojo los espesores reales de modelado). 
+Cuando se corrige, desaparecen los "!!!":
+ ![ESMET04c](..\img\hormigon\TABLA-ESMET-04c.png)
+El campo de valor `VERIF` contiene la tabla con los 15 espesores Normalizados.
+Si coincide vuelca un cero y el resultado del campo queda vacío, sino coincide lanza el "!!!".
+ ![ESMET04b](..\img\hormigon\TABLA-ESMET-04b.png)
+.El Campo de Valor `SUPERF` genera el peso/m2 de la chapa con la siguiente fórmula: `(GetValue("WIDTH")/1000)*7850`
+![ESMET04d](..\img\hormigon\TABLA-ESMET-04d.png)
+.El campo de valor `PESOPL` suma todos los pesos de las chapas mediante el atributo `WEIGHT`:
+![ESMET04e](..\img\hormigon\TABLA-ESMET-04e.png)
+.El campo de valor `SUPERF_1` genera la superficie total de las chapas por tipo de espesor con la fórmula:`CopyField("PESOPL")/CopyField("SUPERF")`.
+![ESMET04f](..\img\hormigon\TABLA-ESMET-04f.png)
+Una observación, cuando obtengo valores de los atributos, coloco `GetValue`, si quiero utilizar valores de Campos de Valor, coloco `CopyField`.
+
 c. La Zona 3 genera las filas de los Perfiles, y trabaja, también, con dos filas:
 ![ESMET05](..\img\hormigon\TABLA-ESMET-05.png)
 En el primer nivel se filtra el `PROFILE` con `PL*` (Placa).
@@ -526,23 +551,127 @@ En el primer nivel se filtra el `CONTENTTYPE` con `BOLT` (Tornillo).
 En el Segundo nivel no hay selección, sólo se setea la fila como `TORNILLO`
 e. La zona 5 es la de resultados y Suma con `Sum` los campos de valor: `Sum("PESOPL_3")+Sum("PESOPL")` para el peso y `Sum("NUMT")` para los bulones.
 f. Por practicidad el ancho de las filas es mejor dejarlas más anchas que las zonas de trabajo, así es más sencillo seleccionar la fila para su configuración y modificar los campos de valor.
+3. Para descargar el excel `CuadroCompEstrMetálica.xlsx` que resume las variables y fórmulas ir a la Zona de Descargas.  
 
 ### En la Vista - Modo Trabajo o Modelado
 
 1. En este ámbito son importantes los espesores de las chapas, que deberán ser modelados con los espesores Estándar:
 ![ESMET09](..\img\hormigon\TABLA-ESMET-09.png)
+Como se describía en el punto anterior (2.b) la tabla generará un aviso si los espesores no son los Estandarizados, con un triple "!" en color rojo.
+2. Los perfiles deberán modelarse de acuerdo a la base de datos del SIRSOC, en la `Base de Datos Perfiles` ya agregada al Tekla. Esto es importante para que el cómputo se realize de acuerdo a los pesos unitarios estandarizados de la Norma de Referencia. 
+![ESMET09a](..\img\hormigon\TABLA-ESMET-09a.png)
+Los pesos unitarios se encuentran en el atributo `WEIGHT_M`.
 
 ### En el Dibujo
 
 1. A nivel dibujo es importante que en la/s Vista/s  se vean todas las Estructuras Metálicas:
 ![ESMET10](..\img\hormigon\TABLA-ESMET-10.png)
-En este caso tiene las vistas de algunos pórticos, eso no es un problema, la Tabla no vuelve a contabilizar los Perfiles/Placas/Bulones repetidos en la Planta y los Cortes.
-2. Como en otro caso, la numeración de las filas es gobernado con un Excel, denominado  `numeración3.xlsx` (Ver en Zona de descargas")
+En este caso tiene los Cortes de algunos pórticos, eso no es un problema, la Tabla no vuelve a contabilizar los Perfiles/Placas/Bulones repetidos en la Planta y los Cortes. Puede identificar los repetidos.
+2. Como en otro caso, la numeración de las filas es gobernado con un Excel, denominado  `numeración3.xlsx` (Ver en Zona de descargas").
+3.Verifiquen si no surge los signos de admiración en la fila de las Chapas. Ver punto 2.b de "En el Editor de Cuadros".
 
 ### Descargas
 
 [Descarga Listado en Excel "numeración3.xlsx"](../ref/Cuadros/numeración3.xlsx){: .btn .btn-purple }
+[Descarga Listado en Excel "CuadroCompEstrMetálica.xlsx"](../ref/Cuadros/CuadroCompEstrMetálica.xlsx){: .btn .btn-purple } 
 [Descarga Cuadro "P_COMPUTO_ACERO.tpl"](../ref/Cuadros/P_COMPUTO_ACERO.tpl){: .btn .btn-purple }
+
+## Listado y Cómputo de Materiales en Estructuras de Acero - Uso `USER_FIELD_1`
+
+>Se busca generar un listado de partes metálicas, pero filtrando una estrucutra de otras mediante un filtro determiado por el atributo `USER_FIELD_1`. Así se obtendrán las 
+cantidades y pesos para incorporar dentro del plano. Se debe buscar lo siguiente:
+> - Placas
+> - Perfiles
+> - Bulones
+
+1.Iteramos sobre toda la Estructura Metálica para otener el peso total y la cantidad de bulones de esa estrucutra.
+2.Separamos en tres items: Placas, Perfiles y Bulones.
+
+Previsualización de la Tabla `P_COMPUTO_ACERO_SelecAtrib.tpl` (Ver Zona de Descargas):
+![ESMETA01](..\img\hormigon\TABLA-ESMET-Atr_01.png)
+
+### En el Editor de Cuadros 
+
+1. Utilzaremos los siguientes atributos, prácticamente son los mismos del apartado anterior, agregando uno:
+- `WIDTH`
+- `MATERIAL`
+- `WEIGHT`
+- `PROFILE`
+- `WEIGHT_M`
+- `DIAMETER`
+- `GRADE`
+- `NUMBER`
+- `MATERIAL_TYPE`
+- `PROFILE`
+- `NAME`
+- `USER_FIELD_1`
+
+2. La topología del cuadro se verá de la siguiente forma:
+![ESMETA02](..\img\hormigon\TABLA-ESMET-Atr_02.png)
+
+a. Paras las áreas 1, 2, 3, 4 y 5. Ver la descripción en el punto anterior: 2a-b-c-d-e-f.
+
+b. El área 1A es el qque establece la diferencia con el cuadro anterior, filtra todas las partes mediante el atributo `USER_FIELD_1`:
+
+![ESMETA02](..\img\hormigon\TABLA-ESMET-Atr_03.png)
+.La zona A: es igual a los descripto en el partado anterior. Pero está "anidado" debajo de "B" la fila que contiene el filtro:
+`if GetValue("USERDEFINED.USER_FIELD_1") == 1 then`
+ `Output()`
+`else`
+ `StepOver()` 
+`endif`
+Esto logra que se compute todas las partes cuyo atributo `USER_FIELD_1` sea, en este caso, un 1 (uno).
+3. Para descargar el excel `CuadroCompEstrMetálica.xlsx` que resume las variables y fórmulas ir a la Zona de Descargas.
+4. Para lograr utilizar el mismo cuadro en una lámina es importante ir cambiando el nombre del cuadro, por ejemplo el primero será `P_COMPUTO_ACERO_SelecAtrib1.tpl` para selecionar las estrucutras con `USER_FIELD_1`=1, el siguiente podría ser `P_COMPUTO_ACERO_SelecAtrib2.tpl`para `USER_FIELD_1`=2, y así sucesivamente.
+En el ejemplo siguiente se ven los resultados para una selección de 1 (naranja), 2 (amarillo) y 4 (verde) pórticos iguales (celeste "A"):
+![ESMETA08](..\img\hormigon\TABLA-ESMET-Atr_08.png)
+.El naranja tiene `USER_FIELD_1`=1
+.El amarillo tiene `USER_FIELD_1`=2
+.El verde tiene `USER_FIELD_1`=3.
+Esta es una forma práctica de tener cómputos de diferentes estrucutras separados por `USER_FIELD_1`.
+
+
+### En la Vista - Modo Trabajo o Modelado
+
+1. En éste ámbito se aplica lo mismo que el apartado anterior.
+2. Para ingresar el valor a `USER_FIELD_1` se deberá hacerlo eligiendo cada tipo:
+- Chapas
+![ESMETA04](..\img\hormigon\TABLA-ESMET-Atr_04.png)
+
+- Pefiles
+![ESMETA05](..\img\hormigon\TABLA-ESMET-Atr_05.png)
+
+- Bulón/Tornillo
+![ESMETA06](..\img\hormigon\TABLA-ESMET-Atr_06.png)
+
+Se pueden generar filtros para elegir cada tipo, en este ejemplo cómo elegir el perfil `W6x12`:
+
+![ESMETA07](..\img\hormigon\TABLA-ESMET-Atr_07.png)
+
+En la zona inferior de comando se hace click en `Filtro Selección` (1) y se abre el menú `Grupo Objetos-Filtro Selección`. En una de las filas se elije:
+`PARTE/PERFIL/Igual a/W6x12` (2). Se debe tildar la fila y luego `APLICAR/OK`.
+Una vez efectuado esta operación se "barre" con el cursor la zona para seleccionar esos perfiles (3), que pueden abarcar uno o más pórticos o estructuras. Una vez selecionado se coloca el 1 u otro número en la zona de `USER_FIELD_1`:
+![ESMETA05](..\img\hormigon\TABLA-ESMET-Atr_05.png)
+
+Esta operación se repite para Chapas y Bulones.
+
+### En el Dibujo
+
+1. Se aplican todas las sugerencias del apartado anterior.
+2. En el ejemplo siguiente se ven los resultados para una selección de 1 (naranja), 2 (amarillo) y 4 (verde) pórticos iguales (celeste "A"):
+![ESMETA08](..\img\hormigon\TABLA-ESMET-Atr_08.png)
+.El naranja tiene `USER_FIELD_1`=1. (P_COMPUTO_ACERO_SelecAtrib1.tpl)
+.El amarillo tiene `USER_FIELD_1`=2. (P_COMPUTO_ACERO_SelecAtrib2.tpl)
+.El verde tiene `USER_FIELD_1`=3. (P_COMPUTO_ACERO_SelecAtrib3.tpl)
+Esta es una forma práctica de tener cómputos de diferentes estrucutras separados por `USER_FIELD_1`.
+
+### Descargas
+
+[Descarga Listado en Excel "numeración3.xlsx"](../ref/Cuadros/numeración3.xlsx){: .btn .btn-purple }
+[Descarga Listado en Excel "CuadroCompEstrMetálica.xlsx"](../ref/Cuadros/CuadroCompEstrMetálica.xlsx){: .btn .btn-purple } 
+[Descarga Cuadro "P_COMPUTO_ACERO_SelecAtrib1.tpl"](../ref/Cuadros/P_COMPUTO_ACERO_SelecAtrib1.tpl){: .btn .btn-purple }
+[Descarga Cuadro "P_COMPUTO_ACERO_SelecAtrib2.tpl"](../ref/Cuadros/P_COMPUTO_ACERO_SelecAtrib2.tpl){: .btn .btn-purple }
+[Descarga Cuadro "P_COMPUTO_ACERO_SelecAtrib3.tpl"](../ref/Cuadros/P_COMPUTO_ACERO_SelecAtrib3.tpl){: .btn .btn-purple }
 
 
 [← Volver al inicio](index.md)

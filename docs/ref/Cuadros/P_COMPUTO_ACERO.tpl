@@ -1,4 +1,3 @@
-
 template template_1343
 {
     name = "template_1343";
@@ -15,7 +14,7 @@ template template_1343
     gridyspacing = 1;
     version = 4.1;
     created = "03.05.2004 13:23";
-    modified = "29.05.2026 16:12";
+    modified = "12.06.2026 18:50";
     notes = "";
     colors = "153;152;160;161;162;163;164;165;154;155;156;157;158;159;130;131;132;133;";
 
@@ -745,35 +744,6 @@ template template_1343
                 aligncontenttotop = FALSE;
             };
 
-            valuefield _tmp_38
-            {
-                name = "DIAM_1";
-                location = (30, 2);
-                formula = "GetValue(\"WIDTH\")";
-                maxnumoflines = 1;
-                datatype = DOUBLE;
-                class = "Length";
-                cacheable = TRUE;
-                formatzeroasempty = FALSE;
-                justify = CENTERED;
-                visibility = FALSE;
-                angle = 0;
-                length = 5;
-                decimals = 1;
-                sortdirection = ASCENDING;
-                fontname = "Arial";
-                fontcolor = 132;
-                fonttype = 2;
-                fontsize = 2.5;
-                fontratio = 1;
-                fontstyle = 0;
-                fontslant = 0;
-                pen = 0;
-                oncombine = NONE;
-                unit = "mm";
-                aligncontenttotop = FALSE;
-            };
-
             valuefield _tmp_40
             {
                 name = "SUPERF";
@@ -828,6 +798,63 @@ template template_1343
                 fontslant = 0;
                 pen = 0;
                 oncombine = CLOSESUM;
+                aligncontenttotop = FALSE;
+            };
+
+            valuefield _tmp_5
+            {
+                name = "VERIF";
+                location = (32, 2);
+                formula = "if (GetValue(\"WIDTH\")==1.59) then\n0\nelse\nif (GetValue(\"WIDTH\")==2.38) then\n0\nelse\nif (GetValue(\"WIDTH\")==3.17) then\n0\nelse\nif (GetValue(\"WIDTH\")==4.76) then\n0\nelse\nif (GetValue(\"WIDTH\")==6.35) then\n0\nelse\nif (GetValue(\"WIDTH\")==7.94) then\n0\nelse\nif (GetValue(\"WIDTH\")==9.53) then\n0\nelse\nif (GetValue(\"WIDTH\")==12.70) then\n0\nelse\nif (GetValue(\"WIDTH\")==15.88) then\n0\nelse\nif (GetValue(\"WIDTH\")==19.05) then\n0\nelse\nif (GetValue(\"WIDTH\")==22.23) then\n0\nelse\nif (GetValue(\"WIDTH\")==25.40) then\n0\nelse\nif (GetValue(\"WIDTH\")==31.75) then\n0\nelse\nif (GetValue(\"WIDTH\")==38.10) then\n0\nelse\nif (GetValue(\"WIDTH\")==50.80) then\n0\nelse\n\"!!!\"\nendif\nendif\nendif\nendif\nendif\nendif\nendif\nendif\nendif\nendif\nendif\nendif\nendif\nendif\nendif";
+                maxnumoflines = 1;
+                datatype = STRING;
+                class = "";
+                cacheable = TRUE;
+                formatzeroasempty = TRUE;
+                justify = CENTERED;
+                visibility = TRUE;
+                angle = 0;
+                length = 4;
+                decimals = 0;
+                sortdirection = ASCENDING;
+                fontname = "Arial";
+                fontcolor = 160;
+                fonttype = 2;
+                fontsize = 2.5;
+                fontratio = 1;
+                fontstyle = 0;
+                fontslant = 0;
+                pen = 0;
+                oncombine = NONE;
+                aligncontenttotop = FALSE;
+            };
+
+            valuefield _tmp_1
+            {
+                name = "DIAM_1";
+                location = (157, 2);
+                formula = "GetValue(\"WIDTH\")";
+                maxnumoflines = 1;
+                datatype = DOUBLE;
+                class = "Length";
+                cacheable = TRUE;
+                formatzeroasempty = FALSE;
+                justify = LEFT;
+                visibility = FALSE;
+                angle = 0;
+                length = 5;
+                decimals = 2;
+                sortdirection = ASCENDING;
+                fontname = "Arial";
+                fontcolor = 159;
+                fonttype = 2;
+                fontsize = 2.5;
+                fontratio = 1;
+                fontstyle = 0;
+                fontslant = 0;
+                pen = 0;
+                oncombine = NONE;
+                unit = "mm";
                 aligncontenttotop = FALSE;
             };
         };
@@ -1012,7 +1039,7 @@ template template_1343
         valuefield _tmp_65
         {
             name = "PESOPL_3";
-            location = (127.28125, 2);
+            location = (156.28125, 2);
             formula = "GetValue(\"WEIGHT\")";
             maxnumoflines = 1;
             datatype = DOUBLE;
@@ -1020,7 +1047,7 @@ template template_1343
             cacheable = TRUE;
             formatzeroasempty = FALSE;
             justify = CENTERED;
-            visibility = TRUE;
+            visibility = FALSE;
             angle = 0;
             length = 8;
             decimals = 2;
@@ -1041,17 +1068,17 @@ template template_1343
         valuefield _tmp_85
         {
             name = "LONGITUD";
-            location = (63.28125, 2);
-            formula = "CopyField(\"PESOPL_3\")/CopyField(\"PESO_1\")";
+            location = (65.28125, 2);
+            formula = "GetValue(\"LENGTH\")";
             maxnumoflines = 1;
             datatype = DOUBLE;
-            class = "";
+            class = "Length";
             cacheable = TRUE;
             formatzeroasempty = TRUE;
             justify = CENTERED;
             visibility = TRUE;
             angle = 0;
-            length = 10;
+            length = 8;
             decimals = 2;
             sortdirection = NONE;
             fontname = "Arial";
@@ -1063,6 +1090,7 @@ template template_1343
             fontslant = 0;
             pen = 0;
             oncombine = SUM;
+            unit = "m";
             aligncontenttotop = FALSE;
         };
 
@@ -1109,62 +1137,6 @@ template template_1343
             bulge = 0;
         };
 
-        valuefield _tmp_15
-        {
-            name = "SUPERF_2";
-            location = (83, 2);
-            formula = "if CopyField(\"LONGITUD\")==0 then (CopyField(\"PESOPL_3\")/CopyField(\"SUPERF_3\"))\r\r\r\n  \r\r\r\nelse 0\r\r\r\n  \r\r\r\nendif";
-            maxnumoflines = 1;
-            datatype = DOUBLE;
-            class = "";
-            cacheable = TRUE;
-            formatzeroasempty = TRUE;
-            justify = CENTERED;
-            visibility = TRUE;
-            angle = 0;
-            length = 8;
-            decimals = 3;
-            sortdirection = NONE;
-            fontname = "Arial";
-            fontcolor = 153;
-            fonttype = 2;
-            fontsize = 2.5;
-            fontratio = 1;
-            fontstyle = 0;
-            fontslant = 0;
-            pen = 0;
-            oncombine = CLOSESUM;
-            aligncontenttotop = FALSE;
-        };
-
-        valuefield _tmp_17
-        {
-            name = "SUPERF_3";
-            location = (114.9609375, 2);
-            formula = "if CopyField(\"LONGITUD\")==0 then ((GetValue(\"WIDTH\")/1000)*7850)  \r\r\nelse 0 \r\r\nendif";
-            maxnumoflines = 1;
-            datatype = DOUBLE;
-            class = "";
-            cacheable = TRUE;
-            formatzeroasempty = TRUE;
-            justify = CENTERED;
-            visibility = TRUE;
-            angle = 0;
-            length = 6;
-            decimals = 2;
-            sortdirection = NONE;
-            fontname = "Arial";
-            fontcolor = 153;
-            fonttype = 2;
-            fontsize = 2.5;
-            fontratio = 1;
-            fontstyle = 0;
-            fontslant = 0;
-            pen = 0;
-            oncombine = CLOSESUM;
-            aligncontenttotop = FALSE;
-        };
-
         lineorarc _tmp_10
         {
             name = "LíneaOArco_18";
@@ -1177,6 +1149,35 @@ template template_1343
             linetype = 1;
             linewidth = 2;
             bulge = 0;
+        };
+
+        valuefield _tmp_1
+        {
+            name = "PESOPL_2";
+            location = (127.28125, 2);
+            formula = "CopyField(\"LONGITUD\")*CopyField(\"PESO_1\")/1000";
+            maxnumoflines = 1;
+            datatype = DOUBLE;
+            class = "Weight";
+            cacheable = TRUE;
+            formatzeroasempty = FALSE;
+            justify = CENTERED;
+            visibility = TRUE;
+            angle = 0;
+            length = 8;
+            decimals = 2;
+            sortdirection = NONE;
+            fontname = "Arial";
+            fontcolor = 153;
+            fonttype = 2;
+            fontsize = 2.5;
+            fontratio = 1;
+            fontstyle = 0;
+            fontslant = 0;
+            pen = 0;
+            oncombine = SUM;
+            unit = "kg";
+            aligncontenttotop = FALSE;
         };
     };
 
