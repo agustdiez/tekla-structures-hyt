@@ -1,10 +1,9 @@
-
 template template_1343
 {
     name = "template_1343";
     type = GRAPHICAL;
-    width = 200;
-    maxheight = 100;
+    width = 240;
+    maxheight = 150;
     columns = (1, 1);
     gap = 1;
     fillpolicy = EVEN;
@@ -15,7 +14,7 @@ template template_1343
     gridyspacing = 1;
     version = 4.1;
     created = "03.05.2004 13:23";
-    modified = "19.05.2026 16:51";
+    modified = "17.06.2026 16:04";
     notes = "";
     colors = "153;152;160;161;162;163;164;165;154;155;156;157;158;159;130;131;132;133;";
 
@@ -53,7 +52,7 @@ template template_1343
         {
             name = "LineOrArc_11";
             x1 = 60;
-            y1 = -0;
+            y1 = 0;
             x2 = 60;
             y2 = 8;
             pen = -1;
@@ -263,7 +262,7 @@ template template_1343
             name = "LíneaOArco_10";
             x1 = 0;
             y1 = 0;
-            x2 = -0;
+            x2 = 0;
             y2 = 5;
             pen = -1;
             color = 153;
@@ -278,7 +277,7 @@ template template_1343
             x1 = 0;
             y1 = 0;
             x2 = 159;
-            y2 = -0;
+            y2 = 0;
             pen = -1;
             color = 153;
             linetype = 1;
@@ -304,7 +303,7 @@ template template_1343
         {
             name = "LineOrArc";
             x1 = 60;
-            y1 = -0;
+            y1 = 0;
             x2 = 60;
             y2 = 5;
             pen = -1;
@@ -770,7 +769,7 @@ template template_1343
         rectangle _tmp_18
         {
             name = "Rectángulo_2";
-            x1 = -0;
+            x1 = 0;
             y1 = 0;
             x2 = 159;
             y2 = 6;
@@ -941,7 +940,7 @@ template template_1343
             x1 = 60;
             y1 = 6;
             x2 = 60;
-            y2 = -0;
+            y2 = 0;
             pen = -1;
             color = 153;
             linetype = 1;
@@ -1255,7 +1254,7 @@ template template_1343
         rectangle _tmp_122
         {
             name = "Rectángulo_3";
-            x1 = -0;
+            x1 = 0;
             y1 = 0;
             x2 = 159;
             y2 = 6;
@@ -1350,7 +1349,7 @@ template template_1343
             x1 = 60;
             y1 = 6;
             x2 = 60;
-            y2 = -0;
+            y2 = 0;
             pen = -1;
             color = 153;
             linetype = 1;
@@ -3379,7 +3378,7 @@ template template_1343
         rectangle _tmp_77
         {
             name = "Rectángulo_11";
-            x1 = -0;
+            x1 = 0;
             y1 = 0;
             x2 = 159;
             y2 = 6;
@@ -3425,7 +3424,7 @@ template template_1343
             x1 = 60;
             y1 = 6;
             x2 = 60;
-            y2 = -0;
+            y2 = 0;
             pen = -1;
             color = 153;
             linetype = 1;
@@ -3565,14 +3564,14 @@ template template_1343
         height = 6;
         visibility = TRUE;
         usecolumns = FALSE;
-        rule = "if (GetValue(\"CAST_UNIT.MATERIAL\")== \"SIKAGROUT 212\" ) then\n  Output()\nelse\n  StepOut()\nendif";
+        rule = "if (GetValue(\"NAME\")== \"GROUT\" ) then\n  Output()\nelse\n  StepOut()\nendif";
         contenttype = "PART";
         sorttype = COMBINE;
 
         rectangle _tmp_67
         {
             name = "Rectángulo_13";
-            x1 = -0;
+            x1 = 0;
             y1 = 0;
             x2 = 159;
             y2 = 6;
@@ -3587,8 +3586,8 @@ template template_1343
         valuefield _tmp_69
         {
             name = "MATERIAL_6";
-            location = (63.1640625, 2);
-            formula = "GetValue(\"CAST_UNIT.MATERIAL\")";
+            location = (60.1640625, 2);
+            formula = "GetValue(\"USERDEFINED.USER_FIELD_2\")";
             maxnumoflines = 1;
             datatype = STRING;
             class = "";
@@ -3597,7 +3596,7 @@ template template_1343
             justify = RIGHT;
             visibility = TRUE;
             angle = 0;
-            length = 15;
+            length = 17;
             decimals = 0;
             sortdirection = ASCENDING;
             fontname = "Arial";
@@ -3612,33 +3611,13 @@ template template_1343
             aligncontenttotop = FALSE;
         };
 
-        text _tmp_70
-        {
-            name = "Texto_36";
-            x1 = 1;
-            y1 = 2;
-            x2 = 1;
-            y2 = 2;
-            string = "GROUT CEMENTICIO";
-            fontname = "Arial";
-            fontcolor = 153;
-            fonttype = 2;
-            fontsize = 2.5;
-            fontratio = 1;
-            fontslant = 0;
-            fontstyle = 0;
-            angle = 0;
-            justify = CENTERED;
-            pen = -1;
-        };
-
         lineorarc _tmp_71
         {
             name = "LíneaOArco_67";
             x1 = 60;
             y1 = 6;
             x2 = 60;
-            y2 = -0;
+            y2 = 0;
             pen = -1;
             color = 153;
             linetype = 1;
@@ -3819,6 +3798,34 @@ template template_1343
             justify = CENTERED;
             pen = -1;
         };
+
+        valuefield _tmp_0
+        {
+            name = "TIPO_GROUT";
+            location = (1, 2);
+            formula = "GetValue(\"MATERIAL\")\n";
+            maxnumoflines = 1;
+            datatype = STRING;
+            class = "";
+            cacheable = TRUE;
+            formatzeroasempty = FALSE;
+            justify = LEFT;
+            visibility = TRUE;
+            angle = 0;
+            length = 25;
+            decimals = 0;
+            sortdirection = ASCENDING;
+            fontname = "Arial";
+            fontcolor = 153;
+            fonttype = 2;
+            fontsize = 2.5;
+            fontratio = 1;
+            fontstyle = 0;
+            fontslant = 0;
+            pen = 0;
+            oncombine = NONE;
+            aligncontenttotop = FALSE;
+        };
     };
 
     row _tmp_111
@@ -3911,7 +3918,7 @@ template template_1343
         rectangle _tmp_120
         {
             name = "Rectángulo_14";
-            x1 = -0;
+            x1 = 0;
             y1 = 0;
             x2 = 159;
             y2 = 6;
@@ -4263,7 +4270,7 @@ template template_1343
         rectangle _tmp_181
         {
             name = "Rectángulo_15";
-            x1 = -0;
+            x1 = 0;
             y1 = 0;
             x2 = 159;
             y2 = 6;
@@ -4281,7 +4288,7 @@ template template_1343
             x1 = 60;
             y1 = 6;
             x2 = 60;
-            y2 = -0;
+            y2 = 0;
             pen = -1;
             color = 153;
             linetype = 1;
@@ -4526,15 +4533,15 @@ template template_1343
         height = 6;
         visibility = TRUE;
         usecolumns = FALSE;
-        rule = "if(match(GetValue(\"PROFILE\"), \"ESPARRAGO*\")) then\n Output() \nelse\n StepOver() \nendif";
+        rule = "if(match(GetValue(\"NAME\"), \"ANCLAJE\")) then\n Output() \nelse\n StepOver() \nendif";
         contenttype = "PART";
         sorttype = COMBINE;
 
         valuefield _tmp_230
         {
             name = "MATERIAL_9";
-            location = (71.08203125, 2);
-            formula = "GetValue(\"MATERIAL\")";
+            location = (62.08203125, 2);
+            formula = "GetValue(\"USERDEFINED.USER_FIELD_2\")";
             maxnumoflines = 1;
             datatype = STRING;
             class = "";
@@ -4543,7 +4550,7 @@ template template_1343
             justify = CENTERED;
             visibility = TRUE;
             angle = 0;
-            length = 17;
+            length = 27;
             decimals = 0;
             sortdirection = ASCENDING;
             fontname = "Arial";
@@ -4599,7 +4606,7 @@ template template_1343
             x1 = 60;
             y1 = 6;
             x2 = 60;
-            y2 = -0;
+            y2 = 0;
             pen = -1;
             color = 153;
             linetype = 1;
@@ -4898,166 +4905,1131 @@ template template_1343
         };
     };
 
-    row _tmp_2
+    row _tmp_4
     {
-        name = "OBJETOREF";
+        name = "EXCAV";
         height = 6;
-        visibility = TRUE;
+        visibility = FALSE;
         usecolumns = FALSE;
-        rule = "";
-        contenttype = "REFERENCE_OBJECT";
+        rule = "if(match(GetValue(\"NAME\"),\"EXCAVACIÓN\")) then\n Output() \nelse\n StepOver() \nendif";
+        contenttype = "PART";
         sorttype = COMBINE;
 
-        lineorarc _tmp_13
+        row _tmp_2
         {
-            name = "LíneaOArco_87";
-            x1 = 60;
-            y1 = 6;
-            x2 = 60;
-            y2 = -0;
-            pen = -1;
-            color = 153;
-            linetype = 1;
-            linewidth = 2;
-            bulge = 0;
+            name = "EXCAVACION";
+            height = 6;
+            visibility = FALSE;
+            usecolumns = FALSE;
+            rule = "";
+            contenttype = "PART";
+            sorttype = COMBINE;
+
+            lineorarc _tmp_41
+            {
+                name = "LíneaOArco_87";
+                x1 = 108.94770599212;
+                y1 = 6;
+                x2 = 108.94770599212;
+                y2 = 0;
+                pen = -1;
+                color = 153;
+                linetype = 1;
+                linewidth = 2;
+                bulge = 0;
+            };
+
+            lineorarc _tmp_42
+            {
+                name = "LíneaOArco_88";
+                x1 = 133.94770599212;
+                y1 = 6;
+                x2 = 133.94770599212;
+                y2 = 0;
+                pen = -1;
+                color = 153;
+                linetype = 1;
+                linewidth = 2;
+                bulge = 0;
+            };
+
+            lineorarc _tmp_43
+            {
+                name = "LíneaOArco_89";
+                x1 = 126.94770599212;
+                y1 = 6;
+                x2 = 126.94770599212;
+                y2 = 0;
+                pen = -1;
+                color = 153;
+                linetype = 1;
+                linewidth = 1;
+                bulge = 0;
+            };
+
+            text _tmp_44
+            {
+                name = "Texto_48";
+                x1 = 127.94770599212;
+                y1 = 2;
+                x2 = 127.94770599212;
+                y2 = 2;
+                string = "m3";
+                fontname = "Arial";
+                fontcolor = 153;
+                fonttype = 2;
+                fontsize = 2.5;
+                fontratio = 1;
+                fontslant = 0;
+                fontstyle = 0;
+                angle = 0;
+                justify = LEFT;
+                pen = -1;
+            };
+
+            text _tmp_45
+            {
+                name = "Texto_49";
+                x1 = 152.94770599212;
+                y1 = 2;
+                x2 = 152.94770599212;
+                y2 = 2;
+                string = "m3";
+                fontname = "Arial";
+                fontcolor = 153;
+                fonttype = 2;
+                fontsize = 2.5;
+                fontratio = 1;
+                fontslant = 0;
+                fontstyle = 0;
+                angle = 0;
+                justify = LEFT;
+                pen = -1;
+            };
+
+            lineorarc _tmp_46
+            {
+                name = "LíneaOArco_90";
+                x1 = 151.94770599212;
+                y1 = 6;
+                x2 = 151.94770599212;
+                y2 = 0;
+                pen = -1;
+                color = 153;
+                linetype = 1;
+                linewidth = 1;
+                bulge = 0;
+            };
+
+            rectangle _tmp_47
+            {
+                name = "Rectángulo_17";
+                x1 = 0;
+                y1 = 0;
+                x2 = 159;
+                y2 = 6;
+                filled = FALSE;
+                filltype = -1;
+                pen = -1;
+                color = 153;
+                linetype = 1;
+                linewidth = 2;
+            };
+
+            valuefield _tmp_48
+            {
+                name = "VOLEXC2";
+                location = (136.28125, 2);
+                formula = "GetValue(\"VOLUME\")";
+                maxnumoflines = 1;
+                datatype = DOUBLE;
+                class = "Volume";
+                cacheable = TRUE;
+                formatzeroasempty = FALSE;
+                justify = CENTERED;
+                visibility = TRUE;
+                angle = 0;
+                length = 8;
+                decimals = 2;
+                sortdirection = ASCENDING;
+                fontname = "Arial";
+                fontcolor = 153;
+                fonttype = 2;
+                fontsize = 2.5;
+                fontratio = 1;
+                fontstyle = 0;
+                fontslant = 0;
+                pen = 0;
+                oncombine = SUM;
+                unit = "m3";
+                aligncontenttotop = FALSE;
+            };
+
+            valuefield _tmp_50
+            {
+                name = "NUM_2";
+                location = (159.80078125, 2);
+                formula = "GetValue(\"NUMBER\")";
+                maxnumoflines = 1;
+                datatype = INTEGER;
+                class = "";
+                cacheable = TRUE;
+                formatzeroasempty = FALSE;
+                justify = CENTERED;
+                visibility = TRUE;
+                angle = 0;
+                length = 5;
+                decimals = 2;
+                sortdirection = NONE;
+                fontname = "Arial";
+                fontcolor = 153;
+                fonttype = 2;
+                fontsize = 2.5;
+                fontratio = 1;
+                fontstyle = 0;
+                fontslant = 0;
+                pen = 0;
+                oncombine = SUM;
+                aligncontenttotop = FALSE;
+            };
+
+            text _tmp_52
+            {
+                name = "Texto_51";
+                x1 = 1;
+                y1 = 2;
+                x2 = 1;
+                y2 = 2;
+                string = "EXCAVACIÓN";
+                fontname = "Arial";
+                fontcolor = 153;
+                fonttype = 2;
+                fontsize = 2.5;
+                fontratio = 1;
+                fontslant = 0;
+                fontstyle = 0;
+                angle = 0;
+                justify = CENTERED;
+                pen = -1;
+            };
+
+            valuefield _tmp_14
+            {
+                name = "VOLEXC1";
+                location = (111, 2);
+                formula = "GetValue(\"VOLUME\")";
+                maxnumoflines = 1;
+                datatype = DOUBLE;
+                class = "Volume";
+                cacheable = TRUE;
+                formatzeroasempty = FALSE;
+                justify = CENTERED;
+                visibility = TRUE;
+                angle = 0;
+                length = 8;
+                decimals = 2;
+                sortdirection = ASCENDING;
+                fontname = "Arial";
+                fontcolor = 153;
+                fonttype = 2;
+                fontsize = 2.5;
+                fontratio = 1;
+                fontstyle = 0;
+                fontslant = 0;
+                pen = 0;
+                oncombine = NONE;
+                unit = "m3";
+                aligncontenttotop = FALSE;
+            };
+
+            lineorarc _tmp_18
+            {
+                name = "LíneaOArco_63";
+                x1 = 60;
+                y1 = 6;
+                x2 = 60;
+                y2 = 0;
+                pen = -1;
+                color = 153;
+                linetype = 1;
+                linewidth = 2;
+                bulge = 0;
+            };
         };
 
-        lineorarc _tmp_14
+        row _tmp_2
         {
-            name = "LíneaOArco_88";
-            x1 = 108.94770599212;
-            y1 = 6;
-            x2 = 108.94770599212;
-            y2 = 0;
-            pen = -1;
-            color = 153;
-            linetype = 1;
-            linewidth = 2;
-            bulge = 0;
+            name = "TOTEXC";
+            height = 6;
+            visibility = TRUE;
+            usecolumns = FALSE;
+            rule = "";
+            contenttype = "PART";
+            sorttype = COMBINE;
+
+            lineorarc _tmp_15
+            {
+                name = "LíneaOArco_64";
+                x1 = 108.94770599212;
+                y1 = 6;
+                x2 = 108.94770599212;
+                y2 = 0;
+                pen = -1;
+                color = 153;
+                linetype = 1;
+                linewidth = 2;
+                bulge = 0;
+            };
+
+            lineorarc _tmp_16
+            {
+                name = "LíneaOArco_65";
+                x1 = 133.94770599212;
+                y1 = 6;
+                x2 = 133.94770599212;
+                y2 = 0;
+                pen = -1;
+                color = 153;
+                linetype = 1;
+                linewidth = 2;
+                bulge = 0;
+            };
+
+            lineorarc _tmp_17
+            {
+                name = "LíneaOArco_66";
+                x1 = 126.94770599212;
+                y1 = 6;
+                x2 = 126.94770599212;
+                y2 = 0;
+                pen = -1;
+                color = 153;
+                linetype = 1;
+                linewidth = 1;
+                bulge = 0;
+            };
+
+            text _tmp_18
+            {
+                name = "Texto_35";
+                x1 = 127.94770599212;
+                y1 = 2;
+                x2 = 127.94770599212;
+                y2 = 2;
+                string = "m3";
+                fontname = "Arial";
+                fontcolor = 153;
+                fonttype = 2;
+                fontsize = 2.5;
+                fontratio = 1;
+                fontslant = 0;
+                fontstyle = 0;
+                angle = 0;
+                justify = LEFT;
+                pen = -1;
+            };
+
+            text _tmp_19
+            {
+                name = "Texto_63";
+                x1 = 152.94770599212;
+                y1 = 2;
+                x2 = 152.94770599212;
+                y2 = 2;
+                string = "m3";
+                fontname = "Arial";
+                fontcolor = 153;
+                fonttype = 2;
+                fontsize = 2.5;
+                fontratio = 1;
+                fontslant = 0;
+                fontstyle = 0;
+                angle = 0;
+                justify = LEFT;
+                pen = -1;
+            };
+
+            lineorarc _tmp_20
+            {
+                name = "LíneaOArco_91";
+                x1 = 151.94770599212;
+                y1 = 6;
+                x2 = 151.94770599212;
+                y2 = 0;
+                pen = -1;
+                color = 153;
+                linetype = 1;
+                linewidth = 1;
+                bulge = 0;
+            };
+
+            rectangle _tmp_21
+            {
+                name = "Rectángulo_12";
+                x1 = 0;
+                y1 = 0;
+                x2 = 159;
+                y2 = 6;
+                filled = FALSE;
+                filltype = -1;
+                pen = -1;
+                color = 153;
+                linetype = 1;
+                linewidth = 2;
+            };
+
+            valuefield _tmp_22
+            {
+                name = "TOTEXC2";
+                location = (136.28125, 2);
+                formula = "Sum(\"VOLEXC2\")";
+                maxnumoflines = 1;
+                datatype = DOUBLE;
+                class = "Volume";
+                cacheable = TRUE;
+                formatzeroasempty = FALSE;
+                justify = CENTERED;
+                visibility = TRUE;
+                angle = 0;
+                length = 8;
+                decimals = 2;
+                sortdirection = NONE;
+                fontname = "Arial";
+                fontcolor = 153;
+                fonttype = 2;
+                fontsize = 2.5;
+                fontratio = 1;
+                fontstyle = 0;
+                fontslant = 0;
+                pen = 0;
+                oncombine = SUM;
+                unit = "m3";
+                aligncontenttotop = FALSE;
+            };
+
+            valuefield _tmp_23
+            {
+                name = "NUM_3";
+                location = (159.80078125, 2);
+                formula = "Sum(\"NUM_2\")";
+                maxnumoflines = 1;
+                datatype = INTEGER;
+                class = "";
+                cacheable = TRUE;
+                formatzeroasempty = FALSE;
+                justify = CENTERED;
+                visibility = FALSE;
+                angle = 0;
+                length = 5;
+                decimals = 2;
+                sortdirection = NONE;
+                fontname = "Arial";
+                fontcolor = 153;
+                fonttype = 2;
+                fontsize = 2.5;
+                fontratio = 1;
+                fontstyle = 0;
+                fontslant = 0;
+                pen = 0;
+                oncombine = SUM;
+                aligncontenttotop = FALSE;
+            };
+
+            text _tmp_24
+            {
+                name = "Texto_64";
+                x1 = 1;
+                y1 = 2;
+                x2 = 1;
+                y2 = 2;
+                string = "EXCAVACIÓN (*)";
+                fontname = "Arial";
+                fontcolor = 153;
+                fonttype = 2;
+                fontsize = 2.5;
+                fontratio = 1;
+                fontslant = 0;
+                fontstyle = 0;
+                angle = 0;
+                justify = CENTERED;
+                pen = -1;
+            };
+
+            lineorarc _tmp_26
+            {
+                name = "LíneaOArco_97";
+                x1 = 60;
+                y1 = 6;
+                x2 = 60;
+                y2 = 0;
+                pen = -1;
+                color = 153;
+                linetype = 1;
+                linewidth = 2;
+                bulge = 0;
+            };
+
+            valuefield _tmp_28
+            {
+                name = "PROMU";
+                location = (111, 2);
+                formula = "CopyField(\"TOTEXC2\")/CopyField(\"NUM_3\")";
+                maxnumoflines = 1;
+                datatype = DOUBLE;
+                class = "Volume";
+                cacheable = TRUE;
+                formatzeroasempty = FALSE;
+                justify = CENTERED;
+                visibility = TRUE;
+                angle = 0;
+                length = 8;
+                decimals = 2;
+                sortdirection = NONE;
+                fontname = "Arial";
+                fontcolor = 153;
+                fonttype = 2;
+                fontsize = 2.5;
+                fontratio = 1;
+                fontstyle = 0;
+                fontslant = 0;
+                pen = 0;
+                oncombine = NONE;
+                unit = "m3";
+                aligncontenttotop = FALSE;
+            };
+
+            text _tmp_30
+            {
+                name = "Texto_65";
+                x1 = 122.94770599212;
+                y1 = 3;
+                x2 = 122.94770599212;
+                y2 = 3;
+                string = "(**)";
+                fontname = "Arial";
+                fontcolor = 153;
+                fonttype = 2;
+                fontsize = 2;
+                fontratio = 1;
+                fontslant = 0;
+                fontstyle = 0;
+                angle = 0;
+                justify = LEFT;
+                pen = -1;
+            };
+
+            text _tmp_73
+            {
+                name = "Texto_74";
+                x1 = 82.1875;
+                y1 = 3;
+                x2 = 82.1875;
+                y2 = 3;
+                string = "___";
+                fontname = "Arial";
+                fontcolor = 153;
+                fonttype = 2;
+                fontsize = 2.5;
+                fontratio = 1;
+                fontslant = 0;
+                fontstyle = 0;
+                angle = 0;
+                justify = CENTERED;
+                pen = -1;
+            };
+        };
+    };
+
+    row _tmp_16
+    {
+        name = "RELL";
+        height = 6;
+        visibility = FALSE;
+        usecolumns = FALSE;
+        rule = "if(match(GetValue(\"NAME\"),\"RELLENO\")) then\n Output() \nelse\n StepOver() \nendif";
+        contenttype = "PART";
+        sorttype = COMBINE;
+
+        row _tmp_3
+        {
+            name = "RELLENO";
+            height = 6;
+            visibility = FALSE;
+            usecolumns = FALSE;
+            rule = "";
+            contenttype = "PART";
+            sorttype = COMBINE;
+
+            lineorarc _tmp_22
+            {
+                name = "LíneaOArco_92";
+                x1 = 60;
+                y1 = 6;
+                x2 = 60;
+                y2 = 0;
+                pen = -1;
+                color = 153;
+                linetype = 1;
+                linewidth = 2;
+                bulge = 0;
+            };
+
+            lineorarc _tmp_23
+            {
+                name = "LíneaOArco_93";
+                x1 = 108.94770599212;
+                y1 = 6;
+                x2 = 108.94770599212;
+                y2 = 0;
+                pen = -1;
+                color = 153;
+                linetype = 1;
+                linewidth = 2;
+                bulge = 0;
+            };
+
+            lineorarc _tmp_24
+            {
+                name = "LíneaOArco_94";
+                x1 = 133.94770599212;
+                y1 = 6;
+                x2 = 133.94770599212;
+                y2 = 0;
+                pen = -1;
+                color = 153;
+                linetype = 1;
+                linewidth = 2;
+                bulge = 0;
+            };
+
+            lineorarc _tmp_25
+            {
+                name = "LíneaOArco_95";
+                x1 = 126.94770599212;
+                y1 = 6;
+                x2 = 126.94770599212;
+                y2 = 0;
+                pen = -1;
+                color = 153;
+                linetype = 1;
+                linewidth = 1;
+                bulge = 0;
+            };
+
+            text _tmp_26
+            {
+                name = "Texto_60";
+                x1 = 127.94770599212;
+                y1 = 2;
+                x2 = 127.94770599212;
+                y2 = 2;
+                string = "m3";
+                fontname = "Arial";
+                fontcolor = 153;
+                fonttype = 2;
+                fontsize = 2.5;
+                fontratio = 1;
+                fontslant = 0;
+                fontstyle = 0;
+                angle = 0;
+                justify = LEFT;
+                pen = -1;
+            };
+
+            text _tmp_27
+            {
+                name = "Texto_61";
+                x1 = 152.94770599212;
+                y1 = 2;
+                x2 = 152.94770599212;
+                y2 = 2;
+                string = "m3";
+                fontname = "Arial";
+                fontcolor = 153;
+                fonttype = 2;
+                fontsize = 2.5;
+                fontratio = 1;
+                fontslant = 0;
+                fontstyle = 0;
+                angle = 0;
+                justify = LEFT;
+                pen = -1;
+            };
+
+            lineorarc _tmp_28
+            {
+                name = "LíneaOArco_96";
+                x1 = 151.94770599212;
+                y1 = 6;
+                x2 = 151.94770599212;
+                y2 = 0;
+                pen = -1;
+                color = 153;
+                linetype = 1;
+                linewidth = 1;
+                bulge = 0;
+            };
+
+            rectangle _tmp_29
+            {
+                name = "Rectángulo_18";
+                x1 = 0;
+                y1 = 0;
+                x2 = 159;
+                y2 = 6;
+                filled = FALSE;
+                filltype = -1;
+                pen = -1;
+                color = 153;
+                linetype = 1;
+                linewidth = 2;
+            };
+
+            text _tmp_30
+            {
+                name = "Texto_62";
+                x1 = 1;
+                y1 = 2;
+                x2 = 1;
+                y2 = 2;
+                string = "RELLENO";
+                fontname = "Arial";
+                fontcolor = 153;
+                fonttype = 2;
+                fontsize = 2.5;
+                fontratio = 1;
+                fontslant = 0;
+                fontstyle = 0;
+                angle = 0;
+                justify = CENTERED;
+                pen = -1;
+            };
+
+            valuefield _tmp_6
+            {
+                name = "VOLRELL2";
+                location = (136, 2);
+                formula = "GetValue(\"VOLUME\")";
+                maxnumoflines = 1;
+                datatype = DOUBLE;
+                class = "Volume";
+                cacheable = TRUE;
+                formatzeroasempty = FALSE;
+                justify = CENTERED;
+                visibility = TRUE;
+                angle = 0;
+                length = 8;
+                decimals = 2;
+                sortdirection = ASCENDING;
+                fontname = "Arial";
+                fontcolor = 153;
+                fonttype = 2;
+                fontsize = 2.5;
+                fontratio = 1;
+                fontstyle = 0;
+                fontslant = 0;
+                pen = 0;
+                oncombine = SUM;
+                unit = "m3";
+                aligncontenttotop = FALSE;
+            };
+
+            valuefield _tmp_8
+            {
+                name = "NUM";
+                location = (160, 2);
+                formula = "GetValue(\"NUMBER\")";
+                maxnumoflines = 1;
+                datatype = INTEGER;
+                class = "";
+                cacheable = TRUE;
+                formatzeroasempty = FALSE;
+                justify = CENTERED;
+                visibility = TRUE;
+                angle = 0;
+                length = 5;
+                decimals = 2;
+                sortdirection = NONE;
+                fontname = "Arial";
+                fontcolor = 153;
+                fonttype = 2;
+                fontsize = 2.5;
+                fontratio = 1;
+                fontstyle = 0;
+                fontslant = 0;
+                pen = 0;
+                oncombine = SUM;
+                aligncontenttotop = FALSE;
+            };
+
+            valuefield _tmp_12
+            {
+                name = "VOLRELL1";
+                location = (111, 2);
+                formula = "GetValue(\"VOLUME\")";
+                maxnumoflines = 1;
+                datatype = DOUBLE;
+                class = "Volume";
+                cacheable = TRUE;
+                formatzeroasempty = FALSE;
+                justify = CENTERED;
+                visibility = TRUE;
+                angle = 0;
+                length = 8;
+                decimals = 2;
+                sortdirection = ASCENDING;
+                fontname = "Arial";
+                fontcolor = 153;
+                fonttype = 2;
+                fontsize = 2.5;
+                fontratio = 1;
+                fontstyle = 0;
+                fontslant = 0;
+                pen = 0;
+                oncombine = NONE;
+                unit = "m3";
+                aligncontenttotop = FALSE;
+            };
         };
 
-        lineorarc _tmp_15
+        row _tmp_32
         {
-            name = "LíneaOArco_89";
-            x1 = 133.94770599212;
-            y1 = 6;
-            x2 = 133.94770599212;
-            y2 = 0;
-            pen = -1;
-            color = 153;
-            linetype = 1;
-            linewidth = 2;
-            bulge = 0;
+            name = "TOTRELL";
+            height = 6;
+            visibility = TRUE;
+            usecolumns = FALSE;
+            rule = "";
+            contenttype = "PART";
+            sorttype = COMBINE;
+
+            lineorarc _tmp_45
+            {
+                name = "LíneaOArco_98";
+                x1 = 60;
+                y1 = 6;
+                x2 = 60;
+                y2 = 0;
+                pen = -1;
+                color = 153;
+                linetype = 1;
+                linewidth = 2;
+                bulge = 0;
+            };
+
+            lineorarc _tmp_46
+            {
+                name = "LíneaOArco_99";
+                x1 = 108.94770599212;
+                y1 = 6;
+                x2 = 108.94770599212;
+                y2 = 0;
+                pen = -1;
+                color = 153;
+                linetype = 1;
+                linewidth = 2;
+                bulge = 0;
+            };
+
+            lineorarc _tmp_47
+            {
+                name = "LíneaOArco_100";
+                x1 = 133.94770599212;
+                y1 = 6;
+                x2 = 133.94770599212;
+                y2 = 0;
+                pen = -1;
+                color = 153;
+                linetype = 1;
+                linewidth = 2;
+                bulge = 0;
+            };
+
+            lineorarc _tmp_48
+            {
+                name = "LíneaOArco_101";
+                x1 = 126.94770599212;
+                y1 = 6;
+                x2 = 126.94770599212;
+                y2 = 0;
+                pen = -1;
+                color = 153;
+                linetype = 1;
+                linewidth = 1;
+                bulge = 0;
+            };
+
+            text _tmp_49
+            {
+                name = "Texto_66";
+                x1 = 127.94770599212;
+                y1 = 2;
+                x2 = 127.94770599212;
+                y2 = 2;
+                string = "m3";
+                fontname = "Arial";
+                fontcolor = 153;
+                fonttype = 2;
+                fontsize = 2.5;
+                fontratio = 1;
+                fontslant = 0;
+                fontstyle = 0;
+                angle = 0;
+                justify = LEFT;
+                pen = -1;
+            };
+
+            text _tmp_50
+            {
+                name = "Texto_67";
+                x1 = 152.94770599212;
+                y1 = 2;
+                x2 = 152.94770599212;
+                y2 = 2;
+                string = "m3";
+                fontname = "Arial";
+                fontcolor = 153;
+                fonttype = 2;
+                fontsize = 2.5;
+                fontratio = 1;
+                fontslant = 0;
+                fontstyle = 0;
+                angle = 0;
+                justify = LEFT;
+                pen = -1;
+            };
+
+            lineorarc _tmp_51
+            {
+                name = "LíneaOArco_102";
+                x1 = 151.94770599212;
+                y1 = 6;
+                x2 = 151.94770599212;
+                y2 = 0;
+                pen = -1;
+                color = 153;
+                linetype = 1;
+                linewidth = 1;
+                bulge = 0;
+            };
+
+            rectangle _tmp_52
+            {
+                name = "Rectángulo_19";
+                x1 = 0;
+                y1 = 0;
+                x2 = 159;
+                y2 = 6;
+                filled = FALSE;
+                filltype = -1;
+                pen = -1;
+                color = 153;
+                linetype = 1;
+                linewidth = 2;
+            };
+
+            text _tmp_53
+            {
+                name = "Texto_68";
+                x1 = 1;
+                y1 = 2;
+                x2 = 1;
+                y2 = 2;
+                string = "RELLENO (*)";
+                fontname = "Arial";
+                fontcolor = 153;
+                fonttype = 2;
+                fontsize = 2.5;
+                fontratio = 1;
+                fontslant = 0;
+                fontstyle = 0;
+                angle = 0;
+                justify = CENTERED;
+                pen = -1;
+            };
+
+            valuefield _tmp_54
+            {
+                name = "VOLRELL2_1";
+                location = (136, 2);
+                formula = "Sum(\"VOLRELL2\")";
+                maxnumoflines = 1;
+                datatype = DOUBLE;
+                class = "Volume";
+                cacheable = TRUE;
+                formatzeroasempty = FALSE;
+                justify = CENTERED;
+                visibility = TRUE;
+                angle = 0;
+                length = 8;
+                decimals = 2;
+                sortdirection = ASCENDING;
+                fontname = "Arial";
+                fontcolor = 153;
+                fonttype = 2;
+                fontsize = 2.5;
+                fontratio = 1;
+                fontstyle = 0;
+                fontslant = 0;
+                pen = 0;
+                oncombine = SUM;
+                unit = "m3";
+                aligncontenttotop = FALSE;
+            };
+
+            valuefield _tmp_55
+            {
+                name = "NUM_4";
+                location = (159.80078125, 2);
+                formula = "Sum(\"NUM\")";
+                maxnumoflines = 1;
+                datatype = INTEGER;
+                class = "";
+                cacheable = TRUE;
+                formatzeroasempty = FALSE;
+                justify = CENTERED;
+                visibility = FALSE;
+                angle = 0;
+                length = 5;
+                decimals = 2;
+                sortdirection = NONE;
+                fontname = "Arial";
+                fontcolor = 153;
+                fonttype = 2;
+                fontsize = 2.5;
+                fontratio = 1;
+                fontstyle = 0;
+                fontslant = 0;
+                pen = 0;
+                oncombine = SUM;
+                aligncontenttotop = FALSE;
+            };
+
+            valuefield _tmp_56
+            {
+                name = "PROM";
+                location = (111, 2);
+                formula = "CopyField(\"VOLRELL2_1\")/CopyField(\"NUM_4\")";
+                maxnumoflines = 1;
+                datatype = DOUBLE;
+                class = "Volume";
+                cacheable = TRUE;
+                formatzeroasempty = FALSE;
+                justify = CENTERED;
+                visibility = TRUE;
+                angle = 0;
+                length = 8;
+                decimals = 2;
+                sortdirection = NONE;
+                fontname = "Arial";
+                fontcolor = 153;
+                fonttype = 2;
+                fontsize = 2.5;
+                fontratio = 1;
+                fontstyle = 0;
+                fontslant = 0;
+                pen = 0;
+                oncombine = NONE;
+                unit = "m3";
+                aligncontenttotop = FALSE;
+            };
+
+            text _tmp_69
+            {
+                name = "Texto_73";
+                x1 = 82.1875;
+                y1 = 3;
+                x2 = 82.1875;
+                y2 = 3;
+                string = "___";
+                fontname = "Arial";
+                fontcolor = 153;
+                fonttype = 2;
+                fontsize = 2.5;
+                fontratio = 1;
+                fontslant = 0;
+                fontstyle = 0;
+                angle = 0;
+                justify = CENTERED;
+                pen = -1;
+            };
+
+            text _tmp_1
+            {
+                name = "Texto_69";
+                x1 = 123;
+                y1 = 3;
+                x2 = 123;
+                y2 = 3;
+                string = "(**)";
+                fontname = "Arial";
+                fontcolor = 153;
+                fonttype = 2;
+                fontsize = 2;
+                fontratio = 1;
+                fontslant = 0;
+                fontstyle = 0;
+                angle = 0;
+                justify = LEFT;
+                pen = -1;
+            };
+        };
+    };
+
+    row _tmp_2
+    {
+        name = "OBJREF1";
+        height = 6;
+        visibility = FALSE;
+        usecolumns = FALSE;
+        rule = "";
+        contenttype = "REFERENCE_MODEL";
+        sorttype = COMBINE;
+
+        row _tmp_3
+        {
+            name = "OBJREF2";
+            height = 6;
+            visibility = TRUE;
+            usecolumns = FALSE;
+            rule = "";
+            contenttype = "REFERENCE_OBJECT";
+            sorttype = COMBINE;
+
+            valuefield _tmp_5
+            {
+                name = "NUM6";
+                location = (149, 2);
+                formula = "GetValue(\"BOUNDING_BOX_MAX_Z_BASEPOINT\")";
+                maxnumoflines = 1;
+                datatype = DOUBLE;
+                class = "Length";
+                cacheable = TRUE;
+                formatzeroasempty = FALSE;
+                justify = RIGHT;
+                visibility = TRUE;
+                angle = 0;
+                length = 8;
+                decimals = 2;
+                sortdirection = ASCENDING;
+                fontname = "Arial";
+                fontcolor = 153;
+                fonttype = 2;
+                fontsize = 2.5;
+                fontratio = 1;
+                fontstyle = 0;
+                fontslant = 0;
+                pen = 0;
+                oncombine = NONE;
+                unit = "mm";
+                aligncontenttotop = FALSE;
+            };
         };
 
-        lineorarc _tmp_16
+        valuefield _tmp_1
         {
-            name = "LíneaOArco_90";
-            x1 = 126.94770599212;
-            y1 = 6;
-            x2 = 126.94770599212;
-            y2 = 0;
-            pen = -1;
-            color = 153;
-            linetype = 1;
-            linewidth = 1;
-            bulge = 0;
-        };
-
-        text _tmp_17
-        {
-            name = "Texto_48";
-            x1 = 127.94770599212;
-            y1 = 2;
-            x2 = 127.94770599212;
-            y2 = 2;
-            string = "m3";
-            fontname = "Arial";
-            fontcolor = 153;
-            fonttype = 2;
-            fontsize = 2.5;
-            fontratio = 1;
-            fontslant = 0;
-            fontstyle = 0;
-            angle = 0;
-            justify = LEFT;
-            pen = -1;
-        };
-
-        text _tmp_18
-        {
-            name = "Texto_49";
-            x1 = 152.94770599212;
-            y1 = 2;
-            x2 = 152.94770599212;
-            y2 = 2;
-            string = "m3";
-            fontname = "Arial";
-            fontcolor = 153;
-            fonttype = 2;
-            fontsize = 2.5;
-            fontratio = 1;
-            fontslant = 0;
-            fontstyle = 0;
-            angle = 0;
-            justify = LEFT;
-            pen = -1;
-        };
-
-        lineorarc _tmp_19
-        {
-            name = "LíneaOArco_91";
-            x1 = 151.94770599212;
-            y1 = 6;
-            x2 = 151.94770599212;
-            y2 = 0;
-            pen = -1;
-            color = 153;
-            linetype = 1;
-            linewidth = 1;
-            bulge = 0;
-        };
-
-        rectangle _tmp_20
-        {
-            name = "Rectángulo_17";
-            x1 = -0;
-            y1 = 0;
-            x2 = 159;
-            y2 = 6;
-            filled = FALSE;
-            filltype = -1;
-            pen = -1;
-            color = 153;
-            linetype = 1;
-            linewidth = 2;
-        };
-
-        text _tmp_21
-        {
-            name = "Texto_51";
-            x1 = 1;
-            y1 = 2;
-            x2 = 1;
-            y2 = 2;
-            string = "OBJETO DE REFERENCIA";
-            fontname = "Arial";
-            fontcolor = 153;
-            fonttype = 2;
-            fontsize = 2.5;
-            fontratio = 1;
-            fontslant = 0;
-            fontstyle = 0;
-            angle = 0;
-            justify = CENTERED;
-            pen = -1;
-        };
-
-        valuefield _tmp_2
-        {
-            name = "VAR";
-            location = (135.51020599212, 2);
-            formula = "GetValue(\"REFERENCE_MODEL.NAME\")";
+            name = "NUM6_1";
+            location = (147, 2);
+            formula = "GetValue(\"NAME\")";
             maxnumoflines = 1;
             datatype = STRING;
             class = "";
@@ -5082,80 +6054,52 @@ template template_1343
         };
     };
 
-    row _tmp_3
+    row _tmp_59
     {
-        name = "REFERENCE_OBJECT_1";
-        height = 6;
+        name = "PART_5";
+        height = 12;
         visibility = TRUE;
         usecolumns = FALSE;
-        rule = "";
-        contenttype = "REFERENCE_OBJECT";
+        rule = "if (GetValue(\"NAME\")== \"FUNDACION\" ) then\n  Output()\nelse\n  StepOut()\nendif";
+        contenttype = "PART";
         sorttype = COMBINE;
 
-        lineorarc _tmp_22
+        valuefield _tmp_61
         {
-            name = "LíneaOArco_92";
-            x1 = 60;
-            y1 = 6;
-            x2 = 60;
-            y2 = 0;
-            pen = -1;
-            color = 153;
-            linetype = 1;
-            linewidth = 2;
-            bulge = 0;
+            name = "CANT";
+            location = (43.48046875, 4);
+            formula = "GetValue(\"CAST_UNIT.NUMBER\")";
+            maxnumoflines = 1;
+            datatype = INTEGER;
+            class = "";
+            cacheable = TRUE;
+            formatzeroasempty = FALSE;
+            justify = CENTERED;
+            visibility = TRUE;
+            angle = 0;
+            length = 3;
+            decimals = 0;
+            sortdirection = ASCENDING;
+            fontname = "Arial";
+            fontcolor = 153;
+            fonttype = 2;
+            fontsize = 2.5;
+            fontratio = 1;
+            fontstyle = 0;
+            fontslant = 0;
+            pen = 0;
+            oncombine = SUM;
+            aligncontenttotop = FALSE;
         };
 
-        lineorarc _tmp_23
+        text _tmp_63
         {
-            name = "LíneaOArco_93";
-            x1 = 108.94770599212;
-            y1 = 6;
-            x2 = 108.94770599212;
-            y2 = 0;
-            pen = -1;
-            color = 153;
-            linetype = 1;
-            linewidth = 2;
-            bulge = 0;
-        };
-
-        lineorarc _tmp_24
-        {
-            name = "LíneaOArco_94";
-            x1 = 133.94770599212;
-            y1 = 6;
-            x2 = 133.94770599212;
-            y2 = 0;
-            pen = -1;
-            color = 153;
-            linetype = 1;
-            linewidth = 2;
-            bulge = 0;
-        };
-
-        lineorarc _tmp_25
-        {
-            name = "LíneaOArco_95";
-            x1 = 126.94770599212;
-            y1 = 6;
-            x2 = 126.94770599212;
-            y2 = 0;
-            pen = -1;
-            color = 153;
-            linetype = 1;
-            linewidth = 1;
-            bulge = 0;
-        };
-
-        text _tmp_26
-        {
-            name = "Texto_60";
-            x1 = 127.94770599212;
-            y1 = 2;
-            x2 = 127.94770599212;
-            y2 = 2;
-            string = "m3";
+            name = "Texto_70";
+            x1 = 2;
+            y1 = 4;
+            x2 = 2;
+            y2 = 4;
+            string = "** Volumen promedio de las";
             fontname = "Arial";
             fontcolor = 153;
             fonttype = 2;
@@ -5164,18 +6108,18 @@ template template_1343
             fontslant = 0;
             fontstyle = 0;
             angle = 0;
-            justify = LEFT;
+            justify = CENTERED;
             pen = -1;
         };
 
-        text _tmp_27
+        text _tmp_65
         {
-            name = "Texto_61";
-            x1 = 152.94770599212;
-            y1 = 2;
-            x2 = 152.94770599212;
-            y2 = 2;
-            string = "m3";
+            name = "Texto_71";
+            x1 = 3;
+            y1 = 8;
+            x2 = 3;
+            y2 = 8;
+            string = "* No se considera esponjamiento.";
             fontname = "Arial";
             fontcolor = 153;
             fonttype = 2;
@@ -5184,47 +6128,18 @@ template template_1343
             fontslant = 0;
             fontstyle = 0;
             angle = 0;
-            justify = LEFT;
+            justify = CENTERED;
             pen = -1;
         };
 
-        lineorarc _tmp_28
+        text _tmp_67
         {
-            name = "LíneaOArco_96";
-            x1 = 151.94770599212;
-            y1 = 6;
-            x2 = 151.94770599212;
-            y2 = 0;
-            pen = -1;
-            color = 153;
-            linetype = 1;
-            linewidth = 1;
-            bulge = 0;
-        };
-
-        rectangle _tmp_29
-        {
-            name = "Rectángulo_18";
-            x1 = -0;
-            y1 = 0;
-            x2 = 159;
-            y2 = 6;
-            filled = FALSE;
-            filltype = -1;
-            pen = -1;
-            color = 153;
-            linetype = 1;
-            linewidth = 2;
-        };
-
-        text _tmp_30
-        {
-            name = "Texto_62";
-            x1 = 1;
-            y1 = 2;
-            x2 = 1;
-            y2 = 2;
-            string = "RELLENO";
+            name = "Texto_72";
+            x1 = 48.400390625;
+            y1 = 4;
+            x2 = 48.400390625;
+            y2 = 4;
+            string = "Uds. de Fundación.";
             fontname = "Arial";
             fontcolor = 153;
             fonttype = 2;

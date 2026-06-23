@@ -66,9 +66,42 @@ graph LR
 
 ### Ejecutor + Responsable de maqueta
 
+```mermaid
+graph LR
+    A[Seteo del programa] --> B[Modelar Hormigon]
+    A --> C[Modelar Acero]
+    B --> D[Armar Documento]
+    C --> D
+    E[Reportes \n Crear cuadros] --> D
+    F[Trimble Connect\n Ejecutor] --> D
+    G[Trimble Connect\n GENERAL] --> D
+    H[BIM Publisher] --> G
+    click A href "./setup/index.html"
+    click B href "./hormigon/index.html"
+    click C href "./acero/index.html"
+    click D href "./dibujo/index.html"
+    click E href "./reportes/ejemplos_cuadros.html"
+    click F href "./connect/connect-ejecutor.html"
+    click G href "./connect/connect-general.html"
+    click H href "./generalidades/bim_publisher.html"
+```
+
 ### Revisor
 
-### Nuevos usuarios
+```mermaid
+graph LR
+    A[Seteo del programa] --> B[Generalidades TEKLA]
+    C[BIM] --> B
+    D[BIM Publisher] --> B
+    F[Gestión de archivos] --> B
+    B --> E[Trimble Connect - Revisor]
+    click A href "./setup/index.html"
+    click B href "./generalidades/generalidades.html"
+    click C href "./generalidades/BIM.html"
+    click D href "./generalidades/bim_publisher.html"
+    click E href "./connect/connect-revisor.html"
+    click F href "./avanzado/gestion_archivos.html"
+```
 
 ---
 

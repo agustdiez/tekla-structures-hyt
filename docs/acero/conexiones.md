@@ -153,7 +153,7 @@ El recuadro superior `Stiffeners positions`permite generar los rigidizadores que
 
 7. Las pestañas `Analisis` y `Extra plates`  no solemos usarla en este componente
 
-[Planilla](../ref
+[Planilla](../ref/Placa%20Base/PB_VERIFICACIONES.xlsx)
 
 
 

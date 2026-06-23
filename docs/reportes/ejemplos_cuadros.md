@@ -127,7 +127,6 @@ Quedando con la numeración correcta:
 [__Descarga Cuadro "SAC_COORDS_INY QUIM"__](../ref/Cuadros/SAC_COORDS_INY%20QUIM.tpl){: .btn .btn-purple }
 
 
-
 ## Listado de materiales
 
 >Se busca armar un listado de cantidades para incorporar dentro del plano. Se debe buscar lo siguiente:
@@ -146,12 +145,14 @@ Quedando con la numeración correcta:
 
 El objetivo final es lograr un cuadro como `P-COMPUTO_HA-AC-.tpl`:
 
-![TABLA01](..\img\hormigon\TABLA-MAT.png)
+![TABLA01](..\img\hormigon\TABLA-MAT_0.png)
 
 
 ### En el Editor de Cuadros 
 
 1. Utilzaremos los siguientes atributos:
+- `NAME`
+- `PERFIL`
 - `CAST_UNIT.NUMBER`
 - `VOLUME`
 - `MATERIAL`
@@ -161,27 +162,93 @@ El objetivo final es lograr un cuadro como `P-COMPUTO_HA-AC-.tpl`:
 - `HEIGHT`
 - `LENGTH`
 - `WEIGHT_NET`
+- `USER_FIELD_2`
 
 2. La topología del cuadro se verá de la siguiente forma:
 
 ![TABLA01](..\img\hormigon\TABLA-MAT-EDIT.png)
 
-Los atributos se encuetran en varios `Campo de valor` con diferente nombre, cada fila contempla el cómputo de cada material, descriptos del lado derecho: H30, H15, ADN-420, SIKAGROUT 212, F24 y ASTM 1554 Gr.36. Las filas denominadas de reserva son aquellas que pueden generar el cómputo de otros materiales, como los insertos, relleno, etc.
+Los atributos se encuetran en varios `Campo de valor` con diferente nombre, cada fila contempla el cómputo ya sea por `NAME`, `PERFIL` o `MATERIAL`, descriptos del lado derecho: `FUNDACION`, `H30`, `H15`, `ADN-420`, `GROUT`, `PL*`, `ANCLAJE`, `EXCAVACIÓN` y `RELLENO`. Las filas denominadas de reserva son aquellas que pueden generar el cómputo de otros materiales, como los insertos, objetos de referencia, etc.
 
-A modo de ejemplo, solo desarrollamos la fila ADN-420.
+3. Brevemente desarrollaremos cada fila:
+
+.La fila _CANT. TOTAL_ busca la cantidad total de `FUNDACIONES`:
+![TABLA01a](..\img\hormigon\TABLA-MAT-EDIT-01a.png)
+
+.La denominada _OCULTA 1_ desarrolla todos los volúmenes de las estructuras de hormigón con calidad `H30`, está oculta, sólo es para control, si se ncesitara verlas, tildar `Ocultar en salida`:
+![TABLA01b](..\img\hormigon\TABLA-MAT-EDIT-01b.png)
+El Campo principal es `VOLUME_hor` dónde se suma el volumen por tipo de `FUNDACIÓN` con el atributo `VOLUME`:
+![TABLA01e](..\img\hormigon\TABLA-MAT-EDIT-01e.png)
+
+. La fila _H30_ es el totalizador, filtra los `H30`:
+![TABLA01b](..\img\hormigon\TABLA-MAT-EDIT-01c.png)
+El principal campo es el `CampoValor_03` totaliza el campo `VOLUMEN_hor` de las filas _OCULTA 1_.
+![TABLA01d](..\img\hormigon\TABLA-MAT-EDIT-01d.png)
+
+.La fila _OCULTA 2_ desarrolla todos los volúmenes de las estructuras de hormigón calidad `H15`, está oculta, sólo es para control, si se ncesitara verlas, tildar `Ocultar en salida`.
+![TABLA01f](..\img\hormigon\TABLA-MAT-EDIT-01f.png)
+El campo que totaliza el volumen es `VOLUMEN_hor_1` por cada tipo de fundación:
+![TABLA01g](..\img\hormigon\TABLA-MAT-EDIT-01g.png)
+
+. La fila _H15_ es el totalizador, filtra los `H15`:
+![TABLA01h](..\img\hormigon\TABLA-MAT-EDIT-01h.png)
+El principal campo: `CampoValor_6` totaliza `VOLUMEN_hor_1`:
+![TABLA01i](..\img\hormigon\TABLA-MAT-EDIT-01i.png)
+
+.Desarrollamos la fila _ADN-420_.
 ![TABLA01](..\img\hormigon\TABLA-MAT-EDIT-01.png)
-Siendo su resultado esta línea/fila:
-![TABLA01](..\img\hormigon\TABLA-MAT-EDIT-03.png)
+Siendo su resultado esta línea/fila (totalizador):
+![TABLA03](..\img\hormigon\TABLA-MAT-EDIT-03.png)
 
-3 La fila se configura filtrando el material ADN-420:
-![TABLA01](..\img\hormigon\TABLA-MAT-EDIT-02.png)
+La fila se configura filtrando el material ADN-420:
+![TABLA02](..\img\hormigon\TABLA-MAT-EDIT-02.png)
 
-. El material `ADN-420`, se computa en base a las filas "OCULTA 3" (es una copia de parte del informe "HYT-PDH.pdf", eso uniforme la salida de los datos). La fila ADN-420 suma en el campo de valor: `ARMTOT-1`, la fórmula es: `Sum("PESOT_6")+Sum("PESOT_8")+Sum("PESOT_10")+Sum("PESOT_12")+Sum("PESOT_16")+Sum("PESOT_20")+Sum("PESOT_25")`.
-_Atrib_. El otro campo de valor es `MATERIAL_4`, se utiliza el atributo: `MATERIAL`.
+El material `ADN-420`, se computa en base a las filas "OCULTA 3" (es una copia de parte del informe "HYT-PDH.pdf", eso uniforma la salida de los datos). La fila ADN-420 suma en el campo de valor: `ARMTOT-1`, la fórmula es: `Sum("PESOT_6")+Sum("PESOT_8")+Sum("PESOT_10")+Sum("PESOT_12")+Sum("PESOT_16")+Sum("PESOT_20")+Sum("PESOT_25")`.
+El otro campo de valor es `MATERIAL_4`, se utiliza el atributo: `MATERIAL`.
+
+.Fila _GROUT_ filtra el grout mediante `NAME`=`GROUT`.
+
+.Fila _PL*_ filtra la chapa mediante `PROFILE`=`PL*`.
+
+.Fila _ANCLAJE_ filtra el anclaje mediante `NAME`=`ANCLAJE`.
+
+.Las filas _EXCAVACIÓN_ y _RELLENO_ generan los volúmenes descriptos, con una fila de selección, otra oculta para resultados por tipo de volumen y una fila de resultados.
+
+### En la Vista - Modo Trabajo o Modelado
+
+1. Cuando se modele el Grout:
+.Se deberá poner como `NAME`= GROUT, el `MATERIAL`= `GROUT CEMENTICIO` o `GROUT EPOXI`:
+![TABLA04](..\img\hormigon\TABLA-MAT-EDIT-04.png)
+.También en el atributo `USER_FIELD_2` (Campo de Usuario 2) se colocará la Calidad del Material, en el ejemplo se consignó "SIKGROUT 212". El `USER_FIELD_1` (Campo de Usuario 1), en amarillo, se completará cuando se usa la variante de este cuadro:
+![TABLA05](..\img\hormigon\TABLA-MAT-EDIT-05.png)
+
+2. Para modelar el Anclaje, se deberá poner el `NAME`  como _ANCLAJE_ y usar el perfil `ANCLAJE_M*`, el esterisco (*) serán los milímetros:
+![TABLA11](..\img\hormigon\TABLA-MAT-EDIT-11.png)
+Para colocar el Material, se usará el `USER_FIELD_2` y se escribirá el tipo de materila, en este caso _ASTM 1554 Gr.36_:
+![TABLA12](..\img\hormigon\TABLA-MAT-EDIT-12.png)
+El `USER_FIELD_1` (Campo de Usuario 1), se completará cuando se usa la variante de este cuadro.
+
+3. Para modelar la excavación y el relleno:
+.Primero se deberá modelar la excavación, el `NAME` (Nombre) deberá ser _EXCAVACIÓN_ (Sí, con acento), en este caso se creo un material en la Base de Materiales que se llama _EXCAVACIÓN_. Para que funcione la tabla/cuadro no es necesario esa definición, pero hay que tener cuidado de no definirle el H30 ó H15, o algún otro material que se use en el modelo, eso dará un error en la Tabla:
+![TABLA06](..\img\hormigon\TABLA-MAT-EDIT-06.png)
+El modelado se ejecutó con un perfil particular, con taludes 1:1, de acuerdo a requerimientos de este Proyecto en particular. El perfil es el`PRMD3400*3400-5600*5600`, las cifras `3400` son la base en milímetros y las `5600` son los lados superiores. La altura se maneja con el Nivel Superior e Inferior, en este caso -250.00mm y -1850.00mm, altura de 1600mm.
+El perfil se encuentra en la Zona de `Paramétricos`, con el nombre de `PRMD`:
+![TABLA07](..\img\hormigon\TABLA-MAT-EDIT-07.png)
+![TABLA08](..\img\hormigon\TABLA-MAT-EDIT-08.png)
+
+.Segundo se modele el relleno, no será otro que el prisma de la _Excavación_ y se le resta el H30 Y el H15 de la fundación. El `NAME` (Nombre) deberá ser _RELLENO_, en este caso se creo un material en la Base de Materiales que se llama _RELLENO_. Para que funcione la tabla/cuadro no es necesario esa definición, pero hay que tener cuidado de no definirle el H30 ó H15, o algún otro material que se use en el modelo, eso dará un error en la Tabla:
+![TABLA09](..\img\hormigon\TABLA-MAT-EDIT-09.PNG)
+
+._El consejo_: el modelado de la excavación y el relleno sería apropiado realizarlo fuera del área de las fundaciones, así es más fácil seleccionar las partes para, por ejemplo, hacer la `Corte por partes` para el relleno. Cuando se tenga que mover todo al área de la fundación generará un mensaje si desea Conservar o Borrar Duplicados, esto aparece porque son dos perfiles iguales tratando de cohabitar en un mismo espacio, debemos ponerle _Conservar duplicados_, entonces quedarán ambos sólidos en la zona de la fundación:
+![TABLA10](..\img\hormigon\TABLA-MAT-EDIT-10.PNG)
+
 
 ### En el Dibujo
 
-A nivel dibujo es importante que la Vista/S debe contener los objetos/partes a computar en el el Cuadro.
+A nivel dibujo es importante que la Vista/s debe contener los objetos/partes a computar en el el Cuadro.
+![TABLA14](..\img\hormigon\TABLA-MAT-EDIT-14.png)
+En este caso están conviviendo dos tablas, la del recuadro en rojo es la  totalizadora de las 30 unidades que corresponde a este apartado, la superior es con `USER_FIELD_1`=1 es la del siguiente capítulo.
+
 
 ### Descargas
 
@@ -189,14 +256,61 @@ A nivel dibujo es importante que la Vista/S debe contener los objetos/partes a c
 
 ## Listado de materiales - Uso `USER_FIELD_1`
 
+>Se busca armar un listado de materiales de algunas fundaciones (seleccionadas de acuerdo a características particulares como dimensiones o armaduras) para incorporar dentro del plano. Se filtra mediante el atributo`USER_FIELD_1`. Se debe buscar lo siguiente:
+> - Hormigón estructural
+> - Hormigón de limpieza
+> - Acero ADN-420
+> - Grout
+> - Placas F-24
+> - Anclajes por diámetro
+> Ganchos Izaje AL-220
+> Insertos AL-220
+
+El objetivo final es lograr un cuadro como `P_COMPUTO_HA-AC_Atrib1.tpl`:
+
+![TABLA02](..\img\hormigon\TABLA-MAT_2.png)
+
+Para detalles particulares de esta Tabla ver capítulo anterior _Listado de materiales_. 
+
 ### En el Editor de Cuadros 
+
+1. Utilzaremos los siguientes atributos:
+- `NAME`
+- `PERFIL`
+- `CAST_UNIT.NUMBER`
+- `VOLUME`
+- `MATERIAL`
+- `LENGHT`
+- `SIZE`
+- `NUMBER`
+- `HEIGHT`
+- `LENGTH`
+- `WEIGHT_NET`
+- `USER_FIELD_1`
+- `USER_FIELD_2`
+
+2. La topología del cuadro se verá de la siguiente forma:
+![TABLA02a](..\img\hormigon\TABLA-MAT_2a.png)
+En el recuadro rojo está la fila `FILTRO`, que mediante el atributo `USERDEFINED.USER_FIELD_1` = 1, filtra todas las fundaciones, placas, anclajes, hormigones que tengan caracterizado el campo de usuario en 1.
+![TABLA02b](..\img\hormigon\TABLA-MAT_2b.png)
+Para utilizar esta tabla en un mismo plano o modelo deberá cambiarse el nombre, para lograr que funciones de acuerdo a los cambios del atributo `USER_FIELD_1`. _Observación_:Lo más seguro es cambiarle totalmente el nombre, de `P_COMPUTO_HA-AC_Atrib1.tpl`  a, por ejemplo `1346_Fund Flare_Atrib1.tpl` cambiando el 1 por otro numero de acuero al valor del `USER_FIELD_1`.
+
+3. Para el resto de las filas y campos y atributos utilizados ver capítulo anterior.
 
 ### En la Vista - Modo Trabajo o Modelado
 
+.Se filtrará cuidadosamente cada parte de las fundaciones, grout, anclajes, chapas, armaduras, etc. de cada tipo de fundación y se colocará en el atributo `USER_FIELD_1` el valor que deseemos, en este caso particular 1, 2, 3, etc. 
+
+
 ### En el Dibujo
+
+Procurar dejar en las vistas toda las fundaciones, no hay problema que una misma fundación aparezca en otras vistas en un mismo plano:
+![TABLA12](..\img\hormigon\TABLA-MAT-EDIT-13.png)
+En este caso están conviviendo dos tablas, la del recuadro en rojo es la que corresponde a este apartado con `USER_FIELD_1`=1, la inferior es la totalizadora de las 30 unidades (desarrollada en el apartado anterior).
 
 ### Descargas
 
+[__Descarga cuadro "P_COMPUTO_HA-AC_Atrib1.tpl""__](../ref/Cuadros/P_COMPUTO_HA-AC_Atrib1.tpl){: .btn .btn-purple }
 
 
 
@@ -578,7 +692,7 @@ En este caso tiene los Cortes de algunos pórticos, eso no es un problema, la Ta
 
 ## Listado y Cómputo de Materiales en Estructuras de Acero - Uso `USER_FIELD_1`
 
->Se busca generar un listado de partes metálicas, pero filtrando una estrucutra de otras mediante un filtro determiado por el atributo `USER_FIELD_1`. Así se obtendrán las 
+>Se busca generar un listado de partes metálicas, pero seleccionanado una estrucutra de otras mediante un filtro determiado por el atributo `USER_FIELD_1`. Así se obtendrán las 
 cantidades y pesos para incorporar dentro del plano. Se debe buscar lo siguiente:
 > - Placas
 > - Perfiles
@@ -609,7 +723,7 @@ Previsualización de la Tabla `P_COMPUTO_ACERO_SelecAtrib.tpl` (Ver Zona de Desc
 2. La topología del cuadro se verá de la siguiente forma:
 ![ESMETA02](..\img\hormigon\TABLA-ESMET-Atr_02.png)
 
-a. Paras las áreas 1, 2, 3, 4 y 5. Ver la descripción en el punto anterior: 2a-b-c-d-e-f.
+a. Paras las áreas 1, 2, 3, 4 y 5 ver la descripción en el punto anterior: 2a-b-c-d-e-f.
 
 b. El área 1A es el qque establece la diferencia con el cuadro anterior, filtra todas las partes mediante el atributo `USER_FIELD_1`:
 
@@ -623,7 +737,7 @@ b. El área 1A es el qque establece la diferencia con el cuadro anterior, filtra
 Esto logra que se compute todas las partes cuyo atributo `USER_FIELD_1` sea, en este caso, un 1 (uno).
 3. Para descargar el excel `CuadroCompEstrMetálica.xlsx` que resume las variables y fórmulas ir a la Zona de Descargas.
 4. Para lograr utilizar el mismo cuadro en una lámina es importante ir cambiando el nombre del cuadro, por ejemplo el primero será `P_COMPUTO_ACERO_SelecAtrib1.tpl` para selecionar las estrucutras con `USER_FIELD_1`=1, el siguiente podría ser `P_COMPUTO_ACERO_SelecAtrib2.tpl`para `USER_FIELD_1`=2, y así sucesivamente.
-En el ejemplo siguiente se ven los resultados para una selección de 1 (naranja), 2 (amarillo) y 4 (verde) pórticos iguales (celeste "A"):
+En el ejemplo siguiente se ven los resultados para una selección de 1 estructura (naranja), 2 estructuras (amarillo) y 4 estructuras (verde) pórticos, todos iguales en geometría (celeste "A"):
 ![ESMETA08](..\img\hormigon\TABLA-ESMET-Atr_08.png)
 .El naranja tiene `USER_FIELD_1`=1
 .El amarillo tiene `USER_FIELD_1`=2
@@ -658,7 +772,7 @@ Esta operación se repite para Chapas y Bulones.
 ### En el Dibujo
 
 1. Se aplican todas las sugerencias del apartado anterior.
-2. En el ejemplo siguiente se ven los resultados para una selección de 1 (naranja), 2 (amarillo) y 4 (verde) pórticos iguales (celeste "A"):
+2. En el ejemplo siguiente se ven los resultados para una selección de 1 estructura (naranja), 2 estructuras (amarillo) y 4 estructuras (verde) pórticos, todos iguales en geometría (celeste "A"):
 ![ESMETA08](..\img\hormigon\TABLA-ESMET-Atr_08.png)
 .El naranja tiene `USER_FIELD_1`=1. (P_COMPUTO_ACERO_SelecAtrib1.tpl)
 .El amarillo tiene `USER_FIELD_1`=2. (P_COMPUTO_ACERO_SelecAtrib2.tpl)

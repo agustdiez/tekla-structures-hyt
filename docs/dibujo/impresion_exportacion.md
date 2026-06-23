@@ -108,10 +108,11 @@ Dentro de la pestaña `Layer rules` decidiremos a que layer dentro del archivo q
 
 - En `(1)` podemos guardar la configuración que se cree de un ploteo, este archivo se guardará en la carpeta "attributes" de nuestro modelo con la extensión ".dwgsetting".
 
-{: .warning}
-> La configuración guardada suele tener incovenientes, ya que al momento de abrir el dwg en el layout su aspecto está rotado respecto la hoja de fondo. Siempre es recomendable revisar el archivo exportado, y en su defecto modificar lo que sea necesario.
-
 - En `(2)` podremos traer desde un archivo ".dwg" layers que estén creados dentro de este, para ser usados en (3).
+
+{: .warning}
+> La configuración guardada está basada en el archivo subido en `(2)`, por lo que los layers que usaremos serán los que encontramos allí, además que al exportar en el layout aparecerá la hoja que configuramos también en este archivo (así que en el caso que se utilice otra, deberá entrar al dwg y editar el tamaño o la orientación de la hoja en el layout según sea el caso). Siempre es recomendable revisar el archivo exportado, y en su defecto modificar lo que sea necesario.
+
 
 - En `(3)` tenemos varias columnas para editar:
     - **Include**: al marcar la casilla filtra si se incluye o no la condición para los objetos.
@@ -136,11 +137,12 @@ Dentro de la pestaña `Layer rules` decidiremos a que layer dentro del archivo q
     {: .note}
     > Para la previsualización del archivo se abrirá una ventana donde nos obligará a seleccionar `Refresh preview` para visualizarlo, no puede hacerse zoom pero se apreciarán los colores que estarán en el dwg.
 
-La preconfiguración que usamos dentro de la empresa es la llamada "HYT-EXPORT_DWG" y será de la siguiente manera:
+La preconfiguración que usamos dentro de la empresa es la llamada ["HYT-EXPORT_DWG"](../ref/Dibujo/Impresión_Exportación/HYT-EXPORT_DWG.dwgsetting) y será de la siguiente manera:
+
 ![preconfiguración HYT-EXPORT_DWG](../img/dibujo/preconfiguración%20HYT-EXPORT_DWG.png) 
 *Figura 9: `HYT-EXPORT_DWG` dentro de `Export Drawings`*
 
-El archivo ".dwg" que contiene los layers será el llamado ["LAYERS.dwg"](../ref/Dibujo/Impresión_Exportación/LAYERS.dwg) dentro de la FIRM.
+El archivo ".dwg" que contiene los layers será el llamado ["LAYERS.dwg"](../ref/Dibujo/Impresión_Exportación/LAYERS.dwg) dentro de la FIRM. La ruta deberá modificarse una única vez desde la pestaña "Layer rules" y buscandolo en "Target layers from DWG" (C:\Users\ `usuario` \OneDrive - Hytech Ingeniería S.A\TEKLA\STD\FIRM\LAYERS.dwg), para luego colocar `Save` al lado de `(1)`.
 
 {: .highlight}
 > Todo lo referente a las propiedades que debe cumplir un archivo ".dwg" dentro de la empresa se regirá por este [documento adjunto](../ref/Dibujo/Impresión_Exportación/PR-O-M-008-r6%20Dibujos%20e%20Impresiones.pdf).

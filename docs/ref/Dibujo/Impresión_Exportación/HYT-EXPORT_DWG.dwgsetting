@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DwgExportOptions Version="1.1">
+  <FileAttributes FileExtension=".dwg" FilePrefix="" FileSuffix="" FileVersion="Dwg.UI.DwgFileVersion.vAC24" />
+  <Preferences OpenFolder="false" OutputDirectory=".\PlotFiles" UpdateExisting="false" EmbedImages="true" WithoutBlocks="true" SnapshotToModelSpace="false" SnapshotScale="1.0" CoordinatesToUse="Local" />
+  <LayerRules>&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ObjectMappingRules xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+  &lt;LayerTemplate&gt;C:\Users\gketchejian\OneDrive - Hytech Ingeniería S.A\TEKLA\STD\FIRM\LAYERS.dwg&lt;/LayerTemplate&gt;
+  &lt;Version&gt;1.0&lt;/Version&gt;
+  &lt;MappingRules&gt;
+    &lt;MappingRule&gt;
+      &lt;Setting IncludeInExport="true" Color="ByDwgLayer" LineStyle="ByDwgLayer" LineWeight="ByDwgLayer" PaperSpace="false" LayerName="06-CIV-FUND" /&gt;
+      &lt;Filter ObjectType="DrawingObject" FilterName="HYT-H30" GroupingStyle="All" /&gt;
+    &lt;/MappingRule&gt;
+    &lt;MappingRule&gt;
+      &lt;Setting IncludeInExport="true" Color="ByDwgLayer" LineStyle="ByDwgLayer" LineWeight="ByDwgLayer" PaperSpace="false" LayerName="06-CIV-HOR-LIMP" /&gt;
+      &lt;Filter ObjectType="DrawingObject" FilterName="HYT-H15" GroupingStyle="All" /&gt;
+    &lt;/MappingRule&gt;
+    &lt;MappingRule&gt;
+      &lt;Setting IncludeInExport="true" Color="ByDwgLayer" LineStyle="ByDwgLayer" LineWeight="ByDwgLayer" PaperSpace="false" LayerName="06-EST-META-NUEV" /&gt;
+      &lt;Filter ObjectType="DrawingObject" FilterName="HYT-ACERO ESTRUCTURAL" GroupingStyle="All" /&gt;
+    &lt;/MappingRule&gt;
+    &lt;MappingRule&gt;
+      &lt;Setting IncludeInExport="true" Color="ByDwgLayer" LineStyle="ByDwgLayer" LineWeight="ByDwgLayer" PaperSpace="false" LayerName="11-GEN-COTA" /&gt;
+      &lt;Filter ObjectType="DimensionBase" FilterName="" GroupingStyle="All" /&gt;
+    &lt;/MappingRule&gt;
+    &lt;MappingRule&gt;
+      &lt;Setting IncludeInExport="true" Color="ByDwgLayer" LineStyle="ByDwgLayer" LineWeight="ByDwgLayer" PaperSpace="false" LayerName="11-GEN-COTA" /&gt;
+      &lt;Filter ObjectType="GraphicObject" FilterName="" GroupingStyle="All" /&gt;
+    &lt;/MappingRule&gt;
+    &lt;MappingRule&gt;
+      &lt;Setting IncludeInExport="true" Color="ByDwgLayer" LineStyle="ByDwgLayer" LineWeight="ByDwgLayer" PaperSpace="false" LayerName="11-GEN-KEYPLAN" /&gt;
+      &lt;Filter ObjectType="DwgObject" FilterName="" GroupingStyle="All" /&gt;
+    &lt;/MappingRule&gt;
+    &lt;MappingRule&gt;
+      &lt;Setting IncludeInExport="true" Color="ByDwgLayer" LineStyle="ByDwgLayer" LineWeight="ByDwgLayer" PaperSpace="false" LayerName="11-GEN-COTA" /&gt;
+      &lt;Filter ObjectType="WeldMark" FilterName="" GroupingStyle="All" /&gt;
+    &lt;/MappingRule&gt;
+    &lt;MappingRule&gt;
+      &lt;Setting IncludeInExport="true" Color="ByDwgLayer" LineStyle="ByDwgLayer" LineWeight="ByDwgLayer" PaperSpace="false" LayerName="06-CIV-ARM" /&gt;
+      &lt;Filter ObjectType="ReinforcementBase" FilterName="" GroupingStyle="All" /&gt;
+    &lt;/MappingRule&gt;
+    &lt;MappingRule&gt;
+      &lt;Setting IncludeInExport="true" Color="ByDwgLayer" LineStyle="ByDwgLayer" LineWeight="ByDwgLayer" PaperSpace="false" LayerName="11-GEN-COTA" /&gt;
+      &lt;Filter ObjectType="MarkBase" FilterName="" GroupingStyle="All" /&gt;
+    &lt;/MappingRule&gt;
+    &lt;MappingRule&gt;
+      &lt;Setting IncludeInExport="true" Color="ByDwgLayer" LineStyle="ByDwgLayer" LineWeight="ByDwgLayer" PaperSpace="false" LayerName="11-GEN-COTA" /&gt;
+      &lt;Filter ObjectType="DetailMark" FilterName="" GroupingStyle="All" /&gt;
+    &lt;/MappingRule&gt;
+    &lt;MappingRule&gt;
+      &lt;Setting IncludeInExport="true" Color="ByDwgLayer" LineStyle="ByDwgLayer" LineWeight="ByDwgLayer" PaperSpace="false" LayerName="11-GEN-ROTU" /&gt;
+      &lt;Filter ObjectType="Image" FilterName="" GroupingStyle="All" /&gt;
+    &lt;/MappingRule&gt;
+    &lt;MappingRule&gt;
+      &lt;Setting IncludeInExport="true" Color="ByDwgLayer" LineStyle="ByDwgLayer" LineWeight="ByDwgLayer" PaperSpace="false" LayerName="11-GEN-TEXT-GENE" /&gt;
+      &lt;Filter ObjectType="Text" FilterName="" GroupingStyle="All" /&gt;
+    &lt;/MappingRule&gt;
+    &lt;MappingRule&gt;
+      &lt;Setting IncludeInExport="true" Color="ByDwgLayer" LineStyle="ByDwgLayer" LineWeight="ByDwgLayer" PaperSpace="false" LayerName="11-GEN-ROTU" /&gt;
+      &lt;Filter ObjectType="TextFile" FilterName="" GroupingStyle="All" /&gt;
+    &lt;/MappingRule&gt;
+    &lt;MappingRule&gt;
+      &lt;Setting IncludeInExport="true" Color="ByDwgLayer" LineStyle="ByDwgLayer" LineWeight="ByDwgLayer" PaperSpace="false" LayerName="06-CIV-GRATING" /&gt;
+      &lt;Filter ObjectType="DrawingObject" FilterName="HYT-GRATING" GroupingStyle="All" /&gt;
+    &lt;/MappingRule&gt;
+    &lt;MappingRule&gt;
+      &lt;Setting IncludeInExport="true" Color="ByDwgLayer" LineStyle="ByDwgLayer" LineWeight="ByDwgLayer" PaperSpace="false" LayerName="11-GEN-ROTU" /&gt;
+      &lt;Filter ObjectType="DrawingFrame" FilterName="" GroupingStyle="All" /&gt;
+    &lt;/MappingRule&gt;
+    &lt;MappingRule&gt;
+      &lt;Setting IncludeInExport="true" Color="ByDwgLayer" LineStyle="ByDwgLayer" LineWeight="ByDwgLayer" PaperSpace="false" LayerName="11-GEN-ROTU" /&gt;
+      &lt;Filter ObjectType="DrawingTable" FilterName="" GroupingStyle="All" /&gt;
+    &lt;/MappingRule&gt;
+  &lt;/MappingRules&gt;
+&lt;/ObjectMappingRules&gt;</LayerRules>
+</DwgExportOptions>

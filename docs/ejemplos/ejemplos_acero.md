@@ -68,12 +68,16 @@ Se deja debajo el plano de estructura, para obtener el diseño final de placa ba
 
 #### Creación de proyecto en Connect y colocación de referencias
 
-<iframe width="900" height="506" src="https://www.youtube.com/embed/Ca-cqnSOwV8?si=WWt19nfqycQAVep5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay=1; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="700" height="393,75" src="https://www.youtube.com/embed/Ca-cqnSOwV8?si=WWt19nfqycQAVep5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay=1; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
 #### Importar modelo de STAAD en modelo y ajuste del mismo
 
+<iframe width="700" height="393,75" src="https://www.youtube.com/embed/jnicyUKoWLA?si=kMG5hilfoHFPlE5w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay=1; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 #### Asignación de materiales, atributos, propiedades
+
+
 
 #### Sincronización con Connect y evaluación de interferencias
 

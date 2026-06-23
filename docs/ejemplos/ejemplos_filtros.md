@@ -77,7 +77,7 @@ Dentro de `Object representation` crearemos nuestro filtro, teniendo en cuenta q
 
 En el siguiente video mostramos el ejemplo desarrollado en este apartado:
 
-<iframe width="900" height="506" src="https://www.youtube.com/embed/M1iL3ZNzTxY?si=IYVwqx9k9x2LgZFq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay=1 ; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="700" height="393,75" src="https://www.youtube.com/embed/M1iL3ZNzTxY?si=IYVwqx9k9x2LgZFq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay=1 ; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
 

@@ -1,4 +1,3 @@
-
 template template_1343
 {
     name = "template_1343";
@@ -15,7 +14,7 @@ template template_1343
     gridyspacing = 1;
     version = 4.1;
     created = "03.05.2004 13:23";
-    modified = "17.06.2026 13:23";
+    modified = "17.06.2026 15:45";
     notes = "";
     colors = "153;152;160;161;162;163;164;165;154;155;156;157;158;159;130;131;132;133;";
 
@@ -1580,11 +1579,11 @@ template template_1343
             text _tmp_0
             {
                 name = "Text_3";
-                x1 = 3;
+                x1 = 2;
                 y1 = 2;
-                x2 = 3;
+                x2 = 2;
                 y2 = 2;
-                string = "PÓRTICO TIPO";
+                string = "ESTRUCTURA TIPO";
                 fontname = "Arial";
                 fontcolor = 153;
                 fonttype = 2;
@@ -1600,7 +1599,7 @@ template template_1343
             valuefield _tmp_1
             {
                 name = "PERFIL_1";
-                location = (29, 2);
+                location = (36, 2);
                 formula = "GetValue(\"USERDEFINED.USER_FIELD_1\")";
                 maxnumoflines = 1;
                 datatype = INTEGER;

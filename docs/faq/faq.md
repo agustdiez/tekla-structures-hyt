@@ -79,11 +79,19 @@ Indicarlas entrando a
 ---
 ## Previo a modelar
 
-### Definición de punto base 
+### Definición de punto base
+Para definir el punto base debe leerse el apartado ["Definición de punto base"](../generalidades/generalidades.md#definición-punto-base).
 
 ### Cargar referencias 
 
-### Especificaciones tecnicas 
+Se puede leer apartado de ["Referencias externas"](../generalidades/generalidades.md#referencias-externas), también en ["¿Donde se suben los modelos?"](../connect/connect-ejecutor.md#donde-se-suben-los-modelos) se tiene noción de las referencias subidas en Trimble Connect, y por último en ["Ejemplo acero"](../ejemplos/ejemplos_acero.md#creación-de-proyecto-en-connect-y-colocación-de-referencias) se ve un ejemplo de como se cargan las referencias en Trimble Connect.
+Para subir referencias en "Reference model", dentro de "model" se deben seguir los siguientes pasos:
+
+1. Hacer click en "Reference models" ![Reference models](../img/faq/Reference%20models.png)
+2. Seleccionar `+ Add model`
+3. En 
+
+### Especificaciones técnicas 
 
 ### Memorias de calculo, información 
 
@@ -255,14 +263,6 @@ La estructura de carpetas obligatorias serán las ubicadas dentro del modelo, do
 {: .highlight}
 > Este último (Xref) es recomendable en el caso en que se tengan pocos archivos vinculados al dibujo, mientras que las demás serán convenientes en los casos donde se tengan muchos archivos de ese tipo.
 
-### no levanta el doc de referencia cargado en proyecto
-Algunas veces puede suceder que un modelo de referencia no se puede visualizar bien en el modelo, y por ende en el dibujo. 
-Por ejemplo al subir un `DWG 3D` los elementos sólidos pueden verse de forma unifilar. Una solución a esto es llevar el archivo a `Navisworks Manage` y transformar el modelo a `nwd` y luego volver a colocarlo como una referencia.
-...
-
-### no levanta el doc de referencia cargado en dibujo
-
-
 
 ### Vistas isometricas en tekla
 
@@ -287,7 +287,39 @@ Si elimino la marca de una vista al [crearse una vista en base a otra](../dibujo
 
 ### No se ve mi modelo de referencia en la vista.
 
-Es probable que esté mal la profundidad de la vista, por ejemplo en nuestro caso las cosas están modeladas en el +100.000, entonces...
+Es probable que esté mal la profundidad de la vista, por ejemplo en nuestro caso las cosas están modeladas en el `+100.000`, entonces si el modelo de referencia está modelado en el 0.00 es muy probable que no se vea.
+
+![profundidad de vista](../img/dibujo/profundidad%20de%20vista.png)
+*Propiedades a editar para la profundidad de la vista*
+
+En el ejemplo que mencionamos anteriormente, nuestro `Depth down` estará en `+100.000` para alcanzar al modelo de referencia que está en el `0.00`, y el valor `Depth up` podremos ponerle cualquier valor en este caso.
+
+{: .note}
+> Si el caso fuese al revés, donde nosotros modelaramos en el 0.00, y el modelo de referencia estuviese en +100.000, el valor de `Depth up` será 100.000 y el otro libre.
+
+### ¿Como creo un filtro?
+
+Para crear un filtro puede tomarse de referencia el ejemplo creado para ["grating"](../ejemplos/ejemplos_filtros.md) o la explicación en ["filtros"](../dibujo/vistas_dibujo.md#filter).
+
+### ¿Puedo editar un simbolo?
+
+Si se quiere editar un simbolo ya existente, es posible realizarlo, pero es recomendable en todo caso duplicar el que se quiere editar y editarlo, ya que si ese otro simbolo se tiene en otro lugar puede perjudicar a otro plano.
+
+![editar simbolo](../img/faq/editar%20simbolo.png)
+*Pasos para ingresar al editor de simbolos*
+
+Se abrirá el [editor de simbolos](../dibujo/marcas_simbolos_notas.md#simbolos) y allí seleccionaremos el símbolo que queremos usar de referencia, ponemos copy y lo pegamos donde deseemos (donde lo copiemos será el número al que corresponde el símbolo).
+
+![COPIAR SIMBOLO](../img/faq/COPIAR%20SIMBOLO.gif)
+
+Luego lo guardamos y cerramos el editor de simbolos, para luego en `Symbol properties`/`Number` poner el número al que corresponde su nuevo símbolo.
+
+{: .warning}
+Tener en cuenta que esto modificará el archivo de simbolos de todos, por lo que hay que tener cuidado en no eliminar ni sobreescribir nada.
+
+### ¿Puedo crear un dibujo a partir de otro?
+
+Esta es una de las opciones que nos permite el [document manager](../dibujo/generalidades_dibujo.md#document-manager), haciendo click derecho en el dibujo a copiar aparecera en la lista desplegable "Copy drawing views/with layout" (ver su uso en el link anterior).
 
 --- 
 

@@ -339,22 +339,19 @@ Las configuraciones guardadas consideran lo siguiente:
 - El grout será 25mm hasta 3/4''. De 1'' para arriba se considera 30mm para que entre la tuerca de nivelación
 
 
-
-| Perfil | 200x200 | 250x250 | 300x300 | 350x350 | 400x400 | 450x450 |
-|:---|:---:|:---:|:---:|:---:|:---:|:---:|
-| **W6x15** | Articulada 1° | – | Empotrada 1° | Empotrada 2° | – | – |
-| **W8x18** | – | Articulada 1° | – | Empotrada 1° | Empotrada 2° | – |
-| **W8x31** | – | Articulada 1° + 2° | – | Empotrada 1° | Empotrada 2° | – |
-| **W10x45** | – | – | Articulada 1° | – | Empotrada 1° | Empotrada 2° |
-| **W12x50** | – | – | – | Articulada 1° | – | Empotrada 1° |
-| **W14x74** | – | – | – | – | Articulada 1° | Empotrada 1° |
-| **HEB160** | Articulada 1° | – | Empotrada 1° | Empotrada 2° | – | – |
-| **HEB200** | – | Articulada 1° | – | – | Empotrada 1° | Empotrada 2° |
-| **UPN140C** | – | Empotrada 1° (250x200) | Empotrada 2° (300x250) | – | – | – |
-| **UPN180C** | – | – | Empotrada 1° (300x250) | Empotrada 2° (350x300) | – | – |
-| **UPN220C** | – | – | – | – | Empotrada 1° (400x300) | Empotrada 2° (450x350) |
-
-
+| Perfil | 200x200 | 250x200 | 250x250 | 280x280 | 300x250 | 300x300 | 350x280 | 350x300 | 350x350 | 400x300 | 400x350 | 400x400 | 450x350 | 450x450 |
+|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|
+| **W6x15**   | [Articulada 1°](../ref/Placa%20Base/W6x15-ART-1°.j1047) |   |   |   |   | [Empotrada 1°](../ref/Placa%20Base/W6x15-EMP-1°.j1047) |   |   | [Empotrada 2°](../ref/Placa%20Base/W6x15-EMP-2°.j1047) |   |   |   |   |   |
+| **W8x18**   |   |   | [Articulada 1°](../ref/Placa%20Base/W8x18-ART-1°.j1047) |   |   |   | [Empotrada 1°](../ref/Placa%20Base/W8x18-EMP-1°.j1047) |   |   |   | [Empotrada 2°](../ref/Placa%20Base/W8x18-EMP-2°.j1047) |   |   |   |
+| **W8x31**   |   |   | [Articulada 1°](../ref/Placa%20Base/W8x31-ART-1°.j1047)<br>[Articulada 2°](../ref/Placa%20Base/W8x31-ART-2°.j1047) |   |   |   |   |   | [Empotrada 1°](../ref/Placa%20Base/W8x31-EMP-1°.j1047) |   |   | [Empotrada 2°](../ref/Placa%20Base/W8x31-EMP-2°.j1047) |   |   |
+| **W10x45**  |   |   |   |   |   | [Articulada 1°](../ref/Placa%20Base/W10x45-ART-1°.j1047) |   |   |   |   |   | [Empotrada 1°](../ref/Placa%20Base/W10x45-EMP-1°.j1047) |   | [Empotrada 2°](../ref/Placa%20Base/W10x45-EMP-2°.j1047) |
+| **W12x50**  |   |   |   |   |   |   |   |   | [Articulada 1°](../ref/Placa%20Base/W12x50-ART-1°.j1047) |   |   |   |   | [Empotrada 1°](../ref/Placa%20Base/W12x50-EMP-1°.j1047) |
+| **W14x74**  |   |   |   |   |   |   |   |   |   |   |   | [Articulada 1°](../ref/Placa%20Base/W14x74-ART-1°.j1047) |   | [Empotrada 1°](../ref/Placa%20Base/W14x74-EMP-1°.j1047) |
+| **HEB160**  |   |   |   | [Empotrada 1°](../ref/Placa%20Base/HEB160-EMP-1°.j1047) |   |   |   |   | [Empotrada 2°](../ref/Placa%20Base/HEB160-EMP-2°.j1047) |   |   |   |   |   |
+| **HEB200**  |   |   | [Articulada 1°](../ref/Placa%20Base/HEB200-ART-1°.j1047) |   |   |   |   |   | [Empotrada 1°](../ref/Placa%20Base/HEB200-EMP-1°.j1047) |   |   |   |   | [Empotrada 2°](../ref/Placa%20Base/HEB200-EMP-2°.j1047) |
+| **UPN140C** |   | [Empotrada 1°](../ref/Placa%20Base/UPN140C-EMP-1°.j1047) |   |   | [Empotrada 2°](../ref/Placa%20Base/UPN140C-EMP-2°.j1047) |   |   |   |   |   |   |   |   |   |
+| **UPN180C** |   |   |   |   | [Empotrada 1°](../ref/Placa%20Base/UPN180C-EMP-1°.j1047) |   |   | [Empotrada 2°](../ref/Placa%20Base/UPN180C-EMP-2°.j1047) |   |   |   |   |   |   |
+| **UPN220C** |   |   |   |   |   |   |   |   |   | [Empotrada 1°](../ref/Placa%20Base/UPN220C-EMP-1°.j1047) |   |   | [Empotrada 2°](../ref/Placa%20Base/UPN220C-EMP-2°.j1047) |   |
 
 ### Antimaterial
 
