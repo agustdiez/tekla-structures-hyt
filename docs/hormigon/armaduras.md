@@ -219,14 +219,9 @@ Para el caso de barras de gran longitud o que deban separarse en tramos, aparece
 
 Hay componentes dentro del programa que permiten hacer splice de barras, aunque si se trata de una estructura particular donde debe estar pensado, es buena alternativa hacerlo manualmente e indicarlo en el plano de manera correcta.
 
-De forma general, las longitudes de empalme deben considerarse como $1,3 $
+De forma general, las longitudes de empalme deben considerarse como $1,3 $ veces la longitud de anclaje de la barra
 
 ---
-
-## Listado de componentes
-
-
-
 
 
 [← Volver al inicio](index.md)

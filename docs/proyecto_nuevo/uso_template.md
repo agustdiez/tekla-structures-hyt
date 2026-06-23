@@ -27,7 +27,7 @@ Para crear un nuevo modelo utilizando un template existente deben seguirse los s
 3. Crear nuevo modelo, eligiendo el template del proyecto en el menú principal.
 4. Validar tener en los dibujos los rótulos cargados.
 
-![alt text](image-3.png)
+![listado_templates](../img/proyecto_nuevo/listado_proyectos.png)
 
 ---
 
@@ -55,13 +55,13 @@ Por lo tanto, el template vive en un modelo aparte que no debe tocarse. Las modi
 
 Para lograr esto, seguir de forma general los siguientes pasos, haciendo doble click sobre el cuadro a editar:
 
-![alt text](image.png)
+![Layout template](../img/proyecto_nuevo/layout_template.png)
 
 1. Editar los cuadros a modificar, guardando los mismos dentro del modelo en la carpeta `/templates` de nuestro modelo.
 2. Ir al `Drawing Layout Editor` y sumar los nuevos cuadros en las disposiciones a modificar (A0, A1, A2) y guardar el layout. Al hacer esto se generará un archivo `.lay` dentro de nuestro modelo.
 3. De esta forma, los `.tpl` y `.lay` creados en este apartado se pueden copiar y pegar en los modelos que lo requieran.
 
-![alt text](image-2.png)
+![Save_as](../img/proyecto_nuevo/save_as_template.png)
 
 ### Crear nuevos atributos para un modelo
 
@@ -122,6 +122,19 @@ La estructura de los atributos y tabs debe guardarse en un `objects_<DESCRIPCION
 
 ## Orden de lectura
 
+Para el caso de nuevos cuadros creados, siempre recordar que el orden de lectura es el siguiente. Esto podría traer algún problema de sobreescritura si no se trabaja correctamente.
+
+1. Carpeta que contiene la propiedad avanzada XS_​TEMPLATE_​DIRECTORY.
+   >Esto ya lo tenemos seteado a través del .ini 
+2. Carpeta de modelo o `\templates` dentro de la carpeta del modelo.
+3. Carpeta proyecto (XS_PROJECT)
+    >No se está utilizando  
+4. Carpeta FIRM (XS_FIRM)
+5. Cuadros del entorno SouthAmerica
+6. Cuadros del sistema
+
+Por lo tanto, cualquier archivo que se llame igual a nivel modelo podrá eventualmente pisar alguno del servidor.
+
 ## Preset de propiedades
 
 Los archivos .ifc son los archivos entregables de la maqueta y que formarán parte de los modelos federados. Básicamente se trata de archivos que combinarán elementos geométricos con información. Cada parte contendrá una serie de atributos que ya vendrán definidos de forma predefinida en el preset de empresa.
@@ -133,10 +146,7 @@ A modo informativo, se dejan a continuación todos los atributos con los que sal
 
 El **preset de propiedades** consta de todos aquellos atributos que contendrán los modelos `.ifc` que se exporten desde el modelo o utilizando el [BIM Publisher](../generalidades/bim_publisher.md)
 
-Se describen los pasos para crear uno nuevo, aunque la configuración utilizada actualmente (`nombre_config`) es muy completa y cubre gran cantidad de atributos que se precisan tener a mano en la maqueta.
-
-
-
+La configuración utilizada actualmente ([`HYTECH_CONFIGURATION_FILE`](../ref/HYTECH_CONFIGURATION_FILE.xml)) es completa y cubre gran cantidad de atributos que se precisan tener a mano en la maqueta. Para crear nuevos preset de propiedades, deberá hacerse atendiendo a nuevos atributos a sumar en la maqueta.
 
 
 [← Volver al inicio](index.md)

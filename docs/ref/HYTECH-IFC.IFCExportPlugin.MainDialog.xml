@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+  <BaseQuantities>1</BaseQuantities>
+  <GridExport>0</GridExport>
+  <Assemblies>1</Assemblies>
+  <Bolts>1</Bolts>
+  <ReinforcingBars>1</ReinforcingBars>
+  <PourObjects>0</PourObjects>
+  <Welds>1</Welds>
+  <LayersNameAsPart>1</LayersNameAsPart>
+  <SurfaceTreatments>1</SurfaceTreatments>
+  <ExcludeSnglPrtAsmb>0</ExcludeSnglPrtAsmb>
+  <LocsFromOrganizer>0</LocsFromOrganizer>
+  <PLprofileToPlate>0</PLprofileToPlate>
+  <ViewColors>0</ViewColors>
+  <SectionedSpine>0</SectionedSpine>
+  <PSetContent>1</PSetContent>
+  <CreateAll>1</CreateAll>
+  <AdditionalPSets>HYTECH_CONFIGURATION_FILE</AdditionalPSets>
+  <OutputFile>.\IFC\out</OutputFile>
+  <Format>0</Format>
+  <ExportType>0</ExportType>
+  <BasePointName>ORIGEN MAQUETA</BasePointName>
+  <LocationBy>-1</LocationBy>
+</config>

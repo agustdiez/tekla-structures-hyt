@@ -88,8 +88,13 @@ Se puede leer apartado de ["Referencias externas"](../generalidades/generalidade
 Para subir referencias en "Reference model", dentro de "model" se deben seguir los siguientes pasos:
 
 1. Hacer click en "Reference models" ![Reference models](../img/faq/Reference%20models.png)
-2. Seleccionar `+ Add model`
-3. En 
+2. Seleccionar `+ Add model`.
+3. Hacer click en `Browse...` y seleccionar el archivo que se desea usar de referencia (recordando que el archivo debe estar con una ruta local de una carpeta del modelo como `./Xref` para que otras personas puedan abrir el modelo y ver la referencia).
+
+![cargar referencia en model](../img/faq/cargar%20referencia%20en%20model.png)
+*Pasos para cargar referencia desde el model*
+
+Por último pueden modificarse parámetros como designarlo en un grupo, definir el origen asociado, desfasarlo del punto anterior alguna distancia, la escala o la rotación.
 
 ### Especificaciones técnicas 
 
@@ -151,11 +156,36 @@ En líneas generales se sugiere:
   
 ### Quiero crear un filtro ¿Cómo hago?
 
-Ver..
+Para crear un filtro puede tomarse de referencia el ejemplo creado para ["grating"](../ejemplos/ejemplos_filtros.md) o la explicación en ["filtros"](../dibujo/vistas_dibujo.md#filter).
 
 ### A veces veo las partes de una forma y otra vez de otra
 
-Explicar los modos de representación (Crtl+1 a 5)
+Esto ocurre ya que el programa permite ver de 5 formas diferentes los elementos del modelo:
+- Estructura alambre.
+- Estructura alambre sombreado.
+- Partes escala grises.
+- Partes render.
+- Partes seleccionadas.
+
+Los [métodos abreviados de teclado](../manuales/2022-Tekla-Structures-EN-KB-Shortcuts-flyer.pdf) que usamos son:
+
+Representación | Atajo |
+|-------|---------------|
+|Estructura alambre **(Partes)**.|`Ctrl+1`|
+|Estructura alambre sombreado **(Partes)**.|`Ctrl+2`|
+|Partes escala grises **(Partes)**.|`Ctrl+3`|
+|Partes render **(Partes)**.|`Ctrl+4`|
+|Partes seleccionadas **(Partes)**.|`Ctrl+5`|
+|Estructura alambre **(Componentes)**.|`Mayús+1`|
+|Estructura alambre sombreado **(Componentes)**.|`Mayús+2`|
+|Partes escala grises **(Componentes)**.|`Mayús+3`|
+|Partes render **(Componentes)**.|`Mayús+4`|
+|Partes seleccionadas **(Componentes)**.|`Mayús+5`|
+|Estructura alambre **(Referencias)**.|`Ctrl+Mayús+1`|
+|Estructura alambre sombreado **(Referencias)**.|`Ctrl+Mayús+2`|
+|Partes escala grises **(Referencias)**.|`Ctrl+Mayús+3`|
+|Partes render **(Referencias)**.|`Ctrl+Mayús+4`|
+|Partes seleccionadas **(Referencias)**.|`Ctrl+Mayús+5`|
 
 ### actualizacion de template local en modelos nuevos 
 16/4/26 fer mati 
@@ -197,6 +227,11 @@ modif separación
 ### Componente 128
 
 generar recorte de ala en vez de ovalado por defecto, a 45°
+
+### Verificar los NSA de la estructura
+
+
+### ¿Que atributos adicionales a la estructura deben indicarse?
 
 
 ---

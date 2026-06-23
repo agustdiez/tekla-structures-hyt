@@ -1,0 +1,968 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Archivo de configuración de propiedades para cada tipo de entidad IFC del programa-->
+<PropertySetConfiguration xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0" xmlns="http://www.tekla.com/IfcProperties">
+  <PropertySetBindings>
+    <PropertySetBind referenceId="default">
+      <Rules />
+    </PropertySetBind>
+    <!--Definición de fundaciones, a nivel Cast Unit y a nivel parte-->
+    <PropertySetBind referenceId="fundacion">
+      <Rules>
+        <Include entityType="IfcElementAssembly" subtypes="false" />
+        <Include entityType="IfcFooting" subtypes="false" />
+      </Rules>
+    </PropertySetBind>
+    <PropertySetBind referenceId="rebar_properties">
+      <Rules>
+        <Include entityType="IfcReinforcingBar" subtypes="false" />
+      </Rules>
+    </PropertySetBind>
+    <PropertySetBind referenceId="vigas">
+      <Rules>
+        <Include entityType="IfcBeam" subtypes="false" />
+      </Rules>
+    </PropertySetBind>
+    <PropertySetBind referenceId="proyecto">
+      <Rules>
+        <Include entityType="IfcProject" subtypes="false" />
+      </Rules>
+    </PropertySetBind>
+  </PropertySetBindings>
+  <PropertySetDefinitions>
+    <PropertySet referenceId="default">
+      <Description />
+      <Name>Default</Name>
+      <Properties />
+    </PropertySet>
+    <!--Definición de fundaciones, a nivel Cast Unit y a nivel parte-->
+    <PropertySet referenceId="fundacion">
+      <Description />
+      <Name>Fundacion</Name>
+      <Properties>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>GUID</Name>
+          <PropertyValue xsi:type="StringValueType" stringType="IfcLabel">
+            <GetValue xsi:type="TemplateVariableType">
+              <TemplateName>GUID</TemplateName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>HISTORY.MODIFIED</Name>
+          <PropertyValue xsi:type="StringValueType" stringType="IfcLabel">
+            <GetValue xsi:type="TemplateVariableType">
+              <TemplateName>HISTORY.MODIFIED</TemplateName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>HISTORY.MODIFIED_ACTION</Name>
+          <PropertyValue xsi:type="StringValueType" stringType="IfcLabel">
+            <GetValue xsi:type="TemplateVariableType">
+              <TemplateName>HISTORY.MODIFIED_ACTION</TemplateName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>HISTORY.MODIFIED_BY</Name>
+          <PropertyValue xsi:type="StringValueType" stringType="IfcLabel">
+            <GetValue xsi:type="TemplateVariableType">
+              <TemplateName>HISTORY.MODIFIED_BY</TemplateName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>CREATED_BY</Name>
+          <PropertyValue xsi:type="StringValueType" stringType="IfcLabel">
+            <GetValue xsi:type="TemplateVariableType">
+              <TemplateName>CREATED_BY</TemplateName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>HISTORY.CREATED</Name>
+          <PropertyValue xsi:type="StringValueType" stringType="IfcLabel">
+            <GetValue xsi:type="TemplateVariableType">
+              <TemplateName>HISTORY.CREATED</TemplateName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>HISTORY.CREATED_BY</Name>
+          <PropertyValue xsi:type="StringValueType" stringType="IfcLabel">
+            <GetValue xsi:type="TemplateVariableType">
+              <TemplateName>HISTORY.CREATED_BY</TemplateName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>ATT_301_GA_HYTECH</Name>
+          <PropertyValue xsi:type="StringValueType" stringType="IfcLabel">
+            <GetValue xsi:type="UdaVariableType">
+              <UdaName>ATT_301_GA_HYTECH</UdaName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>ATT_301_OWNER_HYTECH</Name>
+          <PropertyValue xsi:type="StringValueType" stringType="IfcLabel">
+            <GetValue xsi:type="UdaVariableType">
+              <UdaName>ATT_301_OWNER_HYTECH</UdaName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>ATT_301_SUPPLIER_HYTECH</Name>
+          <PropertyValue xsi:type="StringValueType" stringType="IfcLabel">
+            <GetValue xsi:type="UdaVariableType">
+              <UdaName>ATT_301_SUPPLIER_HYTECH</UdaName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>ATT_303_DESC_EQUIP</Name>
+          <PropertyValue xsi:type="StringValueType" stringType="IfcLabel">
+            <GetValue xsi:type="UdaVariableType">
+              <UdaName>ATT_303_DESC_EQUIP</UdaName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>ATT_303_EWP_FUND</Name>
+          <PropertyValue xsi:type="StringValueType" stringType="IfcLabel">
+            <GetValue xsi:type="UdaVariableType">
+              <UdaName>ATT_303_EWP_FUND</UdaName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>ATT_303_PDH_HYTECH</Name>
+          <PropertyValue xsi:type="StringValueType" stringType="IfcLabel">
+            <GetValue xsi:type="UdaVariableType">
+              <UdaName>ATT_303_PDH_HYTECH</UdaName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>ATT_303_MC_HYTECH</Name>
+          <PropertyValue xsi:type="StringValueType" stringType="IfcLabel">
+            <GetValue xsi:type="UdaVariableType">
+              <UdaName>ATT_303_MC_HYTECH</UdaName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>ATT_303_PROVEEDOR_FUND</Name>
+          <PropertyValue xsi:type="StringValueType" stringType="IfcLabel">
+            <GetValue xsi:type="UdaVariableType">
+              <UdaName>ATT_303_PROVEEDOR_FUND</UdaName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>ATT_303_STATUS_FUND</Name>
+          <PropertyValue xsi:type="IntegerValueType">
+            <GetValue xsi:type="UdaVariableType">
+              <UdaName>ATT_303_STATUS_FUND</UdaName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>ATT_303_STATUS_OBRA</Name>
+          <PropertyValue xsi:type="IntegerValueType">
+            <GetValue xsi:type="UdaVariableType">
+              <UdaName>ATT_303_STATUS_OBRA</UdaName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>VOLUME_NET</Name>
+          <PropertyValue xsi:type="MeasureValueType" conversion="1E-09" measureType="IfcVolumeMeasure">
+            <GetValue xsi:type="TemplateVariableType">
+              <TemplateName>VOLUME_NET</TemplateName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>WEIGHT_NET</Name>
+          <PropertyValue xsi:type="MeasureValueType" conversion="1" measureType="IfcMassMeasure">
+            <GetValue xsi:type="TemplateVariableType">
+              <TemplateName>WEIGHT_NET</TemplateName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>COG_X_BASEPOINT</Name>
+          <PropertyValue xsi:type="MeasureValueType" conversion="1" measureType="IfcLengthMeasure">
+            <GetValue xsi:type="TemplateVariableType">
+              <TemplateName>COG_X_BASEPOINT</TemplateName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>COG_Y_BASEPOINT</Name>
+          <PropertyValue xsi:type="MeasureValueType" conversion="1" measureType="IfcLengthMeasure">
+            <GetValue xsi:type="TemplateVariableType">
+              <TemplateName>COG_Y_BASEPOINT</TemplateName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>TOP_LEVEL_BASEPOINT</Name>
+          <PropertyValue xsi:type="StringValueType" stringType="IfcLabel">
+            <GetValue xsi:type="TemplateVariableType">
+              <TemplateName>TOP_LEVEL_BASEPOINT</TemplateName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>BOTTOM_LEVEL_BASEPOINT</Name>
+          <PropertyValue xsi:type="StringValueType" stringType="IfcLabel">
+            <GetValue xsi:type="TemplateVariableType">
+              <TemplateName>BOTTOM_LEVEL_BASEPOINT</TemplateName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>CAST_UNIT_HEIGHT_TOTAL</Name>
+          <PropertyValue xsi:type="MeasureValueType" conversion="1" measureType="IfcLengthMeasure">
+            <GetValue xsi:type="TemplateVariableType">
+              <TemplateName>CAST_UNIT_HEIGHT_TOTAL</TemplateName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>CAST_UNIT_REBAR_WEIGHT</Name>
+          <PropertyValue xsi:type="MeasureValueType" conversion="1" measureType="IfcMassMeasure">
+            <GetValue xsi:type="TemplateVariableType">
+              <TemplateName>CAST_UNIT_REBAR_WEIGHT</TemplateName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>AREA_FORM_BOTTOM</Name>
+          <PropertyValue xsi:type="MeasureValueType" conversion="1E-06" measureType="IfcAreaMeasure">
+            <GetValue xsi:type="TemplateVariableType">
+              <TemplateName>AREA_FORM_BOTTOM</TemplateName>
+            </GetValue>
+          </PropertyValue>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>AREA_FORM_TOP</Name>
+          <PropertyValue xsi:type="MeasureValueType" conversion="1E-06" measureType="IfcAreaMeasure">
+            <GetValue xsi:type="TemplateVariableType">
+              <TemplateName>AREA_FORM_TOP</TemplateName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>MATERIAL</Name>
+          <PropertyValue xsi:type="StringValueType" stringType="IfcLabel">
+            <GetValue xsi:type="TemplateVariableType">
+              <TemplateName>MATERIAL</TemplateName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>MODEL_TOTAL</Name>
+          <PropertyValue xsi:type="IntegerValueType">
+            <GetValue xsi:type="TemplateVariableType">
+              <TemplateName>MODEL_TOTAL</TemplateName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>CAST_UNIT_POS</Name>
+          <PropertyValue xsi:type="StringValueType" stringType="IfcLabel">
+            <GetValue xsi:type="TemplateVariableType">
+              <TemplateName>CAST_UNIT_POS</TemplateName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>CAST_UNIT_PREFIX</Name>
+          <PropertyValue xsi:type="StringValueType" stringType="IfcLabel">
+            <GetValue xsi:type="TemplateVariableType">
+              <TemplateName>CAST_UNIT_PREFIX</TemplateName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>CAST_UNIT_NAME</Name>
+          <PropertyValue xsi:type="StringValueType" stringType="IfcLabel">
+            <GetValue xsi:type="TemplateVariableType">
+              <TemplateName>CAST_UNIT_NAME</TemplateName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>NAME</Name>
+          <PropertyValue xsi:type="StringValueType" stringType="IfcLabel">
+            <GetValue xsi:type="TemplateVariableType">
+              <TemplateName>NAME</TemplateName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        </Property>
+      </Properties>
+    </PropertySet>
+    <!--Definición de rebar-->
+    <PropertySet referenceId="rebar_properties">
+      <Description />
+      <Name>Rebar_properties</Name>
+      <Properties>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>ADDED_TO_POUR_UNIT</Name>
+          <PropertyValue xsi:type="IntegerValueType">
+            <GetValue xsi:type="TemplateVariableType">
+              <TemplateName>ADDED_TO_POUR_UNIT</TemplateName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>CAST_UNIT_POS</Name>
+          <PropertyValue xsi:type="StringValueType" stringType="IfcLabel">
+            <GetValue xsi:type="TemplateVariableType">
+              <TemplateName>CAST_UNIT_POS</TemplateName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>CATALOG_NAME</Name>
+          <PropertyValue xsi:type="StringValueType" stringType="IfcLabel">
+            <GetValue xsi:type="TemplateVariableType">
+              <TemplateName>CATALOG_NAME</TemplateName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>CC_TARGET</Name>
+          <PropertyValue xsi:type="MeasureValueType" conversion="1" measureType="IfcLengthMeasure">
+            <GetValue xsi:type="TemplateVariableType">
+              <TemplateName>CC_TARGET</TemplateName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>CONCRETE_COVER_ON_PLANE_MIN</Name>
+          <PropertyValue xsi:type="MeasureValueType" conversion="1" measureType="IfcLengthMeasure">
+            <GetValue xsi:type="TemplateVariableType">
+              <TemplateName>CONCRETE_COVER_ON_PLANE_MIN</TemplateName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>DIAMETER_NOMINAL</Name>
+          <PropertyValue xsi:type="MeasureValueType" conversion="1" measureType="IfcLengthMeasure">
+            <GetValue xsi:type="TemplateVariableType">
+              <TemplateName>DIAMETER_NOMINAL</TemplateName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>DIM_A</Name>
+          <PropertyValue xsi:type="MeasureValueType" conversion="1" measureType="IfcLengthMeasure">
+            <GetValue xsi:type="TemplateVariableType">
+              <TemplateName>DIM_A</TemplateName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>DIM_B</Name>
+          <PropertyValue xsi:type="MeasureValueType" conversion="1" measureType="IfcLengthMeasure">
+            <GetValue xsi:type="TemplateVariableType">
+              <TemplateName>DIM_B</TemplateName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>DIM_C</Name>
+          <PropertyValue xsi:type="MeasureValueType" conversion="1" measureType="IfcLengthMeasure">
+            <GetValue xsi:type="TemplateVariableType">
+              <TemplateName>DIM_C</TemplateName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>DIM_D</Name>
+          <PropertyValue xsi:type="MeasureValueType" conversion="1" measureType="IfcLengthMeasure">
+            <GetValue xsi:type="TemplateVariableType">
+              <TemplateName>DIM_D</TemplateName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>DIM_E</Name>
+          <PropertyValue xsi:type="MeasureValueType" conversion="1" measureType="IfcLengthMeasure">
+            <GetValue xsi:type="TemplateVariableType">
+              <TemplateName>DIM_E</TemplateName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>DIM_L</Name>
+          <PropertyValue xsi:type="MeasureValueType" conversion="1" measureType="IfcLengthMeasure">
+            <GetValue xsi:type="TemplateVariableType">
+              <TemplateName>DIM_L</TemplateName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>GRADE</Name>
+          <PropertyValue xsi:type="StringValueType" stringType="IfcLabel">
+            <GetValue xsi:type="TemplateVariableType">
+              <TemplateName>GRADE</TemplateName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>GUID</Name>
+          <PropertyValue xsi:type="StringValueType" stringType="IfcLabel">
+            <GetValue xsi:type="TemplateVariableType">
+              <TemplateName>GUID</TemplateName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>HOOK_END_ANGLE</Name>
+          <PropertyValue xsi:type="StringValueType" stringType="IfcLabel">
+            <GetValue xsi:type="TemplateVariableType">
+              <TemplateName>HOOK_END_ANGLE</TemplateName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>HOOK_END_LENGTH</Name>
+          <PropertyValue xsi:type="MeasureValueType" conversion="1" measureType="IfcLengthMeasure">
+            <GetValue xsi:type="TemplateVariableType">
+              <TemplateName>HOOK_END_LENGTH</TemplateName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>HOOK_START_ANGLE</Name>
+          <PropertyValue xsi:type="StringValueType" stringType="IfcLabel">
+            <GetValue xsi:type="TemplateVariableType">
+              <TemplateName>HOOK_START_ANGLE</TemplateName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>HOOK_START_LENGTH</Name>
+          <PropertyValue xsi:type="MeasureValueType" conversion="1" measureType="IfcLengthMeasure">
+            <GetValue xsi:type="TemplateVariableType">
+              <TemplateName>HOOK_START_LENGTH</TemplateName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>LAYER</Name>
+          <PropertyValue xsi:type="StringValueType" stringType="IfcLabel">
+            <GetValue xsi:type="TemplateVariableType">
+              <TemplateName>LAYER</TemplateName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>NAME</Name>
+          <PropertyValue xsi:type="StringValueType" stringType="IfcLabel">
+            <GetValue xsi:type="TemplateVariableType">
+              <TemplateName>NAME</TemplateName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>MODEL_TOTAL</Name>
+          <PropertyValue xsi:type="IntegerValueType">
+            <GetValue xsi:type="TemplateVariableType">
+              <TemplateName>MODEL_TOTAL</TemplateName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>MATERIAL</Name>
+          <PropertyValue xsi:type="StringValueType" stringType="IfcLabel">
+            <GetValue xsi:type="TemplateVariableType">
+              <TemplateName>MATERIAL</TemplateName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>NUMBER_OF_BARS_IN_GROUP</Name>
+          <PropertyValue xsi:type="IntegerValueType">
+            <GetValue xsi:type="TemplateVariableType">
+              <TemplateName>NUMBER_OF_BARS_IN_GROUP</TemplateName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>REBAR_POS</Name>
+          <PropertyValue xsi:type="StringValueType" stringType="IfcLabel">
+            <GetValue xsi:type="TemplateVariableType">
+              <TemplateName>REBAR_POS</TemplateName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>SHAPE</Name>
+          <PropertyValue xsi:type="StringValueType" stringType="IfcLabel">
+            <GetValue xsi:type="TemplateVariableType">
+              <TemplateName>SHAPE</TemplateName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>WEIGHT_TOTAL_IN_GROUP</Name>
+          <PropertyValue xsi:type="MeasureValueType" conversion="1" measureType="IfcMassMeasure">
+            <GetValue xsi:type="TemplateVariableType">
+              <TemplateName>WEIGHT_TOTAL_IN_GROUP</TemplateName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>HISTORY.CREATED</Name>
+          <PropertyValue xsi:type="StringValueType" stringType="IfcLabel">
+            <GetValue xsi:type="TemplateVariableType">
+              <TemplateName>HISTORY.CREATED</TemplateName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>HISTORY.CREATED_BY</Name>
+          <PropertyValue xsi:type="StringValueType" stringType="IfcLabel">
+            <GetValue xsi:type="TemplateVariableType">
+              <TemplateName>HISTORY.CREATED_BY</TemplateName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>HISTORY.MODIFIED</Name>
+          <PropertyValue xsi:type="StringValueType" stringType="IfcLabel">
+            <GetValue xsi:type="TemplateVariableType">
+              <TemplateName>HISTORY.MODIFIED</TemplateName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>HISTORY.MODIFIED_ACTION</Name>
+          <PropertyValue xsi:type="StringValueType" stringType="IfcLabel">
+            <GetValue xsi:type="TemplateVariableType">
+              <TemplateName>HISTORY.MODIFIED_ACTION</TemplateName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>HISTORY.MODIFIED_BY</Name>
+          <PropertyValue xsi:type="StringValueType" stringType="IfcLabel">
+            <GetValue xsi:type="TemplateVariableType">
+              <TemplateName>HISTORY.MODIFIED_BY</TemplateName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+      </Properties>
+    </PropertySet>
+    <PropertySet referenceId="vigas">
+      <Description />
+      <Name>VIGAS</Name>
+      <Properties>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>ASSEMBLY_BOTTOM_LEVEL_BASEPOINT</Name>
+          <PropertyValue xsi:type="StringValueType" stringType="IfcLabel">
+            <GetValue xsi:type="TemplateVariableType">
+              <TemplateName>ASSEMBLY_BOTTOM_LEVEL_BASEPOINT</TemplateName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>ASSEMBLY_DEFAULT_PREFIX</Name>
+          <PropertyValue xsi:type="StringValueType" stringType="IfcLabel">
+            <GetValue xsi:type="TemplateVariableType">
+              <TemplateName>ASSEMBLY_DEFAULT_PREFIX</TemplateName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>ASSEMBLY_POS</Name>
+          <PropertyValue xsi:type="StringValueType" stringType="IfcLabel">
+            <GetValue xsi:type="TemplateVariableType">
+              <TemplateName>ASSEMBLY_POS</TemplateName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>ASSEMBLY_TOP_LEVEL_BASEPOINT</Name>
+          <PropertyValue xsi:type="StringValueType" stringType="IfcLabel">
+            <GetValue xsi:type="TemplateVariableType">
+              <TemplateName>ASSEMBLY_TOP_LEVEL_BASEPOINT</TemplateName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>ASSEMBLY_PREFIX</Name>
+          <PropertyValue xsi:type="StringValueType" stringType="IfcLabel">
+            <GetValue xsi:type="TemplateVariableType">
+              <TemplateName>ASSEMBLY_PREFIX</TemplateName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>BOTTOM_LEVEL_BASEPOINT</Name>
+          <PropertyValue xsi:type="StringValueType" stringType="IfcLabel">
+            <GetValue xsi:type="TemplateVariableType">
+              <TemplateName>BOTTOM_LEVEL_BASEPOINT</TemplateName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>CAST_UNIT_POS</Name>
+          <PropertyValue xsi:type="StringValueType" stringType="IfcLabel">
+            <GetValue xsi:type="TemplateVariableType">
+              <TemplateName>CAST_UNIT_POS</TemplateName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>COG_X_BASEPOINT</Name>
+          <PropertyValue xsi:type="MeasureValueType" conversion="1" measureType="IfcLengthMeasure">
+            <GetValue xsi:type="TemplateVariableType">
+              <TemplateName>COG_X_BASEPOINT</TemplateName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>COG_Y_BASEPOINT</Name>
+          <PropertyValue xsi:type="MeasureValueType" conversion="1" measureType="IfcLengthMeasure">
+            <GetValue xsi:type="TemplateVariableType">
+              <TemplateName>COG_Y_BASEPOINT</TemplateName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>COMMENT</Name>
+          <PropertyValue xsi:type="StringValueType" stringType="IfcLabel">
+            <GetValue xsi:type="TemplateVariableType">
+              <TemplateName>COMMENT</TemplateName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>DIMENSION_A</Name>
+          <PropertyValue xsi:type="MeasureValueType" conversion="1" measureType="IfcLengthMeasure">
+            <GetValue xsi:type="TemplateVariableType">
+              <TemplateName>DIMENSION_A</TemplateName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>DIMENSION_B</Name>
+          <PropertyValue xsi:type="MeasureValueType" conversion="1" measureType="IfcLengthMeasure">
+            <GetValue xsi:type="TemplateVariableType">
+              <TemplateName>DIMENSION_B</TemplateName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>GUID</Name>
+          <PropertyValue xsi:type="StringValueType" stringType="IfcLabel">
+            <GetValue xsi:type="TemplateVariableType">
+              <TemplateName>GUID</TemplateName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>HEIGHT</Name>
+          <PropertyValue xsi:type="MeasureValueType" conversion="1" measureType="IfcLengthMeasure">
+            <GetValue xsi:type="TemplateVariableType">
+              <TemplateName>HEIGHT</TemplateName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>LENGTH_NET</Name>
+          <PropertyValue xsi:type="MeasureValueType" conversion="1" measureType="IfcLengthMeasure">
+            <GetValue xsi:type="TemplateVariableType">
+              <TemplateName>LENGTH_NET</TemplateName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>MATERIAL</Name>
+          <PropertyValue xsi:type="StringValueType" stringType="IfcLabel">
+            <GetValue xsi:type="TemplateVariableType">
+              <TemplateName>MATERIAL</TemplateName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>MODEL_TOTAL</Name>
+          <PropertyValue xsi:type="IntegerValueType">
+            <GetValue xsi:type="TemplateVariableType">
+              <TemplateName>MODEL_TOTAL</TemplateName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>NAME</Name>
+          <PropertyValue xsi:type="StringValueType" stringType="IfcLabel">
+            <GetValue xsi:type="TemplateVariableType">
+              <TemplateName>NAME</TemplateName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>PROFILE</Name>
+          <PropertyValue xsi:type="StringValueType" stringType="IfcLabel">
+            <GetValue xsi:type="TemplateVariableType">
+              <TemplateName>PROFILE</TemplateName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>RADIUS</Name>
+          <PropertyValue xsi:type="RealValueType">
+            <GetValue xsi:type="TemplateVariableType">
+              <TemplateName>RADIUS</TemplateName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>TOP_LEVEL_BASEPOINT</Name>
+          <PropertyValue xsi:type="StringValueType" stringType="IfcLabel">
+            <GetValue xsi:type="TemplateVariableType">
+              <TemplateName>TOP_LEVEL_BASEPOINT</TemplateName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>VOLUME_NET</Name>
+          <PropertyValue xsi:type="MeasureValueType" conversion="1E-09" measureType="IfcVolumeMeasure">
+            <GetValue xsi:type="TemplateVariableType">
+              <TemplateName>VOLUME_NET</TemplateName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>HAS_CONNECTIONS</Name>
+          <PropertyValue xsi:type="IntegerValueType">
+            <GetValue xsi:type="TemplateVariableType">
+              <TemplateName>HAS_CONNECTIONS</TemplateName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>HAS_HOLES</Name>
+          <PropertyValue xsi:type="IntegerValueType">
+            <GetValue xsi:type="TemplateVariableType">
+              <TemplateName>HAS_HOLES</TemplateName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>PROFILE_TYPE</Name>
+          <PropertyValue xsi:type="StringValueType" stringType="IfcLabel">
+            <GetValue xsi:type="TemplateVariableType">
+              <TemplateName>PROFILE_TYPE</TemplateName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>PROFILE_WEIGHT</Name>
+          <PropertyValue xsi:type="MeasureValueType" conversion="1" measureType="IfcMassMeasure">
+            <GetValue xsi:type="TemplateVariableType">
+              <TemplateName>PROFILE_WEIGHT</TemplateName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>HISTORY.CREATED</Name>
+          <PropertyValue xsi:type="StringValueType" stringType="IfcLabel">
+            <GetValue xsi:type="TemplateVariableType">
+              <TemplateName>HISTORY.CREATED</TemplateName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>HISTORY.CREATED_BY</Name>
+          <PropertyValue xsi:type="StringValueType" stringType="IfcLabel">
+            <GetValue xsi:type="TemplateVariableType">
+              <TemplateName>HISTORY.CREATED_BY</TemplateName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>HISTORY.MODIFIED</Name>
+          <PropertyValue xsi:type="StringValueType" stringType="IfcLabel">
+            <GetValue xsi:type="TemplateVariableType">
+              <TemplateName>HISTORY.MODIFIED</TemplateName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>HISTORY.MODIFIED_ACTION</Name>
+          <PropertyValue xsi:type="StringValueType" stringType="IfcLabel">
+            <GetValue xsi:type="TemplateVariableType">
+              <TemplateName>HISTORY.MODIFIED_ACTION</TemplateName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>HISTORY.MODIFIED_BY</Name>
+          <PropertyValue xsi:type="StringValueType" stringType="IfcLabel">
+            <GetValue xsi:type="TemplateVariableType">
+              <TemplateName>HISTORY.MODIFIED_BY</TemplateName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>ATT_301_GA_HYTECH</Name>
+          <PropertyValue xsi:type="StringValueType" stringType="IfcLabel">
+            <GetValue xsi:type="UdaVariableType">
+              <UdaName>ATT_301_GA_HYTECH</UdaName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>ATT_301_OWNER_HYTEC</Name>
+          <PropertyValue xsi:type="StringValueType" stringType="IfcLabel">
+            <GetValue xsi:type="UdaVariableType">
+              <UdaName>ATT_301_OWNER_HYTEC</UdaName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>ATT_301_SUPPLIER_HY</Name>
+          <PropertyValue xsi:type="StringValueType" stringType="IfcLabel">
+            <GetValue xsi:type="UdaVariableType">
+              <UdaName>ATT_301_SUPPLIER_HY</UdaName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>ATT_303_DESC_EQUIP</Name>
+          <PropertyValue xsi:type="StringValueType" stringType="IfcLabel">
+            <GetValue xsi:type="UdaVariableType">
+              <UdaName>ATT_303_DESC_EQUIP</UdaName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>ATT_303_EWP_FUND</Name>
+          <PropertyValue xsi:type="StringValueType" stringType="IfcLabel">
+            <GetValue xsi:type="UdaVariableType">
+              <UdaName>ATT_303_EWP_FUND</UdaName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>ATT_303_MC_HYTECH</Name>
+          <PropertyValue xsi:type="StringValueType" stringType="IfcLabel">
+            <GetValue xsi:type="UdaVariableType">
+              <UdaName>ATT_303_MC_HYTECH</UdaName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>ATT_303_PDH_HYTECH</Name>
+          <PropertyValue xsi:type="StringValueType" stringType="IfcLabel">
+            <GetValue xsi:type="UdaVariableType">
+              <UdaName>ATT_303_PDH_HYTECH</UdaName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>ATT_303_PROVEEDOR_F</Name>
+          <PropertyValue xsi:type="StringValueType" stringType="IfcLabel">
+            <GetValue xsi:type="UdaVariableType">
+              <UdaName>ATT_303_PROVEEDOR_F</UdaName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>ATT_303_STATUS_FUND</Name>
+          <PropertyValue xsi:type="IntegerValueType">
+            <GetValue xsi:type="UdaVariableType">
+              <UdaName>ATT_303_STATUS_FUND</UdaName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>ATT_303_STATUS_OBRA</Name>
+          <PropertyValue xsi:type="IntegerValueType">
+            <GetValue xsi:type="UdaVariableType">
+              <UdaName>ATT_303_STATUS_OBRA</UdaName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>AREA_FORM_BOTTOM</Name>
+          <PropertyValue xsi:type="MeasureValueType" conversion="1E-06" measureType="IfcAreaMeasure">
+            <GetValue xsi:type="TemplateVariableType">
+              <TemplateName>AREA_FORM_BOTTOM</TemplateName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>AREA_FORM_TOP</Name>
+          <PropertyValue xsi:type="MeasureValueType" conversion="1E-06" measureType="IfcAreaMeasure">
+            <GetValue xsi:type="TemplateVariableType">
+              <TemplateName>AREA_FORM_TOP</TemplateName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+      </Properties>
+    </PropertySet>
+    <PropertySet referenceId="proyecto">
+      <Description />
+      <Name>PROYECTO</Name>
+      <Properties>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>DATE</Name>
+          <PropertyValue xsi:type="TimeValueType">
+            <GetValue xsi:type="TemplateVariableType">
+              <TemplateName>DATE</TemplateName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>DATE_END</Name>
+          <PropertyValue xsi:type="StringValueType" stringType="IfcLabel">
+            <GetValue xsi:type="TemplateVariableType">
+              <TemplateName>DATE_END</TemplateName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>DATE_START</Name>
+          <PropertyValue xsi:type="StringValueType" stringType="IfcLabel">
+            <GetValue xsi:type="TemplateVariableType">
+              <TemplateName>DATE_START</TemplateName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>LOCATION</Name>
+          <PropertyValue xsi:type="StringValueType" stringType="IfcLabel">
+            <GetValue xsi:type="TemplateVariableType">
+              <TemplateName>LOCATION</TemplateName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>MODEL</Name>
+          <PropertyValue xsi:type="StringValueType" stringType="IfcLabel">
+            <GetValue xsi:type="TemplateVariableType">
+              <TemplateName>MODEL</TemplateName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+        <Property xsi:type="PropertySingleValueType" optional="true">
+          <Name>NAME</Name>
+          <PropertyValue xsi:type="StringValueType" stringType="IfcLabel">
+            <GetValue xsi:type="TemplateVariableType">
+              <TemplateName>NAME</TemplateName>
+            </GetValue>
+          </PropertyValue>
+        </Property>
+      </Properties>
+    </PropertySet>
+  </PropertySetDefinitions>
+</PropertySetConfiguration>

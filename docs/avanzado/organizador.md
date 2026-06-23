@@ -15,4 +15,6 @@ has_toc: true
 1. TOC
 {:toc}
 
-proximamente...
+A completar más adelante. Al día de la fecha no estamos necesitando su uso, pero podría ser útil eventualmente.
+
+

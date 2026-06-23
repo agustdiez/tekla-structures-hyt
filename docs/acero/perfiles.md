@@ -237,6 +237,7 @@ Son elementos horizontales o inclinados que transmiten cargas por flexión.
 Son elementos laminares planos que sirven para la creación de complementos a la estructura metálica. 
 
 ![RIBBON PLATE](../img/acero/RIBBON_PLATE_ACERO.gif)
+
 ![RIBBON PLATE OPCIONES](../IMG/acero/RIBBON_PLATE_ACERO.png)
 *Figura 4: Tipos de plates*
 

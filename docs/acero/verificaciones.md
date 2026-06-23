@@ -41,8 +41,8 @@ Estas verificaciones estan pensadas para el modelado de estructuras de acero en 
 
 | Paso | Descripción | Responsable | Check |
 |------|-------------|-------------|-------|
-| 1.1 | [Verificar familias de perfiles](../faq/faq.md#especificaciiones-tecnicas) | ET | [ ] |
-| 1.2 | [Verificar calidad del acero](../faq/faq.md#especificaciiones-tecnicas) | ET/LEP | [ ] |
+| 1.1 | [Verificar familias de perfiles](../faq/faq.md#especificaciones-técnicas) | ET | [ ] |
+| 1.2 | [Verificar calidad del acero](../faq/faq.md#especificaciones-técnicas) | ET/LEP | [ ] |
 | 1.3 | [Cargar referencias](../faq/faq.md#cargar-referencias) | EJE | [ ] |
 | 1.4 | [Definición de punto base](../faq/faq.md#definición-de-punto-base) | LEP | [ ] |
 | 1.5 | [Configurar grillas](../faq/faq.md#configurar-grillas) | EJE | [ ] |
@@ -58,23 +58,21 @@ Estas verificaciones estan pensadas para el modelado de estructuras de acero en 
 | 2.5 | [Selección y modelar uniones de acuerdo con componentes siguiendo atributos](../acero/conexiones.md#componentes-de-acero) |  EJE  | [ ] |
 | 2.6 | [Modelar las chapas de nudo o cualquier chapa individual con espesores comerciales](../acero/perfiles.md#chapas-de-nudo) | EJE | [  ] | [  ] |
 | 2.7 | [Modelado de placa base](../hormigon/elementos.md#diseño-de-anclajes)  |  EJE  | [  ] |
-| 2.9 | [Asignación de materiales correctos a perfiles, chapas, bulones y anclajes](../hormigon/elementos.md#diseño-de-anclajes)  |  EJE  | [  ] |
+| 2.8 | [Asignación de materiales correctos a perfiles, chapas, bulones y anclajes](../hormigon/elementos.md#diseño-de-anclajes)  |  EJE  | [  ] |
 
 ### Paso 3 - Validando lo modelado
 
 | Paso | Descripción |  Responsable | Check |
 |------|-------------|-------|-------|
-| 3.1 | [¿La estructura tiene los NSA correctos?](PENDIENTE) |  EJE / LEP  | [ ] |
+| 3.1 | [¿La estructura tiene los NSA correctos?](../faq/faq.md#verificar-los-nsa-de-la-estructura) |  EJE / LEP  | [ ] |
 | 3.2 | [¿La estructura tiene los perfiles orientados correctamente?](../acero/perfiles.md#proyectar-la-estructura) | EJE / LEP | [ ] |
-| 3.4 | [¿La estructura no tiene elementos torcidos por error de modelado?](../reportes/ejemplos_cuadros.md#verificar-coordenadas-de-modelado)  |  EJE | [ ] |
-| 3.5 | [¿La estructura tiene a nivel partes todos los atributos correctamente modelados?](../acero/perfiles.md#atributos-a-modelar)  | EJE | [ ] |
-| 3.6 | [¿La estructura tiene los componentes con sus partes correctamente modelados?](../acero/perfiles.md#atributos-a-modelar) | EJE | [ ] |
-| 3.7 | [¿Hay atributos adicionales a la estructura que deben indicarse?](PENDIENTE)  |  EJE  | [ ] |
+| 3.3 | [¿La estructura no tiene elementos torcidos por error de modelado?](../reportes/ejemplos_cuadros.md#verificar-coordenadas-de-modelado)  |  EJE | [ ] |
+| 3.4 | [¿La estructura tiene a nivel partes todos los atributos correctamente modelados?](../acero/perfiles.md#atributos-a-modelar)  | EJE | [ ] |
+| 3.5 | [¿La estructura tiene los componentes con sus partes correctamente modelados?](../acero/perfiles.md#atributos-a-modelar) | EJE | [ ] |
+| 3.6 | [¿Hay atributos adicionales a la estructura que deben indicarse?](../faq/faq.md#que-atributos-adicionales-a-la-estructura-deben-indicarse)  |  EJE  | [ ] |
 | 3.7 | [¿Los bulones de uniones con calidad correcta, con separaciones mínimas y máximas y posibilidad de torquearse?](../acero/perfiles.md#distancias-entre-bulones-distancias-a-borde-y-distancias-a-perfiles)  |  EJE  | [ ] |
 | 3.8 | [¿Las chapas que componen la estructura está de acuerdo a espesores comerciales?](../acero/perfiles.md#chapas-de-nudo)  |  EJE  | [ ] |
 | 3.9 | [¿Está modelado correctamente las placas que representan el grating?](../ejemplos/ejemplos_filtros.md)  |  EJE  | [ ] |
-
-
 
 
 [← Volver al inicio](index.md)

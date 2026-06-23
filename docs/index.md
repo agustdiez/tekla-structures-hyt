@@ -127,7 +127,7 @@ graph LR
 Se recomienda consultar los manuales internos de Hytech sobre metodología BIM y gestión de modelos federados.
 
 - [Uso de modelo 3D](manuales/PR-O-P-001-r1%20Uso%20de%20Modelos%203D_rxxiv.docx) **EN PROCESO**
-- [BIM por Civil y Estructuras] - En desarrollo
+- [BIM por Civil y Estructuras](./ref/HY-CIV-PR-001-r0.pdf) - En desarrollo
 
 ---
 

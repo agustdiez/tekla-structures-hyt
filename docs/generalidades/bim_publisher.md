@@ -20,7 +20,7 @@ has_toc: true
 
 ## ¿Qué es BIM Publisher?
 
-El BIM Publisher es una aplicación de escritorio que realiza exportaciones masivas de múltiples modelos y sus planos en diversos formatos. Permite agregar tantos modelos como sea necesario, elegir qué filtros aplicar y exportarlos con cualquier versión instalada de Tekla Structures. Puede programarse para ejecutarse automáticamente en la PC.
+El BIM Publisher es una aplicación de escritorio que realiza exportaciones de múltiples modelos y sus planos en diversos formatos. Permite agregar tantos modelos como sea necesario, elegir qué filtros aplicar y exportarlos con cualquier versión instalada de Tekla Structures. Puede programarse para ejecutarse automáticamente en la PC.
 
 Por ejemplo, es posible crear un filtro de selección en Tekla Structures basado en algún criterio de proyecto y sacar modelos a demanda en función de eso.
 
@@ -73,7 +73,7 @@ Los valores que deben tomar dependerán de la licencia vigente con la que cuente
 
 ### Scheduling
 
-Si interesa correrlo de forma automática de Windows en cierto horario. Si no, realizar manualmente.
+Si interesa correrlo de forma automática de Windows en cierto horario. Si no, realizar manualmente corriendo `Run`.
 
 ## Roles
 
@@ -81,5 +81,15 @@ En función de la magnitud del proyecto, es aconsejable dejar alguien a cargo de
 
 - Gestión de archivos exportados en maqueta. Ver [Gestion de archivos](../avanzado/gestion_archivos.md) para detalle
 - Sacar modelos con la periodicidad indicada por el LEP Civil del proyecto utilizando BIM Publisher.
+
+Ambas tareas están supeditadas a la magnitud y complejidad del proyecto. Se aconseja poder implementarlas siempre, ya que requieren demasiado para ponerse en marcha.
+
+## Import/Export de configuración
+
+El responsable de seguir el BIM Publisher y la alimentación de modelos federados deberá saber que se puede exportar la configuración que está utilizando como `.xml` desde el programa.
+
+En caso de que otro usuario deba encargarse de las tareas descriptas si la persona se relocaliza a otro proyecto, deberá importarse dicha configuración atendiendo a editarla en un editor de texto todas aquellas rutas de configuraciones que incluyan al nombre de usuario del responsable anterior.
+
+Exportar e importar la configuración en una nueva PC es algo que no debería llevar más de 10 minutos.
 
 [← Volver al inicio](index.md)
