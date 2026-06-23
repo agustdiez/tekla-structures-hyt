@@ -95,7 +95,6 @@ _Figura 3: Archivo con definiciones de ángulo_
 
 <details markdown="1">
 <summary>`angles_staad_tekla.cnv`</summary>
-
 ```
 !PERFILES SIMPLES
 L50.8*50.8*3.2		L20201
@@ -598,7 +597,6 @@ UPN380		FRUPN380-10
 UPN400		FRUPN400-10
 
 ```
-
 </details>
 
 

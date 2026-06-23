@@ -32,6 +32,7 @@ graph LR
     A --> C[Modelar Acero]
     B --> D[Armar Documento]
     C --> D
+    G[Uso de template \n de proyecto] --> D
     E[Reportes \n Crear cuadros] --> D
     F[Trimble Connect\n Ejecutor] --> D
     click A href "./setup/index.html"
@@ -40,6 +41,7 @@ graph LR
     click D href "./dibujo/index.html"
     click E href "./reportes/ejemplos_cuadros.html"
     click F href "./connect/connect-ejecutor.html"
+    click G href "./proyecto_nuevo/uso_template.html"
 ```
 
 ### Ejecutor en nuevo proyecto
@@ -82,11 +84,11 @@ graph LR
     click D href "./dibujo/index.html"
     click E href "./reportes/ejemplos_cuadros.html"
     click F href "./connect/connect-ejecutor.html"
-    click G href "./connect/connect-general.html"
+    click G href "./connect/connect_general.html"
     click H href "./generalidades/bim_publisher.html"
 ```
 
-### Revisor
+### LEP 
 
 ```mermaid
 graph LR
