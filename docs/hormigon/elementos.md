@@ -340,7 +340,7 @@ Las configuraciones guardadas consideran lo siguiente:
 
 
 | Perfil | 200x200 | 250x200 | 250x250 | 280x280 | 300x250 | 300x300 | 350x280 | 350x300 | 350x350 | 400x300 | 400x350 | 400x400 | 450x350 | 450x450 |
-|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|
+|:---------:|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|
 | **W6x15**   | [Articulada 1°](../ref/Placa%20Base/W6x15-ART-1°.j1047) |   |   |   |   | [Empotrada 1°](../ref/Placa%20Base/W6x15-EMP-1°.j1047) |   |   | [Empotrada 2°](../ref/Placa%20Base/W6x15-EMP-2°.j1047) |   |   |   |   |   |
 | **W8x18**   |   |   | [Articulada 1°](../ref/Placa%20Base/W8x18-ART-1°.j1047) |   |   |   | [Empotrada 1°](../ref/Placa%20Base/W8x18-EMP-1°.j1047) |   |   |   | [Empotrada 2°](../ref/Placa%20Base/W8x18-EMP-2°.j1047) |   |   |   |
 | **W8x31**   |   |   | [Articulada 1°](../ref/Placa%20Base/W8x31-ART-1°.j1047)<br>[Articulada 2°](../ref/Placa%20Base/W8x31-ART-2°.j1047) |   |   |   |   |   | [Empotrada 1°](../ref/Placa%20Base/W8x31-EMP-1°.j1047) |   |   | [Empotrada 2°](../ref/Placa%20Base/W8x31-EMP-2°.j1047) |   |   |

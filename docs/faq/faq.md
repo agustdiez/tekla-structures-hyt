@@ -226,13 +226,19 @@ modif separación
 
 ### Componente 128
 
-generar recorte de ala en vez de ovalado por defecto, a 45°
+El componente 128 por defecto hace un recorte de alas ovalado, y para modificar esto (por ejemplo ponerle un corte a 45°) debe modificarse desde acá:
+
+![Modificar corte de alas](../img/faq/Modificar%20corte%20de%20alas.png)
+*Modificar corte de alas*
+
+y en picture podrá darse una medida si se quisiera.
+
+![medidas corte de alas picture](../img/faq/medidas%20corte%20de%20alas%20picture.png)
+*Modificar dimensiones de chaflán en alas*
 
 ### Verificar los NSA de la estructura
 
-
 ### ¿Que atributos adicionales a la estructura deben indicarse?
-
 
 ---
 ## Dibujos
@@ -252,7 +258,6 @@ Las herramientas que pueden utilizarse en el modo dibujo podrán ser:
 - Para elementos gráficos podrán ser los detallados en ["Elementos gráficos"](../dibujo/elementos_graficos.md).
 
 - Para imprimir o exportar documentos ver apartado ["Impresión y exportación"](../dibujo/impresion_exportacion.md).
-
 
 ### ¿Cómo es el proceso para crear nuevos rótulos?
 
