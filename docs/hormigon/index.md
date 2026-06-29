@@ -5,7 +5,7 @@ nav_order: 4
 has_children: true
 ---
 
-## Hormigón
+# Hormigón
 En este capitulo se describe como modelar en Hormigón desde los tipos de elementos del programa hasta el modelado de armadura. Se incluye una serie de verificaciones para modelar paso a paso estructuras de hormigón.
 
 ## Contenido

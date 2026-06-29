@@ -44,7 +44,7 @@ Dentro de la ventana que se abre podremos editar dos pestañas: [Options](impres
 
 ### Line properties
 
-![line properties print drawings](../img/dibujo/line%20properties%20print%20drawings.png)
+![line properties print drawings hyt](../img/dibujo/line%20properties%20print%20drawings%20hyt.png)
 *Figura 3: configuración de `Line properties` dentro de `Print Drawings`*
 
 - En `(1)` podremos guardar la configuración de las propiedades de `Options` y `Line properties`.
@@ -58,10 +58,12 @@ En "Line properties" debemos tener como lineamiento el archivo de [puntas](../re
 ![Hytech.ctb lineamiento](../img/dibujo/Hytech.ctb%20lineamiento.png)
 *Figura 4: configuración de `Line properties` dentro de `Print Drawings`*
 
-En base a este lineamiento, adaptamos la impresión de nuestro documento a los espesores con los colores propuestos (teniendo en cuenta nuevamente que 1 = 0,1 mm), y la preconfiguración de esto es "Hytech_ctb".
+En base a este lineamiento, adaptamos la impresión de nuestro documento a los espesores con los colores propuestos (teniendo en cuenta nuevamente que 1 = 0,1 mm), y la preconfiguración de esto es ["Hytech_ctb"](../ref/Dibujo/Impresión_Exportación/HYTECH_ctb.PdfPrintOptions.xml).
 
-![HYTECH.ctb tekla structures](../img/dibujo/HYTECH.ctb%20tekla%20structures.png)
-*Figura 5: adaptación de las puntas a nuestro documento*
+{: .warning}
+El "Base line width" deberá aparecer el valor "0.01 mm" para adaptarse mejor a las puntas del cliente correspondiente. Si apareciera otro valor, deberá modificarse manualmente en las opciones avanzadas, y buscar la opción "XS_BASE_LINE_WIDT" y modificar el valor a 0.01.
+![propiedad avanzada Base line width](../img/dibujo/propiedad%20avanzada%20Base%20line%20width.png)
+*Figura 5: propiedad avanzada "Base line width"*
 
 Por último haremos click en `Print` para realizar nuestra impresión.
 

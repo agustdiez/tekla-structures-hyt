@@ -240,6 +240,10 @@ y en picture podrá darse una medida si se quisiera.
 
 ### ¿Que atributos adicionales a la estructura deben indicarse?
 
+
+### El modelo no se ve:
+![visualización trabada](../img/faq/Errores%20al%20visualizar%20el%20modelo.gif)
+
 ---
 ## Dibujos
 
@@ -378,6 +382,14 @@ Archivos de instalación
 ---
 
 ## Editor de cuadros
+
+### Agregar una imagen en el template
+
+Para agregar imágenes a los cuadros, recordar que el editor de cuadros trabaja de manera independiente al TEKLA, por lo que allí desde las preferencias del programa deberá editarse la ruta para mapear al `bitmaps` de la carpeta `FIRM`.
+
+![bitmaps_ubicacion](../img/proyecto_nuevo/ubicacion_bitmaps.png)
+
+
 
 ### No veo imágenes en el editor de cuadros
 

@@ -1,0 +1,333 @@
+
+ATENCIÓN [TODAS LAS COLUMNAS DEBEN DE TENER TILDADA LA OPCIÓN: "OUTPOUT 0 AS AN EMPTY STRING"]
+
+PRIMERA COLUMNA NUMERO:
+
+if (CopyField("CODIGO_1")!= 0) then
+  "1. "
+else
+  ""
+endif
+
+if (CopyField("CODIGO_2")!= 0) then
+  "2. "
+else
+  ""
+endif
+
+if (CopyField("CODIGO_3")!= 0) then
+  "3. "
+else
+  ""
+endif
+
+if (CopyField("CODIGO_1")!= 0) then
+  "4. "
+else
+  ""
+endif
+
+if (CopyField("CODIGO_5")!= 0) then
+  "5. "
+else
+  ""
+endif
+
+if (CopyField("CODIGO_6")!= 0) then
+  "6. "
+else
+  ""
+endif
+
+if (CopyField("CODIGO_7")!= 0) then
+  "7. "
+else
+  ""
+endif
+
+if (CopyField("CODIGO_8")!= 0) then
+  "8. "
+else
+  ""
+endif
+
+if (CopyField("CODIGO_9")!= 0) then
+  "9. "
+else
+  ""
+endif
+
+if (CopyField("CODIGO_10")!= 0) then
+  "10. "
+else
+  ""
+endif
+
+if (CopyField("CODIGO_11")!= 0) then
+  "11. "
+else
+  ""
+endif
+
+if (CopyField("CODIGO_12")!= 0) then
+  "12. "
+else
+  ""
+endif
+
+if (CopyField("CODIGO_13")!= 0) then
+  "13. "
+else
+  ""
+endif
+
+if (CopyField("CODIGO_14")!= 0) then
+  "14. "
+else
+  ""
+endif
+
+if (CopyField("CODIGO_15")!= 0) then
+  "15. "
+else
+  ""
+endif
+
+if (CopyField("CODIGO_16")!= 0) then
+  "16. "
+else
+  ""
+endif
+
+SEGUNDA COLUMNA CODIGO:
+
+CODIGO_1
+if (GetValue("DR_1_COD")!= **) then
+  GetValue("DR_1_COD")
+else
+  GetValue("DR_1_COD_PROY")
+endif
+
+CODIGO_2
+if (GetValue("DR_2_COD")!= **) then
+  GetValue("DR_2_COD")
+else
+  GetValue("DR_2_COD_PROY")
+endif
+
+CODIGO_3
+if (GetValue("DR_3_COD")!= **) then
+  GetValue("DR_3_COD")
+else
+  GetValue("DR_3_COD_PROY")
+endif
+
+CODIGO_4
+if (GetValue("DR_4_COD")!= **) then
+  GetValue("DR_4_COD")
+else
+  GetValue("DR_4_COD_PROY")
+endif
+
+CODIGO_5
+if (GetValue("DR_5_COD")!= **) then
+  GetValue("DR_5_COD")
+else
+  GetValue("DR_5_COD_PROY")
+endif
+
+CODIGO_6
+if (GetValue("DR_6_COD")!= **) then
+  GetValue("DR_6_COD")
+else
+  GetValue("DR_6_COD_PROY")
+endif
+
+CODIGO_7
+if (GetValue("DR_7_COD")!= **) then
+  GetValue("DR_7_COD")
+else
+  GetValue("DR_7_COD_PROY")
+endif
+
+CODIGO_8
+if (GetValue("DR_8_COD")!= **) then
+  GetValue("DR_8_COD")
+else
+  GetValue("DR_8_COD_PROY")
+endif
+
+CODIGO_9
+if (GetValue("DR_9_COD")!= **) then
+  GetValue("DR_9_COD")
+else
+  GetValue("DR_9_COD_PROY")
+endif
+
+CODIGO_10
+if (GetValue("DR_10_COD")!= **) then
+  GetValue("DR_10_COD")
+else
+  GetValue("DR_10_COD_PROY")
+endif
+
+CODIGO_11
+if (GetValue("DR_11_COD")!= **) then
+  GetValue("DR_11_COD")
+else
+  GetValue("DR_11_COD_PROY")
+endif
+
+CODIGO_12
+if (GetValue("DR_12_COD")!= **) then
+  GetValue("DR_12_COD")
+else
+  GetValue("DR_12_COD_PROY")
+endif
+
+CODIGO_13
+if (GetValue("DR_13_COD")!= **) then
+  GetValue("DR_13_COD")
+else
+  GetValue("DR_13_COD_PROY")
+endif
+
+CODIGO_14
+if (GetValue("DR_14_COD")!= **) then
+  GetValue("DR_14_COD")
+else
+  GetValue("DR_14_COD_PROY")
+endif
+
+CODIGO_15
+if (GetValue("DR_15_COD")!= **) then
+  GetValue("DR_15_COD")
+else
+  GetValue("DR_15_COD_PROY")
+endif
+
+CODIGO_16
+if (GetValue("DR_16_COD")!= **) then
+  GetValue("DR_16_COD")
+else
+  GetValue("DR_16_COD_PROY")
+endif
+
+
+TERCERA COLUMNA NOMBRE:
+
+NOMBRE_1
+if (GetValue("DR_1_DESC")!= **) then
+  GetValue("DR_1_DESC")
+else
+  GetValue("DR_1_DESC_PROY")
+endif
+
+NOMBRE_2
+if (GetValue("DR_2_DESC")!= **) then
+  GetValue("DR_2_DESC")
+else
+  GetValue("DR_2_DESC_PROY")
+endif
+
+NOMBRE_3
+if (GetValue("DR_3_DESC")!= **) then
+  GetValue("DR_3_DESC")
+else
+  GetValue("DR_3_DESC_PROY")
+endif
+
+NOMBRE_4
+if (GetValue("DR_4_DESC")!= **) then
+  GetValue("DR_4_DESC")
+else
+  GetValue("DR_4_DESC_PROY")
+endif
+
+NOMBRE_5
+if (GetValue("DR_5_DESC")!= **) then
+  GetValue("DR_5_DESC")
+else
+  GetValue("DR_5_DESC_PROY")
+endif
+
+NOMBRE_6
+if (GetValue("DR_6_DESC")!= **) then
+  GetValue("DR_6_DESC")
+else
+  GetValue("DR_6_DESC_PROY")
+endif
+
+NOMBRE_7
+if (GetValue("DR_7_DESC")!= **) then
+  GetValue("DR_7_DESC")
+else
+  GetValue("DR_7_DESC_PROY")
+endif
+
+NOMBRE_8
+if (GetValue("DR_8_DESC")!= **) then
+  GetValue("DR_8_DESC")
+else
+  GetValue("DR_8_DESC_PROY")
+endif
+
+NOMBRE_9
+if (GetValue("DR_9_DESC")!= **) then
+  GetValue("DR_9_DESC")
+else
+  GetValue("DR_9_DESC_PROY")
+endif
+
+
+NOMBRE_10
+if (GetValue("DR_10_DESC")!= **) then
+  GetValue("DR_10_DESC")
+else
+  GetValue("DR_10_DESC_PROY")
+endif
+
+NOMBRE_11
+if (GetValue("DR_11_DESC")!= **) then
+  GetValue("DR_11_DESC")
+else
+  GetValue("DR_11_DESC_PROY")
+endif
+
+NOMBRE_12
+if (GetValue("DR_12_DESC")!= **) then
+  GetValue("DR_12_DESC")
+else
+  GetValue("DR_12_DESC_PROY")
+endif
+
+NOMBRE_13
+if (GetValue("DR_13_DESC")!= **) then
+  GetValue("DR_13_DESC")
+else
+  GetValue("DR_13_DESC_PROY")
+endif
+
+NOMBRE_14
+if (GetValue("DR_14_DESC")!= **) then
+  GetValue("DR_14_DESC")
+else
+  GetValue("DR_14_DESC_PROY")
+endif
+
+
+NOMBRE_15
+if (GetValue("DR_15_DESC")!= **) then
+  GetValue("DR_15_DESC")
+else
+  GetValue("DR_15_DESC_PROY")
+endif
+
+
+NOMBRE_16
+if (GetValue("DR_16_DESC")!= **) then
+  GetValue("DR_16_DESC")
+else
+  GetValue("DR_16_DESC_PROY")
+endif
+

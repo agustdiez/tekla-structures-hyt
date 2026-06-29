@@ -121,7 +121,8 @@ La numeración es el proceso mediante el cual Tekla asigna identificadores únic
 
 Luego, validar los prefijos y sufijos dados a cada unidad de colada utilizando los *Inquiry* disponibles para unidades de colada.
 
-(imagen Mati de query)
+![Customn inquiry](../img/hormigon/CUSTOM%20INQUIRY%20UNIDAD%20DE%20COLADA..gif)
+
 
 ## Planilla de doblado de aceros (PDH)
 

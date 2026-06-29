@@ -47,6 +47,36 @@ En el modelado de acero, la pestaña `Profile` se refiere al perfil de la parte 
 
 TEKLA permite acceder a su catálogo de perfiles a través del `Profile Catalog`
 
+### Perfiles CIRSOC
+
+Dentro de la base de datos de perfiles con la que cuenta el entorno Southamerica, se suman a la `FIRM` los perfiles de la [base de datos de CIRSOC](https://www.inti.gob.ar/publicaciones/descargac/215).
+
+![CIRSOC](../img/acero/profile_catalog_cirsoc.png)
+
+Los perfiles originales que reemplazan **no fueron pisados** para evitar errores. Para utilizar directamento estos perfiles en lugar los del entorno se deben nomenclar de la siguiente forma:
+
+- Doble T:
+  - IPN: se nombran tipo `IPN140`
+  - IPB: se nombran tipo `IPB100`. Variantes livianas y pesadas van con `l` y `v`.
+  - IPE: se nombran tipo `IPE300`
+  - W: se nombran tipo `W8x21`
+  - HP y M: acceder directamente desde el catálogo
+
+- Canal:
+  - UPN: se nombran tipo `UPN160`
+  - C y MC: acceder directamente desde el catálogo
+
+- Ángulos
+  - Se nombran de acuerdo a designación del perfil siendo por ejemplo `L25x25x3.2`. Cualquier consulta referir al catálogo y todos cuentan con el atributo `DESIGN GROUP = CIRSOC` en la pestaña `User Attributes`.
+
+{: .highlight}
+> Es importante mencionar que los W van con "x" para diferenciarse de los "X" que son propios del entorno SouthAmerica.
+
+{: .important}
+>Es importante utilizar siempre los perfiles CIRSOC, ya que las tablas de cómputos automáticas de los reportes descriptos en [MTO Acero](../reportes/ejemplos_cuadros.md#listado-y-cómputo-de-materiales-en-estructuras-de-acero) utiliza la propiedad del peso `kg/m` de cada perfil.
+
+
+
 ### Chapas
 
 Las chapas son los elementos de acero planos, a modelarse como `Plate` como se describe más adelante. Lo importante es saber que los espesores de chapa no son arbitrarios y se basan en espesores comerciales. Se presentan a continuación: 

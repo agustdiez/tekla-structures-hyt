@@ -28,7 +28,7 @@ Al abrirse, el programa solicita hacer *login* en Trimble. Crear cuenta en caso 
 
 El departamento usa una carpeta civil de OneDrive donde se guardan los modelos. Solicitar acceso al coordinador civil o líder de disciplina si no se cuenta con acceso al mismo.
 
-La carpeta organiza los modelos por proyecto e incluye una carpeta con todas las configuraciones de la empresa (FIRM). Referir a [BIM por Civil y Estructuras](../)
+La carpeta organiza los modelos por proyecto e incluye una carpeta con todas las configuraciones de la empresa (FIRM). Referir a [BIM por Civil y Estructuras](../manuales/PR-O-P-001-r1%20Uso%20de%20Modelos%203D_rxxiv.docx)
 
 Validar lo siguiente antes de continuar:
 
@@ -100,7 +100,7 @@ Son parte del entorno en el que se ejecuta un proceso. Por ejemplo, un proceso e
 Dentro de la carpeta FIRM se encuentra el archivo ```user.ini``` a tomar. Para descripción de que es cada línea ver [Archivos de configuración](./user_ini.md).
 
 {: .note}
-> Un archivo INI es un archivo de texto simple usado comúnmente en informática y programación para almacenar configuraciones de software. Es un formato sencillo y ampliamente compatible que organiza la información en secciones y pares clave-valor. Puedes pensar en él como una forma estructurada de **guardar las preferencias para diversos aspectos de un programa**.
+> Un archivo INI es un archivo de texto simple usado comúnmente en informática y programación para almacenar configuraciones de software. Es un formato sencillo y ampliamente compatible que organizar información. Permite **guardar las preferencias para diversos aspectos de un programa**.
 
 1. Copiar el archivo original ```user.ini```
 2. Pegar el archivo en el siguiente directorio. El año dependerá de la versión de TEKLA que se trate. La carpeta AppData está oculta, por lo que debe habilitarse en Windows la visión de carpetas ocultas.
@@ -129,22 +129,21 @@ En la empresa utilizamos de forma común ciertas extensiones del programa. Las e
 
 Las extensiones vienen en formato `.tsep` y se instalan previo a iniciar el programa una vez que se ejecuta cada una siguiendo los pasos. 
 
-
 {: .note}
 >Para referir a consultas puntuales del uso de las extensiones, referir a la documentación
 
 | Nombre | Descripción | Enlace Warehouse |
 |---|---|---|
-| [*ExcelToDrawing*](../../ref/Extensiones/ExcelToDrawing_V1.7.tsep) | Inserta tablas de archivos Excel (.xls/.xlsx) directamente en planos de Tekla Structures. Requiere Microsoft Excel instalado. | [Tekla Warehouse](https://warehouse.tekla.com/#/search/results?search_e=ExcelToDrawing) |
-| [*NWDPlugin*](../../ref/Extensiones/NWDPlugin-1.19_x64.tsep) | Permite insertar archivos Navisworks (.nwd) como modelos de referencia en Tekla Structures (v2019+). | [Tekla Warehouse](https://warehouse.tekla.com/#/catalog/details/67ef20f4-d238-4949-8758-3332c1d2d183) |
-| [*ReferenceModelRefresher*](../../ref/Extensiones/ReferenceModelRefresher_1.0.tsep) | Actualiza (refresca) modelos de referencia vinculados en el modelo de Tekla sin necesidad de hacerlo manualmente uno a uno. | [Tekla Warehouse](https://warehouse.tekla.com/#/search/results?search_e=ReferenceModelRefresher) |
-| [*SelectSimilar*](../../ref/Extensiones/SelectSimilar_2.3.tsep) | Selecciona todos los objetos del modelo similares al objeto actualmente seleccionado, filtrando por atributos como nombre, perfil o longitud. | [Tekla Warehouse](https://warehouse.tekla.com/#/search/results?search_e=SelectSimilar) |
+| [*ExcelToDrawing*](../ref/ExcelToDrawing_V2.0.tsep) | Inserta tablas de archivos Excel (.xls/.xlsx) directamente en planos de Tekla Structures. Requiere Microsoft Excel instalado. | [Tekla Warehouse](https://warehouse.tekla.com/#/search/results?search_e=ExcelToDrawing) |
+| [*NWDPlugin*](../ref/Extensiones/NWDPlugin-1.19_x64.tsep) | Permite insertar archivos Navisworks (.nwd) como modelos de referencia en Tekla Structures (v2019+). | [Tekla Warehouse](https://warehouse.tekla.com/#/catalog/details/67ef20f4-d238-4949-8758-3332c1d2d183) |
+| [*ReferenceModelRefresher*](../ref/Extensiones/ReferenceModelRefresher_1.0.tsep) | Actualiza (refresca) modelos de referencia vinculados en el modelo de Tekla sin necesidad de hacerlo manualmente uno a uno. | [Tekla Warehouse](https://warehouse.tekla.com/#/search/results?search_e=ReferenceModelRefresher) |
+| [*SelectSimilar*](../ref/Extensiones/SelectSimilar_2.3.tsep) | Selecciona todos los objetos del modelo similares al objeto actualmente seleccionado, filtrando por atributos como nombre, perfil o longitud. | [Tekla Warehouse](https://warehouse.tekla.com/#/search/results?search_e=SelectSimilar) |
 
 ## Verificación
 
 Para verificar tener todo correctamente seteado, basta con abrir el programa en "New Model" y ya se deberán visualizar los templates de proyecto disponibles.
 
-Cualquier desvío o consulta particular, referir al [FAQ](../faq/faq.md) o al LEP del proyecto. 
+Cualquier desvío o consulta particular, referir al [FAQ](../faq/faq.md) / al LEP del proyecto /a su proyectista de confianza. 
 
 
 

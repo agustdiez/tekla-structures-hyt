@@ -32,15 +32,15 @@ Por lo tanto, el proceso consta en:
 
 ### Alternar entre selección de componentes y partes
 
-(foto del selector)
+![RIBBON SELECTOR](../img/acero/SELECTOR%20DE%20PARTES%20Y%20COMPONENTES.png)
 
 Una vez modelado el componente con las partes involucradas, se deberá tener conocimiento del uso de selector entre `Parte` y `Componente`. Esto se hace a través del ribbon que se ve debajo.
+
+![SELECTOR ALTERNADO](../img/acero/SELECTOR%20ALTERNADO.gif)
 
 Los componentes si están correctamente modelados figurarán en verde, en amarillo si hay alguna advertencia (por ejemplo, no cumplir distancia a borde) y en rojo si directamente hay un error en el modelado.
 
 En caso de tener que refinar algo por fuera del alcance del componente, deberá pasarse al selector de `Parte` y modificar manualmente las partes involucradas.
-
-
 
 ---
 

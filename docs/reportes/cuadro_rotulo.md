@@ -33,13 +33,12 @@ Los formatos se encuentran en el SPDMS, en la carpeta del cliente, con su corres
 *Figura 2: Extracción formato CAD*
 
 3. Creación de los .tpl:
-Los archivos .tpl son formatos que permiten generar cuadros. Estos archivos se crean en el [Editor de Cuadros](./editor_cuadros.md)
-Los archivos utilzados en un rotulo, por lo general son
+Los archivos .tpl son formatos nativos de tekla que permiten generar cuadros. Estos archivos se crean en el [Editor de Cuadros](./editor_cuadros.md). Los archivos utilzados en un rotulo, por lo general son
     1. Marco de rotulo
     2. Cuadro de rotulo cliente
     3. Cuadro revisión
 ![Template mas comunes](../img/reportes/TPLS%20MAS%20UTILIZADOS.png)
-*Figura 3: Archivo .lay y tpls utilizados*
+*Figura 3: Archivo .lay y .tpls utilizados*
 
 4. Atributos a utilizar marco de rotulo: 
     1. `DR_x_COD_PROY`: Son textos que representan los codigos de los documentos de referencia a nivel _PROYECTO_. 
@@ -48,6 +47,14 @@ Los archivos utilzados en un rotulo, por lo general son
     4.  `DR_1_DESC`:Son textos que representan los nombres de los documentos de referencia a nivel _PLANO_. 
     ![ATRIBUTOS TPLS](../img/reportes/TPLS_ATRIBUTOS%20MARCOS.png)
     *Figura 4: Cuadro de docs de referencia*
+    Estos atributos son una manera actualizada de completar los documentos de referencia, la sintaxis de estos campos se encuentra en [Cuadros de rotulos](../ref/Cuadros/TEMPLATES%20CODIGOS%20DOCS%20DE%20REF.txt).
+    Hay 3 campos importantes a completar, el numero, la codificación y la descripción. Estos campos se completan para que el rotulo funcione de la manera mas eficiente,
+    ![Establecer value field](../img/reportes/VALUE%20FIELD.png)
+    *Figura 4:  Establecer el value field*
+    ![Copiar sintexis del txt](../img/reportes/Copiar%20sintaxis.png)
+    ![Establecer sintaxis del rótulo](../img/reportes/CUADROS%20SINTAXIS.png)
+    *Figura 5: Copiar la sintaxis en la formula*
+    
 5. Atributos a utilizar cuadro de rotulo cliente:
     1. `TITLES 1/2/3`: Muestra el titulo del plano, suelen utilizarse los primeros 2, suele utilizarse el titulo 3 si tiene un rotulo chico o segmentado.
     2. `PROJECT.INFO1/LOCATION/NAME`: Muestra la ubicación del proyecto
