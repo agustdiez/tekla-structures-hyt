@@ -8,7 +8,7 @@ has_toc: true
 
 # BIM
 {: .no_toc }
-Esta sección tiene la finalidad de condensar ciertos conceptos asociados a la metodología BIM de trabajo.
+Esta sección tiene la finalidad de condensar conceptos asociados a la metodología BIM de trabajo.
 
 {: .note}
 >(BIM, Building Information Modeling ), también llamado modelado de información para la edificación,​ es un conjunto de procesos y métodos para la generación y gestión de datos de un edificio u obra de arquitectura y/o ingeniería civil durante su ciclo de vida , utilizando para ello un modelo digital compartido entre distintos actores de la cadena de valor. El objetivo es reducir tiempo y recursos en el diseño , la construcción y la gestión del activo. BIM se fundamenta en la colaboración interdisciplinar y el intercambio de información con otras herramientas de software, como GIS, etc

@@ -420,33 +420,58 @@ Para mayor detalle referir al manual
 
 ### Tengo errores cuando comienza a intentar abrir modelos
 
-### Lo corro y no pasa nada o tengo errores
+### Al iniciar a correr se queda estático
+
+Los 3 minutos de la API
+
+### Usar filtros de representación
+
+
+### Usar filtros de modelado
+
+### Utilizar la configuración de una PC en otra distinta
+
+Exportar ---> Cambiar texto --- > Importar
+
 
 ---
 ## Trimble Connect
 
-Trimble Connect es una herramienta que permite:
+### Roles en los proyectos
 
-- Armar un proyecto e invitar a usuarios a participar o visualizar del mismo.
-- Sincronizar todos los modelos propios de un proyecto, teniendo diálogo constante con lo que ejecuta quien modela.
-- Realizar comentarios sobre los modelos subidos.
-- Tener control de versiones de los modelos que conforman el proyecto.
-- Realizar seguimiento de tareas, asignando responsables, plazos y estatus de cada punto.
-- Visualizar propiedades/atributos de cada modelo, pudiendo exportar la información siguiendo algún filtro determinado.
+User/Admin
 
-Se trata de una herramienta central para el desarrollo del proyecto, ya que actúa de puente entre quienes modelan con quienes revisan la documentación a emitir.
+### ¿Cómo uso la `Data Table`?
 
-Para mayor detalle referir al manual
+### Quiero ver otras propiedades en `Data Table`
+
+Diferencia entre los .tekla y los .ifc
+
+
+### Sumar atributos en Trimble Connect
+
+### ¿Cómo genero un comentario?
+
+### ¿Quién genera comentarios sobre los modelos?
+
+
+### ¿Donde puedo ver todos los puntos abiertos de un proyecto?
+
 
 
 ## Características Avanzadas
 
 ### Como crear un material nuevo?
 
+### ¿Cómo gestionar archivos de modelos federados?
+
+### Sumar nuevos atributos a la maqueta
+
+### 
+
 ### al abrir tekla no aparece en la pantalla
 MTA IT MAXIMIZAR
 
-## NSA en estructuras
 
 
 

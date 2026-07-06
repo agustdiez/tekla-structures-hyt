@@ -18,9 +18,7 @@ has_toc: true
 
 ## Objeto y alcance
 
-Contiene los estándares y procedimientos para el modelado de estructuras de hormigón armado en Tekla Structures. Cubre elementos estructurales, propiedades a completar y buenas prácticas para garantizar modelos coordinados y homogéneos.
-
-No es alcance de este instructivo mostrar cuestiones básicas del modelado de elementos si no brindar pautas de diseño y guiar en el proceso.
+Contiene los estándares y procedimientos para el modelado de estructuras de hormigón armado en Tekla Structures. 
 
 El objeto de este instructivo es mencionar los estándares y procedimientos para el modelado de estructuras de hormigón armado en Tekla Structures, a fin de mantener un modelado homogeneo a nivel empresa. 
 
@@ -74,10 +72,10 @@ Elementos en contacto con el suelo que distribuyen las cargas provenientes de la
 | **User field / UDAS** | Atributos del elementos  | - |
 | **Alto** | Alto del elemento |`400` |
 
-- **1. Name**: Nombre del elemento, generalmente se suele definir antes del empezar el proyecto, como valor recomendado se puede definir "ZAPATA" o "BASE AISLADA"
-- **2- Profile**: Base y altura del elemento, tienen dos maneras de editarse, en la pestaña de propiedades o en la parte superior o inferior del elemento.
+- **1. Name**: Nombre del elemento, se completa en base a los nombres estandarizados en el apartado [name](#name).
+- **2- Profile**: Base y altura del elemento, tienen dos maneras de editarse, en la pestaña de propiedades o en la parte superior o inferior del elemento con la modificación directa.
 - **3- Material**: Material del elemento, dependen de la base de datos de materiales, suele ser H25/H30/H35
-- **4- Class**: Color del elemento, generalmente se suele definir antes del empezar el proyecto, como valor recomendado se puede definir "8", puede variar.
+- **4- Class**: Color del elemento, se completa en base a las clases estandarizadas en el apartado [clases](#clases).
 - **5-Position**: Desplazamiento del elemento, se puede modificar los puntos de inicio y final del elemento en cualquiera de sus ejes (X/Y/Z). 
 - **6- IFC Export** : Atributos y configuraciones de la exportación a IFC.
 - **7- User field / UDAS**: Atributos tanto definidos por el usuario como los "userfield" estas filas tienen varios usos, tanto como la numeración, o especificaciones, estas filas pueden usarse para tablas, reportes, cuadros.
@@ -114,10 +112,10 @@ Son elementos horizontales o inclinados que transmiten cargas por flexión.
 | **User field / UDAS** | Atributos del elementos  | - |
 | **Largo** | Largo del elemento |`6000` |
 
-- **1- Name**: Nombre del elemento, generalmente se suele definir antes del empezar el proyecto, como valor recomendado se puede definir "VIGA"
-- **2- Profile**: Base y altura del elemento, tienen dos maneras de editarse, en la pestaña de propiedades o en la parte superior o inferior del elemento. Tocando los 3 puntos del lado derecho, se obtiene acceso a la biblioteca de perfiles, la cual da accede a una gran variedad de formas totalmente parametrizables. 
+- **1- Name**:  Nombre del elemento, se completa en base a los nombres estandarizados en el apartado [name](#name).
+- **2- Profile**: Base y altura del elemento, tienen dos maneras de editarse, en la pestaña de propiedades o en la parte superior o inferior del elemento con la modificación directa. Ademas, Tocando los 3 puntos del lado derecho, se obtiene acceso a la biblioteca de perfiles, la cual da accede a una gran variedad de formas totalmente parametrizables. 
 - **3- Material**: Material del elemento, dependen de la base de datos de materiales, suele ser H25/H30/H35
-- **4- Class**: Color del elemento, generalmente se suele definir antes del empezar el proyecto, como valor recomendado se puede definir "8", puede variar.
+- **4- Class**: Color del elemento, se completa en base a las clases estandarizadas en el apartado [clases](#clases).
 - **5-Offset**: Desplazamiento del elemento, se puede modificar los puntos de inicio y final del elemento en cualquiera de sus ejes (X/Y/Z). 
 - **6- IFC Export** : Atributos y configuraciones de la exportación a IFC.
 - **7- User field / UDAS**: Atributos tanto definidos por el usuario como los "userfield" estas filas tienen varios usos, tanto como la numeración, o especificaciones, estas filas pueden usarse para tablas, reportes, cuadros.
@@ -141,20 +139,21 @@ Son elementos verticales que transmiten cargas axiales y momentos desde niveles 
 *Figura 4: Atributos Column*
 
 **Atributos importantes:**
-| Atributo | Descripción | Valor Ejemplo |
-|----------|-------------|---------------|
+
+| Atributo | Descripción | Valor ejemplo |
+|:---------|:------------|:-------------:|
 | **Name** | Identificador del elemento | `COLUMNA` |
 | **Profile** | Dimensiones del elemento | `300*300` |
 | **Material** | Material del elemento | `H30` |
-| **Class** | Clase del elemento  | `8` |
-| **IFC export** | Config. de exportación | - |
-| **User field / UDAS** | Atributos del elementos  | - |
-| **Altura** | Altura del elemento |`3600` |
+| **Class** | Clase del elemento | `8` |
+| **IFC export** | Configuración de exportación | - |
+| **User field / UDAs** | Atributos del elemento | - |
+| **Altura** | Altura del elemento | `3600` |
 
-- **1- Name**: Nombre del elemento, generalmente se suele definir antes del empezar el proyecto, como valor recomendado se puede definir "COLUMNA"
-- **2- Profile**: Dimension del elemento, tienen dos maneras de editarse, en la pestaña de propiedades o en la parte superior o inferior del elemento.
+- **1- Name**:  Nombre del elemento, se completa en base a los nombres estandarizados en el apartado [name](#name).
+- **2- Profile**: Dimensión del elemento, tienen dos maneras de editarse, en la pestaña de propiedades o en la parte superior o inferior del elemento con la modificación directa.
 - **3- Material**: Material del elemento, dependen de la base de datos de materiales, suele ser H25/H30/H35
-- **4- Class**: Color del elemento, generalmente se suele definir antes del empezar el proyecto, como valor recomendado se puede definir "8", puede variar.
+- **4- Class**: Color del elemento, se completa en base a las clases estandarizadas en el apartado [clases](#clases).
 - **5- IFC Export** : Atributos y configuraciones de la exportación a IFC.
 - **6- User field / UDAS**: Atributos tanto definidos por el usuario como los "userfield" estas filas tienen varios usos, tanto como la numeración, o especificaciones, estas filas pueden usarse para tablas, reportes, cuadros.
 - **7- Altura**: Altura del elemento, se edita desde el elemento.
@@ -190,10 +189,10 @@ Son elementos superficiales que trabajan en una o dos direcciones
 | **User field / UDAS** | Atributos del elementos  | - |
 | **Dimensiones** | Largo y ancho del elemento |`3000 X 2400` |
 
-- **1- Name**: Nombre del elemento, generalmente se suele definir antes del empezar el proyecto, como valor recomendado se puede definir "LOSA"
-- **2- Profile**: Dimension del elemento, tienen dos maneras de editarse, en la pestaña de propiedades o en la parte superior o inferior del elemento.
+- **1- Name**:  Nombre del elemento, se completa en base a los nombres estandarizados en el apartado [name](#name).
+- **2- Profile**: Dimensión del elemento, tienen dos maneras de editarse, en la pestaña de propiedades o en la parte superior o inferior del elemento con la modificación directa.
 - **3- Material**: Material del elemento, dependen de la base de datos de materiales, suele ser H25/H30/H35
-- **4- Class**: Color del elemento, generalmente se suele definir antes del empezar el proyecto, como valor recomendado se puede definir "8", puede variar.
+- **4- Class**: Color del elemento, se completa en base a las clases estandarizadas en el apartado [clases](#clases).
 - **5- Position**: Modifica el punto o linea de inserción del elemento, en su profundidad
 - **6- IFC Export** : Atributos y configuraciones de la exportación a IFC.
 - **7- User field / UDAS**: Atributos tanto definidos por el usuario como los "userfield" estas filas tienen varios usos, tanto como la numeración, o especificaciones, estas filas pueden usarse para tablas, reportes, cuadros.
@@ -215,7 +214,6 @@ Son objetos modelados en 3D, que permiten colocarse en el modelo, dependen del S
 
 Para modelar y ubicarnos respecto al proyecto debemos usar referencias externas a nuestro modelo, que permiten ubicar la estructura a modelar en el espacio.
 
-
 El proyecto en el que se esté modelando ya tendrá un modelo de Connect asociado. Allí habrá referencias a otros modelos y de otras disciplinas. Ver [Trimble - Ejecutor](../connect/connect-ejecutor.md) para detalle. En caracter general se describen cómo pueden tomar las referencias
 
 - Referencias de Trimble Connect 
@@ -232,14 +230,17 @@ Para referencias de Connect, ver [Connect - Ejecutor](../connect/connect-ejecuto
 
 ### Unidad de colada
 
-Una unidad de colada es un valor numerico creado por el usuario que establece la union monolitica de dos o mas partes de hormigón. Por defecto cada parte de hormigón modelada se considera su propia unidad de colada. Al modelar partes de hormigón en Tekla, debe crear unidades de colada cuando hay varias partes de hormigón que se deben fundir como una estructura monolítica.
+Una unidad de colada es un valor numerico creado por el usuario que establece la union monolitica de dos o mas partes de hormigón. Por defecto cada parte de hormigón modelada se considera su propia unidad de colada. Al modelar partes de hormigón en Tekla, se debe de crear unidades de colada cuando hay varias partes de hormigón que se deben fundir como una estructura monolítica.
 
 Previo a usar unidades de colada, familiarizarse con las herramientas de selección de elementos, descriptas en... [Herramientas de modelado](../generalidades/generalidades.md#herramientas-de-modelado)
 
-La unidad de colada es mandatoria para realizar reportes de armadura (planillas de doblado). Su creación, modificación y numeración se describe en el apartado del manual [Armaduras](./armaduras.md).
+La unidad de colada es mandatoria para realizar reportes de armadura (planillas de doblado). Su creación, modificación y numeración se describe en el apartado del manual [PDH](./armaduras.md#planilla-de-doblado-de-aceros-pdh).
 
 Para verificar que la unidad de colada sea la correcta a la hora de numerar y trabajarla se debe de hacer una verificación con la herramienta `Inquire objets`.
+
 ![Inquire](../img/hormigon/INQUIRE%20OBJETS.png)
+*Figura 7: Inquire*
+
 Al utilizar esta herramienta la misma brindará la información sobre la unidad de colada, su nombre, posición, etc. 
 
 
@@ -251,12 +252,14 @@ Va a depender de IB/ID, definiciones de proyecto, pero en caracter general y com
 - CLASS
 - PROFILE
 - MATERIAL
-- UDAs (_Atributos definidos por el usuario_): es responsabilidad del LEP indicar cuáles se precisan, de acuerdo al preset de propiedades creado, descripto en [Preset Propiedades](../proyecto_nuevo/uso_template.md#).
-
+- UDAs (_Atributos definidos por el usuario_): es responsabilidad del LEP indicar cuáles se precisan, de acuerdo al preset de propiedades creado, descripto en [Preset Propiedades](../proyecto_nuevo/uso_template.md#preset-de-propiedades).
 
 #### Name
 
-Tabla de nombres:
+{: .important}
+> **TODOS** los objetos modelados deben de tener los nombres estandarizados. 
+
+Tabla de nombres estandarizados:
 
 | Elemento                      | Nomenclatura      |
 |:------------------------------|:------------------|
@@ -309,10 +312,7 @@ Ver [Armaduras](./armaduras.md) para detalle de cómo modelar, tipo de armaduras
 
 
 ---
-
-## Miscelaneos
-
-### Diseño de anclajes
+## Diseño de anclajes
 
 Los anclajes son alcance de las estructuras de hormigón a nivel diseño. Para modelarlos tendremos que modelar la estructura metálica superior asociada (que luego podemos ocultar).
 
@@ -323,7 +323,6 @@ Los materiales disponibles para anclajes son los siguientes. Si se precisa otro,
 - ASTM F1554 Gr.55
 
 A través del nombre del anclaje se indicará ANCLAJE_1 o ANCLAJE_2 de acuerdo a si se trata de primera o segunda etapa.
-
 
 Para acelerar el análisis, utilizar el componente 1047 del TEKLA para modelar placas base, donde ya se encuentran varias configuraciones guardadas para distintas configuraciones.
 
@@ -339,19 +338,25 @@ Las configuraciones guardadas consideran lo siguiente:
 - El grout será 25mm hasta 3/4''. De 1'' para arriba se considera 30mm para que entre la tuerca de nivelación
 
 
-| Perfil | 200x200 | 250x200 | 250x250 | 280x280 | 300x250 | 300x300 | 350x280 | 350x300 | 350x350 | 400x300 | 400x350 | 400x400 | 450x350 | 450x450 |
-|:---------:|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|
-| **W6x15**   | [Articulada 1°](../ref/Placa%20Base/W6x15-ART-1°.j1047) |   |   |   |   | [Empotrada 1°](../ref/Placa%20Base/W6x15-EMP-1°.j1047) |   |   | [Empotrada 2°](../ref/Placa%20Base/W6x15-EMP-2°.j1047) |   |   |   |   |   |
-| **W8x18**   |   |   | [Articulada 1°](../ref/Placa%20Base/W8x18-ART-1°.j1047) |   |   |   | [Empotrada 1°](../ref/Placa%20Base/W8x18-EMP-1°.j1047) |   |   |   | [Empotrada 2°](../ref/Placa%20Base/W8x18-EMP-2°.j1047) |   |   |   |
-| **W8x31**   |   |   | [Articulada 1°](../ref/Placa%20Base/W8x31-ART-1°.j1047)<br>[Articulada 2°](../ref/Placa%20Base/W8x31-ART-2°.j1047) |   |   |   |   |   | [Empotrada 1°](../ref/Placa%20Base/W8x31-EMP-1°.j1047) |   |   | [Empotrada 2°](../ref/Placa%20Base/W8x31-EMP-2°.j1047) |   |   |
-| **W10x45**  |   |   |   |   |   | [Articulada 1°](../ref/Placa%20Base/W10x45-ART-1°.j1047) |   |   |   |   |   | [Empotrada 1°](../ref/Placa%20Base/W10x45-EMP-1°.j1047) |   | [Empotrada 2°](../ref/Placa%20Base/W10x45-EMP-2°.j1047) |
-| **W12x50**  |   |   |   |   |   |   |   |   | [Articulada 1°](../ref/Placa%20Base/W12x50-ART-1°.j1047) |   |   |   |   | [Empotrada 1°](../ref/Placa%20Base/W12x50-EMP-1°.j1047) |
-| **W14x74**  |   |   |   |   |   |   |   |   |   |   |   | [Articulada 1°](../ref/Placa%20Base/W14x74-ART-1°.j1047) |   | [Empotrada 1°](../ref/Placa%20Base/W14x74-EMP-1°.j1047) |
-| **HEB160**  |   |   |   | [Empotrada 1°](../ref/Placa%20Base/HEB160-EMP-1°.j1047) |   |   |   |   | [Empotrada 2°](../ref/Placa%20Base/HEB160-EMP-2°.j1047) |   |   |   |   |   |
-| **HEB200**  |   |   | [Articulada 1°](../ref/Placa%20Base/HEB200-ART-1°.j1047) |   |   |   |   |   | [Empotrada 1°](../ref/Placa%20Base/HEB200-EMP-1°.j1047) |   |   |   |   | [Empotrada 2°](../ref/Placa%20Base/HEB200-EMP-2°.j1047) |
-| **UPN140C** |   | [Empotrada 1°](../ref/Placa%20Base/UPN140C-EMP-1°.j1047) |   |   | [Empotrada 2°](../ref/Placa%20Base/UPN140C-EMP-2°.j1047) |   |   |   |   |   |   |   |   |   |
-| **UPN180C** |   |   |   |   | [Empotrada 1°](../ref/Placa%20Base/UPN180C-EMP-1°.j1047) |   |   | [Empotrada 2°](../ref/Placa%20Base/UPN180C-EMP-2°.j1047) |   |   |   |   |   |   |
-| **UPN220C** |   |   |   |   |   |   |   |   |   | [Empotrada 1°](../ref/Placa%20Base/UPN220C-EMP-1°.j1047) |   |   | [Empotrada 2°](../ref/Placa%20Base/UPN220C-EMP-2°.j1047) |   |
+| Perfil Dimensión | **W6x15** | **W8x18** | **W8x31** | **W10x45** | **W12x50** | **W14x74** | **HEB160** | **HEB200** | **UPN140C** | **UPN180C** | **UPN220C** |
+|:---------:|:---------:|:---------:|:---------:|:----------:|:----------:|:----------:|:----------:|:----------:|:-----------:|:-----------:|:-----------:|
+| **200x200** | [Articulada 1°](../ref/Placa%20Base/W6x15-ART-1°.j1047)<br><img src="../img/hormigon/W6x15-ART-1°.png" width="180"> | - | - | - | - | - | - | - | - | - | - |
+| **250x200** | - | - | - | - | - | - | - | - | [Empotrada 1°](../ref/Placa%20Base/UPN140C-EMP-1°.j1047)<br><img src="../img/hormigon/UPN140C-EMP-1°.png" width="180"> | - | - |
+| **250x250** | - | [Articulada 1°](../ref/Placa%20Base/W8x18-ART-1°.j1047)<br><img src="../img/hormigon/W8x18-ART-1°.png" width="180"> | [Articulada 1°](../ref/Placa%20Base/W8x31-ART-1°.j1047)<br><img src="../img/hormigon/W8x31-ART-1°.png" width="180"><br><br>[Articulada 2°](../ref/Placa%20Base/W8x31-ART-2°.j1047)<br><img src="../img/hormigon/W8x31-ART-2°.png" width="180"> | - | - | - | - | [Articulada 1°](../ref/Placa%20Base/HEB200-ART-1°.j1047)<br><img src="../img/hormigon/HEB200-ART-1°.png" width="180"> | - | - | - |
+| **280x280** | - | - | - | - | - | - | [Empotrada 1°](../ref/Placa%20Base/HEB160-EMP-1°.j1047)<br><img src="../img/hormigon/HEB160-EMP-1°.png" width="180"> | - | - | - | - |
+| **300x250** | - | - | - | - | - | - | - | - | [Empotrada 2°](../ref/Placa%20Base/UPN140C-EMP-2°.j1047)<br><img src="../img/hormigon/UPN140C-EMP-2°.png" width="180"> | [Empotrada 1°](../ref/Placa%20Base/UPN180C-EMP-1°.j1047)<br><img src="../img/hormigon/UPN180C-EMP-1°.png" width="180"> | - |
+| **300x300** | [Empotrada 1°](../ref/Placa%20Base/W6x15-EMP-1°.j1047)<br><img src="../img/hormigon/W6x15-EMP-1°.png" width="180"> | - | - | [Articulada 1°](../ref/Placa%20Base/W10x45-ART-1°.j1047)<br><img src="../img/hormigon/W10x45-ART-1°.png" width="180"> | - | - | - | - | - | - | - |
+| **350x280** | - | [Empotrada 1°](../ref/Placa%20Base/W8x18-EMP-1°.j1047)<br><img src="../img/hormigon/W8x18-EMP-1°.png" width="180"> | - | - | - | - | - | - | - | - | - |
+| **350x300** | - | - | - | - | - | - | - | - | - | [Empotrada 2°](../ref/Placa%20Base/UPN180C-EMP-2°.j1047)<br><img src="../img/hormigon/UPN180C-EMP-2°.png" width="180"> | - |
+| **350x350** | [Empotrada 2°](../ref/Placa%20Base/W6x15-EMP-2°.j1047)<br><img src="../img/hormigon/W6x15-EMP-2°.png" width="180"> | - | [Empotrada 1°](../ref/Placa%20Base/W8x31-EMP-1°.j1047)<br><img src="../img/hormigon/W8x31-EMP-1°.png" width="180"> | - | [Articulada 1°](../ref/Placa%20Base/W12x50-ART-1°.j1047)<br><img src="../img/hormigon/W12x50-ART-1°.png" width="180"> | - | [Empotrada 2°](../ref/Placa%20Base/HEB160-EMP-2°.j1047)<br><img src="../img/hormigon/HEB160-EMP-2°.png" width="180"> | [Empotrada 1°](../ref/Placa%20Base/HEB200-EMP-1°.j1047)<br><img src="../img/hormigon/HEB200-EMP-1°.png" width="180"> | - | - | - |
+| **400x300** | - | - | - | - | - | - | - | - | - | - | [Empotrada 1°](../ref/Placa%20Base/UPN220C-EMP-1°.j1047)<br><img src="../img/hormigon/UPN220C-EMP-1°.png" width="180"> |
+| **400x350** | - | [Empotrada 2°](../ref/Placa%20Base/W8x18-EMP-2°.j1047)<br><img src="../img/hormigon/W8x18-EMP-2°.png" width="180"> | - | - | - | - | - | - | - | - | - |
+| **400x400** | - | - | [Empotrada 2°](../ref/Placa%20Base/W8x31-EMP-2°.j1047)<br><img src="../img/hormigon/W8x31-EMP-2°.png" width="180"> | [Empotrada 1°](../ref/Placa%20Base/W10x45-EMP-1°.j1047)<br><img src="../img/hormigon/W10x45-EMP-1°.png" width="180"> | - | [Articulada 1°](../ref/Placa%20Base/W14x74-ART-1°.j1047)<br><img src="../img/hormigon/W14x74-ART-1°.png" width="180"> | - | - | - | - | - |
+| **450x350** | - | - | - | - | - | - | - | - | - | - | [Empotrada 2°](../ref/Placa%20Base/UPN220C-EMP-2°.j1047)<br><img src="../img/hormigon/UPN220C-EMP-2°.png" width="180"> |
+| **450x450** | - | - | - | [Empotrada 2°](../ref/Placa%20Base/W10x45-EMP-2°.j1047)<br><img src="../img/hormigon/W10x45-EMP-2°.png" width="180"> | [Empotrada 1°](../ref/Placa%20Base/W12x50-EMP-1°.j1047)<br><img src="../img/hormigon/W12x50-EMP-1°.png" width="180"> | [Empotrada 1°](../ref/Placa%20Base/W14x74-EMP-1°.j1047)<br><img src="../img/hormigon/W14x74-EMP-1°.png" width="180"> | - | [Empotrada 2°](../ref/Placa%20Base/HEB200-EMP-2°.j1047)<br><img src="../img/hormigon/HEB200-EMP-2°.png" width="180"> | - | - | - |
+
+
+## Miscelaneos
 
 ### Antimaterial
 

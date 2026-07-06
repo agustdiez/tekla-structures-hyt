@@ -65,7 +65,7 @@ Para finalizar con la creación del template se le suele agregar una imagen de p
 Para configurar esta ruta se debe tener una imagen que se quiera utilizar de portada en formato jpg o png guardarla en la carpeta del modelo y renombrarla como `thumbnail`
 
 ![Thumbnail](../img/proyecto_nuevo/THUMNAIL.png)
-*Figura 4: Ubicación thumnail*
+*Figura 4: Ubicación thumbnail*
 
 
 ## Guardado del template

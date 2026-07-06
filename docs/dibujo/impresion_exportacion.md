@@ -49,7 +49,7 @@ Dentro de la ventana que se abre podremos editar dos pestañas: [Options](impres
 
 - En `(1)` podremos guardar la configuración de las propiedades de `Options` y `Line properties`.
 
-- En `(2)` tendremos la configuración de la colorimetría y el espesor de las lineas que tendrá nuestra impresión. Podemos ver que en la columna `Line thickness`, 1 = 0,1 mm. Luego la columna `Object color` representa el color que se le asignó en el dibujo dentro de nuestro programa, y en la columna `Color on output` es el color que se verá en el documento impreso.
+- En `(2)` tendremos la configuración de la colorimetría y el espesor de las lineas que tendrá nuestra impresión. Podemos ver que en la columna `Line thickness`, 10 = 0,1 mm. Luego la columna `Object color` representa el color que se le asignó en el dibujo dentro de nuestro programa, y en la columna `Color on output` es el color que se verá en el documento impreso.
 
 - En `(3)` obtendremos una previsualización del documento que exportaremos.
 
@@ -58,7 +58,7 @@ En "Line properties" debemos tener como lineamiento el archivo de [puntas](../re
 ![Hytech.ctb lineamiento](../img/dibujo/Hytech.ctb%20lineamiento.png)
 *Figura 4: configuración de `Line properties` dentro de `Print Drawings`*
 
-En base a este lineamiento, adaptamos la impresión de nuestro documento a los espesores con los colores propuestos (teniendo en cuenta nuevamente que 1 = 0,1 mm), y la preconfiguración de esto es ["Hytech_ctb"](../ref/Dibujo/Impresión_Exportación/HYTECH_ctb.PdfPrintOptions.xml).
+En base a este lineamiento, adaptamos la impresión de nuestro documento a los espesores con los colores propuestos (teniendo en cuenta nuevamente que 10 = 0,1 mm), y la preconfiguración de esto es ["Hytech_ctb"](../ref/Dibujo/Impresión_Exportación/HYTECH_ctb.PdfPrintOptions.xml).
 
 {: .warning}
 El "Base line width" deberá aparecer el valor "0.01 mm" para adaptarse mejor a las puntas del cliente correspondiente. Si apareciera otro valor, deberá modificarse manualmente en las opciones avanzadas, y buscar la opción "XS_BASE_LINE_WIDT" y modificar el valor a 0.01.

@@ -26,7 +26,7 @@ Es buena práctica separar la **estructura metálica**, **estructuras de hormig�
 
 ## Fases
 
-A su vez, TEKLA cuenta con fases, el mismo es un atributo más que pueden asignarse a las partes que conforman un modelo. Funcionan como layers o capaz dentro del modelo.
+A su vez, TEKLA cuenta con fases, el mismo es un atributo más que pueden asignarse a las partes que conforman un modelo. Funcionan como layers o capas dentro del modelo.
 
 A través del número de fase es posible copiar *ciertos elementos* que esten contenidos en una misma fase de un modelo a otro.
 
@@ -45,7 +45,7 @@ Las fases recomendadas para los nuevos modelos, son:
 
 Al unificar las fases por tipo de estructura, logramos poder uniformizar la manera de modelado. 
 
-Las fases pueden cambiarse en cualquier momento desde el gestor de fases, ademas, es util a la hora de modelar grandes estructuras, permite la creación de filtros de modelado por fase. 
+Las fases pueden cambiarse en cualquier momento desde el gestor de fases, ademas, es util a la hora de modelar grandes estructuras y permite la creación de filtros de modelado por fase. 
 
 ### Creación de fases:
  1. Abrir el gestor de fases

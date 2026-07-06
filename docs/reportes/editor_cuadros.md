@@ -48,10 +48,8 @@ Los componentes principales que tiene el editor de cuadros son los siguientes:
 
 El *Editor de Cuadros* tiene sus propias propiedades avanzadas y deben setearse para ver las imágenes del nivel de empresa en el programa.
 
-
+![alt text](../img/reportes/prop_avanzadas.png)
 *Figura 1: propiedades avanzadas a editar*
-
-
 
 ## Paso a paso
 

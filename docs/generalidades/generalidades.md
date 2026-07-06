@@ -26,13 +26,13 @@ Se describen a continuación distintos apartados generales del modelado que debe
 
 Previo al inicio de un proyecto, existen tareas que deben realizarse con antelación:
 
-1. **Armado de rótulos**: de forma genérica se deberán crear 5 archivos de rótulos distintos en distintos tamaños. Referir a [Cuadros Rótulos](../reportes/cuadros-rotulos.md) para mayor detalle.
-2. **Armado de template**: en caso de ser un cliente nuevo en la empresa deberá armarse un template del cliente. 
+1. **Armado de rótulos**: De forma genérica se deberán crear 5 archivos de rótulos distintos en distintos tamaños. Referir a [Cuadros Rótulos](../reportes/cuadros-rotulos.md) para mayor detalle.
+2. **Armado de template**: En caso de ser un cliente nuevo en la empresa deberá armarse un template del cliente. 
 
 {: .note}
-> El template del cliente se realiza tomando el template de empresa y seteando propiedades adicionales tales como XS_PROJECT, apúntandolas a la carpeta correspondiente al cliente.
+> El template del cliente se realiza tomando el template de la empresa y seteando propiedades adicionales tales como XS_PROJECT, apúntandolas a la carpeta correspondiente al cliente.
 
-3. Una vez creado el template, debe hacerse un *Save As* del modelo como template, darle una miniatura del cliente y dejarlo alojado en la carpeta de empresa correspondiente a los templates.
+3. Una vez creado el template, debe hacerse un *Save as* del modelo como template, darle una miniatura del cliente y dejarlo alojado en la carpeta de empresa correspondiente a los templates.
 
 4. Realizados estos pasos, cualquier usuario podrá ver los templates de cliente disponibles al abrir el programa.
 
@@ -86,20 +86,13 @@ El proyectista/ingeniero realiza cambios sobre el modelo y debe subirlos a la ca
 
 Referir al apartado [Trimble Connect](../connect/index.md) para seteo del proyecto. Se enfatiza el uso de la propiedad avanzada que figura en el diagrama de flujo ya que se aconseja en proyectos grandes sectorizar los modelos en carpetas y no tener nucleados todos los modelos bajo una misma carpeta.
 
-### Atributos de proyecto
-
-Los siguientes atributos deben llenarse al inicio del proyecto. Estos atributos generales serán tomados en reportes y rótulos dentro del proyecto:
-
-![Atributos a completar](../img/generalidades/ATRIBUTOS%20DE%20PROYECTO.png)
-*Figura 2: Atributos de proyecto*
-
 ### Definición Punto Base
 
-Los proyectos suelen tener un punto base (`(0,0)` local) correlacionado con una coordenada geográfica que se define al inicio. Dicho punto en coordenadas POSGAR estará indicado en la documentación del proyecto.
+Los proyectos suelen tener un punto base (`(0,0)` local) correlacionado con una coordenada geográficas que se define al inicio. Dicho punto en coordenadas POSGAR estará indicado en la documentación del proyecto.
 
 Sin embargo, las maquetas de los proyectos se trabajan en coordenadas locales y en `mm` generalmente.
 
-Definir un BASEPOINT de proyecto dentro del modelo, que generalmente corresponde a `(0,0,100.000)`, para que los modelos sean adecuados al exportar a la maqueta.
+Definir un **BASEPOINT** de proyecto dentro del modelo, que generalmente corresponde a `(0,0,100.000)`, para que los modelos sean adecuados al exportar a la maqueta.
 
 Referir a [Modelo 3D](modelo_3d.md) para más detalles respecto al modelo federado.
 
@@ -110,14 +103,14 @@ Referir a [Modelo 3D](modelo_3d.md) para más detalles respecto al modelo federa
 
 Las referencias externas son archivos que se cargan al modelo para auxiliar durante el modelado. Pueden subirse localmente (siempre en la carpeta `./xref` del modelo) o bien a Trimble Connect para cargar directamente la referencia/modelo en Tekla.
 
-Instalar la extensión que permite cargar .nwd en el programa 
+Para poder ver la referencia en el programa se debe de instalar la [extensión](../setup/configuracion-inicial.md#instalación-de-extensiones) que permite cargar .nwd en el programa 
 
 Si la maqueta está en continuo cambio, se recomienda armar una rutina que recopile los .nwd de cada área y los suba a Connect. Ver [Gestión de archivos](../avanzado/gestion_archivos.md) para mayor detalle.
 
 ---
 ## Creación de vistas
 
-Las vistas serán la herramienta a utilizar apara generar el modo en que representamos lo modelado y luego llevamos al plano.
+Las vistas serán la herramienta a utilizar para generar el modo en que representamos lo modelado y luego llevamos al plano.
 
 La cantidad de vistas deberá ser dentro de todo consistente con la cantidad de plantas/elevaciones/cortes que haremos en el [Modo Dibujo](../dibujo/index.md).
 
@@ -126,7 +119,7 @@ Existen múltiples formas de crear vistas en el programa y no es alcance de esto
 [Crear vistas (documentación oficial)](https://support.tekla.com/doc/tekla-structures/2026/mod_creating_a_view)
 
 {: .note}
-> Al hacer `Shift+P` llevamos nuestra vista 3D a su visión en planta. Eso nos dirá si nuestra grilla está en planta o en elevación dependiendo del tipo de vista que se haya creado.
+> Al hacer `Control+P` llevamos nuestra vista 3D a su visión en planta. Eso nos dirá si nuestra vista está en planta o en elevación dependiendo del tipo de vista que se haya creado.
 
 
 ---
@@ -134,30 +127,28 @@ Existen múltiples formas de crear vistas en el programa y no es alcance de esto
 
 Hay distintos tipos de elementos a nivel modelo:
 
-1. **PARTES**
+1. **Partes**
 Son los elementos principales de la estructura.
 
-   - **Beam (Viga)**: Elementos lineales (vigas, columnas, diagonales)
-   - **Column (Columna)**: Elementos verticales
-   - **Polybeam**: Vigas con trayectoria poligonal
-   - **Curved Beam**: Vigas curvas
-   - **Orthogonal Beam**: Vigas ortogonales
-   - **Contour Plate (Placa de Contorno)**: Placas definidas por contorno
-   - **Pad Footing (Zapata)**: Fundaciones tipo zapata
-
-
+      - **Beam (Viga)**: Elementos lineales (vigas, columnas, diagonales)
+      - **Column (Columna)**: Elementos verticales
+      - **Polybeam**: Vigas con trayectoria poligonal
+      - **Curved Beam**: Vigas curvas
+      - **Orthogonal Beam**: Vigas ortogonales
+      - **Contour Plate (Placa de Contorno)**: Placas definidas por contorno
+      - **Pad Footing (Zapata)**: Fundaciones tipo zapata
 
 {: note}
 > Los objetos más usuales a usar en estos proyectos se basan en BEAMS, PAD FOOTING, COLUMN y PLATE. En función del tipo de objeto, los atributos a presentar pueden variar y ser distinto, por lo que es importante modelar con un mismo criterio
 
-2. **PERNOS/SOLDADURAS**: se pueden modelar individualmente pero en general se aplican a través de componentes.
-3. **ARMADURAS**: hay distintos tipos de armaduras. Ver apartado dentro del capítulo [Armaduras](../hormigon/armaduras.md) para mayor detalle.
-4. **ASSEMBLIES**: la licencia actual es de piezas de hormigón por lo que se podrán crear lo que se denominan unidades de colada y que se cubre en los capitulos correspondientes dentro de [Hormigón](../hormigon/index.md).
-5. **ELEMENTOS AUXILIARES**: aquello que auxiliará durante el modelado.
-   1. Grillas
-   2. Objetos de construcción (linea, planos, circulos)
-   3. Puntos
-6. **COMPONENTES**: los componentes actúan como *macros* que permiten modelar objetos de forma automática de cuestiones que se repiten (por ejemplo, una viga de encadenado o una placa base). Cada sección de [Hormigón](../hormigon/index.md) o [Acero](../acero/index.md) cuenta con una biblioteca de componentes usuales para utilizar.
+   2. **PERNOS/SOLDADURAS**: se pueden modelar individualmente pero en general se aplican a través de componentes.
+   3. **ARMADURAS**: hay distintos tipos de armaduras. Ver apartado dentro del capítulo [Armaduras](../hormigon/armaduras.md) para mayor detalle.
+   4. **ASSEMBLIES**: la licencia actual es de piezas de hormigón por lo que se podrán crear lo que se denominan unidades de colada y que se cubre en los capitulos correspondientes dentro de [Hormigón](../hormigon/index.md).
+   5. **ELEMENTOS AUXILIARES**: aquello que auxiliará durante el modelado.
+       1. Grillas
+       2. Objetos de construcción (linea, planos, circulos)
+       3. Puntos
+   6. **COMPONENTES**: los componentes actúan como *macros* que permiten modelar objetos de forma automática de cuestiones que se repiten (por ejemplo, una viga de encadenado o una placa base). Cada sección de [Hormigón](../hormigon/index.md) o [Acero](../acero/index.md) cuenta con una biblioteca de componentes usuales para utilizar.
 
 ---
 
@@ -167,13 +158,13 @@ Se describen herramientas de modelado a continuación que resultan indispensable
 
 ### Selectores de partes y unidades de colada
 
-Los modelos complejos, pueden ser dificiles de trbajar cuando hay muchos objetos en el mismo. Para solucionar eso Tekla, tiene integrado Selectores de partes y unidades de colada. 
+Los modelos complejos, pueden ser dificiles de trabajar. Para solucionar este problema Tekla, tiene integrado Selectores de partes y unidades de colada. 
 
 ![Selectores](../img/generalidades/SELECTORES%20DE%20PARTES%20Y%20DE%20UNIDADES%20DE%20COLADA.png)
 *Figura 4: Selectores*
 
 ![Selectores, traducción](../img/generalidades/SELECTORES-TRADUCCIÓN.png)
-*Figura 5: Significado de los selctores*
+*Figura 5: Significado de los selectores*
 
 
 1. **Select all:** Activar o desactivar todos los interruptores de selección. Se Puede seleccionar todos los tipos de objetos, excepto Tornillos individuales.
@@ -183,13 +174,13 @@ Los modelos complejos, pueden ser dificiles de trbajar cuando hay muchos objetos
 5. **Select points:** Se pueden seleccionar puntos.
 6. **Select construction lines:** Se pueden seleccionar líneas de construcción y círculos.
 7. **Select reference models:** Se pueden seleccionar modelos de referencia, si se deselecciona no se pueden seleccionar los modelos de referencia y permite trabajar mas comodamente
-8. **Select grids:**  Se pueden seleccionar gillas enteras.
+8. **Select grids:**  Se pueden seleccionar grillas enteras.
 9. **Select grid lines:** Se pueden seleccionar lineas de grillas.
 10. **Select welds:** Se pueden selecionar soldaduras
-11. **Select cuts and added materials:** Se puedenseleccionar cortes de línea, pieza y polígonos, accesorios y material añadido. 
+11. **Select cuts and added materials:** Se pueden seleccionar cortes de línea, pieza y polígonos, accesorios y material añadido. 
 12. **Select views:** Se pueden seleccionar vistas.
 13. **Select bolts:** Se pueden seleccionar grupos de bulones.
-14. **Select single bolts:** Se pueden seleccionar bulones singulares
+14. **Select single bolts:** Se pueden seleccionar bulones individuales
 15. **Select reinforcing bars:** Se pueden seleccionar sets de armadura, así como grupos de barras de refuerzo y barras de refuerzo individuales.
 16. **Select bar groups in rebar sets:** Se pueden  seleccionar grupos de barras en sets de Armadura, así como grupos de reinforcing bars y single reinforcing bars. 
 17. **Select single bars in rebar sets:** Se pueden seleccionar single bars in rebar sets, y reinforcing bar groups y single reinforcing bars.
@@ -210,14 +201,14 @@ Los modelos complejos, pueden ser dificiles de trbajar cuando hay muchos objetos
 ![alt text](../img/generalidades/MODIFICACIÓN%20DIRECTA.png)
 *Figura 6: Modificación directa*
 
-La modificación directa permite redimensionar, remodelar y mover el modelo objetos utilizando pestañas de modificación directa. Cuando se selecciona un objeto, Tekla muestra las cotas y dimensiones de modificación directa que son específico para ese objeto modelado. 
-
+La modificación directa permite redimensionar, remodelar y mover la parte modelada utilizando cotas. Cuando se selecciona un objeto, Tekla muestra las cotas según sus ejes y dimensiones. Las mismas se pueden modificar para que la medida afecte a un lado o a ambos. 
 
 ![MODIFICADORES](../img/generalidades/MODIFICADORES.png)
+*Figura 6: Modificación directa*
+
 
 {: .note}
-> La modificación directa se activa y desactiva con la letra `D` y viene activada por defecto, a veces puede desactivarse sola, se vuelve a activar usando el comando. 
-
+> La modificación directa se activa y desactiva con la letra `D` y viene activada por defecto, a veces puede desactivarse sola, se vuelve a activar tocando la letra
 
 #### Alargar varios objetos
 

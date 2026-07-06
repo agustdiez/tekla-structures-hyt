@@ -73,21 +73,30 @@ Se deja debajo el plano de estructura, para obtener el diseño final de placa ba
 
 #### Importar modelo de STAAD en modelo y ajuste del mismo
 
-<iframe width="700" height="393,75" src="https://www.youtube.com/embed/jnicyUKoWLA?si=kMG5hilfoHFPlE5w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay=1; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="700" height="393,75" src="https://www.youtube.com/embed/wrmDnypui3Y?si=iIuiDNIbVLyKwkLU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay=1; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 #### Asignación de materiales, atributos, propiedades
 
-
+<iframe width="700" height="393,75" src="https://www.youtube.com/embed/UwdXALfRkcI?si=zooOzCrpThe9LApo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay=1; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 #### Sincronización con Connect y evaluación de interferencias
 
+<iframe width="700" height="393,75" src="https://www.youtube.com/embed/UnLR4X4fblw?si=MxY3gOBv8vjEQf50" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay=1; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 #### Armado de dibujo: creación del dibujo usando un rótulo genérico.
+
+<iframe width="700" height="393,75" src="https://www.youtube.com/embed/HIC1kGfr9q8?si=yWNtH6B4mbHP-bI8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay=1; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 #### Creación de vistas y definición de layout
 
+<iframe width="700" height="393,75" src="https://www.youtube.com/embed/jwxsP8qrIbA?si=vMH96kXI47fO-jKJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay=1; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 #### Retoque a vistas del dibujo
 
+
+
 #### Impresión del documento
+
 
 
 [← Volver al inicio](index.md)

@@ -81,5 +81,17 @@ Los archivos .tpl son formatos nativos de tekla que permiten generar cuadros. Es
 
 8. Creación del template actualizado del cliente [TEMPLATE](../proyecto_nuevo/creacion_template.md).
 
+
+
+
+
+
+
+
+
+
+
+
+
 [← Volver al inicio](index.md)
 

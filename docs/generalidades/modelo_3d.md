@@ -11,7 +11,7 @@ has_toc: true
 
 El siguiente capítulo describe el orden de trabajo para modelado 3D en proyectos de ingeniería, definiendo estructura de responsabilidades, pautas y criterios uniformes de modelado para todas las especialidades.
 
-Lo aquí indicado está sujeto a modificaciones en función del documento vigente respecto a la gestión de maqueta indicado en el [Índice](../index.md).
+Lo indicado está sujeto a modificaciones en función del documento vigente respecto a la gestión de maqueta indicado en el [Índice](../index.md).
 
 Para aplicación de dicho formulario a nivel Civil, referir al apartado [BIM](BIM.md).
 
