@@ -356,6 +356,13 @@ Las configuraciones guardadas consideran lo siguiente:
 | **450x450** | - | - | - | [Empotrada 2°](../ref/Placa%20Base/W10x45-EMP-2°.j1047)<br><img src="../img/hormigon/W10x45-EMP-2°.png" width="180"> | [Empotrada 1°](../ref/Placa%20Base/W12x50-EMP-1°.j1047)<br><img src="../img/hormigon/W12x50-EMP-1°.png" width="180"> | [Empotrada 1°](../ref/Placa%20Base/W14x74-EMP-1°.j1047)<br><img src="../img/hormigon/W14x74-EMP-1°.png" width="180"> | - | [Empotrada 2°](../ref/Placa%20Base/HEB200-EMP-2°.j1047)<br><img src="../img/hormigon/HEB200-EMP-2°.png" width="180"> | - | - | - |
 
 
+hkjih
+jkjk
+
+Prueba 
+}
+
+
 ## Miscelaneos
 
 ### Antimaterial
