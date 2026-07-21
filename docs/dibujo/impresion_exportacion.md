@@ -113,8 +113,7 @@ Dentro de la pestaña `Layer rules` decidiremos a que layer dentro del archivo q
 - En `(2)` podremos traer desde un archivo ".dwg" layers que estén creados dentro de este, para ser usados en (3).
 
 {: .warning}
-> La configuración guardada está basada en el archivo subido en `(2)`, por lo que los layers que usaremos serán los que encontramos allí, además que al exportar en el layout aparecerá la hoja que configuramos también en este archivo (así que en el caso que se utilice otra, deberá entrar al dwg y editar el tamaño o la orientación de la hoja en el layout según sea el caso). Siempre es recomendable revisar el archivo exportado, y en su defecto modificar lo que sea necesario.
-
+> La configuración guardada está basada en el archivo subido en `(2)`, por lo que los layers que usaremos serán los que se encuentran allí, además que al exportar en el layout aparecerá la hoja que se configuró también en este archivo (así que en el caso que se utilice otra, deberá entrar al dwg y editar el tamaño o la orientación de la hoja en el layout según sea el caso). Siempre es recomendable revisar el archivo exportado, y en su defecto modificar lo que sea necesario.
 
 - En `(3)` tenemos varias columnas para editar:
     - **Include**: al marcar la casilla filtra si se incluye o no la condición para los objetos.
@@ -122,13 +121,13 @@ Dentro de la pestaña `Layer rules` decidiremos a que layer dentro del archivo q
     - **Objects**: seleccionamos que objetos colocaremos en determinado layer. Puede realizarse tanto colocando "All" y luego aplicando un filtro en "Object filtering" o seleccionando una categoría especifica en esta pestaña. Las opciones de selección que tenemos son:
     ![layer rules objects](../img/dibujo/layer%20rules%20objects.png)
 
-    - **Presentation filtering**: podremos filtrar los elementos como lineas, textos, hatches, etc. según cuantos de estos hay en el valor que hayamos colocado en "Object".
+    - **Presentation filtering**: Podremos filtrar los elementos como lineas, textos, hatches, etc. según cuantos de estos hay en el valor que hayamos colocado en "Object".
 
-    - **Object filtering**: aquí se puede aplicar algún [filtro de objectos](./vistas_dibujo.md#filter), a los objectos seleccionados en "Object".
+    - **Object filtering**: Aquí se puede aplicar algún [filtro de objectos](./vistas_dibujo.md#filter), a los objectos seleccionados en "Object".
 
     - **Target layer**: Aquí elegiremos a que layer pertenecerán los objetos que cumplan con las condiciones de las columnas anteriores.
 
-    - **Color/Line style/Line weight**: aquí decidiremos si los valores de estas columnas estarán determinados por el layer dentro del ".dwg" ![parámetros según dwg](../img/dibujo/parámetros%20según%20dwg.png) o si están dados por los parámetros dentro de nuestro programa ![parámetros según tekla](../img/dibujo/parámetros%20según%20tekla.png)
+    - **Color/Line style/Line weight**: Aquí decidiremos si los valores de estas columnas estarán determinados por el layer dentro del ".dwg" ![parámetros según dwg](../img/dibujo/parámetros%20según%20dwg.png) o si están dados por los parámetros dentro de nuestro programa ![parámetros según tekla](../img/dibujo/parámetros%20según%20tekla.png)
 
     - **Paper space**: En esta casilla podemos elegir si los objetos seleccionados irán al "model" o al "layout" de AutoCAD.
 

@@ -35,7 +35,8 @@ Se dan a continuación requisitos a tener en cuenta en ambos programas para impo
 
 En versiones recientes de STAAD, se incorporan bases de datos adicionales al programa.
 
-**Se deben utilizar las bases hoy llamadas LEGACY**, para lograr que al importar los perfiles se vean de acuerdo con el nombre.
+{: .warning}
+>**Se deben utilizar las bases hoy llamadas LEGACY**, para lograr que al importar los perfiles se vean de acuerdo con el nombre.
 
 ![BD_Standard](../img/acero/BD_STD.gif)
 _Figura 1: Base de datos Standard_
@@ -78,9 +79,6 @@ Para sintaxis del archivo ver el siguiente apartado.
 >La configuración actual permitirá traer doble ángulo, pero no permite disponerlos en cruz (no es posible lograrlo), por lo que se omite la conversión en ese caso, para que sea explicito que debe modelarse el `Twin Profile` directamente en TEKLA.
 
 ![ConversionFIle](../img/acero/conversion_files.png)
-
-
-
 
 ### Archivos de conversión
 

@@ -244,6 +244,10 @@ y en picture podrá darse una medida si se quisiera.
 ### El modelo no se ve:
 ![visualización trabada](../img/faq/Errores%20al%20visualizar%20el%20modelo.gif)
 
+### No puedo seleccionar nada
+
+
+
 ---
 ## Dibujos
 
@@ -364,6 +368,17 @@ Tener en cuenta que esto modificará el archivo de simbolos de todos, por lo que
 ### ¿Puedo crear un dibujo a partir de otro?
 
 Esta es una de las opciones que nos permite el [document manager](../dibujo/generalidades_dibujo.md#document-manager), haciendo click derecho en el dibujo a copiar aparecera en la lista desplegable "Copy drawing views/with layout" (ver su uso en el link anterior).
+
+### A la hora de abrir un dibujo, tarda mucho en abrir, se realentiza. 
+
+### Recuadros PHANTOM
+
+
+
+
+
+
+
 
 --- 
 

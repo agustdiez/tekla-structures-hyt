@@ -45,9 +45,9 @@ El objetivo principal es que a partir de un archivo de excel, este se pueda impo
 
 Para importar una tabla hay que seguir los siguientes pasos:
 
-1. Una vez descargado, buscar el plugin "ExcelToDrawing" dentro de `Applications & components` en el panel vertical de la derecha y hacer click derecho para acceder a las propiedades
+1. Una vez descargado, buscar el plugin "ExcelToDrawing" dentro de `Applications & components` en el panel vertical de la derecha y hacer click derecho para acceder a las propiedades.
 2. Seleccionamos la carpeta de la izquierda de la siguiente imagen: ![Excel file](../img/dibujo/Excel%20file.png) y buscamos en nuestro ordenador el archivo de extensión ".xlsx" (Excel) que tenga la tabla que queremos añadir, luego le damos click izquierdo al archivo y tocamos `Abrir`.
-3. Luego en la ruta que queda en el renglón de "Excel file" debemos colocar un punto antes de la barra que separa a una carpeta dentro del modelo para que la ruta no se limite unicamente a nuestro dispositivo.
+3. Luego en la ruta que queda en el renglón de "Excel file" debemos colocar un punto antes de la barra que separa a una carpeta dentro del modelo para que la ruta no se limite unicamente a nuestro dispositivo.: `./XREF/archivo.xslx`
 4. Clickear en `Modify`, `Apply`, `OK` y se cerrará la ventana del plugin.
 5. Seleccionar nuevamente en el plugin dentro de `Applications & components` en el panel vertical de la derecha.
 6. Hacemos click en donde queremos que esté ubicado nuestra tabla.
@@ -93,6 +93,9 @@ En el caso de un archivo ".dwg" las propiedades y la configuración funciona de 
 > - Es recomendable que el archivo de origen de AutoCAD esté lo más "limpio" posible para evitar ralentizar la carga del archivo, pudiendo usarse el comando "purge" o cualquier herramienta útil para esto.
 
 Lo ideal con los `.dwg` es siempre post-procesarlos o dibujar exclusivamente lo necesario para el dibujo, para que al colocarlo en el dibujo no sature y pueda hacer inusable el programa.
+
+{: .note}
+> Al cargar un modelo de referencia en el programa, se crea un archivo temporal, el mismo puede realentizar la maquina, para solucionarlo referir a las [preguntas frecuentes](../faq/faq.md#a-la-hora-de-abrir-un-dibujo-tarda-mucho-en-abrir-se-realentiza) 
 
 {: .note}
 > Cualquier cosa que se esté cargando como un dibujo menor es recomendable hacerlo desde el [editor de simbolos](../dibujo/marcas_simbolos_notas.md#editor-de-símbolos).

@@ -28,7 +28,7 @@ Tekla permite modelar armaduras, siendo estas elementos cilindricos lineales, la
 
 {: .note}
 
-> La definición de la armadura, queda a cargo del Revisor / Ingeniero / LEP. **Puede variar según avanza el proyecto** (tanto en cantidad, separación y diametro)
+> La definición de la armadura, queda a cargo del Revisor / Ingeniero / LEP. **Puede variar según avanza el proyecto o el documento a emitir** (tanto en cantidad, separación y diametro)
 
 Existen varias maneras de modelar la armadura de una estructura, las mas utilizadas suelen ser: 
 
@@ -45,28 +45,28 @@ Modelar armadura por grupo de barras permite diseñar la forma de la armadura y 
 3. **Patron a reforzar**: Luego de definir la forma se debe indicar el camino que reforzará la armadura.
 
 ![ARMADURA_PROCEDIMIENTO](../img/hormigon/ARMADURA_PROCEDIMIENTO.gif)
-*Figura 3: Forman y patron a reforzar*
+*Figura 3: Forma y patrón a reforzar*
 
-4. **Separación**: Una vez generada la armadura, se debe modificar la separación, hay varias opciones para modificarla
-   1. `Equal distribution`: distribuye las barras equitativamente bajo dos opciones, por cantidad de barras o por un espaciado objetivo.
+4. **Separación**: Una vez generada la armadura, se debe modificar la separación, hay varias opciones para modificarla:
+   1. `Equal distribution`: Distribuye las barras equitativamente bajo dos opciones, por cantidad de barras o por un espaciado objetivo.
    2. `By exact spacings`: Distribuye las barras según una separación exacta. Tiene varias posibilidades de edición: 
         1. `By exact spacing with flexible last and first space` siendo la primera y ultima posición variables 
         2.  `By exact spacing with flexible middle` siendo las posiciones del 
-        medio variables
+        medio variables.
 
 ![ARMADURA_SEPARACIÓN](../img/hormigon/ARMADURA_SEPARACIÓN.gif)
 *Figura 4: Separación*
 
 5. **Retoque de propiedades**: Por ultimo, se pueden modificar propiedades especificas, o que quedan en segundo plano a la hora de dibujar la armadura. 
-    1. `Hooks`: pueden ser editados tanto al principio como al final de la armadura. Se recomienda empezar con alguna de las opciones por defecto ya que establecen el radio de doblado permitido por el tamaño y calidad de la barra. Si se quiere editar el largo del gancho, o cambiar el angulo, se recomienda editarlo con la opcion "Custom Hook"
-    2. `Cover thickness`: Permite modificar el recubrimiento de la armadura, tanto en plano como en largo. 
+    1. `Hooks`: Pueden ser editados tanto al principio como al final de la armadura. Se recomienda empezar con alguna de las opciones por defecto ya que establecen el radio de doblado permitido por el tamaño y calidad de la barra. Si se quiere editar el largo del gancho, o cambiar el ángulo, se recomienda editarlo con la opcion "Custom Hook"
+    2. `Cover thickness`: Permite modificar el recubrimiento de la armadura, tanto en plano como en longitud. 
 
 ![ARMADURA_HOOKS](../img/hormigon/ARMADURA_HOOKS.gif)
 *Figura 5:  Hooks*
 
 ### Rebar set 
 
-Los rebar set constan de armaduras que se agrupan automáticamente en función de la geometría de la barra y que puede modificar usando la modificación directa y las guías de conjunto de armaduras. Se pueden crear conjuntos de armaduras cuando desee reforzar flexiblemente varias áreas y geometrías en partes de hormigón u objetos de vertido.
+Los rebar set son conujntos de armaduras que se agrupan automáticamente en función de la geometría de la barra. Se puede modificar usando la modificación directa y las guías de conjunto de armaduras. Se recomienda crear conjuntos de armaduras cuando se desee reforzar flexiblemente varias áreas y geometrías en partes de hormigón. 
 
 ![REBAR SET CROSSING](../img/hormigon/ARMADURA_REBAR_SET_CROSSING.gif)
 *Figura 6: Rebar set crossing*
@@ -74,25 +74,29 @@ Los rebar set constan de armaduras que se agrupan automáticamente en función d
 ![REBAR SET LONGITUDINAL](../img/hormigon/ARMADURA_REBAR_SET_LONG.gif)
 *Figura 7: Rebar set longitudinal*
 
-### Malla (Malla)
+### Mesh (Malla)
 
-El rebar mesh una malla prefabricada de barras de acero, compuesta por barras principales y secundarias ortogonales, generalmente soldadas entre sí, usada comúnmente en losas, muros y elementos de hormigón armado.
+El rebar mesh una malla prefabricada de barras de acero, compuesta por barras principales y secundarias ortogonales, generalmente soldadas entre sí, usada comúnmente en losas, muros y plateas.
 
 ![MESH](../img/hormigon/ARMADURA_MESH.gif)
 *Figura 8: Rebar mesh*
 
 ---
+
 ## Propiedades
 
 ## Unidad de colada
-Cuando se modela un elemento que contiene varias partes de H° y las mismas contiene armadura, la forma correcta de trabajar es utilizar la unidad de colada, para ver mas información leer Ver [Unidad de colada](elementos.md#unidad-de-colada). Varias partes deben tener la misma unidad de colada para cuando salga el reporte de la Planilla de Doblado de Hierros, salgan con la cantidad y peso correctos, dentro de la misma parte. 
+
+Cuando se modela un elemento que contiene varias partes de H° y las mismas contienen armadura, la forma correcta de trabajar es utilizar la `unidad de colada`, para ver mas información leer Ver [Unidad de colada](elementos.md#unidad-de-colada). Varias partes modeladas dentro de una misma estructura deben tener la misma unidad de colada para que cuando se ejecute el reporte de la **P**lanilla de **D**oblado de **H**ierros, las armaduras salgan con el nombre, cantidad y numeración correcta. 
 
 ![UNIDAD DE COLADA ARMADURA EN PARTES](../img/hormigon/ARMADURA_COLADA.png)
 *Figura 9: Armadura en parte, fases de colada 1*
 ![UNIDAD DE COLADA ARMADURA EN PARTES](../img/hormigon/ARMADURA_COLADA2.png)
 *Figura 10: Armadura en parte, fases de colada 1*
+
 ### Propiedades de la unidad de colada
-Las unidades de colada, tienen propiedades, **no** usar `PRECAST`, ya que a la hora de sacar el reporte saldrá con errores. Tambien, seleccionando la unidad de colada, se podrá modificar, el nombre, numeración y modificar los atributos definidos por el usuario. 
+
+Las unidades de colada, tienen propiedades que configuran sus caracteristicas, **NO** se debe usar `PRECAST`, ya que a la hora de sacar el reporte saldrá con errores. Ademas, seleccionando la unidad de colada, se podrá modificar, el nombre, numeración y los atributos definidos por el usuario. 
 
 ![PROPIEDADES UNIDAD DE COLADA](../img/hormigon/ARMADURA_COLADA_2.gif)
 *Figura 11: Unidad de colada propiedades*
@@ -113,9 +117,10 @@ La numeración es el proceso mediante el cual Tekla asigna identificadores únic
     4. `Clear reinforcing bar numbers`
 2. Seleccionar el apartado de "Numbering settings:
     1. Al abrir la ventana, aparecerá la configuración de numeración. Por defecto estará seleccionada la opción `standard`.
-    2. Hytech tiene 3 formatos de enumeración, el mas utilizado  es el `RE-ENUMERAR-2`. Al utilizar la unidad de colada se recomienda utilizar la `RE-ENUMERAR-3`.
+    2. Hytech tiene 3 formatos de enumeración, el mas utilizado  es el `RE-ENUMERAR-2`. Al utilizar la unidad de colada se recomienda utilizar la `RE-ENUMERAR-3` ya que está numeración es la más optima con el reporte y la unidad de colada.
     3. Se aplican y guardan los formatos de enumeración 
-3. Seleccionar en el apartado de "Perform numbering" la opción de `Number series of selected objets` esta, ennumerará **solo** la armadura del objeto seleccionado
+3. Seleccionar en el apartado de `Perform numbering` la opción de `Number series of selected objets` esta, ennumerará **solo** la armadura del objeto seleccionado
+
 ![ENUMERACIÓN](../img/hormigon/ARMADURA_ENUMERACIÓN.gif)
 *Figura 13: Enumeración de armaduras de una parte*
 
@@ -123,10 +128,9 @@ Luego, validar los prefijos y sufijos dados a cada unidad de colada utilizando l
 
 ![Customn inquiry](../img/hormigon/CUSTOM%20INQUIRY%20UNIDAD%20DE%20COLADA..gif)
 
-
 ## Planilla de doblado de aceros (PDH)
 
-Una planilla de doblado de hierros es Un documento técnico que detalla, de forma **ordenada y precisa**, las características geométricas y constructivas de las barras de acero de refuerzo, indicando cómo deben cortarse y doblarse antes de su colocación en la estructura de hormigón armado.
+Una planilla de doblado de hierros es Un documento técnico que detalla, de forma **ordenada y precisa**, las características geométricas y constructivas de las barras de acero de refuerzo, indicando cómo deben cortarse y doblarse antes de su colocación en la estructura de hormigón.
 
 ### Como generar el reporte de una PDH
 
@@ -139,7 +143,8 @@ Una planilla de doblado de hierros es Un documento técnico que detalla, de form
 ### Como generar el formato de una PDH
 
 1. En el siguiente link se encuentra la rutina de [Google Colab](https://colab.research.google.com/drive/12fXq9QDGkd16nXEkAKexgHfziEjB_yEo) que genera la planilla de doblados final.
-2.  Se requiere completar la [PLANTILLA BASE](https://www.google.com/url?q=https%3A%2F%2Fdocs.google.com%2Fspreadsheets%2Fd%2F1PRK6W-IhIslE1Gx3XgKjs4684XgOAIxN%2Fedit%3Fusp%3Dsharing%26ouid%3D114357192518648123855%26rtpof%3Dtrue%26sd%3Dtrue) . y completarla con los datos del proyecto (se deberá subir con el nombre PLANTILLA_BASE.xlsx). En caso de modificarse, se debe de notificar.: 
+2.  Se requiere completar la [PLANTILLA BASE](https://www.google.com/url?q=https%3A%2F%2Fdocs.google.com%2Fspreadsheets%2Fd%2F1PRK6W-IhIslE1Gx3XgKjs4684XgOAIxN%2Fedit%3Fusp%3Dsharing%26ouid%3D114357192518648123855%26rtpof%3Dtrue%26sd%3Dtrue) . y completarla con los datos del proyecto (se deberá subir con el nombre PLANTILLA_BASE.xlsx). 
+
 ![Plantilla PDH](../img/hormigon/ARMADURA_PLANTILLA_PDH.png)
 *Figura 14: Campos plantilla base*
     Bloques:
@@ -195,7 +200,7 @@ Su cálculo se encuentra indicado en CIRSOC 201-2005 bajo Art.12.2 (a responsabi
 Para el caso de ganchos (en extremos de barras con algún filo de hormigón, vale lo de la siguiente imagen)
 
 ![Ganchos-cirsoc](../img/hormigon/ganchos_cirsoc.png)
-*Figura 15: ganchos de acuerdo a CIRSOC 201-05*
+*Figura 15: Ganchos de acuerdo a CIRSOC 201-05*
 
 | $$d_b$$ | $$l_{dh}$$ | $$L_{gancho,\min}$$ |
 |---------|------------|---------------------|
@@ -218,11 +223,24 @@ Para el caso de barras de gran longitud o que deban separarse en tramos, aparece
 
 ### Modelar empalmes
 
-Hay componentes dentro del programa que permiten hacer splice de barras, aunque si se trata de una estructura particular donde debe estar pensado, es buena alternativa hacerlo manualmente e indicarlo en el plano de manera correcta.
+Hay componentes dentro del programa que permiten hacer splice de barras, aunque si se trata de una estructura particular donde debe estar pensado, es buena alternativa hacerlo manualmente e indicarlo en el plano de manera correcta:
+
+![Rebar splice](../img/hormigon/REBAR%20SPLICE.png)
+*Figura 16: Rebar splice en empalmes*
+
+Al tocar este comando, el mismo pedirá información sobre el corte de la barra a empalmar:
+
+![Configuración de empalme](../img/hormigon/REBAR%20SPLICE%20CONFIGURACIÓN.png)
+*Figura 17: Rebar splice configuración*
+
+1. Joint type: muestra las distintas posiciones de solape, ofrece la posibilidad de solaparla, a la derecha, izquierda, ambas o de soldarlas y agregar una cupla
+2. Lap Length: Longitud del solape, la misma depende del cálculo
+3. Offset: Separación de las barras 
+4. Bar Positions: Posición de las barras, esta opción puede ser o superpuestas entre si o paralelas. 
 
 De forma general, las longitudes de empalme deben considerarse como $1,3 $ veces la longitud de anclaje de la barra
 
----
+
 
 
 [← Volver al inicio](index.md)

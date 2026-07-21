@@ -93,10 +93,10 @@ Se deja debajo el plano de estructura, para obtener el diseño final de placa ba
 
 #### Retoque a vistas del dibujo
 
-
+<iframe width="700" height="393,75" src="https://www.youtube.com/embed/xEZanph9H9Y?si=iyNxP5tvT2GcubES" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay=1; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 #### Impresión del documento
 
-
+<iframe width="700" height="393,75" src="https://www.youtube.com/embed/dQ5v86-Dxd0?si=UDAYaOg1rkt1mq80" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay=1; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 [← Volver al inicio](index.md)

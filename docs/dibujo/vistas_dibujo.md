@@ -21,7 +21,7 @@ has_toc: true
 Para crear una vista, debemos en primer lugar trasladarnos desde la pestaña `Window` a donde se encuentren las vistas que hayamos dejado preparadas en el Model.
 
 ![views](../img/dibujo/views.gif)
-*Figura 1: ver vistas en "Window"*
+*Figura 1: Ver vistas en "Window"*
 
 Al entrar al modelo con la pestaña `Window`, cuando se tenga la vista que desea mostrarse en el dibujo, puede optarse por tomar toda la vista ([Entire model view](../dibujo/vistas_dibujo.md#entire-model-view.md)) o una parte en especifico ([Area in model view](../dibujo/vistas_dibujo.md#area-in-model-view)).
 
@@ -66,10 +66,10 @@ Una vez ubicado, se debe hacer click derecho en el recuadro transparente y tocar
 ![Attributes 1](../img/dibujo/Attributes%201.png)
 *Figura 7: Attributes-Attributes 1*
 
-- Al entrar en las propiedades de la vista, en el apartado `Attributes/ Attributes 1` hay vistas ya pre-configuradas con la escala como principal forma para distinguirse entre cada una `(1)`. 
+- Al entrar en las propiedades de la vista, en el apartado `Attributes/ Attributes 1` hay vistas ya pre-configuradas con la escala como principal forma de distinción entre cada una `(1)`. 
 - En primer lugar hay que definir la escala del dibujo `(2)`.
 - Luego se puede editar la profundidad de la vista `(3)`, esto siendo principalmente útil en vistas en planta. Nos dirá hasta cuanto de esa planta veremos hacia atrás o delante.
-- Por último se aconseja (no solo acá si no en todas las propiedades del modo dibujo) dejar el valor `(4)` en *"fixed"* y no en "free" como a veces sucede por default, esto ya que garantiza que lo que se edite se mantenga tal cual uno lo desea.
+- Por último se aconseja (no solo acá si no en todas las propiedades del modo dibujo) dejar el valor `(4)` en *`fixed`* y no en "free" como a veces sucede por default, esto ya que garantiza que lo que se edite se mantenga tal cual uno lo desea.
 
 {: .note}
 > La escala de la vista dependerá de distintas variables:
@@ -88,7 +88,7 @@ Una vez dentro, por cada renglón tendremos a la izquierda opciones parametrizad
 *Figura 9: Edición de marcas en renglón `A1`*
 
 - En `(1)` seleccionamos lo que queremos que se vea en nuestra marca.
-- En `(2)` está el panel que controla lo que entra, lo que sale, y el orden como se muestran las marcas. Se pone `add` para agregar marcas desde `(1)` y `remove` para quitarlas desde `(3)`, luego `Move up/down` para darle un orden linealmente en el renglón.
+- En `(2)` está el panel que controla lo que entra, lo que aparece. Se pone `add` para agregar marcas desde `(1)` y `remove` para quitarlas desde `(3)`, luego `Move up/down` para darle un orden linealmente en el renglón.
 - En `(3)` vemos todas las marcas que hay en el renglón, siendo lo más arriba lo que está mas a la izquierda.
 - En `(4)` está el panel de edición de las marcas, seleccionando la marca en `(3)` se puede agregar recuadros, cambiar colores, tamaño de texto, etc.
 
@@ -118,7 +118,7 @@ Se utiliza para elegir cuales elementos podriamos seleccionar en el model, y cua
 . En `(3)` controlaremos la transparencia, pudiendo ser esta:
 ![transparencia filtro](../img/dibujo/transparencia%20filtro.png)
 
-. En `(4)` controlaremos la creación o eliminación de cada renglón de filtro, así como el orden que queremos darle. Esto es importante ya que este filtro tiene una jerarquía de orden descendente, por lo que se irá visualizando lo que englobe el primer renglón, luego el segundo y así.
+. En `(4)` controlaremos la creación o eliminación de cada renglón de filtro, así como el orden que queremos darle. Esto es importante ya que este filtro tiene una jerarquía de orden descendente, por lo que se irá visualizando lo que englobe el primer renglón, luego el segundo progresivamente. 
 
 - **All drawing types**:
 Esta casilla permite que los filtros puedan ser utilizados en todos los drawings del modelo.
@@ -135,7 +135,7 @@ El filtro de selección permite decidir que elementos de modelo pueden seleccion
 
 ![Propiedades de categorias organizer](../img/dibujo/Propiedades%20de%20categorias%20organizer.png)
 
-- En `(1)` vemos dentro de `Object group...` el filtro que creamos, o mismo desde el menú desplegable que hay debajo.
+- En `(1)` vemos dentro de `Object group` el filtro que creamos, o mismo desde el menú desplegable que hay debajo.
 
 #### Propiedades de los filtros
 
@@ -167,7 +167,7 @@ Podrán ver más ejemplos de filtros en el apartado ["ejemplo filtros"](../ejemp
 
 ### Referencias externas con vistas
 
-Dentro del apartado `Objects/ Reference object` podremos configurar la visualización de objetos que hayan sido cargados en el model como referencias, como pueden ser archivos de extensión ".ifc", ".nwd", ".dwg", etc.
+Dentro del apartado `Objects/ Reference object` se podrá configurar la visualización de objetos que hayan sido cargados en el model como referencias, como pueden ser archivos de extensión ".ifc", ".nwd", ".dwg", etc.
 Se puede configurar que referencias se desean mostrar en la vista dentro de `Content` y luego en "Visibility" se elige `Visible/Invisible`.
 
 ![ref obj content](../img/dibujo/ref%20obj%20content.png)
@@ -180,7 +180,8 @@ Luego en `Appearance` ponemos la opción en `outline``(1)` y podemos configurar 
 
 {: .note}
 >**Aclaración 1**: El tiempo de carga de los modelos de referencia en la vista dependerá de la cantidad que haya de estos para cargar y cuanto contenido haya dentro de cada uno.
->
+
+{: .note}
 > **Aclaración 2**: Si el archivo de origen cuenta con layers, como puede ser un "3D DWG", esos layers pueden configurarse en "modelos de referencia" en el model. Si se oculta uno de estos layers allí, no se verán en el dibujo.
 
 {: .warning}
@@ -199,7 +200,7 @@ Se pueden crear vistas y detalles a partir de Area in model view o Entire model 
     6. Por último para asignarle un lugar a la vista detalle se clickea en el lugar donde quiere colocarse en la hoja.
 
 {: .note}
->En el paso `(C)` puede editarse posteriormente la envergadura de lo que se desea mostrar.
+>En el paso `(C)` puede editarse posteriormente el ancho de lo que se desea mostrar.
 
 ![detail view](../img/dibujo/detail%20view.gif)
 *Figura 14: Ejemplo de creación de una "Detail view"*
@@ -207,7 +208,7 @@ Se pueden crear vistas y detalles a partir de Area in model view o Entire model 
 Las propiedades de esta vista se dividen en tres: View label, Detail boundary y Detail mark
 
 - **View label**: Representa el texto que va a colocarse en la vista que se creo en base al circulo del detalle.
-Suele usarse solo el renglón A1 y la parte de Symbol de abajo no se usa en ninguno de los casos.
+Suele usarse solo el renglón A1 y la parte de Symbol de abajo no se utiliza en ninguno de los casos.
 
 ![View label](../img/dibujo/View%20label.png)
 *Figura 15: Propiedades View label*
@@ -247,7 +248,7 @@ Las propiedades de esta vista se dividen en tres: Cutting line, Section mark y V
 - **View label**: Representa el texto que va a colocarse en la vista que se creo en base al circulo del detalle.
 Suele usarse solo el renglón A1 y la parte de Symbol de abajo no se usa en ninguno de los casos.
 ![View label section](../img/dibujo/View%20label%20section.png)
-*Figura 20: propiedades View label*
+*Figura 20: Propiedades View label*
 
 3. ### Area in drawing view:
     1. Asegurarse estar dentro de la vista donde se desee hacer la otra vista.
@@ -257,7 +258,7 @@ Suele usarse solo el renglón A1 y la parte de Symbol de abajo no se usa en ning
     5. Hacer click en el lugar de la hoja donde se desea colocar la nueva vista.
 
 ![area in drawing view](../img/dibujo/area%20in%20drawing%20view.gif)
-*Figura 21: ejemplo de creación de un "Area in drawing view"*
+*Figura 21: Ejemplo de creación de un "Area in drawing view"*
 
 Las propiedades de esta vista se podrán modificar de la misma manera que en [Atributos de vista](./vistas_dibujo.md#atributos-de-vista).
 
@@ -269,10 +270,10 @@ Se pueden copiar las vistas de un `GAdrawing` a otro, siguiendo estos pasos:
 3. Aparecerán todas las vistas del dibujo como un bloque, si se quiere una en particular se pueden borrar las demás, ya que en el drawing original seguirán los dibujos intactos.
 
 ![copiar H2](../img/dibujo/copiar%20H2.png)
-*Figura 21: hoja 2 con los dibujos a copiar*
+*Figura 21: Hoja 2 con los dibujos a copiar*
 
 ![copiar eh h1](../img/dibujo/copiar%20eh%20h1.gif)
-*Figura 22: ejemplo copiar hoja 2 en la hoja 1*
+*Figura 22: Rjemplo copiar hoja 2 en la hoja 1*
 
 
 [← Volver al inicio](index.md)

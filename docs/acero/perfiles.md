@@ -18,9 +18,7 @@ has_toc: true
 
 ## Objeto y alcance
 
-Contiene los estándares y procedimientos para el modelado de estructuras de hormigón armado en Tekla Structures. Cubre elementos estructurales, propiedades a completar y buenas prácticas para garantizar modelos coordinados y homogéneos.
-
-No es alcance de este instructivo mostrar cuestiones básicas del modelado de elementos si no brindar pautas de diseño y guiar en el proceso.
+Contiene los estándares y procedimientos para el modelado de estructuras de acero en Tekla Structures.
 
 El objeto de este instructivo es mencionar los estándares y procedimientos para el modelado de estructuras de acero en Tekla Structures, a fin de mantener un modelado homogeneo a nivel empresa. 
 
@@ -43,7 +41,7 @@ En el modelado de acero, la pestaña `Profile` se refiere al perfil de la parte 
 - IPE
 - HEA
 - HEB
-- Angulos: L B x B x t* 
+- Angulos: L B x B x t*
 
 TEKLA permite acceder a su catálogo de perfiles a través del `Profile Catalog`
 
@@ -148,8 +146,6 @@ Hay 14 clases/colores definidos en TEKLA, esta sirve para discriminar elementos 
 
 Por simplicidad, seguir lo siguiente:
 
-
-
 | Elemento                      | Nomenclatura      | Clase                               |
 |:------------------------------|:------------------|:----------------------------------- |
 | Placa Base/Chapa Embebida     | PB_<# Secuencial> |![CLASE](../img/hormigon/CLASE_4.png)|
@@ -167,20 +163,29 @@ Por simplicidad, seguir lo siguiente:
 | Barandas                      | _BAR              |![CLASE](../img/hormigon/CLASE_1.png)|
 | Grating                       | _GRATING          |![CLASE](../img/hormigon/CLASE_1.png)|
 
+## Antes de modelar
+
+- Referencias de connect
+- Referencias externas de cliente
+- Referencias internas del proyecto de otras disciplinas
+
+EL LEP deberá indicar a quien modele lo que debe tomar como información valida y tener en cuenta para proyectar la estructura.
+
+Para referencias de Connect, ver [Connect - Ejecutor](../connect/connect-ejecutor.md)
+
+Es probable que si la estructura es relevante, se tenga un modelo de elementos finitos de esta. Ver [Importacion FEM](./importacion_FEM.md) para detalle de como importar modelos.
 
 ---
 ## Descripción de elementos
 
-Tekla permite modelar estructuras de acero, este capitulo se centra en la creación de objetos de acerp. Hay 5 principales opciones en el modelado. 
+Tekla permite modelar estructuras de acero, este capitulo se centra en la creación de objetos de acero. Hay 5 principales opciones en el modelado. 
 
 ![Ribbon Acero](../img/acero/RIBBON_ACERO.png)
 *Figura 1: Ribbon  Acero*
 
-
 ### Column
 
 Son elementos verticales que transmiten cargas axiales y momentos desde niveles superiores hacia la fundación.
-
 
 #### Usos
 
@@ -202,11 +207,10 @@ Son elementos verticales que transmiten cargas axiales y momentos desde niveles 
 | **UDAS** | Atributos definidos por el usuario |- |
 | **Altura** | Altura del elemento |`3500` |
 
-
-- **1- Name**: Nombre del elemento, generalmente se suele definir antes del empezar el proyecto, como valor recomendado se puede definir "COLUMNA"
+- **1- Name**:Nombre del elemento, se completa en base a los nombres estandarizados en el apartado [name](#name).
 - **2- Profile**: Perfil normalizado de la columna
 - **3- Material**: Material del elemento, dependen de la base de datos de materiales, suele ser F24
-- **4- Class**: Color del elemento, generalmente se suele definir antes del empezar el proyecto, como valor recomendado se puede definir "1", puede variar.
+- **4- Class**: Color del elemento, varia según la parte, se completa en base a las clases estandarizadas en el apartado [clases](#clases).
 - **5- Position** : Posición de la parte, puede modificarse en vertical/rotación/horizontal/superior
 - **5- IFC Export** : Atributos y configuraciones de la exportación a IFC.
 - **6- User field / UDAS**: Atributos tanto definidos por el usuario como los "userfield" estas filas tienen varios usos, tanto como la numeración, o especificaciones, estas filas pueden usarse para tablas, reportes, cuadros.
@@ -251,10 +255,10 @@ Son elementos horizontales o inclinados que transmiten cargas por flexión.
 | **Altura** | Altura del elemento |`3500` |
 
 
-- **1- Name**: Nombre del elemento, generalmente se suele definir antes del empezar el proyecto, como valor recomendado se puede definir "VIGA"
+- **1- Name**: Nombre del elemento, se completa en base a los nombres estandarizados en el apartado [name](#name).
 - **2- Profile**: Perfil normalizado de la viga
 - **3- Material**: Material del elemento, dependen de la base de datos de materiales, suele ser F24
-- **4- Class**: Color del elemento, generalmente se suele definir antes del empezar el proyecto, como valor recomendado se puede definir "1", puede variar.
+- **4- Class**: Color del elemento, varia según la parte, se completa en base a las clases estandarizadas en el apartado [clases](#clases).
 - **5- Position** : Posición de la parte, puede modificarse en vertical/rotación/horizontal/superior.
 - **6- IFC export / UDAS**: Atributos y configuraciones de la exportación a IFC. Atributos tanto definidos por el usuario como los "userfield" estas filas tienen varios usos, tanto como la numeración, o especificaciones, estas filas pueden usarse para tablas, reportes, cuadros.
 - **7- Largo**: Largo de la parte, se edita desde el elemento.
@@ -293,10 +297,10 @@ Son elementos laminares planos que sirven para la creación de complementos a la
 | **UDAS** | Atributos definidos por el usuario |- |
 | **Largo** | Altura del elemento |`3500` |
 
-- **1- Name**: Nombre del elemento, generalmente se suele definir antes del empezar el proyecto, como valor recomendado se puede definir "PLACA/GRATING"
+- **1- Name**: Nombre del elemento, se completa en base a los nombres estandarizados en el apartado [name](#name).
 - **2- Profile**: Espesor normalizado de la placa, se puede definir con el prefijo `PL`+ espesor `150`: `PL150`, crea una placa de espesor 150mm
 - **3- Material**: Material del elemento, dependen de la base de datos de materiales, suele ser F24
-- **4- Class**: Color del elemento, generalmente se suele definir antes del empezar el proyecto, como valor recomendado se puede definir "1", puede variar.
+- **4- Class**: Color del elemento, varia según la parte, se completa en base a las clases estandarizadas en el apartado [clases](#clases).
 - **5- Position** : Posición de la parte, puede modificarse en vertical/rotación/horizontal/superior.
 - **6- IFC export / UDAS**: Atributos y configuraciones de la exportación a IFC. Atributos tanto definidos por el usuario como los "userfield" estas filas tienen varios usos, tanto como la numeración, o especificaciones, estas filas pueden usarse para tablas, reportes, cuadros.
 - **7- Largo**: Largo de la placa, se edita desde el elemento.
@@ -307,24 +311,10 @@ Son elementos laminares planos que sirven para la creación de complementos a la
 
 ### Bolt
 
-Los bulones son elementos de fijación cilíndricos que se utilizan para unir piezas trasmitir cargas de elementos.
-Generalmente se suele usar los [componentes](./conexiones.md)
+Los bulones son elementos de fijación cilíndricos que se utilizan para unir piezas trasmitir cargas de elementos. Generalmente se suele usar los [componentes](./conexiones.md)
+
 ![PROCEDIMIENTO BOLT](../img/acero/PROCEDIMIENTO_BOLT_ACERO.gif)
 *Figura 6.5: Como crear un bolt*
-
----
-
-## Antes de modelar
-
-- Referencias de connect
-- Referencias externas de cliente
-- Referencias internas del proyecto de otras disciplinas
-
-EL LEP deberá indicar a quien modele lo que debe tomar como información valida y tener en cuenta para proyectar la estructura.
-
-Para referencias de Connect, ver [Connect - Ejecutor](../connect/connect-ejecutor.md)
-
-Es probable que si la estructura es relevante, se tenga un modelo de elementos finitos de esta. Ver [Importacion FEM](./importacion_FEM.md) para detalle de como importar modelos.
 
 ---
 
@@ -363,7 +353,7 @@ Las soldaduras siempre deberán hacerse a través de componentes, pero es necesa
 
 
 ![Soldaduras](../img/acero/soldaduras.png)
-*Figura 1: Pestaña soladduras del programa*
+*Figura 1: Pestaña soldaduras del programa*
 
 En (1) se indica la soldadura sobre la línea (lugar opuesto a la flecha) y en (2) la soldadura del lado de la flecha. En (3) se suman parámetros para indicar si es intermitente, si se hace en sitio (banderita) o si es en todo el perímetro (circulo).
 
@@ -423,9 +413,6 @@ Al modelar siempre se debe optar por tener la distancia mínima entre bulones. S
 > En aplicaciones de los proyectos de Oil&Gas y para los tamaños de perfiles que se manejan, recordar principalmente lo siguiente:
 > - 60mm para separar bulones de 3/4''. 30mm a borde
 > - 75mm para separar bulones de 1''. 40mm a borde
-
-
-
 
 #### Otras distancias a tener en cuenta
 

@@ -23,9 +23,9 @@ Contiene los estándares y procedimientos para el modelado de estructuras de hor
 El objeto de este instructivo es mencionar los estándares y procedimientos para el modelado de estructuras de hormigón armado en Tekla Structures, a fin de mantener un modelado homogeneo a nivel empresa. 
 
 Se cubriran los siguientes aspectos para cada elemento:
-- Definición
-- Propiedades a completar
-- Buenas prácticas
+- Definición de tipos de elementos
+- Propiedades y atributos obligatorios a completar
+- Buenas prácticas a seguir para proyectar estructuras
 
 No es alcance de este instructivo mostrar cuestiones básicas del modelado de elementos si no brindar pautas de diseño y guiar en el proceso. Para pautas más básicas de modelado, referir a la [Bibliografía](../index.md#documentación-oficial)
 
@@ -355,14 +355,6 @@ Las configuraciones guardadas consideran lo siguiente:
 | **450x350** | - | - | - | - | - | - | - | - | - | - | [Empotrada 2°](../ref/Placa%20Base/UPN220C-EMP-2°.j1047)<br><img src="../img/hormigon/UPN220C-EMP-2°.png" width="180"> |
 | **450x450** | - | - | - | [Empotrada 2°](../ref/Placa%20Base/W10x45-EMP-2°.j1047)<br><img src="../img/hormigon/W10x45-EMP-2°.png" width="180"> | [Empotrada 1°](../ref/Placa%20Base/W12x50-EMP-1°.j1047)<br><img src="../img/hormigon/W12x50-EMP-1°.png" width="180"> | [Empotrada 1°](../ref/Placa%20Base/W14x74-EMP-1°.j1047)<br><img src="../img/hormigon/W14x74-EMP-1°.png" width="180"> | - | [Empotrada 2°](../ref/Placa%20Base/HEB200-EMP-2°.j1047)<br><img src="../img/hormigon/HEB200-EMP-2°.png" width="180"> | - | - | - |
 
-
-hkjih
-jkjk
-
-Prueba 
-}
-
-
 ## Miscelaneos
 
 ### Antimaterial
@@ -383,7 +375,7 @@ Los antimateriales son piezas que generan un vacio en otro elemento, suelen util
 
 {: .note}
 
->Los antimateriales quedan representados con una linea punteada, representando su corte en el material, son invisibles y no se exportan, sus propiedades otorgan que el material recortado aparezca como una pieza monolítica si así fue modelada.`
+>Los antimateriales quedan representados con una linea punteada, representando su corte en el material, son invisibles y no se exportan, sus propiedades otorgan que la parte aparezca como una pieza monolítica si así fue modelada.
 
 Los antimateriales modelados pueden aparecer o no, para reiniciar su forma de representación se puede tocar la opcion "Redraw View" para que se escondan, o borrar el material cortado y volver hacia atras para que vuelva a aparecer:
 

@@ -18,7 +18,7 @@ has_toc: true
 ## Marcas
 
 ### Part Mark
-Esta marca puede ser usada en cualquier cosa que sea una parte a nivel programa. Los usos más frecuentes de este tipo de marca son en perfiles metálicos, en armaduras, partes de unidades de colada, anclajes, etc.
+Esta marca puede ser usada en cualquier parte a nivel programa. Los usos más frecuentes de este tipo de marca son en perfiles metálicos, armaduras, partes de unidades de colada, anclajes, etc.
 
 Para colocarla en el dibujo hay que seguir los siguientes pasos:
 
@@ -35,8 +35,8 @@ Para colocarla en el dibujo hay que seguir los siguientes pasos:
 ![Part mark content](../img/dibujo/Part%20mark%20content.png)
 *Figura 2: Propiedades en `content`*
 
-- Dentro del apartado de `content` en ``(1)`` seleccionamos lo que queremos que se vea en nuestra marca (en la imagen está puesto "Profile" por ejemplo).
-- En ``(2)`` está el panel que controla lo que entra, lo que sale, y el orden como se muestran las marcas. Se pone `add` para agregar marcas desde ``(1)`` y `remove` para quitarlas desde ``(3)``, luego `Move up/down` para darle un orden linealmente en el renglón.
+- Dentro del apartado de `content` en ``(1)`` seleccionamos el atributo que queremos que se vea en nuestra marca.
+- En ``(2)`` está el panel que controla los atributos y su ordena la hora de mostrar las marcas. Se pone `add` para agregar marcas desde ``(1)`` y `remove` para quitarlas desde ``(3)``, luego `Move up/down` para darle el orden en cuanto a su altura.
 - En ``(3)`` vemos todas las marcas que hay en el renglón, siendo lo más arriba lo que está mas a la izquierda.
 - En ``(4)`` está el panel de edición de las marcas, seleccionando la marca en ``(3)`` se puede agregar recuadros, cambiar colores, tamaño de texto, etc.
 
@@ -51,7 +51,7 @@ Para colocarla en el dibujo hay que seguir los siguientes pasos:
 
 - Dentro del apartado de `General` en ``(1)`` podemos asignarle un recuadro alrededor de la marca y modificar el color de esta.
 - En ``(2)`` podemos asignarle una flecha que permita mover el texto a diferentes lugares del dibujo sin perder la referencia de lo que se quiere mostrar, pudiendose modificar el tipo de flecha aquí y el color dependerá de ``(2)``.
-- En ``(3)`` se modifica la posición del texto, aunque se suele modificar con el cursor manualmente.
+- En ``(3)`` se modifica la posición del texto, principalmente, su rotación y justificación. La ubicación suele modificarse manualmente.
 
 #### Ejemplos
 
@@ -199,8 +199,8 @@ Las propiedades son similares a las detalladas en [Detail View](../dibujo/vistas
 ![Marca revisión propiedades](../img/dibujo/Marca%20revisión%20propiedades.png)
 *Figura 15: Propiedades de marcas de revisión.*
 
-- Dentro del apartado ``(1)`` se pueden guardar la configuración de la apariencia de marcas de revisión que se hayan hecho en otro momento, siendo útil ya que suelen ser siempre de la misma forma.
-- Una vez que en ``(1)`` se carguen las configuraciones de apariencia, en ``(2)`` se seleccionará el número de revisión al que se hará alución, de las revisiones cargadas previamente.
+- Dentro del apartado ``(1)`` se puede guardar la configuración de la apariencia de marcas de revisión que se hayan hecho en otro momento, siendo útil ya que suelen ser siempre de la misma forma.
+- Una vez que en ``(1)`` se carguen las configuraciones de apariencia, en ``(2)`` se seleccionará el número de revisión al que se hará alución, de las revisiones cargas previamente.
 
 ![Marca revisión apariencia](../img/dibujo/Marca%20revisión%20apariencia.png)
 *Figura 16: Ejemplo de configuración de apariencia de marcas de revisión.*
@@ -212,11 +212,11 @@ Las propiedades son similares a las detalladas en [Detail View](../dibujo/vistas
 
 {: .highlight}
 > Para hacer las "REVCLOUDS" tanto de revisión, como cuando un elemento está en "HOLD", primero hay que configurar el valor en [`Settings/Advanced options`](generalidades_dibujo.md#). Luego para realizar la nube ![simbolo nube](../img/dibujo/simbolo%20nube.png) se deben hacer puntos en los lugares que se necesiten para encuadrar el área que se quiere marcar:
-![EJEMPLO CREACIÓN REVCLOUD](../img/dibujo/EJEMPLO%20CREACIÓN%20REVCLOUD.gif)
+<img src="../img/dibujo/EJEMPLO CREACIÓN REVCLOUD.gif" width="500">
 Luego si es una `"REVISIÓN CLOUD"` quedará de la manera que se dibuja por default:
-![revision cloud](../img/dibujo/revision%20cloud.png) mientras que la `"HOLD CLOUD"` deberán configurarse las propiedades de la siguiente manera:
-![hold cloud](../img/dibujo/hold%20cloud.png)
-
+<img src="../img/dibujo/revision cloud.png" width="500">
+mientras que la `"HOLD CLOUD"` deberán configurarse las propiedades de la siguiente manera:
+<img src="../img/dibujo/hold cloud.png" width="500">
 ## Cotas
 Como fue mencionado en [Views](../dibujo/generalidades_dibujo.md#descripción-del-modo-dibujo), los tipos más utilizados de cotas son la horizontal, vertical, free y la angular.
 Para realizar las tres primeras se debe hacer lo siguiente:
@@ -245,7 +245,7 @@ Para realizar la cota angular se deben seguir los siguientes pasos:
 *Figura 18: Ejemplo cota angular*
 
 Por último, los pasos para una cota curva son los siguientes:
-1. Seleccionar la cota curva con lineas de referencia radiales ![cota curva logo](../img/dibujo/cota%20curva%20logo.png). Hay otra opción con lineas de referencia ortogonales pero no la solemos usar
+1. Seleccionar la cota curva con lineas de referencia radiales. ![cota curva logo](../img/dibujo/cota%20curva%20logo.png) Hay otra opción con lineas de referencia ortogonales pero no la solemos usar
 2. Seleccionar el primer punto del radio interior de la curva a acotar.
 3. Seleccionar el punto medio de la curva interior y el punto final.
 4. Luego sobre la curva exterior seleccionar los puntos donde se desea realizar las cotas.
@@ -324,7 +324,7 @@ Luego en General podemos configurar lo relacionado a la apariencia de la nota.
 Como texto pueden colocarse dos tipos diferentes, `Text` y `Rich text`.
 
 - `Text` se utiliza para colocar algo escrito en el lugar que se desee, y posteriormente se pueden agregar flechas, recuadros, y demás cosas alrededor de ese texto pudiendo simular una nota. Se usa para cosas puntuales y más chicas.
-- `Rich text` se utiliza para importar desde un archivo de texto tipo word, textos más extensos con varios párrafos o con las características que tenga ese archivo de base.
+- `Rich text` se utiliza para importar desde un word guardado con la extensión `.rtf`, textos más extensos con varios párrafos o con las características que tenga ese archivo de base. Por lo general, se utiliza esta extensión las notas.
 
 ### Text
 Se coloca haciendo click en `Text` y seleccionando el lugar donde se desea colocar.
@@ -338,13 +338,13 @@ Se coloca haciendo click en `Text` y seleccionando el lugar donde se desea coloc
 ![propiedades de texto](../img/dibujo/propiedades%20de%20texto.png)
 *Figura 28: propiedades de texto*
 
-- En ``(1)`` podemos editar todo lo relacionado al texto en sí, lo que se quiere incluir, el tamaño, colores, alineación, etc.
+- En ``(1)`` podemos editar las caracteristicas del texto, lo que se quiere incluir, el tamaño, colores, alineación, etc.
 - En ``(2)`` podemos configurar el entorno de ese texto, como flechas, recuadros y el color de estos.
 
 {: .highlight}
 > - Los textos permiten la función copiar y pegar para replicarlo entre vistas, a diferencia de las notas que hay que hacer los pasos de colocación por cada una que se desee agregar.
 > 
-> - El texto al modificarse en base a otro porque se quieren adoptar las mismas propiedades, puede que pierda el formato ``(2)``, por lo que hay que tener en consideración la edición posterior de este parámetro. Con el método anterior no pasa esto.
+> - El texto puede perder las propiedades si se quiere modificar en base a otro ``(2)``, por lo que hay que tener en consideración la edición posterior de este parámetro. Con el método anterior no pasa esto.
 
 
 ![ejemplo copiar pegar texto](../img/dibujo/ejemplo%20copiar%20pegar%20texto.gif)
@@ -457,12 +457,12 @@ Cuando se tenga la vista con las barras, se podrá optar dentro de las propiedad
 Para detallar armadura podemos optar por hacerlo de dos formas diferentes, mediante un componente o con `Part mark`.
 
 {: .warning}
-> Antes de comenzar a hacer las marcas, es necesario realizar la numeración de la armadura y en lo posible tener la PDH para constatar que las posiciones de cada barra sea la correcta, y que no falte señalar a ninguna.
+> Antes de comenzar a hacer las marcas, es necesario realizar la numeración de la armadura y en lo posible tener la PDH para constatar que las posiciones de cada barra sea la correcta, y que no falte señalar a ninguna. Para mas información referir a [PDH](../hormigon/armaduras.md#planilla-de-doblado-de-aceros-pdh)
 
 #### Utilizando un componente
 El componente que se utiliza para la marca de armaduras en grupo de barras es el siguiente:
 ![componente armadura](../img/dibujo/componente%20armadura.png)
-aunque existen muchos mas que pueden ser utilizados.
+Aunque existen muchos mas que pueden ser utilizados.
 
 Para colocarlo se deben seguir los siguientes pasos:
 1. Seleccionar el grupo de barras que queremos marcar.
