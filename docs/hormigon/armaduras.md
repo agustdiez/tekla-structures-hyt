@@ -81,6 +81,36 @@ El rebar mesh una malla prefabricada de barras de acero, compuesta por barras pr
 ![MESH](../img/hormigon/ARMADURA_MESH.gif)
 *Figura 8: Rebar mesh*
 
+## Modelado correcto de la armadura
+Para saber si una armadura esta bien modelada, hay que seguir un par de recomendaciones:
+
+### ¿La armadura está dentro de la parte?
+
+Suele ocurrir que en la rapidez de ejecución del modelado, la armadura, salga de la parte en la cual uno la está asociando. Esto es facil de corregir y de visualizar. Se debe de realizar una verificación visual alrededor de la parte, se recomienda usar los comandos `ctrl+1/2/3/4` para cambiar la representación de la armadura y las partes, y asi verificar que no este por fuera. 
+![Armadura mal posicionada](../img/faq/MAL_MODELADO_ARM.png)
+![Armadura bien posicionada](../img/faq/BIEN_MODELADO_ARM.png)
+
+### ¿Los ganchos de la armadura estan bien modelados?
+Para modelar ganchos en una barra, se debe de usar  la opción `Hooks` en la pestaña de modelado de armadura, la misma tiene configuraciones preseteadas, que 
+determinan la forma de la misma.
+![Ganchos](../img/faq/HOOKS_ARMADURA.png)
+
+Si bien al modelar grupo de barras, se puede elegir la forma de la misma, y dibujar manualmente el gancho, la manera correcta del modelado es utilizar los hooks predefinidos por el programa. 
+
+### ¿Hay doble armadura en las partes que lo requieran?
+Las bases aisladas, plateas, y fundaciones en general, suelen tener doble armadura. Una superior y otra inferior, suelen ser de el mismo diametro, y separación por lo que si se modelo una inicialmente se deberá duplicar.
+
+![Doble armadura](../img/hormigon/ARMADURA_SUPERIOR_E_INFERIOR.png)
+
+### ¿El radio de doblado de la armadura es correcto?
+Las armaduras, tienen un radio de doblado asignado dependiente de su diametro, puede ocurrir que al generar un gancho para la misma la barra gire en un radio que no es el correcto, para chequear el correcto utilizar la opcion `standard hook` y modificar el largo.
+![Armadura hooks](../img/hormigon/ARMADURA_HOOKS_CORRECTOS.gif)
+
+### ¿Se están utilizando nombres en la armadura?
+Nombrar la armadura sirve para generar una distinsión en la PDH. Una barra, puede tener distinto nombre, pero misma forma, esto puede ser util cuando se requiera diferenciar una armadura superior de la inferior, o simplemente nombrar barras dependiendo de la forma.
+![Nombre barra 1](../img/hormigon/ARMADURA_NOMBRE.png)
+![Nombre barra 2](../img/hormigon/ARMADURA_NOMBRE_1.png)
+
 ---
 
 ## Propiedades
@@ -219,7 +249,8 @@ Para el caso de barras de gran longitud o que deban separarse en tramos, aparece
 - La longitud es 1,3 veces la de anclaje recto.
 - Escalonar empalmes cuando sea posible
 
-
+En el caso que se tengan que cubrir distancias mayores a la longitud maxima, se debe de modelar el empalme correspondiente, el mismo se modela con la siguiente herramienta:
+![Reinforcement splice](../img/hormigon/ARMADURA_REINFORCEMENT_SPLICE.png)
 
 ### Modelar empalmes
 

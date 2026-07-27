@@ -29,8 +29,7 @@ Se menciona en detalle como crear rótulos, ya que es una tarea que se repite al
 
 {: important}
 > El editor de cuadros consiste en identificar alguna situación del modelo que interese extraer en una serie de objetos. Una planilla de doblados es un reporte que itera sobre partes y extrae armaduras.
->
-> La finalidad
+
 
 ## Componentes principales
 
@@ -65,7 +64,6 @@ En función del tipo de cuadro, puede prescindirse o no de elementos gráficos, 
 > Las extensiones de archivo son:
 > .tpl
 > .rpt
-> 
 
 ### Tipo de objeto
 

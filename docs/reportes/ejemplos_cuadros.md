@@ -32,7 +32,7 @@ Los cuadros enunciados a modo de ejemplo se encuentran para descargar al fin de 
 ---
 ##  Cuadro de coordenadas
 
->Se busca extraer una tabla de coordenadas y niveles de todas las fundaciones de un modelo, ordenándolas, en este caso, primero por Área de Ubicación y luego por Nombre de Fundación. Este Ejemplo se encuentra con el nombre de "SAC_COORDS_INY QUIM.tpl". Ver en Descargas ("SAC_COORDS_INY QUIM.tpl"):
+>Se busca extraer una tabla de coordenadas y niveles de todas las fundaciones de un modelo, ordenándolas, en este caso, primero por Área de Ubicación y luego por Nombre de Fundación. El ejemplo es: [coordenadas de inyectores químicos](../ref/cuadros/SAC_COORDS_INY%20QUIM.tpl)
 
 !["SAC_COORDS_INY QUIMICOS.tpl"](..\img\hormigon\TABLA-COORD.png)
 
@@ -70,7 +70,7 @@ La fila (`ROW`) ha sido configurada para que busque y selecciones todos las part
 
 ![EDITOR2](..\img\hormigon\TABLA-COORD-EDIT-02.png)
 
-Si ingresamos al partado `Avanzado` podremos configurar el tipo de selección, editando el tipo de parte o atributo. Hay que mencionar que en el desplegable `Predefinido` podremos encontrar otro tipo de selección.
+Si ingresamos al apartado `Avanzado` podremos configurar el tipo de selección, editando el tipo de parte o atributo. Hay que mencionar que en el desplegable `Predefinido` podremos encontrar otro tipo de selección.
 
 ![EDITOR3](..\img\hormigon\TABLA-COORD-EDIT-03.png)
 
@@ -88,14 +88,13 @@ El Pié de Página tiene la única "fórmula" que genera el conteo total de fund
 
 Como el Tekla 2020 no puede generar el conteo por fila se adosa en el dibujo un Excel para numerar las filas, en este caso denominado `numeración.xlsx`. Ver apartado 4 y en zona de "Descargas".
 
-Una captura con un cuadro con las características principales de la Tabla. Ver en Descargas (`Cuadro Coordenada.xlsx`):
+Una captura con un cuadro con las características principales de la Tabla. Ver [cuadro coordenadas](../ref/Cuadros/Cuadro%20Coordenada.xlsx)
 
 ![excel](..\img\hormigon\TABLA-COORD-01.png)
 
-
 ### En el Dibujo
 
-1. A nivel dibujo es importante que la Vista debe contener los objetos/partes a computar en el el Cuadro, en este caso son 9:
+1. A nivel dibujo es importante entender que la vista debe contener los objetos/partes a computar en el el Cuadro, en este caso son 9:
 
 ![dib02](..\img\hormigon\TABLA-COORD-DIB-01.png)
 
@@ -175,7 +174,7 @@ Los atributos se encuetran en varios `Campo de valor` con diferente nombre, cada
 .La fila _CANT. TOTAL_ busca la cantidad total de `FUNDACIONES`:
 ![TABLA01a](..\img\hormigon\TABLA-MAT-EDIT-01a.png)
 
-.La denominada _OCULTA 1_ desarrolla todos los volúmenes de las estructuras de hormigón con calidad `H30`, está oculta, sólo es para control, si se ncesitara verlas, tildar `Ocultar en salida`:
+.La denominada _OCULTA 1_ desarrolla todos los volúmenes de las estructuras de hormigón con calidad `H30`, está oculta, sólo es para control, si se necesitara verlas, tildar `Ocultar en salida`:
 ![TABLA01b](..\img\hormigon\TABLA-MAT-EDIT-01b.png)
 El Campo principal es `VOLUME_hor` dónde se suma el volumen por tipo de `FUNDACIÓN` con el atributo `VOLUME`:
 ![TABLA01e](..\img\hormigon\TABLA-MAT-EDIT-01e.png)

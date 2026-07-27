@@ -75,12 +75,12 @@ Se indica en cada caso quien es responsable de suministrar el dato o dónde se p
 
 | Paso | Descripción |  Responsable | Check |
 |------|-------------|-------|-------|
-| 4.1 | [¿La armadura está dentro de la parte?](../faq/faq.md#modelado-correcto-de-la-armadura) | EJE | [ ] |
-| 4.2 | [¿La armadura tiene la separación correcta?](../faq/faq.md#modelado-correcto-de-la-armadura) | EJE | [ ] |
-| 4.3 | [¿El recubrimiento de la armadura es correcto?](../faq/faq.md#modelado-correcto-de-la-armadura) | EJE | [ ] |
-| 4.4 | [¿Los ganchos y empalmes están correctamete modelados?](../faq/faq.md#modelado-correcto-de-la-armadura) | EJE | [ ] |
-| 4.5 | [¿La armadura está correctamente modelada?](../faq/faq.md#modelado-correcto-de-la-armadura)  | EJE | [ ] |
-| 4.6 | [¿El reporte de la planilla de doblado sale correctamente?](../faq/faq.md#modelado-correcto-de-la-armadura)  | EJE | [ ] |
+| 4.1 | [¿La armadura está dentro de la parte?](../hormigon/armaduras.md#modelado-correcto-de-la-armadura) | EJE | [ ] |
+| 4.2 | [¿La armadura tiene la separación correcta?](../hormigon/armaduras.md#modelado-correcto-de-la-armadura) | EJE | [ ] |
+| 4.3 | [¿El recubrimiento de la armadura es correcto?](../hormigon/armaduras.md#modelado-correcto-de-la-armadura) | EJE | [ ] |
+| 4.4 | [¿Los ganchos y empalmes están correctamete modelados?](../hormigon/armaduras.md#modelado-correcto-de-la-armadura) | EJE | [ ] |
+| 4.5 | [¿La armadura está correctamente modelada?](../hormigon/armaduras.md#modelado-correcto-de-la-armadura)  | EJE | [ ] |
+| 4.6 | [¿El reporte de la planilla de doblado sale correctamente?](../hormigon/armaduras.md#modelado-correcto-de-la-armadura)  | EJE | [ ] |
 
 
 

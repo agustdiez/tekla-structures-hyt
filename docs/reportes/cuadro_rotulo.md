@@ -15,24 +15,33 @@ has_toc: true
 1. TOC
 {:toc}
 
-## Creación de rótulos - Paso a paso
+## Validación de la ruta FILE LOCATIONS en el template editor
 
 Al comenzar un nuevo proyecto se debe de crear el rotulo determinado por el cliente: 
-1. Validacion de FIle Locations del Template Editor
 El template editor es un programa aparte del tekla structures, por lo tanto, hay ciertas configuraciones independientes que hay q actualizar. 
 ![FILE LOCATIONS](../img/proyecto_nuevo/FILE%20LOCATIONS.gif)
 *Figura 1: File locations template editor*
+
+{: important}
+> Si no se actualiza está ruta, no se podrá visualizar las imágenes, ni agregar nuevas.
 
 la ruta a customizar es la correspondiente a "Symbols, pictures" Y agregar la ruta:
 ```
 ;C:\Users\NOMBRE DE USUARIO\OneDrive - Hytech Ingeniería S.A\TEKLA\STD\FIRM\bitmaps\
 ```
-2. Descarga de formatos en formato CAD:
+
+## Creación de rótulos - Paso a paso
+
+1. Descarga de formatos en formato CAD:
 Los formatos se encuentran en el SPDMS, en la carpeta del cliente, con su correspondiente nombre y codigo, ahi se encuentran los formatos CAD, para los planos, en los tamaños acordados. 
 ![EXTRACCIÓN FORMATO CAD](../img/proyecto_nuevo/FORMATO%20CAD.gif) 
 *Figura 2: Extracción formato CAD*
 
-3. Creación de los .tpl:
+>{important}
+IMPORTANTE: 
+Se debe de respetar los colores que brinda el paso número *2*, al extaer el formato, el proyectista o ejecutor debe mantener el color de todos los objetos del rótulo, sea texto, lineas, o imágenes, este debe formato debe ser accesible para todos los que modelen en el programa y debe de ser igual o lo más parecido al del SPDMS. 
+
+2. Creación de los .tpl:
 Los archivos .tpl son formatos nativos de tekla que permiten generar cuadros. Estos archivos se crean en el [Editor de Cuadros](./editor_cuadros.md). Los archivos utilzados en un rotulo, por lo general son
     1. Marco de rotulo
     2. Cuadro de rotulo cliente
@@ -40,7 +49,7 @@ Los archivos .tpl son formatos nativos de tekla que permiten generar cuadros. Es
 ![Template mas comunes](../img/reportes/TPLS%20MAS%20UTILIZADOS.png)
 *Figura 3: Archivo .lay y .tpls utilizados*
 
-4. Atributos a utilizar marco de rotulo: 
+3. Atributos a utilizar marco de rotulo: 
     1. `DR_x_COD_PROY`: Son textos que representan los codigos de los documentos de referencia a nivel _PROYECTO_. 
     2. `DR_x_COD`: Son textos que representan los codigos de los documentos de referencia a nivel _PLANO_. 
     3. `DR_x_DESC_PROY`: Son textos que representan los nombres de los documentos de referencia a nivel _PROYECTO_.
@@ -48,6 +57,11 @@ Los archivos .tpl son formatos nativos de tekla que permiten generar cuadros. Es
     ![ATRIBUTOS TPLS](../img/reportes/TPLS_ATRIBUTOS%20MARCOS.png)
     *Figura 4: Cuadro de docs de referencia*
     Estos atributos son una manera actualizada de completar los documentos de referencia, la sintaxis de estos campos se encuentra en [Cuadros de rotulos](../ref/Cuadros/TEMPLATES%20CODIGOS%20DOCS%20DE%20REF.txt).
+    >{important}
+    Al copiar la sintesis del txt, saltará este error:
+![Sintax error](../img/reportes/SINTAX_ERROR.png)
+El mismo, refiere a que el programa, no puede interpretar esos asteriscos, pero es solo un problema de reconocimiento, puesto a que a la hora de la ejecución funcionará correctamente.
+
     Hay 3 campos importantes a completar, el numero, la codificación y la descripción. Estos campos se completan para que el rotulo funcione de la manera mas eficiente,
     ![Establecer value field](../img/reportes/VALUE%20FIELD.png)
     *Figura 4:  Establecer el value field*
@@ -55,7 +69,10 @@ Los archivos .tpl son formatos nativos de tekla que permiten generar cuadros. Es
     ![Establecer sintaxis del rótulo](../img/reportes/CUADROS%20SINTAXIS.png)
     *Figura 5: Copiar la sintaxis en la formula*
     
-5. Atributos a utilizar cuadro de rotulo cliente:
+>{important}
+Los campos de número, codigo y nombre deben de tener la opción activada **`output 0 as an empty string`** para que funcione correctamente.
+
+4. Atributos a utilizar cuadro de rotulo cliente:
     1. `TITLES 1/2/3`: Muestra el titulo del plano, suelen utilizarse los primeros 2, suele utilizarse el titulo 3 si tiene un rotulo chico o segmentado.
     2. `PROJECT.INFO1/LOCATION/NAME`: Muestra la ubicación del proyecto
     3. `USERDEFINED.DRAWING_USERFIELD`:Los UDAS, pueden ser utilizados para rellenar varios aspectos del dibujo, suelen utilizarse para indicar quien calculó el plano, su codigo, la cantidad de hojas, etc.
@@ -67,7 +84,7 @@ Los archivos .tpl son formatos nativos de tekla que permiten generar cuadros. Es
     ![ATRIBUTOS TPLS](../img/reportes/TPLS_CONFIG_ATRIBUTOS.png)
     *Figura 5: Cuadro de rotulo*
 
-6. Atributos a utilizar en el cuadro de revisión :
+5. Atributos a utilizar en el cuadro de revisión :
     1. `MARK`: Muestra la marca de la revisión
     2. `TEXT1`: Muestra el caracter de emisión de la revisión 
     3. `DATE_CREATE`: Muestra la fecha de la revisión.
@@ -77,21 +94,9 @@ Los archivos .tpl son formatos nativos de tekla que permiten generar cuadros. Es
     ![REVISIÓN](../img/reportes/TPLS_REVISIÓN.png)
     *Figura 6: Cuadro de revisión*
 
-7. Notificación a coordinador de modelos 3D CIVIL, para que guarde los cuadros y .lay dentro de la carpeta del cliente.
+6. Notificación a coordinador de modelos 3D CIVIL, para que guarde los cuadros y .lay dentro de la carpeta del cliente.
 
-8. Creación del template actualizado del cliente [TEMPLATE](../proyecto_nuevo/creacion_template.md).
-
-
-
-
-
-
-
-
-
-
-
-
+7. Creación del template actualizado del cliente [TEMPLATE](../proyecto_nuevo/creacion_template.md).
 
 [← Volver al inicio](index.md)
 
